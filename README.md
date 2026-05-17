@@ -1060,7 +1060,7 @@ more information
 | [JadeTwinkle](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/JadeTwinkle.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [beautifulrem](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/beautifulrem.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [ci-yang](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/ci-yang.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [dl4987638](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/dl4987638.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [dl4987638](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/dl4987638.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [teasec4](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/teasec4.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [panlutingcn](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/panlutingcn.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [carinawuu-028](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/carinawuu-028.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1207,6 +1207,7 @@ more information
 | [vanadiumricard-cell](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/vanadiumricard-cell.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [cainiao0924](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/cainiao0924.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
