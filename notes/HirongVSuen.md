@@ -68,5 +68,13 @@ _3.集成飞书_
 _参考文档_
 
 [Feishu / Lark | Hermes Agent (](https://hermes-agent.nousresearch.com/docs/zh-Hans/user-guide/messaging/feishu)[nousresearch.com](http://nousresearch.com)[)](https://hermes-agent.nousresearch.com/docs/zh-Hans/user-guide/messaging/feishu)
+
+_4.生成学习助手_
+
+告诉助手一下提示词：
+
+请作为我的 AI × Web3 School Learning Agent，先阅读启动 Prompt：[https://aiweb3.school/learning-agent.zh.txt](https://aiweb3.school/learning-agent.zh.txt) ，并结合 Handbook：[https://aiweb3.school/zh/handbook/](https://aiweb3.school/zh/handbook/) ，帮我初始化个人学习计划、GitHub 学习仓库、每日打卡草稿和 Handbook feedback 流程。  
+  
+助理自动生成github仓库和个人学习推荐
 <!-- DAILY_CHECKIN_2026-05-18_END -->
 <!-- Content_END -->
