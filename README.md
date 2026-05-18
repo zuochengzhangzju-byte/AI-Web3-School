@@ -1017,7 +1017,7 @@ more information
 | [n620970v11-stack](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/n620970v11-stack.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [sunshineluyao](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/sunshineluyao.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [YuAnReL](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/YuAnReL.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [aleranderramsden-yes](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/aleranderramsden-yes.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [aleranderramsden-yes](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/aleranderramsden-yes.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [zoo100130](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/zoo100130.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [jk416](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/jk416.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Aifulesi](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Aifulesi.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1213,6 +1213,7 @@ more information
 | [lei612](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/lei612.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [lusora-ai](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/lusora-ai.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
