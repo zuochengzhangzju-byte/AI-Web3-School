@@ -23,6 +23,7 @@ AI x Web3 School
   
 \- 学习 Handbook  
 \- 20:00 Hermes 从 0 到 1 讲座  
+\- 看 AI 下乡回放  
 \- 做 AI idea / 做 portfolio  
   
 _Step by step._
@@ -30,6 +31,7 @@ _Step by step._
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
