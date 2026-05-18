@@ -712,7 +712,7 @@ more information
 | [yhzhongc](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/yhzhongc.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Eewen1111](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Eewen1111.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [GeYan-lab](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/GeYan-lab.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [iokk](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/iokk.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [iokk](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/iokk.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [2912785283](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/2912785283.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yvettepan023](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/yvettepan023.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [CryptographyBloke](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/CryptographyBloke.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -774,7 +774,7 @@ more information
 | [Chris56684](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Chris56684.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [QingQiuGeek](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/QingQiuGeek.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [natureloved](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/natureloved.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Gooloobaby](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Gooloobaby.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [Gooloobaby](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Gooloobaby.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [alkaid0520](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/alkaid0520.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [fox896](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/fox896.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [a279679426](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/a279679426.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1224,6 +1224,7 @@ more information
 | [Havensky-stack](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Havensky-stack.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [jhhgbf6cgp-cpu](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/jhhgbf6cgp-cpu.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
