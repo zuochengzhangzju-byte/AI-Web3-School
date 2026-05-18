@@ -20,5 +20,7 @@ AI x Web3 School
 今天比較忙
 
 只有學習什麼是LLM 以及運作模式
+
+我是有Web3基礎的 所以會著重在學習AI
 <!-- DAILY_CHECKIN_2026-05-18_END -->
 <!-- Content_END -->
