@@ -847,7 +847,7 @@ more information
 | [ankahamster](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/ankahamster.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Chaney0106](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Chaney0106.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Feimike09](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Feimike09.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [likebubblegum0604](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/likebubblegum0604.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [likebubblegum0604](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/likebubblegum0604.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Qitiandasheng-sketch](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Qitiandasheng-sketch.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [vmn30](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/vmn30.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [zheng051499](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/zheng051499.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1214,6 +1214,7 @@ more information
 | [lusora-ai](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/lusora-ai.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [10yu7ian](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/10yu7ian.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
