@@ -15,6 +15,8 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
-
-
+# 2026-05-18
+<!-- DAILY_CHECKIN_2026-05-18_START -->
+正式打卡的第一天，今天完成了一些前置准备的任务
+<!-- DAILY_CHECKIN_2026-05-18_END -->
 <!-- Content_END -->
