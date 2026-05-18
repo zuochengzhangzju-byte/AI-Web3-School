@@ -628,7 +628,7 @@ more information
 | [luna-670](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/luna-670.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [qiutudou66](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/qiutudou66.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [newfish-cmyk](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/newfish-cmyk.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [vitalebob](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/vitalebob.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [vitalebob](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/vitalebob.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Song042](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Song042.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [xinxin1204](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/xinxin1204.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [sidarth16](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/sidarth16.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1222,7 +1222,9 @@ more information
 | [zmm1112520-hub](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/zmm1112520-hub.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [process-d](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/process-d.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Havensky-stack](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Havensky-stack.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [jhhgbf6cgp-cpu](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/jhhgbf6cgp-cpu.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
