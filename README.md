@@ -599,7 +599,7 @@ more information
 | [enolaxu0418](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/enolaxu0418.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [mile202206](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/mile202206.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [KUOLEYA](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/KUOLEYA.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [317232](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/317232.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [317232](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/317232.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [bobben1998](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/bobben1998.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [mlliao5127-spec](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/mlliao5127-spec.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [DylanYuan666](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/DylanYuan666.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1224,6 +1224,7 @@ more information
 | [Havensky-stack](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Havensky-stack.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [jhhgbf6cgp-cpu](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/jhhgbf6cgp-cpu.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
