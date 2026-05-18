@@ -15,6 +15,8 @@ timezone: UTC+8
 ## Notes
 
 <!-- Content_START -->
-
-
+# 2026-05-18
+<!-- DAILY_CHECKIN_2026-05-18_START -->
+今天在学习如何使用codex搭建工作流，然后投入实际运作
+<!-- DAILY_CHECKIN_2026-05-18_END -->
 <!-- Content_END -->
