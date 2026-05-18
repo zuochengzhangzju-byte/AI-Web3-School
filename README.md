@@ -200,7 +200,7 @@ more information
 | [dennimz8n687-a11y](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/dennimz8n687-a11y.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [kmiliu](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/kmiliu.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [occupy5](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/occupy5.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [wilsonHason](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/wilsonHason.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [wilsonHason](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/wilsonHason.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [jasmineqh77-del](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/jasmineqh77-del.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [wbc351](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/wbc351.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [chesteryang76-arch](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/chesteryang76-arch.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -298,7 +298,7 @@ more information
 | [Xena016](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Xena016.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [daidaidawang](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/daidaidawang.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Astris233](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Astris233.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Chunfield](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Chunfield.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [Chunfield](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Chunfield.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [QAQDFAFD](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/QAQDFAFD.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [JonathanQUANLEE](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/JonathanQUANLEE.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [adrianelo0107](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/adrianelo0107.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -637,7 +637,7 @@ more information
 | [0xxoo-eth](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/0xxoo-eth.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [beetroot42](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/beetroot42.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [jesse353](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/jesse353.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [doctorzero666](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/doctorzero666.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [doctorzero666](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/doctorzero666.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yevhen277](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/yevhen277.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [tumiao233](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/tumiao233.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [NeoWeb3Nova](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/NeoWeb3Nova.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1224,6 +1224,7 @@ more information
 | [Havensky-stack](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Havensky-stack.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [jhhgbf6cgp-cpu](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/jhhgbf6cgp-cpu.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
