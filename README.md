@@ -646,7 +646,7 @@ more information
 | [Flower-jie](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Flower-jie.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [wanghanyu0120](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/wanghanyu0120.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [zhao1511575265-del](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/zhao1511575265-del.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [P1kra](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/P1kra.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [P1kra](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/P1kra.md) | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [ZhangYing-SZ](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/ZhangYing-SZ.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [3030723427](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/3030723427.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [fuujiro](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/fuujiro.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1213,6 +1213,7 @@ more information
 | [lei612](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/lei612.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [lusora-ai](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/lusora-ai.md) |   | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
