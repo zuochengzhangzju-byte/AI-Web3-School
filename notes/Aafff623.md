@@ -17,9 +17,9 @@ AI x Web3 School
 <!-- Content_START -->
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
-## repo:  
+## repo:
 
-github 该天笔记记录: [https://github.com/Aafff623/web3career-study-track/tree/master/daily-log/week-1/2026-05-18](https://github.com/Aafff623/web3career-study-track/tree/master/daily-log/week-1/2026-05-18)  
+github 该天笔记记录: [https://github.com/Aafff623/web3career-study-track/tree/master/daily-log/week-1/2026-05-18](https://github.com/Aafff623/web3career-study-track/tree/master/daily-log/week-1/2026-05-18)
 
 ## 详情内容
 
@@ -31,7 +31,7 @@ github 该天笔记记录: [https://github.com/Aafff623/web3career-study-track/t
 
 -   完成 AI 基础模块全部 11 节预习笔记（LLM → Prompt → Context → RAG → Agent → Frameworks → Vibe-Coding → MCP → Evaluation → Fine-tuning → Inference），含批注和实践文件
     
--   搭建项目三层规范架构（GUIDE.md + CLAUDE.md + steering.md），统一 Claude Code 和 Kiro 的协作规范
+-   搭建项目三层规范架构（[GUIDE.md](http://GUIDE.md) + [CLAUDE.md](http://CLAUDE.md) + [steering.md](http://steering.md)），统一 Claude Code 和 Kiro 的协作规范
     
 -   配置 Learning Agent 角色，将 AI Web3 School 官方启动 Prompt 写入项目约束
     
@@ -39,7 +39,7 @@ github 该天笔记记录: [https://github.com/Aafff623/web3career-study-track/t
     
 -   创建 idea/ 目录，沉淀实验性构思
     
--   安装 skill-creator，将原型提炼为正式 SKILL.md 格式
+-   安装 skill-creator，将原型提炼为正式 [SKILL.md](http://SKILL.md) 格式
     
 -   创建 reference/ 目录（case/ + eval/），为后续 skill 迭代做准备
     
@@ -75,7 +75,7 @@ github 该天笔记记录: [https://github.com/Aafff623/web3career-study-track/t
 
 > 短短一行。
 
--   推进 Web3 基础部分预习（Cryptography、Wallet、Smart Contract...）
+-   推进 Web3 基础部分预习（Cryptography、Wallet、Smart Contract…）
     
 -   整理 idea/ 目录，把 workflow 中可复用的模式沉淀成 skill
 <!-- DAILY_CHECKIN_2026-05-18_END -->
