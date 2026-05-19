@@ -15,8 +15,37 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-19
+<!-- DAILY_CHECKIN_2026-05-19_START -->
+## **1\. 清算机制**
+
+-   当抵押率过低时，系统会拍卖抵押物，确保 DAI 有足够资产支撑。
+    
+-   清算时：
+    
+    NaN.  抵押物被卖出。
+          
+    NaN.  偿还用户的 DAI 债务。
+          
+    NaN.  多余资产退还给用户。
+          
+-   如果清算不足，会由 **MakerDAO 的保险机制（Surplus Buffer / MKR 代币）**兜底。
+    
+
+* * *
+
+## **2\. 稳定锚定机制（Peg Stability Module，PSM）**
+
+-   DAI 通过市场机制保持与 1 美元挂钩，但也会有波动。
+    
+-   PSM 的作用是允许用户 **1:1 用 USDC、USDP 等稳定币兑换 DAI**，从而帮助 DAI 保持锚定。
+    
+-   例如：如果 DAI 价格高于 1 美元，用户会用 USDC 换 DAI 并卖出套利，价格回落；反之亦然。
+<!-- DAILY_CHECKIN_2026-05-19_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 DAI 是 **MakerDAO 协议**发行的去中心化稳定币，目标是锚定美元（1 DAI ≈ 1 USD）。它不同于 USDT、USDC 等中心化稳定币，不依赖单一公司储备，而是通过智能合约和抵押资产来维持稳定。
 
 **核心机制：超额抵押**
