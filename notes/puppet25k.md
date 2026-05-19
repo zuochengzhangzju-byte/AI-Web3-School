@@ -15,8 +15,14 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-19
+<!-- DAILY_CHECKIN_2026-05-19_START -->
+我今天在分享会过程中，把hermes和openclaw迁移到云服务器并且成功使用，也把和飞书的连接，以及日历的每日提醒完成了，明天会继续学习ai x web3指导文档中的内容。
+<!-- DAILY_CHECKIN_2026-05-19_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 \# 2026.5.18
 
 \## 目前的状态
