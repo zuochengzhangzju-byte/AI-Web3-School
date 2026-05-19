@@ -15,8 +15,14 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-19
+<!-- DAILY_CHECKIN_2026-05-19_START -->
+搭建好了Hermes，但是还不会用
+<!-- DAILY_CHECKIN_2026-05-19_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 ![屏幕截图 2026-05-18 202135.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/puxunucovulo41-lab/images/2026-05-18-1779110672241-_____2026-05-18_202135.png)
 
 -   密钥是随机生成的哈希数，用来签名
