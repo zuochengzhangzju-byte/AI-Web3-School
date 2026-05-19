@@ -19,7 +19,6 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-19_START -->
 ## 今日進度
 
-  
 **Large Language Models explained briefly:** [https://www.youtube.com/watch?v=LPZh9BOjkQs](https://www.youtube.com/watch?v=LPZh9BOjkQs)
 
 這部影片深入淺出地解釋了大語言模型（LLM）的底層運作機制。以下是筆記精華總結：
@@ -51,13 +50,14 @@ AI x Web3 School
 
 ### 4\. 湧現現象與不可解釋性
 
--   **黑盒子特性**：儘管研究人員設計了模型的架構與步驟，但模型最終展現出來的驚人流暢度與實用性，其實是數千億個參數在訓練中微調出來的**「湧現現象（emergent phenomenon）」**。
+-   **黑盒子特性**：儘管研究人員設計了模型的架構與步驟，但模型最終展現出來的驚人流暢度與實用性，其實是數千億個參數在訓練中微調出來的\*\*「湧現現象（emergent phenomenon）」\*\*。
     
 -   這導致了一個巨大的挑戰：由於參數極其龐大，**我們很難確切知道模型究竟為什麼會做出某個特定的預測**。這也呼應了先前章節提到的：LLM 是機率模型，不應直接將其視為絕對的真相源。
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 # 自我評估
 
