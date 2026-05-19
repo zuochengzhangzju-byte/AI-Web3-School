@@ -25,6 +25,7 @@ AI x Web3 School
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
 
+
 了解web2和web3的交付系统，在infra的基础上找安全点，同时了解了好多新名词慢慢消化，也听说了很多协议
 
 以后可以用lxda-自己做一个钱包，infra简单做一个尝试
