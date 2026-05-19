@@ -15,8 +15,23 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-19
+<!-- DAILY_CHECKIN_2026-05-19_START -->
+hermes agent 已配置，下载的时候不要直接问ai配置hermes，Hermes和hermes agent是不一样的  
+长期记忆需要硬编码，可以根据喜好来配置hermes agent  
+  
+**软提示词约束**：在系统提示词（System Prompt）顶部或任务描述里强行追加死命令（如：遇到 Google 登录或 2FA 立刻停止并打印 `Manual Intervention Required`）。  
+**代码硬熔断（**`max_steps=5`**）**：在核心执行的 `while` 或 `for` 循环里硬编码加上计数器，一旦执行超过 5 步还没成功，直接 `break` 强制退出循环，彻底拧紧钱包水龙头。  
+  
+安全需要架构能力，web3和web2的区别其实不是特别大，只是方向不同，做支付要梳理资金流，其实web2支付服务就是信任问题，web3就是解决信任问题，通过私钥签名进行校验身份  
+钱包就是用户如何控制自己的资产，私钥管理，通往web3的唯一凭证，钱包是身份和资产管理的双重角色
+
+链上钱包的分类和硬件钱包
+<!-- DAILY_CHECKIN_2026-05-19_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 每日打卡机制：每周需要至少打卡 5天以上才能进入下一周的学习和 Hackathon 阶段。打卡形式是在 WCB 学习面板上提交每日学习记录，平台有自动统计。如果缺卡太多，一周三次，会被淘汰出当前共学营。
 
 我会使用基于 DeepSeek-V4-Flash 驱动的 Hermes Agent 帮我自动化追踪 课程任务并辅助生成 Daily Note。
