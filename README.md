@@ -288,7 +288,7 @@ more information
 | [youchen-design](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/youchen-design.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [EJChen-Joanne](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/EJChen-Joanne.md) | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [howaitung](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/howaitung.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [StellaWang5209](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/StellaWang5209.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [StellaWang5209](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/StellaWang5209.md) | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Swiftevo](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Swiftevo.md) | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [fushiaaa](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/fushiaaa.md) | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [2643340347-hash](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/2643340347-hash.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1227,6 +1227,7 @@ more information
 | [joy12315](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/joy12315.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Eliana-web07](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Eliana-web07.md) | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
