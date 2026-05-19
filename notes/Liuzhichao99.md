@@ -15,8 +15,46 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-19
+<!-- DAILY_CHECKIN_2026-05-19_START -->
+这节课主要将了hermes agent的安装过程。但是我已经在昨天安装完了，并配置了智谱Ai的api。但是在晚上十点swen老师分享了john老师的NVIDIA NIM 免费api的接入方法，感觉让我拥有了无限的token，可以尝试多agent做东西了，不再担心token不够花钱的问题，可以不再焦虑的使用hermes agent。
+
+我打算这样子
+
+mac mini m4 ，24小时启动着，挂着hermes ，还有一些其他的东西。
+
+然后rustdesk， 这个远程链接工具，可以让我使用手机控制电脑。
+
+hermes可以成为我的agent学习助手，或者整理各种资料
+
+icloud或者onedrive可以查看整理出来的资料，都是跨设备的
+
+模型使用NVIDIA NIM
+
+設定 NVIDIA NIM
+
+hermes setup
+
+依序填入：
+
+Provider → 選 8. NVIDIA NIM
+
+Base URL → 直接 Enter（預設 [https://integrate.api.nvidia.com/v1](https://integrate.api.nvidia.com/v1)）
+
+API Key → 輸入你的 nvapi-xxxx
+
+Model → 推薦 deepseek-ai/deepseek-v4-flash
+
+Messaging Gateway → 先選 Skip，之後可再設定
+
+⚠️ NVIDIA NIM 免費方案限制： 40 RPM（每分鐘 40 次請求），無到期限制，日常使用足夠。大型長任務建議之後改用 OpenRouter。
+
+后期申请一个甲骨文的免费服务器用来挂自己的服务。
+<!-- DAILY_CHECKIN_2026-05-19_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 \### 26-5-17开营仪式笔记  
   
 安装了hermes agent.  
