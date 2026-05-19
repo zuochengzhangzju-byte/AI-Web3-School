@@ -477,7 +477,7 @@ more information
 | [JingyuSui](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/JingyuSui.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [sb6629](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/sb6629.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [xiqing21](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/xiqing21.md) | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [xiaohong320](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/xiaohong320.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [xiaohong320](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/xiaohong320.md) | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [DukeDeng](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/DukeDeng.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [ZqJiu](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/ZqJiu.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [HACAI-0000](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/HACAI-0000.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1224,6 +1224,7 @@ more information
 | [Havensky-stack](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Havensky-stack.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [jhhgbf6cgp-cpu](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/jhhgbf6cgp-cpu.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
