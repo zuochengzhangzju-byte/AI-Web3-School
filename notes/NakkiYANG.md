@@ -15,8 +15,16 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-19
+<!-- DAILY_CHECKIN_2026-05-19_START -->
+1.学习AI演进趋势、存在模式  
+2.跟进hermes安装流程  
+3.了解hermes可对接的消息平台
+<!-- DAILY_CHECKIN_2026-05-19_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 1、常见问题：  
 1.1 AI对于基础知识要求：需要深厚的基础知识和架构能力，才能明确评估AI产出成果的好坏。  
 AI需要具备**自主验证的能力**，这是决定AI质量的关键。  
