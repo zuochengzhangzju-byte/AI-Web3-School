@@ -376,7 +376,7 @@ more information
 | [T7-ox](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/T7-ox.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [luci16luci](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/luci16luci.md) | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [heimaonisha](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/heimaonisha.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [jiezi77706](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/jiezi77706.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [jiezi77706](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/jiezi77706.md) | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [claire0613](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/claire0613.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [ACodingChuan](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/ACodingChuan.md) | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [LierMi](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/LierMi.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1227,6 +1227,7 @@ more information
 | [joy12315](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/joy12315.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Eliana-web07](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Eliana-web07.md) | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
