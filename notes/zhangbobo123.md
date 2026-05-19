@@ -15,8 +15,20 @@ timezone: UTC+8
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-19
+<!-- DAILY_CHECKIN_2026-05-19_START -->
+[先安装wsl，安装好了之后会输入账号密码，打开wsl环境进行配置](https://hermes-agent.nousresearch.com/docs/zh-Hans/getting-started/installation)
+
+具体网站Hermes：
+
+[https://hermes-agent.nousresearch.com/docs/zh-Hans/getting-started/installation](https://hermes-agent.nousresearch.com/docs/zh-Hans/getting-started/installation)
+
+在wsl的安装链接：curl -fsSL [https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh](https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh) | bash
+<!-- DAILY_CHECKIN_2026-05-19_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 今天是ai与web3学习的第一天，继续在自由职业的道路上前进，创造属于自己的aiXweb3项目！
 
 1.  先判断自己的已有基础：接触了web3实习计划和ai编程、机器学习课程等等，两边都刚入门，没做过项目。
