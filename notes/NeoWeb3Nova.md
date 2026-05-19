@@ -15,8 +15,45 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-19
+<!-- DAILY_CHECKIN_2026-05-19_START -->
+> 今日完成 Week 1 完整任务拆解，正式启动 Web3 测试网实践模块。
+> 
+> 关键收获：
+> 
+> 1.  打卡与任务提交并行，两者缺一不可；学分关联评优和后续资源
+>     
+> 2.  明确了模块 B 的链上操作链：助记词 → 私钥 → 地址 → 签名 → 交易 → Gas → 确认 → 验证
+>     
+> 3.  安全底线：AI Agent 不接触私钥，高风险操作必须人工确认
+>     
+> 
+> 今日进度：
+> 
+> -   ✅ Learning Agent（Hermes）+ GitHub repo 已就绪
+>     
+> -   🔄 测试钱包创建与测试网交互
+>     
+>     1.  安装/配置钱包（MetaMask / Rabby / Frame）  
+>         
+>         ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/NeoWeb3Nova/images/2026-05-19-1779196168383-image.png)
+>     2.  切换到测试网
+>         
+>     3.  从 Faucet 领取测试币, 领取了USDC ([https://faucet.circle.com/](https://faucet.circle.com/))
+>         
+>     4.  发送测试交易，使用x402支付协议完成了几笔USDC的交易。  
+>         
+>         ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/NeoWeb3Nova/images/2026-05-19-1779196185655-image.png)
+>     5.  在区块浏览器验证 （使用 [https://sepolia.basescan.org](https://sepolia.basescan.org) 来查看交易详情）  
+>         
+>         ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/NeoWeb3Nova/images/2026-05-19-1779196193401-image.png)
+> 
+> 学习笔记：[https://github.com/NeoWeb3Nova/neo-ai-web3-school-cohort-0/blob/main/daily/2026-05-19.md](https://github.com/NeoWeb3Nova/neo-ai-web3-school-cohort-0/blob/main/daily/2026-05-19.md)
+<!-- DAILY_CHECKIN_2026-05-19_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 ```
 # 2026-05-18 学习笔记
 
