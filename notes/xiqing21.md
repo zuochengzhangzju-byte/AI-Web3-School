@@ -15,8 +15,32 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-19
+<!-- DAILY_CHECKIN_2026-05-19_START -->
+已安装 Hermes 并配置到 telegram，并安装了以下常用 skill
+
+现在两个 skill 都完整链接好了 ✅
+
+**guizang-ppt-skill**
+
+• Skill: guizang-ppt-skill
+
+• ~/.claude/skills/: ✅ 克隆
+
+• ~/.hermes/skills/: ✅ 软链接
+
+**huashu-design**
+
+• Skill: huashu-design
+
+• ~/.claude/skills/: ✅ 克隆
+
+• ~/.hermes/skills/: ✅ 软链接
+<!-- DAILY_CHECKIN_2026-05-19_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 -   Web3中“信任”仍是比“技术”更难突破的瓶颈，多数看似技术问题的本质实为信任机制缺失 
     
 -   权限分离与风控规则结合的模式，可能成为AI Agent管理多账户资产的主流方案 
