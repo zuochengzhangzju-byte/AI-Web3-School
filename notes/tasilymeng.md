@@ -15,8 +15,18 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-19
+<!-- DAILY_CHECKIN_2026-05-19_START -->
+成功部署了Hermes在TG理，开始作为学习助手部署使用
+
+明天继续根据Hermes提供的学习框架进行Week1的学习
+
+![截屏2026-05-19 23.49.29.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/tasilymeng/images/2026-05-19-1779205772244-__2026-05-19_23.49.29.png)
+<!-- DAILY_CHECKIN_2026-05-19_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 小白入门，阅读了AI & Web3 两块的基础词汇
 
 AI：
