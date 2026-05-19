@@ -17,11 +17,12 @@ AI x Web3 School
 <!-- Content_START -->
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
-EOA
+EOA 什么叫“高度”？你可以把区块想象成一块一块往上叠的积木：
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 用 GitHub CLI 把本地代码推到github仓库和其他方式推到github 仓库有什么区别，其他方式有哪些方式
 
