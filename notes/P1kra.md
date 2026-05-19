@@ -15,8 +15,18 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-19
+<!-- DAILY_CHECKIN_2026-05-19_START -->
+今天把 MetaMask 装好、从 Google 水龙头领了 0.1 Sepolia ETH，在测试网上发了第一笔转账。0.01 ETH 从自己钱包转到另一个地址，Gas 花了 0.000000023 ETH，四舍五入等于免费。  
+  
+亲手点 Confirm 那一下才真正感觉到——钱包其实就是私钥的 UI，链上每一步都得你人工签名授权，平台只是帮你把意图翻译成交易。以前看区块浏览器像在看别人的东西，今天 TxHash、区块高度、Gas 明细一个个验下来，终于觉得是自己的数据了。  
+  
+今天就交了测试网交易这一个任务，20 分到手。明天继续。
+<!-- DAILY_CHECKIN_2026-05-19_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 **Day 1 打卡 · 2026.05.18**  
   
 今天正式开学。白天先把 Hermes Agent 按启动 Prompt 配成了自己的 Learning Agent，让它帮我接了 WCB API、建了 GitHub 仓库、拉出了全部 36 个任务。一开始还被 task 接口坑了一下——要传 trackId 才能拉到完整列表。  
