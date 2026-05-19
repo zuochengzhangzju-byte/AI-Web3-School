@@ -950,7 +950,7 @@ more information
 | [LillyHM](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/LillyHM.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [christine-zhu](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/christine-zhu.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yifengingit](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/yifengingit.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [zhangchengcheng1220](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/zhangchengcheng1220.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [zhangchengcheng1220](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/zhangchengcheng1220.md) | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [bbainthug](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/bbainthug.md) | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [ftrding](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/ftrding.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Sylusia](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Sylusia.md) | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1224,6 +1224,7 @@ more information
 | [Havensky-stack](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Havensky-stack.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [jhhgbf6cgp-cpu](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/jhhgbf6cgp-cpu.md) | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
