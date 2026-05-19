@@ -15,8 +15,18 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-19
+<!-- DAILY_CHECKIN_2026-05-19_START -->
+![PixPin_2026-05-19_20-01-07.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/lovmov/images/2026-05-19-1779197671834-PixPin_2026-05-19_20-01-07.jpg)
+
+1.  目前部署了VSCode + OpenCode
+    
+2.  接下去准备在云服务器的Linux环境中部署Hermes Agent
+<!-- DAILY_CHECKIN_2026-05-19_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 ![PixPin_2026-05-18_20-09-53.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/lovmov/images/2026-05-18-1779119785103-PixPin_2026-05-18_20-09-53.jpg)
 
 1\. AI没有降低系统复杂度：它只是加速了代码堆砌，理解底层逻辑变得前所未有的重要。
