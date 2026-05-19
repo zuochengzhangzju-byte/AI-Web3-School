@@ -318,7 +318,7 @@ more information
 | [puhuiin](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/puhuiin.md) | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [XGe711](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/XGe711.md) | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [mmzzli](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/mmzzli.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [Calciux](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Calciux.md) | ✅ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [Calciux](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Calciux.md) | ✅ | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Crimson798](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Crimson798.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [zac119-cxq](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/zac119-cxq.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [rosieluox2223-spec](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/rosieluox2223-spec.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1228,6 +1228,7 @@ more information
 | [Eliana-web07](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Eliana-web07.md) | ⭕️ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [paranoiaws](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/paranoiaws.md) | ⭕️ | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
