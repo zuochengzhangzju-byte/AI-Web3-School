@@ -15,8 +15,632 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-19
+<!-- DAILY_CHECKIN_2026-05-19_START -->
+# Hermes、Chatbot 与 OpenClaw 的区别与工作流程
+
+# 一、整体关系图
+
+核心理解：
+
+-   Chatbot 是交互入口。
+    
+-   Hermes 是负责推理和决策的大脑。
+    
+-   OpenClaw 是负责执行动作的 Agent Runtime。
+    
+-   真正完整的 AI Agent 系统通常是三者协作。
+    
+
+* * *
+
+# 二、Chatbot 是什么
+
+## 1\. Chatbot 的定义
+
+Chatbot 本质上是：
+
+“人与 AI 对话的界面。”
+
+它通常包含：
+
+-   聊天窗口
+    
+-   用户输入
+    
+-   AI 输出
+    
+-   对话历史
+    
+-   简单上下文管理
+    
+
+常见例子：
+
+-   ChatGPT
+    
+-   Claude
+    
+-   Gemini
+    
+-   Character AI
+    
+-   Discord Bot
+    
+-   Telegram Bot
+    
+
+Chatbot 的核心目标是：
+
+“自然语言交互。”
+
+它不一定真正执行复杂任务。
+
+很多 chatbot 的能力停留在：
+
+-   问答
+    
+-   文本生成
+    
+-   简单建议
+    
+-   内容总结
+    
+-   翻译
+    
+-   基础代码生成
+    
+
+因此：
+
+Chatbot 更像：
+
+```text
+Human ↔ Conversation Interface ↔ LLM
+```
+
+而不是完整 autonomous system。
+
+* * *
+
+## 2\. Chatbot 的工作流程
+
+```text
+用户输入
+   ↓
+聊天界面
+   ↓
+LLM 推理
+   ↓
+生成回答
+   ↓
+返回用户
+```
+
+这是最基础的 AI workflow。
+
+如果进一步增强：
+
+```text
+User
+ ↓
+Chatbot UI
+ ↓
+LLM
+ ↓
+Search/API/Memory
+ ↓
+Response
+```
+
+这时已经开始接近 Agent。
+
+* * *
+
+## 3\. Chatbot 的优点
+
+### 使用门槛低
+
+用户直接对话即可。
+
+### 非常适合：
+
+-   学习
+    
+-   brainstorming
+    
+-   文本创作
+    
+-   coding assistant
+    
+-   quick research
+    
+
+### 适合快速验证 idea
+
+很多 AI 产品第一版其实都是 chatbot。
+
+* * *
+
+## 4\. Chatbot 的局限
+
+### 没有长期记忆
+
+大多数 chatbot：
+
+-   session limited
+    
+-   context 会丢失
+    
+-   无法长期跟踪任务
+    
+
+### 不会主动执行
+
+它通常只会：
+
+“回答。”
+
+不会：
+
+-   自动操作电脑
+    
+-   自动完成工作流
+    
+-   长期自主运行
+    
+
+### 缺少 orchestration
+
+很多 chatbot 无法：
+
+-   multi-step planning
+    
+-   autonomous workflow
+    
+-   complex tool execution
+    
+
+* * *
+
+# 三、Hermes 是什么
+
+## 1\. Hermes 的定义
+
+Hermes 通常指 Nous Research 的 Hermes 系列模型。
+
+它属于：
+
+-   Instruction-tuned LLM
+    
+-   Agent-oriented LLM
+    
+-   Reasoning model
+    
+
+Hermes 不是单纯聊天模型。
+
+它更强调：
+
+-   tool use
+    
+-   structured output
+    
+-   reasoning
+    
+-   workflow coordination
+    
+-   autonomous behavior
+    
+
+因此很多 Agent 系统喜欢使用 Hermes。
+
+* * *
+
+## 2\. Hermes 的核心定位
+
+Hermes 更像：
+
+```text
+AI Brain / AI Planner
+```
+
+它负责：
+
+-   理解任务
+    
+-   推理
+    
+-   拆解步骤
+    
+-   调用工具
+    
+-   管理 workflow
+    
+-   生成 structured output
+    
+
+* * *
+
+## 3\. Hermes 的工作流程
+
+```text
+User Task
+    ↓
+Hermes
+    ↓
+Reasoning / Planning
+    ↓
+Tool Calling
+(Search/API/Files)
+    ↓
+Memory / Context
+    ↓
+Structured Output
+```
+
+如果再进一步：
+
+```text
+User
+ ↓
+Hermes Agent
+ ↓
+Task Planning
+ ↓
+Codex / APIs / Search
+ ↓
+Result Evaluation
+ ↓
+Final Output
+```
+
+这已经是 Agent workflow。
+
+* * *
+
+## 4\. Hermes 的优势
+
+### 更适合 Agent 系统
+
+Hermes 非常强调：
+
+-   tool calling
+    
+-   multi-step reasoning
+    
+-   workflow chaining
+    
+
+### 适合长期学习系统
+
+例如：
+
+-   AI tutor
+    
+-   research agent
+    
+-   coding workflow
+    
+-   career optimization system
+    
+
+### 本地部署友好
+
+Hermes 可以：
+
+-   Ollama 本地运行
+    
+-   GPU 私有部署
+    
+-   接 LangGraph
+    
+-   接 AutoGen
+    
+
+这对 AI engineer 很重要。
+
+* * *
+
+## 5\. Hermes 的局限
+
+### GUI 能力弱
+
+Hermes 本身不会操作电脑。
+
+它只是：
+
+“决定做什么。”
+
+### 工程稳定性不一定强于 Claude
+
+在复杂 coding 上：
+
+Claude Code / GPT-5 Codex 往往更稳定。
+
+### 需要 workflow 框架配合
+
+Hermes 通常需要：
+
+-   LangGraph
+    
+-   OpenClaw
+    
+-   MCP
+    
+-   Tool layer
+    
+
+才能真正 autonomous。
+
+* * *
+
+# 四、OpenClaw 是什么
+
+## 1\. OpenClaw 的定义
+
+OpenClaw 更接近：
+
+-   Computer Use Agent
+    
+-   Browser Agent
+    
+-   Agent Runtime
+    
+-   Autonomous Execution Framework
+    
+
+它的核心目标是：
+
+“让 AI 真正操作电脑。”
+
+例如：
+
+-   打开网页
+    
+-   点击按钮
+    
+-   填表
+    
+-   下载文件
+    
+-   使用 terminal
+    
+-   操作软件
+    
+
+* * *
+
+## 2\. OpenClaw 的核心定位
+
+OpenClaw 更像：
+
+```text
+AI Body / Execution Layer
+```
+
+如果 Hermes 是“大脑”，
+
+那么 OpenClaw 是：
+
+-   手
+    
+-   眼睛
+    
+-   鼠标
+    
+-   键盘
+    
+
+它负责把 reasoning 转化为真实操作。
+
+* * *
+
+## 3\. OpenClaw 的工作流程
+
+```text
+User Goal
+    ↓
+LLM Reasoning
+(Hermes/GPT)
+    ↓
+OpenClaw
+    ↓
+Screen Observation
+    ↓
+Action Decision
+    ↓
+Mouse/Keyboard Action
+    ↓
+Feedback Loop
+    ↓
+Next Action
+```
+
+这是典型 computer-use workflow。
+
+* * *
+
+## 4\. OpenClaw 的能力
+
+### Browser Automation
+
+例如：
+
+-   自动申请工作
+    
+-   自动搜索信息
+    
+-   自动填写表单
+    
+
+### GUI Interaction
+
+例如：
+
+-   点击
+    
+-   输入
+    
+-   拖拽
+    
+-   切换窗口
+    
+
+### Tool Orchestration
+
+它通常还能结合：
+
+-   terminal
+    
+-   docker
+    
+-   APIs
+    
+-   OCR
+    
+-   vision model
+    
+
+* * *
+
+## 5\. OpenClaw 的局限
+
+### 本身不是“大脑”
+
+OpenClaw 通常需要：
+
+-   Hermes
+    
+-   GPT
+    
+-   Claude
+    
+
+作为 reasoning model。
+
+### GUI automation 不稳定
+
+网页变化可能导致：
+
+-   点击失败
+    
+-   selector 错误
+    
+-   context confusion
+    
+
+### 成本较高
+
+因为：
+
+-   vision
+    
+-   screenshots
+    
+-   action loops
+    
+
+会消耗大量 token。
+
+* * *
+
+# 五、三者关系总结
+
+## Chatbot vs Hermes vs OpenClaw
+
+| 维度 | Chatbot | Hermes | OpenClaw |
+| --- | --- | --- | --- |
+| 本质 | 对话界面 | LLM/Reasoning | Agent Runtime |
+| 主要作用 | 聊天交互 | 推理规划 | 执行操作 |
+| 是否能长期规划 | 弱 | 强 | 中 |
+| 是否会操作电脑 | 不会 | 不会 | 会 |
+| 是否适合 Agent | 中 | 强 | 强 |
+| 是否能独立使用 | 可以 | 可以 | 通常不行 |
+| 是否支持 tool calling | 部分 | 强 | 强 |
+| 核心定位 | Interface | Brain | Body |
+
+* * *
+
+# 六、典型真实工作流
+
+## 场景：AI Career Optimization System
+
+### 第一阶段：用户输入
+
+```text
+我想成为英国 AI systems engineer
+```
+
+* * *
+
+### 第二阶段：Chatbot 接收输入
+
+聊天界面负责：
+
+-   用户交互
+    
+-   展示结果
+    
+-   管理 session
+    
+
+* * *
+
+### 第三阶段：Hermes 推理
+
+Hermes：
+
+-   分析用户背景
+    
+-   搜索市场信息
+    
+-   识别技能缺口
+    
+-   制定 roadmap
+    
+-   输出计划
+    
+
+* * *
+
+### 第四阶段：OpenClaw 执行
+
+OpenClaw：
+
+-   搜 LinkedIn
+    
+-   打开 GitHub
+    
+-   自动投递
+    
+-   自动整理岗位
+    
+-   自动填写申请
+    
+
+* * *
+
+### 最终结构
+
+```text
+User
+ ↓
+Chatbot
+ ↓
+Hermes
+ ↓
+OpenClaw
+ ↓
+Real World Execution
+```
+
+这就是现代 AI Agent 系统。
+<!-- DAILY_CHECKIN_2026-05-19_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 # AI × Web3 课程笔记（2023 年后发展与融合方向）
 
 * * *
