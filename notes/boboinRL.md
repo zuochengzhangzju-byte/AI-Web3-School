@@ -15,8 +15,16 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-19
+<!-- DAILY_CHECKIN_2026-05-19_START -->
+今天学习任务完成！成功在微信和电报里面安装了hermes！可以开始叫hermes给我当小助手了！
+
+![Screenshot 2026-05-19 234457.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/boboinRL/images/2026-05-19-1779230809293-Screenshot_2026-05-19_234457.png)![5a93954c-d582-466d-9026-184db935e305.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/boboinRL/images/2026-05-19-1779230821562-5a93954c-d582-466d-9026-184db935e305.png)
+<!-- DAILY_CHECKIN_2026-05-19_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 [https://www.yuque.com/g/u33511068/wg9wgb/ee5wx71gyunrqfau/collaborator/join?token=R7iE7gL397JLmIb7&source=doc\_collaborator#](https://www.yuque.com/g/u33511068/wg9wgb/ee5wx71gyunrqfau/collaborator/join?token=R7iE7gL397JLmIb7&source=doc_collaborator#) 《AI \* Web3》 我5.18的学习笔记已记放在语雀了。请查收，我也附上了相关截图
 
 ![Screenshot 2026-05-18 135318.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/boboinRL/images/2026-05-18-1779144970692-Screenshot_2026-05-18_135318.png)![Screenshot 2026-05-18 235415.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/boboinRL/images/2026-05-18-1779144932847-Screenshot_2026-05-18_235415.png)
