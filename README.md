@@ -652,7 +652,7 @@ more information
 | [fuujiro](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/fuujiro.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Volcano-Heidi](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Volcano-Heidi.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [richardyuo151-droid](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/richardyuo151-droid.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [ForrestKang](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/ForrestKang.md) | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [ForrestKang](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/ForrestKang.md) | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [wjjyyds1](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/wjjyyds1.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [cxh993505935-sys](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/cxh993505935-sys.md) | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [ninaliu9671](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/ninaliu9671.md) | ⭕️ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1232,6 +1232,7 @@ more information
 | [goodperson888](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/goodperson888.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [blueshark71](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/blueshark71.md) | ⭕️ | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
