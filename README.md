@@ -1074,7 +1074,7 @@ more information
 | [KurtneySh](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/KurtneySh.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [xu-nicolas](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/xu-nicolas.md) | ✅ | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yufeiyi](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/yufeiyi.md) | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | |
-| [jeronxpeng](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/jeronxpeng.md) | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [jeronxpeng](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/jeronxpeng.md) | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Vicki-Moon](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Vicki-Moon.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Zhu0yang](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Zhu0yang.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [HashLightYear](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/HashLightYear.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1232,6 +1232,7 @@ more information
 | [goodperson888](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/goodperson888.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [blueshark71](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/blueshark71.md) | ⭕️ | ⭕️ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
