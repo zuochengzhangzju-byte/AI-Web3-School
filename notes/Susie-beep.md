@@ -15,8 +15,14 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-20
+<!-- DAILY_CHECKIN_2026-05-20_START -->
+研究了下Agent API，为什么只能查任务不能替我打卡
+<!-- DAILY_CHECKIN_2026-05-20_END -->
+
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 【日期】2026-05-19 【今日完成】
 
 -   AI：Agent Workflow + 上下文/工具调用笔记（主赛道）
@@ -40,6 +46,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 【日期】2026-05-18 【今日完成】
 
