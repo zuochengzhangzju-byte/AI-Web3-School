@@ -60,7 +60,5 @@ AI x Web3 School
     
 
 * * *
-
-有需要補充其他 slides 的內容嗎？
 <!-- DAILY_CHECKIN_2026-05-20_END -->
 <!-- Content_END -->
