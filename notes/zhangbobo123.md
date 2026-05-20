@@ -20,10 +20,17 @@ timezone: UTC+8
 理解Web3底层原理：
 
 成功安装Hermes：将任务和AIxWEB3学习网站发送了
+
+\### 模型设置：
+
+hermes setup model
+
+hermes gateway
 <!-- DAILY_CHECKIN_2026-05-20_END -->
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 [先安装wsl，安装好了之后会输入账号密码，打开wsl环境进行配置](https://hermes-agent.nousresearch.com/docs/zh-Hans/getting-started/installation)
 
@@ -36,6 +43,7 @@ timezone: UTC+8
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 今天是ai与web3学习的第一天，继续在自由职业的道路上前进，创造属于自己的aiXweb3项目！
