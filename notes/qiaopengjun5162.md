@@ -15,8 +15,34 @@ Web3 开发者 Python Go  Rust  Solidity
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-20
+<!-- DAILY_CHECKIN_2026-05-20_START -->
+**2026-05-19 (Day 2) — RAG, Agent & Frameworks**
+
+**Handbook 学习：**
+
+\- **RAG**：检索增强生成，解决 LLM 知识截止和幻觉
+
+\- **Agent**：LLM + Tool Use + 记忆 + 规划，ReAct 模式
+
+\- **Frameworks**：Agent 框架概览，对比设计哲学
+
+\- ✅ 完成 AI 基础全部核心章节（6章）
+
+**晚间活动：**
+
+\- 参加 AI Agent 入门：Hermes 从 0 到 1 讲座
+
+\- 了解 Hermes 架构（Gateway → Agent Core → Tools → Skills）
+
+**实践规划：**
+
+\- 讨论了 RAG Agent CLI demo 方案，准备 Day 3 动手搭建
+<!-- DAILY_CHECKIN_2026-05-20_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 2026-05-18 (Day 1) — LLM, Prompt, Context & AI Tool Practice  
   
 今日学习：  
