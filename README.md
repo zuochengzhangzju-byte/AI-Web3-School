@@ -445,7 +445,7 @@ more information
 | [L-Macy](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/L-Macy.md) | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [msmao](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/msmao.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [0xannanad](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/0xannanad.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [xyyccc](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/xyyccc.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [xyyccc](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/xyyccc.md) | ⭕️ | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [MonicaArnaud](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/MonicaArnaud.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [christina246543](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/christina246543.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [tianxinjia](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/tianxinjia.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1232,6 +1232,7 @@ more information
 | [goodperson888](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/goodperson888.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [blueshark71](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/blueshark71.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
