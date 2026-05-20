@@ -1053,7 +1053,7 @@ more information
 | [lidahe666](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/lidahe666.md) | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [DDDIABLE](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/DDDIABLE.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [ruoqizhao1idm](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/ruoqizhao1idm.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [KMSHSF](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/KMSHSF.md) | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [KMSHSF](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/KMSHSF.md) | ✅ | ✅ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [annecn037](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/annecn037.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [Xiaonan2020](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Xiaonan2020.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [TangSong-st](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/TangSong-st.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1231,6 +1231,7 @@ more information
 | [zyh523](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/zyh523.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [goodperson888](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/goodperson888.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
