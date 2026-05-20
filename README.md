@@ -798,7 +798,7 @@ more information
 | [nnecec](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/nnecec.md) | ✅ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [hututu0413z-hub](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/hututu0413z-hub.md) | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [pzp12](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/pzp12.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
-| [A-lok-1015](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/A-lok-1015.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
+| [A-lok-1015](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/A-lok-1015.md) | ⭕️ | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [PrincessBubblegum007](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/PrincessBubblegum007.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [diyin4708-code](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/diyin4708-code.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [zirian9](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/zirian9.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1231,6 +1231,7 @@ more information
 | [zyh523](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/zyh523.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [goodperson888](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/goodperson888.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
