@@ -15,14 +15,33 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-20
+<!-- DAILY_CHECKIN_2026-05-20_START -->
+[https://github.com/Dongxibie/ai-web3-study-track/blob/main/daily-notes/2026-05-20.md（昨日课程笔记以及更新照片）](https://github.com/Dongxibie/ai-web3-study-track/blob/main/daily-notes/2026-05-20.md)
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Dongxibie/images/2026-05-20-1779284668766-image.png)
+
+  
+主要是整理昨日笔记以及完成一些兼容问题。
+
+Web3 当中已经开始了第一步的 MetaMask 来测试它的钱包功能，但还是出现了以下问题：
+
+1\. 兼容性问题
+
+2\. 插件打不开（可能是梯子和不够流畅的问题）  
+3\. 在 Telegram 的 Hermes Agent 发现了我发布的消息，但它并没有回应。初步猜测可能是模型的问题，明天想尝试切换另外一个模型，换种方式试试。
+<!-- DAILY_CHECKIN_2026-05-20_END -->
+
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 [https://github.com/Dongxibie/ai-web3-study-track/blob/main/daily-notes/2026-05-19.md](https://github.com/Dongxibie/ai-web3-study-track/blob/main/daily-notes/2026-05-19.md)  
 主要是把昨日 5 月 18 号的那份笔记总结了一下，并且尝试性安装了 harmes 和 Agent，然后准备去将他的部分不兼容问题解决掉。明天主要是去整理 5 月 19 号的上课笔记，并继续去补充基础的 AI 与 Web3 知识，使其更加清晰。
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 # AI × Web3 学习日志｜Day 1  
 GitHub 链接: [https://github.com/Dongxibie/ai-web3-study-track/blob/main/daily-notes/2026-05-18.md](https://github.com/Dongxibie/ai-web3-study-track/blob/main/daily-notes/2026-05-18.md)
