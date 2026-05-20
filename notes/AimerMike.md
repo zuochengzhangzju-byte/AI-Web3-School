@@ -17,23 +17,28 @@ AI x Web3 School
 <!-- Content_START -->
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
-```markdown
 Prompt design is safety design. In Web3, context quality and permission boundaries decide whether an AI agent is just helpful or dangerously overconfident.
+
+```markdown
+- Define the agent as a wallet safety assistant.
+- Ask it to explain intent and summarize risk, not make the signing decision.
+- Require structured context: chain ID, contract address, decoded calldata, token, amount, spender or recipient, current allowance, simulation result, warnings, and sources.
+- Require output to separate confirmed facts, missing data, assumptions, and risks.
+- Make the boundary explicit: the agent must not sign, submit, or approve anything without human confirmation.
 ```
 
--   Define the agent as a wallet safety assistant.
-    
--   Ask it to explain intent and summarize risk, not make the signing decision.
-    
--   Require structured context: chain ID, contract address, decoded calldata, token, amount, spender or recipient, current allowance, simulation result, warnings, and sources.
-    
--   Require output to separate confirmed facts, missing data, assumptions, and risks.
-    
--   Make the boundary explicit: the agent must not sign, submit, or approve anything without human confirmation.
+|   |   |   |   |   |   |   |   |   |   |   |   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
 <!-- DAILY_CHECKIN_2026-05-20_END -->
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 | 角色 | 擅长领域 | 短板 | 使用边界 |
 | --- | --- | --- | --- |
@@ -53,6 +58,7 @@ Prompt design is safety design. In Web3, context quality and permission boundari
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
