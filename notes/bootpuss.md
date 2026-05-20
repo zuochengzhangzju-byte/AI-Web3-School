@@ -15,8 +15,16 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-20
+<!-- DAILY_CHECKIN_2026-05-20_START -->
+学习了hermess agent
+
+学习了 [Web3 运行原理](https://docs.google.com/presentation/d/1NUeO115bLnz0V8aejx9bYqQTaDrznTjhgbCkn-pK1a0/edit?usp=sharing)：作为 Week 1 的 Web3 基础补充材料，帮助学员理解账户、交易、Gas、合约执行和链上状态如何共同构成 Web3 的运行机制。
+<!-- DAILY_CHECKIN_2026-05-20_END -->
+
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 合约入门
 
 Claude Code配置部署
@@ -24,6 +32,7 @@ Claude Code配置部署
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 **MaaS**
 
