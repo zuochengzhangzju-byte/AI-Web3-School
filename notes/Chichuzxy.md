@@ -15,8 +15,172 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-20
+<!-- DAILY_CHECKIN_2026-05-20_START -->
+好的，这是根据你今天的实际操作整理的学习笔记，可以直接放入 GitHub 仓库的 `notes/` 目录。
+
+\---
+
+\## 📝 Week 1 学习笔记：Hermes Agent 配置与 LLM 模型接入
+
+\*\*日期\*\*：2026-05-20
+
+\*\*作者\*\*：zxy
+
+\*\*主题\*\*：在 WSL2 中安装并配置 Hermes Agent，接入免费 LLM 模型，完成首次 AI 工具实践
+
+\---
+
+\### 🎯 学习目标回顾
+
+\- 理解 LLM 的基本工作方式与 API 调用
+
+\- 动手搭建一个 AI Agent（learning agent）
+
+\- 完成 AI 工具实践：跑通 Agent 对话，并用它辅助学习
+
+\- 建立 GitHub 学习仓库，记录全过程
+
+\---
+
+\### ⚙️ 环境与工具
+
+\- \*\*操作系统\*\*：Windows 11 + WSL2 (Ubuntu)
+
+\- \*\*Agent 框架\*\*：Hermes Agent v0.14.0（安装在 `~/.hermes/hermes-agent`）
+
+\- \*\*模型服务\*\*：
+
+\- 最终选择 \*\*智谱AI BigModel\*\* 的免费模型 `GLM-4.7-Flash`
+
+\- 兼容 OpenAI 接口，通过 `GLM_API_KEY` + 修改 `GLM_BASE_URL` 接入
+
+\---
+
+\### 🚧 遇到的问题与解决过程
+
+1\. \*\*找不到 `openai.py` 文件\*\*
+
+\- 现象`find ~/.hermes -name "openai.py"` 无结果。
+
+\- 原因：Hermes 使用模块化插件结构，没有独立的 `openai.py` 文件。
+
+\- 解决：通过查看 `.env.example` 了解配置机制，转而配置 Provider 环境变量。
+
+2\. \*\*[Z.ai](http://Z.ai) 模型不可用\*\*
+
+\- 尝试使用 [Z.ai](http://Z.ai) 的 `glm-4-flash` 报错 `Unknown Model`。
+
+\- 通过 API 查询发现 [Z.ai](http://Z.ai) 当前可用模型列表中无该模型，免费额度已下线。
+
+\- 转向课程推荐的 BigModel`open.bigmodel.cn`）。
+
+3\. \*\*Hermes 配置文件的修改\*\*
+
+\- 复制 `.env.example` 为 `.env`
+
+\- 设置 `GLM_API_KEY` 和 `GLM_BASE_URL` 指向 BigModel
+
+\- 使用 `hermes config set model.default GLM-4.7-Flash` 切换模型
+
+\- 重启 Hermes 后成功返回对话。
+
+\---
+
+\### ✅ 最终配置（关键参数）
+
+\`\`\`ini
+
+\# ~/.hermes/hermes-agent/.env
+
+GLM\_API\_KEY=你的BigModel密钥
+
+GLM\_BASE\_URL=[https://open.bigmodel.cn/api/paas/v4](https://open.bigmodel.cn/api/paas/v4)
+
+\`\`\`
+
+\`\`\`yaml
+
+\# ~/.hermes/config.yaml (自动修改)
+
+model:
+
+default: GLM-4.7-Flash
+
+\`\`\`
+
+\---
+
+\### 🧪 验证测试
+
+\- 启动 Hermes`hermes`
+
+\- 输入：“你好”
+
+\- 返回：Hermes 自我介绍并列举能力，回复正常，上下文用量 19.8K/200K（10%）
+
+\---
+
+\### 🎓 模型选择总结
+
+| 方案 | 可用性 | 费用 | 结论 |
+
+|------|--------|------|------|
+
+| 阿里云百炼 | 未成功配置 | 免费额度 | 暂未使用 |
+
+| [Z.ai](http://Z.ai) (智谱国际) | 免费模型已下线 | 无免费 | 放弃 |
+
+| BigModel (智谱国内) | ✅ 正常 | 免费 2000万 tokens | \*\*最终采用\*\* |
+
+| OpenRouter | 备选方案 | 有免费模型 | 后续可尝试 |
+
+\---
+
+\### 💡 图形化界面探索
+
+\- Hermes WebUI：通过 Docker 部署，浏览器访问 `localhost:3001`，可直接对接现有 WSL2 中的 Hermes 配置。
+
+\- Hermes Desktop：独立 Windows 应用，需重新配置，暂时不采用。
+
+\- 决定优先使用命令行完成本周任务，图形化界面留待后续优化。
+
+\---
+
+\### 📦 产出与下一步
+
+\- ✅ 创建 GitHub 学习仓库（待补充链接）
+
+\- ✅ 本次笔记归档至 `notes/week1-hermes-setup.md`
+
+\- ⏭️ 下一步任务：
+
+\- 用 Hermes 生成 LLM/Agent 概念笔记
+
+\- 创建 Web3 测试钱包，完成一笔测试网交易
+
+\- 完成最小交叉实验（AI 输出 → 人工复核 → 链上执行）
+
+\---
+
+\### 📌 重要经验
+
+\- \*\*环境变量优先\*\*：Agent 框架通常通过 `.env` 和 config.yaml 控制模型，而不是直接修改代码。
+
+\- \*\*API 兼容性\*\*：很多国产模型都支持 OpenAI 接口格式，只需改 base\_url 和 api\_key。
+
+\- \*\*免费模型选择\*\*：密切关注平台公告，模型生命周期和免费政策会动态调整。
+
+\- \*\*学习记录是关键\*\*：所有操作、错误和解决过程都应写下来，形成可回溯的材料。
+
+\---
+
+_本笔记由 Hermes Agent (GLM-4.7-Flash) 辅助整理，人工审核后归档。_
+<!-- DAILY_CHECKIN_2026-05-20_END -->
+
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 \### 📝 任务1：搭建Learning Agent（Hermes）— 进度与困惑记录
 
 **📅 打卡日期：** 2026年5月19日
@@ -132,6 +296,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 \### 📚 每日学习笔记：从LLM到Agent工作流
 
