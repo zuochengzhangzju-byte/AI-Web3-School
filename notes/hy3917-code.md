@@ -15,8 +15,39 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-20
+<!-- DAILY_CHECKIN_2026-05-20_START -->
+[https://z168r49nf7s0-d.space-z.ai/](https://z168r49nf7s0-d.space-z.ai/)
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/hy3917-code/images/2026-05-20-1779274011029-image.png)
+
+### **交互式概念测验网页**
+
+**运行方式**: 直接访问当前页面预览
+
+-   **19道选择题**覆盖 5 大知识领域
+    
+-   专业暗色主题 + 青色强调色
+    
+-   3屏流程：欢迎页 → 答题 → 结果仪表盘
+    
+-   实时进度条 + 分数追踪
+    
+-   每题答后显示详细解析
+    
+-   结果页：环形得分图 + 各领域得分条 + 错题回顾
+    
+-   高分(≥80%)时彩带庆祝动画
+    
+-   题目随机打乱，支持无限重试
+    
+
+![week1-mindmap.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/hy3917-code/images/2026-05-20-1779273975048-week1-mindmap.png)
+<!-- DAILY_CHECKIN_2026-05-20_END -->
+
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 《大语言模型 (LLMs) 指南》学习笔记
 
 1\. 核心概念：什么是大语言模型？
