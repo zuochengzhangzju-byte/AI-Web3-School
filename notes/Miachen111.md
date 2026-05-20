@@ -15,8 +15,38 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-20
+<!-- DAILY_CHECKIN_2026-05-20_START -->
+助記詞丟了 私鑰全丟
+
+資產不在錢包 實際上帳本跟數據在區塊鏈上
+
+私鑰不是普通密碼 丟了找不回
+
+交易 授權網路執行的事 要做的事 手續費 nonce(帳號發送的第幾筆交易，交易成功後加一，防重複執行) 簽名(驗證對應私鑰授權)
+
+拿到私鑰有可能被仿簽
+
+gas fee 手續費 防免費資源被濫用
+
+wallet簽名 RPC node傳播 排隊 排序(看誰交錢多誰先 錢太少上車了還會被踢出去) 出塊 可查詢
+
+block num
+
+PoW BTC 誰先解出誰記帳
+
+PoS ETH 偽隨機
+
+錢包不直接連外網
+
+智能合約
+
+客戶端
+<!-- DAILY_CHECKIN_2026-05-20_END -->
+
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 裝完hermes 用ollama裝
 
 去ai web3 school那個網站讀了llm
@@ -28,6 +58,7 @@ hallucination: 幻覺 外部校驗
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 \--7:00--
 
