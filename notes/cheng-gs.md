@@ -15,8 +15,16 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-20
+<!-- DAILY_CHECKIN_2026-05-20_START -->
+今天我主要完成了 Week 1 Proof-of-Work Pack 的收口工作，把零散材料整理成了可提交、可审核的公开入口。核心产出是把 \[[README.md](http://README.md)\]重写成 Week 1 总入口，并补上了 \[tasks/[minimal-ai-web3-workflow.md](http://minimal-ai-web3-workflow.md)\]，用最小流程说明了 AI 生成、人工复核、钱包确认、测试网执行和区块浏览器验证之间的边界。
+
+今天还补充了对这个最小 AI × Web3 工作流的简短说明，明确了它解决什么问题、哪些步骤由 AI / Agent 辅助、哪些步骤必须人工确认、如何验证最终结果，以及主要风险点。最后，这些更新已经提交并推送到 GitHub
+<!-- DAILY_CHECKIN_2026-05-20_END -->
+
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 # Daily Note - 2026-05-19
 
 ## 今日概览
@@ -173,6 +181,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 # Week 1 配置记录与运行记录
 
