@@ -23,11 +23,16 @@ AI x Web3 School
 
 今日笔记：
 
-[**https://github.com/pillowtalk-Qy/ai-web3-school-cohort-0/blob/main/notes/classes/2026-05-20-web3-operating-principles-sharing.md**](https://github.com/pillowtalk-Qy/ai-web3-school-cohort-0/blob/main/notes/classes/2026-05-20-web3-operating-principles-sharing.md)
+[**https://github.com/pillowtalk-Qy/ai-web3-school-cohort-0/blob/main/notes/classes/2026-05-20-web3-operating-principles-sharing.md**](https://github.com/pillowtalk-Qy/ai-web3-school-cohort-0/blob/main/notes/classes/2026-05-20-web3-operating-principles-sharing.md)  
+  
+Today I organized the 2026-05-20 Web3 operating principles sharing note. The session reviewed how a transaction starts from wallet signing, moves through RPC, mempools, builders, validators, block production, and confirmation, and finally becomes onchain state.
+
+The biggest takeaway is that Web3 is not a set of isolated concepts. It is a full system path from private key to finality. Wallets control signatures, transactions express user intent, gas prices shared resources, RPC connects users to the network, smart contracts carry public rules, and protocol upgrades depend on both technical implementation and social consensus.
 <!-- DAILY_CHECKIN_2026-05-20_END -->
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 今天我继续维护 AI x Web3 School Cohort 0 学习仓库，并整理部署了两份学习资料：ZK trading system fireside chat 笔记，以及 2026-05-19 晚间课程《AI 工具科普 + Hermes Agent 安装与配置分享会》的课程笔记。
 
@@ -52,6 +57,7 @@ Another important takeaway is that the direction of Qy Knowledge Hub became clea
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
