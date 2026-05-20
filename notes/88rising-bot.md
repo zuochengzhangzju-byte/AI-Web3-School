@@ -15,8 +15,20 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-20
+<!-- DAILY_CHECKIN_2026-05-20_START -->
+Day 2 — LLM Basics
+
+今天学习了 LLM 的第一性原理：它的核心是 next-token prediction，不是数据库。关键概念：Token（处理单位）、Embedding（语义向量）、Hallucination（幻觉风险）。
+
+LLM 擅长总结和生成，但不能替代事实校验 — 这对 BD 工作来说很重要：AI 可以帮你快速扫描信息，但链上数据和官方文档仍然需要人工验证。
+
+下一步：学习 Prompt 工程，尝试用结构化 Prompt 做竞品分析实验。
+<!-- DAILY_CHECKIN_2026-05-20_END -->
+
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 -   **准备服务器**：搞一台云服务器，装好基础的 Python 和 Git 环境。
     
 -   **拉取代码**：把 GitHub 上的代码克隆到服务器，装好需要的依赖包。
@@ -30,6 +42,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 # 5.18共学笔记
 
