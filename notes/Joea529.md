@@ -15,8 +15,31 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-21
+<!-- DAILY_CHECKIN_2026-05-21_START -->
+📚 AI × Web3 School Day 4 — 上下文（Context）
+
+💡 3 个核心理解：
+
+1.  Context 不是文本拼接，是信息治理——每类信息必须标注来源、时效、权限、可信度
+    
+2.  2\. Context Engineering 的目标不是塞满窗口，而是让模型在正确的信息层级里工作（指令/任务/事实/知识/记忆五层）
+    
+3.  3\. Memory 不能替代实时授权——用户过去允许某个动作，不代表现在仍然允许
+    
+
+🎯 最大收获：Context 决定模型看到的是可验证的链上事实，还是用户幻想和过期文档
+
+❓ Memory 和 Knowledge Base 的边界在哪里？用户偏好存 Memory，那"上次分析的这个合约已审计通过"属于 Memory 还是 KB？
+
+🔗 [https://github.com/Joea529/ai-web3-school-cohort-0](https://github.com/Joea529/ai-web3-school-cohort-0)
+
+📖 https://aiweb3.school/zh/handbook/
+<!-- DAILY_CHECKIN_2026-05-21_END -->
+
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 📚 AI × Web3 School Day 2 — 提示词（Prompt）
 
 💡 3 个核心理解：
@@ -39,6 +62,7 @@ AI x Web3 School
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 📚 AI × Web3 School Day 2 — 提示词（Prompt）
@@ -64,6 +88,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
