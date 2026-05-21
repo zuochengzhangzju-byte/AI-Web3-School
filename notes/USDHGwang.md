@@ -15,8 +15,28 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-21
+<!-- DAILY_CHECKIN_2026-05-21_START -->
+今天做了什麼
+
+發布 obsidian-knowledge-vault
+
+過去一週我在設自己的 vault（擺 D 槽、修 ACL 權限、裝 Obsidian Git plugin、寫 operating guide），過程中跟 Claude和 Hermes 來回討論讀寫權限的邊界該畫在哪。最後定了三個關鍵規則：reflections 資料夾 AI 永不寫預設不讀、agents引用舊筆記要帶時間戳視為歷史記錄而非現在事實、AI 寫進 vault 的檔案 frontmatter 要標 status: ai-generated +created-by。
+
+然後我想：這套東西如果是其他人來用，他們的環境不同（OS、agent、偏好），不可能直接複製我的setup。所以我把整個設計打包成一個公開 repo，核心是一個 AI\_ONBOARDING\_[PROMPT.md](http://PROMPT.md) — 任何人都可以把整包 repo丟給自己的 AI agent，讓 AI 自己去問使用者的環境、確認對方要採納哪些設計決定（還是要改掉）、然後生成客製化的 setup指令。不是給人看的 tutorial，是給 AI 讀的 prompt。
+
+README 也寫了我 setup 時踩的坑：Windows D 槽 ACL 權限（File Explorer + UAC elevation 會讓資料夾被 Administrator擁有、非 admin 寫不進去 → icacls 解）、agent 更新後 stale state（Hermes auto-update 後回報 connection error 但API key 跟 provider 都正常 → 強制 clean restart）、decision log 紀律問題（覺得「對話已經記錄了就不寫 vault」→三天後要從 chat history 撈回來後悔沒寫）。
+
+repo 7 個 commit，今天從空目錄推到完整 README + prompt + annotated operating guide example。
+
+課程 + AIP 架構串聯
+
+今天的課讓我把 AIP Protocol（on-chain identity）跟 AIP SafeHarness（off-chain agentloop）從兩個獨立專案串成一條完整 pipeline：user intent → agent loop → tool calling → HITL checkpoint → 0G storage → AIP on-chain tx。solo 做這條路，但確認方向踩在 agent identity / agent safety 的轉折點上。
+<!-- DAILY_CHECKIN_2026-05-21_END -->
+
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 \## 今天做了什麼
 
 為 cohort 接下來 12 週搭建了一套個人知識管理系統。具體做了：
@@ -86,6 +106,7 @@ HITL 模組要設計成 **「可被替代的層」**，不是 hardcode 必要的
 <!-- DAILY_CHECKIN_2026-05-19_START -->
 
 
+
 今天的主題是 Hermes Agent 安裝。
 
 因為看到直播裡很多夥伴卡在環境設定，就順手做了一份 Windows WSL2 + macOS 的完整安裝教程，在課程進行中同步解答問題。
@@ -106,6 +127,7 @@ HITL 模組要設計成 **「可被替代的層」**，不是 hardcode 必要的
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
