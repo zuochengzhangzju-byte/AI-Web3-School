@@ -23,6 +23,7 @@ AI x Web3 School
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
 
+
 5.20 学习
 
 钱包：
@@ -80,6 +81,7 @@ Etherscan可以查看交易
 <!-- DAILY_CHECKIN_2026-05-19_START -->
 
 
+
 今天学习任务完成！成功在微信和电报里面安装了hermes！可以开始叫hermes给我当小助手了！
 
 ![Screenshot 2026-05-19 234457.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/boboinRL/images/2026-05-19-1779230809293-Screenshot_2026-05-19_234457.png)![5a93954c-d582-466d-9026-184db935e305.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/boboinRL/images/2026-05-19-1779230821562-5a93954c-d582-466d-9026-184db935e305.png)
@@ -87,6 +89,7 @@ Etherscan可以查看交易
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
