@@ -1,5 +1,5 @@
 ---
-timezone: UTC+48
+timezone: UTC+72
 ---
 
 # Miraitowa325
