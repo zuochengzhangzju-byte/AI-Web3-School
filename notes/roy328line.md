@@ -15,8 +15,66 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-21
+<!-- DAILY_CHECKIN_2026-05-21_START -->
+\---
+
+學習日誌 · 2026-05-21（Day 5）
+
+\## 今日學習主題
+
+直播：AI 下鄉計劃｜AI 在 Web3 的應用（Week 1，5/21 20:00）
+
+複習框架模組，整合前幾天的學習
+
+\## AI 在 Web3 的應用｜核心整理
+
+**AI × Web3 的核心張力**：用不確定的推理引擎（AI）驅動不可逆的執行系統（Web3）。解法方向：Simulation + Structured Output + Session Key + Human-in-the-loop + Audit Log。
+
+**三個應用層次**：
+
+**Layer 1 輔助層**：AI 幫助理解鏈上資料，不直接執行（交易解釋、合約 ABI 翻譯、Gas 估算建議）。
+
+**Layer 2 執行層**：AI 生成操作計劃，人工確認後執行（script 生成 → 人工審查 → 測試網驗證）。
+
+**Layer 3 自動化層**：AI 在受限授權範圍內自動執行（Session Key 限時限額，最小權限原則）。
+
+**AI 下鄉的核心設計原則**：
+
+1\. 降低 Web3 操作門檻，但不降低安全標準
+
+2\. AI 解釋 ≠ AI 授權；AI 建議 ≠ AI 執行
+
+3\. 每一個執行動作都需要可追溯的確認記錄
+
+**個人反思**：AI 在 Web3 的真正價值，不是替代人判斷，而是讓人能夠在更多資訊下做出更好的判斷。
+
+\## 框架複習小結
+
+\- 框架選擇原則：工作流 > 工具能力 > 框架複雜度
+
+\- LangChain 適合快速原型，LangGraph 適合需要狀態管理的生產場景
+
+\- Hermes 提供穩定的 tool calling 和 JSON 輸出，適合 AI x Web3 執行場景
+
+\- OpenAI Agents SDK 提供 handoff/guardrails/tracing 等完整工程化支持
+
+\## 今日產出
+
+\- 參加 5/21 直播：AI 下鄉計劃｜AI 在 Web3 的應用
+
+\- 完成框架模組複習整合
+
+\- 整理 AI × Web3 三層應用架構
+
+\## 明日計劃
+
+參加 5/22 Week 1 例會，整理本週學習成果，開始準備 Proof-of-Work Pack
+<!-- DAILY_CHECKIN_2026-05-21_END -->
+
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 今日學習：Frameworks 模組深讀（LangChain / LangGraph / OpenAI Agents SDK / Hermes）+ Hermes 安裝實作
 
 主要收穫：
@@ -35,6 +93,7 @@ GitHub 筆記：https://github.com/IntensiveCoLearning/AI-Web3-School/pull/29
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 今日學習：深讀 Handbook Agent 模組（Tool Use / Planning / State / Reflection / Multi-Agent）+ 預習 Hermes Agent 架構
 
@@ -59,6 +118,7 @@ Hermes Agent 預習：Skills 可復用高層指令集 / Long-term Memory 跨 ses
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
