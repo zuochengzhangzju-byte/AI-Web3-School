@@ -31,11 +31,14 @@ AI x Web3 School
 
 今天除了安裝AI agent之外，也回看了不同老師的分享，收穫滿滿！如果之後有精力，會繼續看handbook的 concepts。
 
+下圖是Hermes Agent動起來的screenshot：
+
 ![Screen Shot 2026-05-21 at 9.31.38 PM.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/deerjane-bjj/images/2026-05-21-1779371356311-Screen_Shot_2026-05-21_at_9.31.38_PM.png)
 <!-- DAILY_CHECKIN_2026-05-21_END -->
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 今日目標是要做3樣東西：
@@ -52,6 +55,7 @@ AI x Web3 School
 
 
 
+
 Day2
 
 My note is saved in Google docs: [https://docs.google.com/document/d/18Bv98uTSMrQCXBd3qxowlZqXCX\_dfMbQRMUDxJcWA0k/edit?usp=sharing](https://docs.google.com/document/d/18Bv98uTSMrQCXBd3qxowlZqXCX_dfMbQRMUDxJcWA0k/edit?usp=sharing)
@@ -61,6 +65,7 @@ Basically I just read the handbook and clarify the ideas of different AI concept
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
