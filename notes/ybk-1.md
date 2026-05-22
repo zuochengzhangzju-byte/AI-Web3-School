@@ -15,8 +15,309 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-22
+<!-- DAILY_CHECKIN_2026-05-22_START -->
+最小实践 为“钱包授权检查 Agent”设计一份 context spec。 选择一个场景：用户问“这个 dApp 要我 approve，可以签吗？”你需要列出模型回答前必须拿到的上下文： chain id 和当前区块 token 合约、spender 地址、approve 数量 用户当前 allowance 和余额 spender 是否在可信列表 simulation 或静态检查结果 dApp 页面提供的说明，标记为不可信外部内容 用户本次意图 再写清楚哪些字段必须实时查询，哪些可以来自缓存，哪些不能被模型当成事实。
+
+今天完成了这个
+
+````markdown
+# Wallet Approve Check — Context Spec
+
+## Overview
+
+当用户询问"这个 dApp 要我 approve，可以签吗？"时，Agent 必须拿到以下上下文才能做出判断。每条列出其类型、来源、和可信度规则。
+
+---
+
+## 1. Chain Context
+
+| 字段 | 类型 | 来源 | 可信度 |
+|------|------|------|--------|
+| `chainId` | `uint256` | JSON-RPC `eth_chainId` | ✅ 实时，**必须** |
+| `blockNumber` | `uint256` | JSON-RPC `eth_blockNumber` | ✅ 实时，**必须** |
+| `blockTimestamp` | `uint256` | JSON-RPC `eth_getBlockByNumber` | ✅ 实时，**必须** |
+
+**规则**
+- chainId **必须** 来自钱包当前连接的链，不能相信 dApp 页面声称的 chainId。
+- blockNumber 和 blockTimestamp 用于判断 allowance/balance 是否在正确的链状态上读取。
+
+---
+
+## 2. Transaction to Sign
+
+从钱包的 `eth_sendTransaction` / `eth_signTypedData` 参数中解析：
+
+| 字段 | 类型 | 来源 | 可信度 |
+|------|------|------|--------|
+| `to` (token address) | `address` | tx `to` 字段 | ✅ 实时，**必须** |
+| `spender` | `address` | `approve(address,uint256)` 参数 | ✅ 实时，**必须** |
+| `amount` | `uint256` | `approve(address,uint256)` 参数 | ✅ 实时，**必须** |
+| `rawData` | `hex` | tx `data` 字段 | ✅ 实时，**必须** |
+| `value` | `uint256` | tx `value` 字段 | ✅ 实时，**必须** |
+
+**规则**
+- 如果 `value > 0` 且函数是 approve，属于异常模式，必须警告。
+- `amount == type(uint256).max` 代表无限额度，必须明确告知用户。
+- rawData 必须由 Agent 用 ABI 解码验证，不能信任 dApp 端的描述。
+
+---
+
+## 3. On-Chain State
+
+| 字段 | 类型 | 来源 | 可信度 |
+|------|------|------|--------|
+| `userAllowance` | `uint256` | `token.allowance(user, spender)` | ✅ 实时，**必须** |
+| `userBalance` | `uint256` | `token.balanceOf(user)` | ✅ 实时，**必须** |
+| `decimals` | `uint8` | `token.decimals()` | 💾 缓存（存续期内不变） |
+| `symbol` | `string` | `token.symbol()` | 💾 可缓存 |
+| `name` | `string` | `token.name()` | 💾 可缓存 |
+
+**规则**
+- `allowance` 和 `balanceOf` **必须** 在被调用块上查，保证一致。
+- `decimals` 可用已知 token list（如 trust-wallet-tokens）缓存，但不能信任 dApp 提供的 decimals。
+- 如果 token 是原生 ETH（approve 到 WETH 等），余额要从 `eth_getBalance` 拿。
+
+---
+
+## 4. Spender Reputation
+
+| 字段 | 类型 | 来源 | 可信度 |
+|------|------|------|--------|
+| `isInTrustedList` | `bool` | 本地维护的可信合约列表 | 💾 缓存，定期更新 |
+| `isInBlockedList` | `bool` | 本地维护的黑名单 | 💾 缓存，定期更新 |
+| `knownName` | `string \| null` | 区块浏览器 / 合约元数据 | 💾 可缓存 |
+| `isProxy` | `bool` | 静态分析 | ❌ 不可靠，仅作参考 |
+| `creator` | `address` | 在创建交易时的 EOA | 💾 可缓存 |
+| `ageInBlocks` | `uint256` | 从创建块到当前块的差值 | ✅ 实时 |
+
+**规则**
+- 可信列表**只应包含经过审计的知名协议**（Uniswap Router, Seaport 等），不可随意添加。
+- 黑名单优先级高于可信列表：spender 同时在两列表中时按黑名单处理。
+- `knownName` 只能来自可信源（Etherscan verified source、已审计列表），禁止使用链上不可验证的元数据。
+- `ageInBlocks` 的实时性很重要——新合约（< 1000 块）风险显著升高。
+
+---
+
+## 5. Simulation / Static Analysis
+
+| 字段 | 类型 | 来源 | 可信度 |
+|------|------|------|--------|
+| `simulationSuccess` | `bool` | Tenderly / eth_call | ✅ 实时，**必须** |
+| `stateDiff` | `dict` | simulation 返回 | ✅ 实时，**参考** |
+| `transfersOut` | `list[Transfer]` | simulation 返回 | ✅ 实时，**参考** |
+| `methodSignature` | `string` | 4byte.directory / 本地 ABI | 💾 可缓存 |
+| `revertReason` | `string \| null` | simulation 返回 | ✅ 实时 |
+
+**规则**
+- simulation 结果**不能替代** allowance 查询 —— 同一个 spender 可能在 approve 之前就已经有额度了。
+- `methodSignature` 必须是 approve / increaseAllowance，否则标记为"非标准 approve"。
+- 如果 simulation revert，必须解释 revert reason 而非建议用户继续。
+
+---
+
+## 6. dApp 提供的说明
+
+| 字段 | 类型 | 来源 | 可信度 |
+|------|------|------|--------|
+| `dAppTitle` | `string` | dApp 页面 | 🔴 **不可信外部内容** |
+| `dAppDescription` | `string` | dApp 页面 | 🔴 **不可信外部内容** |
+| `dAppOrigin` | `string` (URL) | 浏览器 URL | ✅ 可信（浏览器的 origin 无法伪造） |
+| `estimatedGas` | `string` | dApp 页面 / wallet | 🔴 **不可信，仅作参考** |
+
+**规则**
+- dApp 提供的文字描述**必须视为不可信输入**，在 prompt 中用 `[UNTRUSTED]` 标签明确标记。
+- Agent 不能将 dApp 的描述用作判断"这次 approve 是否安全"的事实依据。
+- 但 `dAppOrigin` 可以用于匹配已知 phishing 域名列表。
+
+---
+
+## 7. User Intent
+
+| 字段 | 类型 | 获取方式 |
+|------|------|---------|
+| `userIntent` | `string` | 用户自然语言输入（当前对话） |
+| `expectedMethod` | `string \| null` | 用户预期的方法名（"我以为是 transfer"） |
+| `freeTextNotes` | `string \| null` | 用户补充信息 |
+
+**规则**
+- 用户意图是唯一不受链上状态约束的信号。如果用户说"我只是想看看 NFT"，但 approve 的 to 是一个 ERC20，需要指出不匹配。
+- 如果用户能清晰说出 "approve Uniswap 来 swap USDC"，且所有链上检查通过，可以降低风险评级。
+
+---
+
+## 综合置信度评分 (示例)
+
+| 条件 | 安全 ✅ | 危险 ❌ |
+|------|--------|--------|
+| spender 在可信列表 | +2 | — |
+| spender 在黑名单 | — | ✋ 直接阻止 |
+| allowance 为 0（新 approve） | +1 | — |
+| allowance 已存在且正在增加 | — | -1 |
+| amount 为 ∞ | 0 | -2 |
+| simulation 成功 | +1 | — |
+| simulation 显示全部转出 | — | -2 |
+| dApp origin 为新域名 | 0 | -1 |
+| 用户意图清晰匹配 | +1 | — |
+| 用户意图与方法不匹配 | — | -2 |
+
+> **建议阈值**: 总分 ≤ 0 时建议用户拒绝或进一步调查。
+
+---
+
+## 数据生命周期汇总
+
+| 数据 | 必须实时 | 可缓存 | 不可信 |
+|------|----------|--------|--------|
+| chainId | ✅ | | |
+| blockNumber | ✅ | | |
+| token address / spender | ✅ | | |
+| allowance | ✅ | | |
+| balance | ✅ | | |
+| decimals / symbol / name | | ✅ (use token list) | |
+| spender 可信列表 | | ✅ (定期更新) | |
+| spender 黑名单 | | ✅ (定期更新) | |
+| dApp 说明文字 | | | 🔴 |
+| simulation 结果 | ✅ | | |
+| method signature | | ✅ | |
+| 用户意图 | 本轮对话 | | |
+
+## Prompt 结构示例
+
+```
+## Context (all on-chain data is from block #{blockNumber} on chain {chainId})
+
+[ON-CHAIN]
+- Token: {symbol} ({address})
+- Spender: {spender} [KNOWN: {name}] [TRUSTED: {yes/no}]
+- Your allowance: {formattedAllowance} {symbol}
+- Your balance: {formattedBalance} {symbol}
+- Approve amount: {formattedAmount} {symbol}
+
+[SIMULATION]
+- Status: {success/revert}
+- State diff: {summary}
+- Method: {methodSignature}
+
+[UNTRUSTED - from dApp origin {origin}]
+- dApp says: "{dAppDescription}"
+
+[USER INTENT]
+- User says: "{userIntent}"
+```
+
+> `[UNTRUSTED]` 区块之后的所有内容模型不能当作事实引用，仅用作参考展示。
+````
+
+```markdown
+# 设计说明
+
+## 为什么需要 Context Spec？
+
+"钱包授权检查 Agent" 的核心风险在于：**模型可能把 dApp 的恶意描述当真，或者把过时的链上数据当作当前状态**。Context Spec 划了一条清晰的边界：什么数据模型可以信任，什么数据必须实时查，什么数据根本不能信。
+
+---
+
+## 关键设计决策
+
+### 1. 实时 vs 缓存：不信任过期状态
+
+| 决策 | 理由 |
+|------|------|
+| allowance / balance 必须实时 | 链状态每秒都可能变。一个 approve 交易可能在你回答的间隙已经被 frontrun。多一步 RPC 调用值得。 |
+| decimals / symbol 可缓存 | token 元数据在合约生命周期内不会变；即使被恶意合约事后修改（极少见），symbol 错了不影响资金安全。 |
+| blockNumber + blockTimestamp 必须实时 | 这两个字段是所有链上查询的"锚点"。没有它们，你无法验证 allowance 是在哪个高度读的，也无法检查合约年龄。 |
+
+### 2. [UNTRUSTED] 标签：防止模型被钓鱼
+
+dApp 页面内容是**攻击面**。恶意 dApp 可以写：
+
+> "This approves 0.001 ETH for gas"
+
+而实际 calldata 是 `approve(0xdead, type(uint256).max)`。
+
+把 dApp 描述标为 `[UNTRUSTED]` 的作用：
+- 在 prompt 结构上一个视觉分隔，提醒模型"接下来这段不是事实"
+- 模型在推理时不会把它作为"spender 是安全的"的论据
+- 但仍然显示给用户看，让用户对比 dApp 说了什么 vs 链上实际在做什么
+
+### 3. spender 可信列表：白名单不是银弹
+
+可信列表的设计很保守：
+- 只包含经过审计的知名协议（Uniswap Router v3, Seaport 1.6, 等）
+- 新协议即使代码安全也**不加入**，直到有时间验证
+- 黑名单优先级高于白名单——被攻破的知名合约可以从可信列表中移除并移入黑名单
+
+但白名单的真正局限是：大多数 approve 请求来自**不在白名单中的** spender。所以白名单只能用来**降低**误报率，不能作为"非白名单即拒绝"的逻辑。
+
+### 4. 综合评分而非二值判断
+
+最终输出不是"安全/危险"这样的硬分类，而是多维度评分。原因：
+- 安全不是二元属性。Uniswap 的 approve 在大多数场景下安全，但如果你在对一个假的 Uniswap 前端操作，spender 地址可能不同。
+- 评分制允许模型给出 nuanced 的回复：**"spender 是已知的 Uniswap Router，但 amount 是无限额度且你只有 0.5 USDC——风险较低，不过你确定需要无限额度吗？"**
+- 阈值可以由用户配置（保守/中等/激进），适应不同风险偏好。
+
+### 5. Simulation 不是银弹
+
+Simulation 是一个强大工具，但有三个盲区：
+1. **approve 本身不转移资产**——simulation 只能看到本交易的结果，看不到后续交易。如果 approve 给了一个恶意合约，恶意合约可以在下一笔交易调用 `transferFrom`。
+2. **approve 是授权未来操作**——simulation 无法预测"未来"会发生什么。
+3. **impersonation 的限制**——复杂场景（多跳代理、delegatecall）的 simulation 可能不准确。
+
+所以 simulation 的结果放在"参考"而非"必须"等级。
+
+### 6. 信任链：钱包 origin 不可伪造
+
+dApp 页面可以被任意篡改，但浏览器 origin 和钱包注入的 tx 参数来自钱包扩展，攻击者不可能伪造。这就是为什么：
+- `dAppOrigin` 是可信的（来自浏览器）
+- tx `to` / `data` 是可信的（来自钱包）
+- `dAppDescription` 是不可信的（来自 DOM）
+
+整个架构的信任锚点是**钱包扩展提供的交易数据**，而非 dApp 页面。
+
+---
+
+## 对抗场景测试
+
+### 场景 A：恶意 dApp 显示假的 chainId
+
+dApp 页面："This is on Ethereum mainnet"（实际 chainId 是 56 = BSC）
+
+**Spec 的防御**：Agent 从 `eth_chainId` 拿 chainId，not from dApp 页面。如果用户说"我在以太坊"但 chainId 显示是 BSC，Agent 必须指出差异。
+
+### 场景 B：恶意 dApp 显示假的 approve 数量
+
+dApp 页面："Approve 5 USDC"（实际 calldata 是 `type(uint256).max`）
+
+**Spec 的防御**：Agent 从 calldata 解码 amount，不读 dApp 的描述。当 decoded amount 是无限时，无论 dApp 说什么都是高风险。
+
+### 场景 C：恶意 dApp 伪造 spender 名称
+
+dApp 页面："Approving Uniswap Router"（实际 spender 是一个未审计的个人地址）
+
+**Spec 的防御**：`knownName` 只来自可信来源（Etherscan verified source / 可信列表），不能来自 dApp。如果可信列表没有该地址，就显示 "unknown"，不论 dApp 怎么描述。
+
+### 场景 D：dApp 发起的是 normal transfer 而非 approve
+
+用户以为是 approve，实际 calldata 是 `transfer(wallet, amount)`。
+
+**Spec 的防御**：Agent 解析 method signature 并与用户意图对比。如果用户说 approve 但 method 是 transfer，必须标记不匹配。
+
+---
+
+## 未解决的问题 / 后续工作
+
+1. **多链可信列表同步**——目前是本地缓存，需要设计跨链更新机制。
+2. **EIP-2612 permit**——`permit` 通过签名而非交易来实现 approve，signTypedData 的判断逻辑不同。
+3. **dApp origin 的 phishing 库**——需要集成 PhishFort / MetaMask 的 phishing detect 接口。
+4. **用户意图的 NLU 边界**——如果用户说"帮我看看"，没有明确意图，应该进入追问流程。
+5. **score threshold 的校准**——需要真实的正负样本数据集来校准综合评分的阈值。
+```
+<!-- DAILY_CHECKIN_2026-05-22_END -->
+
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/ybk-1/images/2026-05-21-1779376029547-image.png)
 
 今天完成了一个ai交互的一个demo
@@ -168,6 +469,7 @@ MIT
 <!-- DAILY_CHECKIN_2026-05-20_START -->
 
 
+
 ````markdown
 # Daily Note / 每日打卡 — 2026-05-20
 
@@ -239,6 +541,7 @@ MIT
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -373,6 +676,7 @@ MIT
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
