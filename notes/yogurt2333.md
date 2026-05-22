@@ -15,8 +15,34 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-22
+<!-- DAILY_CHECKIN_2026-05-22_START -->
+\### Web3 基础 — 过了一遍
+
+章节 核心收获
+
+🌐 **Network** 区块是批量提交，共识决定历史有效性，L2 更便宜但也更复杂
+
+🔐 **Cryptography** 哈希防篡改、私钥=控制权、签名≠登录、Merkle Tree 高效验证
+
+👛 **Wallet** EOA 限制多、三类动作风险不同、gas 要讲清楚、explorer 可自证
+
+📜 **Smart Contract** 链上程序、EVM 执行环境、ABI 是接口说明书、Event 可索引日志
+
+🏗️ **Account Abstraction** 权限从"有私钥/没私钥"变成"什么条件下允许什么动作"，Session Key 是 Agent Wallet 的核心
+
+\### 穿插知识点
+
+\- **Harness Engineering** — The harness beats the model（记到 Obsidian 了）
+
+\- **MCP vs Function Calling** — FC 是"格式"，MCP 是"完整协议"，互补不互替
+
+\- **游戏自动化** — Cradle / UI-TARS 两条路线
+<!-- DAILY_CHECKIN_2026-05-22_END -->
+
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 🧭 2026 核心趋势 Agents with Wallets — Agent 自己管钱自己花
 
 📦 项目全景表 基础设施层 / 钱包支付层 / 应用层，每个都有简介
@@ -34,6 +60,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 Web3 底层原理
 
@@ -60,6 +87,7 @@ Web3 底层原理
 <!-- DAILY_CHECKIN_2026-05-19_START -->
 
 
+
 \## 📋 5月19日学习总结
 
 \### ✅ 已完成
@@ -81,6 +109,7 @@ Web3 底层原理
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
