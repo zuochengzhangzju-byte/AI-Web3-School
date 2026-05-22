@@ -15,8 +15,18 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-22
+<!-- DAILY_CHECKIN_2026-05-22_START -->
+**今日完成：** 我整理了 7 个 Web3 基础概念卡片，完成了 T4 提交稿，也把 T5 测试网交易提交模板和 5 步说明写好了。
+
+**遇到的挑战：** 最容易混淆的是 wallet、address、seed phrase、private key 这几个词。我现在会用“它是否公开、是否能恢复控制权、是否用于签名”来区分它们。
+
+**明天继续：** 手动在 Sepolia 完成一笔测试网交易，把 tx hash 和区块浏览器链接补进 T5，然后进入最小合约练习。
+<!-- DAILY_CHECKIN_2026-05-22_END -->
+
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 **今日完成：** 我继续了顺延后的 Day 2，阅读 Handbook 并整理了 6 个 AI 基础概念的学习摘要，开始把它们转成可提交的 T1 内容。
 
 **遇到的挑战：** LLM、prompt、workflow、agent 这些词很容易混在一起，所以我改用“它负责什么 / 不负责什么”来区分。
@@ -26,6 +36,7 @@ AI x Web3 School
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 **Day 1 | AI × Web3 School Bootcamp 启动**
 
