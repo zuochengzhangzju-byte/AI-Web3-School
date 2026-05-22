@@ -15,8 +15,24 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-22
+<!-- DAILY_CHECKIN_2026-05-22_START -->
+完成 Hermes Agent 的配置！
+
+我是用NVIDIA 模型的免費API，參考了[網路上的文章](https://www.blocktempo.com/nvidia-build-free-api-key-kimi-deepseek-llama-minimax-models/#4_%E6%AD%A5%E9%A9%9F%E6%8B%BF%E5%88%B0_API_Key)
+
+（一步一步照著做就可以申請到API）
+
+然後，再參考[@0xUSDHG](https://x.com/@0xUSDHG) 同学分享的 Hermes Agent 部署文档：
+
+[https://x.com/0xUSDHG/status/2056729189135564850?s=20](https://x.com/0xUSDHG/status/2056729189135564850?s=20)
+
+就安裝成功了！明天再來搭配Agent 規劃學習計劃
+<!-- DAILY_CHECKIN_2026-05-22_END -->
+
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 # **Web3 運行原理筆記**
 
 1.  **Web3 是新一代網路架構**  
@@ -52,6 +68,7 @@ AI x Web3 School
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 ## 今日進度
 
@@ -93,6 +110,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
