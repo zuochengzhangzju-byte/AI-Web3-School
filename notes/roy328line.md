@@ -15,8 +15,26 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-22
+<!-- DAILY_CHECKIN_2026-05-22_START -->
+學習日誌 · 2026-05-22（Day 6）
+
+今日學習：Co-learning 任務推進 + 例會分享 + Week 1 整體複習
+
+Week 1 核心收穫：建立判斷框架——任何 AI 輸出進入 Web3 執行層之前，都需要一道人工確認節點。AI 降低操作門檻，但不降低安全標準。
+
+AI 基礎脈絡整合：LLM 概率生成 → Prompt 軟約束 → Context 五層結構 → Agent 受約束執行循環 → Frameworks 工作流優先
+
+Web3 基礎脈絡整合：Wallet 三類動作風險不同 → 智能合約 ABI ≠ 安全說明 → ERC-4337 Session Key = AI Agent 安全上鏈基礎
+
+AI × Web3 核心原則：AI 解釋 ≠ AI 授權；Simulation + Structured Output + Session Key + Human-in-the-loop + Audit Log
+
+GitHub 筆記：https://github.com/roy328line/ai-web3-school-cohort-0/blob/main/daily/2026-05-22.md
+<!-- DAILY_CHECKIN_2026-05-22_END -->
+
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 \-–
 
 學習日誌 · 2026-05-21（Day 5）
@@ -65,6 +83,7 @@ AI x Web3 School
 
 
 
+
 今日學習：Frameworks 模組深讀（LangChain / LangGraph / OpenAI Agents SDK / Hermes）+ Hermes 安裝實作
 
 主要收穫：
@@ -83,6 +102,7 @@ GitHub 筆記：https://github.com/IntensiveCoLearning/AI-Web3-School/pull/29
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -110,6 +130,7 @@ Hermes Agent 預習：Skills 可復用高層指令集 / Long-term Memory 跨 ses
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
