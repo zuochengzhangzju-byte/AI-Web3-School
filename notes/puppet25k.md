@@ -17,7 +17,7 @@ AI x Web3 School
 <!-- Content_START -->
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
-\# Co-Learning
+\### Co-Learning
 
 1\. 参加了 Swen Chan 主持的 Co-Learning 指南会
 
@@ -25,23 +25,29 @@ AI x Web3 School
 
 3\. 记录了 Hackathon 时间、赛道方向、组队方式等信息
 
-4\. 学习了 tree tree 的优秀笔记结构化整理方法
+4\. 5/25 下一期 Co-Learning
 
-5\. 学到了 Obsidian 本地知识库的最佳实践 — 每个人都该拥有自己的本地知识库
+\### 分享会 — Week 1 例会
 
-\# 分享会
+1\. **tree tree — 优秀笔记分享**: 索引 + 分层重构的结构化整理法，强调笔记的可检索性和可复用性
 
-1\. [**Z.AI**](http://Z.AI) **— Open Agentic Economy**（Sophia）: ERC-8004/ERC-8183 Agent 经济协议标准
+2\. [**Z.AI**](http://Z.AI) **Sophia — Open Agentic Economy**: ERC-8004/ERC-8183 Agent 经济协议标准，Agent 之间的经济协作、支付和结算
 
-2\. **Agent Long-term Memory**（li9292 / Evermind）: 如何让 Agent 拥有持续上下文与长期一致性
+3\. **li9292 / Evermind — Agent Long-term Memory**: 如何让 Agent 拥有持续上下文与长期一致性，解决跨会话上下文连续性问题
 
-3\. **Cobo Agentic Wallet**（Miratisu）: Agent 钱包权限、签名执行与安全边界
+4\. **Miratisu / Cobo — Agentic Wallet**: Agent 钱包的权限、签名执行与安全边界 — 如何让 AI Agent 在边界内安全操作链上资产
 
-\# 随堂笔记
+5\. **Obsidian 知识库**: 每个人都该拥有自己的本地知识库 — 把个人素材、方法论、经历喂给 AI，输出才是自己的
+
+6\. 下周课程预告：5/25 Co-Learning + Week 2 AI×Web3 交叉实践
+
+7\. Q&A: 讨论涉及 Agentic Commerce、AI Security、Privacy、Chainlink、DePIN、Tokenomics 等方向
+
+\### 随堂笔记
 
 \> AI 没有立场、没有经历、没有审美。你需要把自己的素材、方法论、经历、判断喂给它，输出的才是带你自己印记的东西。
 
-\# 下一步工作
+\### 下一步工作
 
 1\. 准备 5/23 的 Open Agentic Economy 深入场
 
@@ -52,6 +58,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 1\. 参加了 "AI 下乡计划｜在 Web3 的应用" 分享会（ELON）
 
@@ -68,6 +75,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 \### 目前的状态
@@ -126,11 +134,13 @@ AI x Web3 School
 
 
 
+
 我今天在分享会过程中，把hermes和openclaw迁移到云服务器并且成功使用，也把和飞书的连接，以及日历的每日提醒完成了，明天会继续学习ai x web3指导文档中的内容。
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
