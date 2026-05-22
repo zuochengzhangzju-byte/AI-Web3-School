@@ -15,8 +15,20 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-22
+<!-- DAILY_CHECKIN_2026-05-22_START -->
+### **学习进度：**
+
+-   **05-22 19:00 - 20:00** Co-learning
+    
+-   **05-22 20:00 - 21:30** Week 1 例会
+    
+-   **05-22 23:30 - 00:00** 翻阅co-learning老师和学员分享的链接讯息
+<!-- DAILY_CHECKIN_2026-05-22_END -->
+
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 ### **学习进度：**
 
 -   **05-21 19:00 - 20:00** 阅读Hung-yi Lee老师的生成式人工智慧课程
@@ -30,6 +42,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 # 每日学习笔记
@@ -88,6 +101,7 @@ AI x Web3 School
 
 
 
+
 # 每日学习笔记
 
 日期: 2026-05-19
@@ -131,6 +145,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
