@@ -15,8 +15,54 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-22
+<!-- DAILY_CHECKIN_2026-05-22_START -->
+主要在Sepolia测试网部署一份存证合约，部署的合约交易hash为：0x11436e8b75dd7b7a7303e96922dea649cef624298e32a6331333b067ee6d6834，合约地址为0x45acd158f0e5c7d4f97766d636240e70b7a6b89c。  
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/sl-tech-design/images/2026-05-22-1779434919300-image.png)
+
+  
+  
+  
+区块链浏览器查询结果：  
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/sl-tech-design/images/2026-05-22-1779434783748-image.png)
+
+  
+合约源码：一个简单的存证合约
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+
+contract EvidenceRepository {
+
+    struct EvidenceData{
+        string hash;
+        address owner;
+        uint timestamp;
+    }
+
+    mapping(string=>EvidenceData) private _evidences; //所有存证数据，用data hash进行索引
+
+    function setData(string memory hash, address owner, uint timestamp) public {
+        _evidences[hash].hash = hash;
+        _evidences[hash].owner = owner;
+        _evidences[hash].timestamp = timestamp;
+    }
+
+    function getData(string memory hash) public view returns(string memory, address, uint) {
+        EvidenceData memory evidence = _evidences[hash];
+        return (evidence.hash, evidence.owner, evidence.timestamp);
+    }
+}
+```
+<!-- DAILY_CHECKIN_2026-05-22_END -->
+
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 今天任务：  
 ①在[https://aiweb3.school/zh/handbook/ai/](https://aiweb3.school/zh/handbook/ai) 网站上复习AI的概念
 
@@ -29,6 +75,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 两个任务：学习web3基础概念；本地部署hermes。  
 **Web3基础概念**
@@ -182,6 +229,7 @@ https://github.com/NousResearch/hermes-agent/blob/main/README.zh-CN.md
 <!-- DAILY_CHECKIN_2026-05-19_START -->
 
 
+
 主要在自己本地部署hermes。但是遇到一些问题，现在卡在网络上，下载hermes到约99%就会失败，目前正在排查（放弃使用http clone，改为使用ssh了，不知道会不会成功）。后面也会把整个部署过程记录，上传到打卡点。
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/sl-tech-design/images/2026-05-19-1779196495368-image.png)
@@ -189,6 +237,7 @@ https://github.com/NousResearch/hermes-agent/blob/main/README.zh-CN.md
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
