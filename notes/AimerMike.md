@@ -15,8 +15,48 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-22
+<!-- DAILY_CHECKIN_2026-05-22_START -->
+An agent is not just a chatbot. A practical agent usually combines:
+
+-   Goal: what the user wants
+    
+-   Context: task data and history
+    
+-   Model: language and reasoning engine
+    
+-   Tools: APIs, browsers, databases, wallets, code execution, search
+    
+-   Memory: durable or session-based information
+    
+-   Policy: what the agent is allowed to do
+    
+-   Evaluation: checks for correctness and safety
+    
+
+Typical loop:
+
+1.  Observe current state.
+    
+2.  Decide what information or action is needed.
+    
+3.  Call a tool or ask the user.
+    
+4.  Interpret the result.
+    
+5.  Continue or stop.
+    
+6.  Produce a final answer or draft action.
+    
+
+Frameworks help organize these loops. They may provide tool schemas, memory, workflow graphs, retries, tracing, evaluation, and deployment patterns.
+
+In Web3, the central risk is permission. A normal software agent might send an email or update a spreadsheet. A Web3 agent might prepare a transaction, request a signature, change token allowance, vote in governance, or interact with a contract. That means agent design must include explicit boundaries.
+<!-- DAILY_CHECKIN_2026-05-22_END -->
+
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 RAG means the model does not rely only on what it already “knows”. The system retrieves relevant documents, snippets, records, or chain data, then gives that context to the model so it can answer with evidence.
 
 The basic flow:
@@ -71,6 +111,7 @@ RAG is not magic. It can still fail if retrieval finds the wrong source, misses 
 
 
 
+
 Prompt design is safety design. In Web3, context quality and permission boundaries decide whether an AI agent is just helpful or dangerously overconfident.
 
 ```markdown
@@ -98,6 +139,7 @@ Prompt design is safety design. In Web3, context quality and permission boundari
 
 
 
+
 | 角色 | 擅长领域 | 短板 | 使用边界 |
 | --- | --- | --- | --- |
 | LLM 大语言模型 | 解读释义、内容总结、对比分析、方案规划 | 无上下文无法获取实时信息，无法保证内容绝对真实 | 必须主动说明信息不确定点与信息来源局限 |
@@ -116,6 +158,7 @@ Prompt design is safety design. In Web3, context quality and permission boundari
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
