@@ -15,8 +15,56 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-22
+<!-- DAILY_CHECKIN_2026-05-22_START -->
+# Context
+
+Note
+
+Context 是模型这一次能看到、能使用、能被影响的信息空间。真正难的不是把更多内容塞进去，而是把系统规则、用户目标、历史状态、工具结果和外部文档分清楚。
+
+在实际产品里，context window 应该配合检索、摘要和结构化数据使用。关键状态直接给，长文档按需取，低可信内容隔离标注。
+
+一个稳定的工具型 Agent 上下文，通常不只是“用户问题 + 一段 JSON”。它还应该包括：
+
+-   当前任务状态
+    
+-   工具返回结果
+    
+-   相关日志或证据
+    
+-   可信数据来源
+    
+-   外部检查结果
+    
+-   用户原始意图
+    
+-   系统禁止事项和输出 schema
+    
+
+**Context Engineering 的目标不是塞满窗口，而是让模型在正确的信息层级里工作。**
+
+Memory 不能替代实时授权。用户过去允许某个动作，不代表现在仍然允许。**所有涉及身份、权限、资产或外部副作用的记忆，都必须重新绑定当前会话和当前授权。**
+
+一个靠谱的 Agent 上下文通常会分层：
+
+-   指令层：系统规则、工具使用规则、禁止事项。
+    
+-   任务层：用户目标、本次会话参数。
+    
+-   事实层：链上状态、工具结果、simulation。
+    
+-   知识层：文档、标准、论坛、历史案例。
+    
+-   记忆层：用户偏好和项目配置。
+    
+
+层级越清楚，后续越容易做权限控制、prompt injection 防护和审计。
+<!-- DAILY_CHECKIN_2026-05-22_END -->
+
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 今天没有太多时间看东西，就查了一些名词。
 
 # [RPC](https://aiweb3.school/zh/handbook/web3/indexing/#rpc)
@@ -90,6 +138,7 @@ Layer 2 通常把大量交易放到主网之外执行，再把结果或证明提
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
 
+
 🎓 AI × Web3 School — Phase 1 Day 3: Prompt
 
 📖 读完了 Prompt 章节：
@@ -115,6 +164,7 @@ Layer 2 通常把大量交易放到主网之外执行，再把结果或证明提
 <!-- DAILY_CHECKIN_2026-05-19_START -->
 
 
+
 🎓 AI × Web3 School — Phase 1 Day 3: Tool Workflow Insights
 
 📖 Did not read Prompt chapter today (deferred) — instead explored practical AI tool workflows from the community:
@@ -138,6 +188,7 @@ Layer 2 通常把大量交易放到主网之外执行，再把结果或证明提
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
