@@ -15,8 +15,16 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-22
+<!-- DAILY_CHECKIN_2026-05-22_START -->
+哎……现在还在应酬，今日只能流水账了
+
+简单听了下co- learning，周末补上
+<!-- DAILY_CHECKIN_2026-05-22_END -->
+
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 今日#流水账#
 
 这两天工作太多，没法抽出过多的时间学习和实践。晚8坚持听完老师的分享，agent payment是近期ai在web3实践的课题，老师也分享了。后续会着重看看这个方向。
@@ -26,6 +34,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 今天下午的web运行原理由于在上班没听成，只能等周末在补上了。
 
@@ -40,6 +49,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-19_START -->
 
 
+
 已经完成hermes的安排，虽然ollama的本地模型没有调用成功，但用api key的方式已经成功用hermes帮我做学习计划。
 
 计划随时学习的过程逐步深入使用agent帮我完成更多的任务。
@@ -49,6 +59,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
