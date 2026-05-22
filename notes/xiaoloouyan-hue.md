@@ -15,8 +15,24 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-22
+<!-- DAILY_CHECKIN_2026-05-22_START -->
+What increasingly stands out in the AI × Web3 space is that the industry is shifting away from a pure obsession with model capability toward questions of coordination, governance, memory, identity, and cultural infrastructure. The next wave is no longer simply about building larger models or faster inference systems, but about designing relationships between humans, agents, institutions, and collective intelligence. This is why backgrounds like architecture, curatorial practice, research, publishing, and spatial thinking suddenly become unexpectedly relevant. Many engineers can build tools, but far fewer understand archives, symbolic systems, public culture, governance structures, or institutional design. In this emerging landscape, culture is no longer treated merely as “content”; it becomes training data, alignment substrate, memory architecture, and programmable social infrastructure. Questions such as who owns cultural memory, who governs datasets, how provenance is maintained, and how agents participate in public coordination are becoming central political and technical problems. What used to be considered curatorial work — organizing narratives, publics, rituals, and shared spaces — is beginning to resemble protocol design and governance architecture for AI-native societies.
+
+At the same time, AI agents are evolving beyond the idea of simple automation bots into something closer to institutional actors: entities with memory, permissions, wallets, identities, goals, and the capacity to participate in governance. This transformation is reshaping the meaning of DAOs, governance systems, and decentralized infrastructures themselves. Increasingly, the real challenge is not intelligence, but coordination — how humans and agents coexist, deliberate, delegate authority, preserve collective memory, and maintain legitimacy within complex systems. In this sense, the future of AI × Web3 may look less like a traditional technology industry and more like a new form of institutional design. The people who will matter most may not be those who only know how to code, but those capable of translating between AI systems, governance structures, aesthetics, public infrastructures, and cultural imagination. This creates a unique opening for practitioners coming from architecture, art, research, and publishing backgrounds: they are often already trained to think about circulation, hierarchy, visibility, participation, and governance through form. The medium is simply changing — from physical space to protocols, workflows, interfaces, and memory systems.
+
+Reading List：
+
+[https://www.radicalxchange.org/](https://www.radicalxchange.org/)
+
+[https://metagov.org/](https://metagov.org/)
+
+[https://www.banklesstimes.com/articles/2026/01/19/vitalik-buterin-urges-dao-renaissance-and-ethereum-core-revival/](https://www.banklesstimes.com/articles/2026/01/19/vitalik-buterin-urges-dao-renaissance-and-ethereum-core-revival/)
+<!-- DAILY_CHECKIN_2026-05-22_END -->
+
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 AI 与 Web3 在 2026 年已经不再只是“叙事拼接”。
 
 真正的变化是：
@@ -49,6 +65,7 @@ Web3 社区的问题是：
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 Rejoining the intense collective learning journey — Day 1 check-in!
