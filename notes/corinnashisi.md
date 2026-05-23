@@ -15,8 +15,18 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-23
+<!-- DAILY_CHECKIN_2026-05-23_START -->
+早上听了**Open Agentic Economy的分享，英文的分享对我还是有压力。只能后面看逐字稿补课。**  
+
+今天还是正式用Hermes来制定学习计划了，在不**homebrew和github的安装。先把学习计划搞定，后面每日安装学习计划执行。**
+
+![Clipboard_Screenshot_1779551425.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/corinnashisi/images/2026-05-23-1779551427730-Clipboard_Screenshot_1779551425.png)
+<!-- DAILY_CHECKIN_2026-05-23_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 哎……现在还在应酬，今日只能流水账了
 
 简单听了下co- learning，周末补上
@@ -24,6 +34,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 今日#流水账#
 
@@ -34,6 +45,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 今天下午的web运行原理由于在上班没听成，只能等周末在补上了。
@@ -50,6 +62,7 @@ AI x Web3 School
 
 
 
+
 已经完成hermes的安排，虽然ollama的本地模型没有调用成功，但用api key的方式已经成功用hermes帮我做学习计划。
 
 计划随时学习的过程逐步深入使用agent帮我完成更多的任务。
@@ -59,6 +72,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
