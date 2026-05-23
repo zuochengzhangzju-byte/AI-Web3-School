@@ -15,8 +15,36 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-23
+<!-- DAILY_CHECKIN_2026-05-23_START -->
+Today I watched an English broadcast about AI × Web3 and one idea clicked for me:
+
+> **AI is moving from “answering questions” to “taking actions”, and Web3 is the economic layer that makes those actions accountable.**
+
+In the talk, they broke it down into a simple stack that really helped my understanding:
+
+-   **AI handles understanding and decision-making**  
+    Models and agents can read data, reason about options, and propose what to do next.
+    
+-   **Web3 provides identity and accounts**  
+    Wallets, on-chain identity, permissions and limits define _who_ the agent is on-chain and _what it is allowed to do_.
+    
+-   **AI needs an economic account, not just an API key**  
+    Once an agent starts renting compute, buying data, calling APIs or sending transactions, it needs a wallet, budget, spending limits and logs.
+    
+-   **Security and risk are not “nice to have”**  
+    If an AI can move real money, you must design guardrails: authorization, limits, transaction simulation, fraud detection, and a clear way to pause or revoke access.
+    
+-   **Good projects solve a specific layer of this “agent economy stack”**  
+    Some focus on compute and storage, some on agent wallets, some on on-chain analytics, some on user protection, some on institutional risk. Seeing them as parts of one stack makes the landscape much clearer.
+    
+
+对我来说，最大的收获是：以后看到 AI × Web3 项目，我不会只问「是不是热点赛道」，而是会先问：**它到底在这条 agent 经济栈里解决的是哪一个具体问题？**
+<!-- DAILY_CHECKIN_2026-05-23_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 这周对我影响最大的一句话是：
 
 > **AI 负责理解和决策，Web3 负责身份、支付、结算和审计。**
@@ -53,6 +81,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 今天认真看完了这份《AI x Web3 Project Map》，用 Bittensor、Coinbase AgentKit、Arkham、Blockaid、Chainalysis 五个主案例，把「AI 走进 Web3 经济系统」需要的整套能力串了起来：从资源、账户，到认知、安全和风控，感觉像是第一次从「系统视角」去看 AI x Web3。
 
@@ -97,6 +126,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 **为什么是 REALart、为什么是 Web3**  
