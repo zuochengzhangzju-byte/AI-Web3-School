@@ -15,8 +15,28 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-23
+<!-- DAILY_CHECKIN_2026-05-23_START -->
+Day 5（5月23日）：链上智能体交互实践（核心打卡点）
+
+• 今日目标：让 AI Agent 真正帮你去链上搞事情。
+
+• 具体要做什么：
+
+1\. 下达指令：对着你的 Hermes Agent 发送指令，例如：“帮我把 0.01 个测试币转账给地址 XXXXX，并在转账成功后告诉我交易哈希。”
+
+2\. 监控过程：不要只看结果，紧盯着终端（Terminal）输出的 Logs。看 AI 是怎么一步步思考的：思考 (Thought) -> 调用工具 (Call Tool) -> 得到链上返回 (Observation) -> 最终回复。
+
+3\. Debug 与调整：如果 AI 报错（比如 Gas 不够、RPC 报错、Prompt 理解错误），用 AI 辅助报错信息提示进行修正。
+
+• 参考材料：
+
+• 链上浏览器：Etherscan (Sepolia)，用于把 AI 给你的交易哈希放进去验证，看看链上是否真的执行成功。
+<!-- DAILY_CHECKIN_2026-05-23_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 **Day 4（5月22日）：Hermes Agent 与智能体框架拆解**
 
 • **今日目标**：攻克课程的核心主角——Hermes Agent（或相关的 AI Agent 框架）。
@@ -39,6 +59,7 @@ AI x Web3 School
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
+
 ### Day 3（5月21日）：AI Coding 与环境初始化（Cursor / Windsurf）
 
 -   **今日目标**：搭建好你的 Vibe Coding 环境，让 AI 成为你的主力副驾驶。
@@ -60,6 +81,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 ### **Day 3（2026-05-21）：AI Coding 与环境初始化（Cursor / Windsurf）**
@@ -87,6 +109,7 @@ AI x Web3 School
 
 
 
+
 ### Day 2（5月20日）：Web3 基础设施与测试网通关
 
 -   **今日目标**：把 Web3 的链上概念吃透，为 AI 代理（Agent）准备好“手和脚”。
@@ -106,6 +129,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
