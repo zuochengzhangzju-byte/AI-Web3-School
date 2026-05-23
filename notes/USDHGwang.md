@@ -15,8 +15,241 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-23
+<!-- DAILY_CHECKIN_2026-05-23_START -->
+# 2026-05-23 殘酷共學打卡｜跟 Claude 深挖 Agent 記憶架構
+
+## **起點：一個看起來很無聊的問題**
+
+今天從一個工程問題開始：**claude.ai 那邊累積的對話和記憶，能不能搬到 Claude Code？**
+
+表面答案：沒有一鍵遷移，要手動 export → 解析 → 寫進 local memory。
+
+但實際拆開看，這背後是個更大的問題：**在多 agent 環境下（我同時用 Claude + Hermes + 偶爾 GPT），記憶應該怎麼設計？**
+
+整天的討論其實在解這件事。記下幾個我覺得 community 也用得上的思考。
+
+* * *
+
+## **關鍵發現 1：「記憶」和「知識」根本是兩件事**
+
+很多人（包括我之前）會把這兩個攪在一起。但攪在一起，**vault 會被污染、agent 啟動會被噪音拖累**。
+
+|   | 知識 | 記憶 |
+| --- | --- | --- |
+| 是什麼 | 你想累積的、未來會去查的 asset | agent 啟動 brief、行為規則、user 是誰 |
+| 誰寫 | 主要自己 + AI 草稿 review | 主要 AI 自動載入用 |
+| 會變化嗎 | 會持續成長、refine | 相對靜態，偶爾調整 |
+| 載入時機 | 需要時去查 | 每次 session 啟動自動載 |
+| 舉例 | AIP 技術細節、某個人物資料、技術框架 | 「user 是 John」、「寫 vault 要保守」 |
+
+實作上：**知識放 Obsidian vault**（Hermes / Claude / 未來自己都讀）；**記憶放 agent 私有區**（Claude Code 自己的 `MEMORY.md`、Hermes 自己的 `~/.hermes/memories/`）。
+
+> 為什麼這個分開很重要：vault 是長期資產，被 agent 啟動設定混進去之後，graph view / 搜尋會被雜訊拖累，你打開 vault 看到的不再是「我累積的洞見」，而是「AI 設定檔」。
+
+* * *
+
+## **關鍵發現 2：用「conversation paradigm」重構 multi-agent 記憶**
+
+多 agent 共享記憶有兩種思考方式：
+
+**Store paradigm**：記憶是 database。要設 schema、namespace、權限、衝突解決。**這是主流做法，但對個人用戶過重。**
+
+**Conversation paradigm**：記憶是「跨時間的對話 transcript」，每筆 = 某 speaker 在某時間說的一句話。
+
+選 conversation paradigm 之後，原本要解的問題**自動消失**：
+
+-   Namespace 衝突？→ Speaker 天然分隔，不存在
+    
+-   寫入權限？→ 任何人都可以「說話」
+    
+-   衝突解決？→ 兩個 speaker 對同件事有不同看法，不是 conflict，是 perspectives
+    
+
+剩下要解的只是 6 個 irreducible 問題：誰說的 / 何時 / 對誰 / 接續哪句 / 還相信嗎 / 怎麼引用。
+
+**而這 6 個用 git 就解了一半**（git author = attribution、git timestamp = temporal、git parent commit = lineage）。
+
+* * *
+
+## **關鍵發現 3：「Lifecycle closure」— 長期工作最容易壞的地方**
+
+這個是今天最有價值的洞察，是我自己之前沒意識到的：
+
+**長期任務有自然的狀態轉換**（完成 / 取消 / 被吸收 / 暫停 / 換載體），但**轉換的那一刻沒有 explicit 收官儀式**，記憶就會被卡在「最後看到的狀態」，agent 帶著過時世界觀回答。
+
+具體例子（我自己的）：
+
+```
+Harness Engineering（我的 Agent 領域主線）
+```
+
+`↓ 2026-04 構想 3-month plan（M1/M2/M3）`
+
+`↓ 4-5 月「徹底轉為」0G APAC Hackathon 執行`
+
+`↓ Hackathon 結束，並行 AI × Web3 課程`
+
+`↓ 現在 → 開放式持續 build，無 endpoint`
+
+`但中間轉換都沒被顯式記錄，所以 Claude 還以為「M1/M2/M3 plan 還在按表執行」`
+
+**根因**：我們的工具（Notion、memory）對「**開始**」很友善（新建 page、寫 note），但對「**結束 / 轉換**」沒有任何系統 prompt。**開始有儀式、結束沒儀式 → 累積偏差。**
+
+設計上應該做的：
+
+-   偵測 transition 訊號（連續 N session 沒提 / deadline 過了 / 你開始談架構不同的相關東西）
+    
+-   主動 prompt 收官（「這要 close 嗎？演化 / 取代 / 暫停？」）
+    
+-   在 project memory 加 **Lifecycle Log** 區塊，記錄演化路徑
+    
+
+* * *
+
+## **關鍵發現 4：寫進 memory 的 filter**
+
+副產品但很重要：**「這在 3 個月後還會 true / relevant 嗎？」**
+
+不過這個 filter 就不寫進 memory。常見的誤判：
+
+-   「這很**緊急**」 → 緊急不等於該入 memory，緊急該在 Notion / calendar
+    
+-   「這很**重要**」 → 重要但變動快的也不該入 memory
+    
+-   「**怕忘記**」 → memory 不是備忘錄，是 agent 啟動 brief
+    
+
+該入 memory：穩定 / 長壽 / 永久教訓  
+不該入：deadline、進度狀態、推測性未來聯絡、任何「截至今天」snapshot
+
+* * *
+
+## **工具盤點（給有相同問題的人參考）**
+
+主流 agent memory infra：
+
+| 方案 | 公信力 | 適用 |
+| --- | --- | --- |
+| OpenMemory MCP (mem0.ai) | ⭐⭐⭐⭐⭐ | 明確為「Claude + Cursor + 其他 MCP client 共享記憶」設計，local-first |
+| Mem0 | ⭐⭐⭐⭐⭐ | 41K stars、AWS Agent SDK 獨家、freemium |
+| Zep | ⭐⭐⭐⭐ | LongMemEval 第一（63.8%），但記憶體很重 |
+| Letta (MemGPT) | ⭐⭐⭐⭐ | 長期跑的 agent 強，是 runtime |
+| Honcho | ⭐⭐⭐⭐ | Hermes 內建 provider，peer model 細緻，但對外封閉 |
+| ByteRover | ⭐⭐⭐ | Hermes provider，記憶寫成 markdown 檔案，跟 Obsidian 哲學一致 |
+
+但**全都不能直接套用我的情況**——我的 stack 是 Obsidian vault (`D:\dev\knowledge-base`) + Hermes + Claude Code 三方，每個方案都會犧牲一塊。
+
+* * *
+
+## **工作哲學的對應（為什麼不能直接套主流方案）**
+
+> **「主流解法是泛式的，每個人情況不同能碰撞出更多的新火花」**
+
+這句是今天歸納出來的個人姿態，但放更廣看是個普世原則：
+
+-   主流方案被設計來覆蓋 80% 的 case → 設計 trade-off 對你的 20% 不一定 align
+    
+-   自己的工作流（vault 結構 / 對 reflection 的潔癖 / 對 transient 不入 memory 的判斷）有獨特性
+    
+-   **碰撞 > 套用**：把主流方案當組件，跟自己情況碰撞，做 bespoke 設計
+    
+
+對應到實作上，我們今天討論的解 — **Cross-Pointer Pattern**：
+
+```
+Claude 的 MEMORY.md                  Hermes 的 MEMORY.md
+```
+
+`───────────── ─────────────`
+
+`第一行：對方記憶在 ←→ 互指 ←→ 第一行：對方記憶在`
+
+`~/.hermes/memories/MEMORY.md C:\...\.claude\...\memory\MEMORY.md`
+
+`── 自己的內容 ── ── 自己的內容 ──`
+
+純 filesystem，零新依賴。Namespace 完全分開（互改不到對方），protocol 是「啟動時也讀對方檔」。
+
+* * *
+
+## **13 條 effects 清單（給設計 personal agent system 的人參考）**
+
+從今天對話 distill 出來的：建構個人 agent 系統時可以拿來檢視的需求 checklist。
+
+| # | 需求 |
+| --- | --- |
+| 1 | Passive：啟動時互帶對方 agent 的 brief |
+| 2 | Active：mid-session 主動查對方 memory |
+| 3 | Agent 能 read vault 找答案（vault 不是只寫不讀） |
+| 4 | Staleness detection（舊紀錄跟新決策衝突要 surface） |
+| 5 | WIP 透明度（agent 知道對方剛碰過什麼） |
+| 6 | 跨 agent task Kanban（看情境） |
+| 7 | 抓逃避 pattern 視覺化 |
+| 8a | Lifecycle closure（轉換要顯式收官） |
+| 8b | Timeline coherence（敘事線可追溯） |
+| 9 | 跨 session self-correction |
+| 10 | 外部 AI 建議形式化緩衝 |
+| 11 | Reflections（user 私有聲音）隔離保護 |
+| 12 | "Still true in 3 months" 寫入篩子 |
+| 13 | Vault 結構優化 |
+
+實際做下來會發現很多需求是耦合的（#3 跟 #9 強耦合、#5 是 #6 的前置、#8a + #8b 一起做才有意義）。
+
+* * *
+
+## **後設觀察：這次共學的真實價值**
+
+今天最大的價值**不是任何單一結論**，是過程中 Claude 跟我互相 push back 形成的幾個 reframe：
+
+1.  我說「能不能搬資料」→ 被 reframe 成「記憶架構該怎麼設計」
+    
+2.  我說「分開不通」→ 被 reframe 成「namespace 分但 protocol 通」是真實需求
+    
+3.  我說「歸納循環」→ 被我自己 reframe 成「lifecycle closure 才是更前置的問題」
+    
+4.  我以為 3-month plan 還在執行 → 對話中發現它早就被現實取代了，但 memory 沒更新
+    
+
+**最後一點很諷刺**：我們花了一整天討論「怎麼讓 memory 跟現實對齊」，而 trigger 點是發現 memory 本身就跟現實脫節。
+
+* * *
+
+## **領域定位反思**
+
+順手把 Harness Engineering / Agent 領域 的定位寫清楚：**沒有結束點，是開放式持續承諾**。
+
+不是「3-month 個人計畫」、不是 hackathon、不是某個 deliverable。
+
+而是這個領域我會持續 build、持續學。**自我定位：Agent 領域前沿學習者 + builder**。
+
+這個定位不是自我抬舉式宣稱——是定下「願意投時間在邊界探索、不只用主流現成解」的個人 commitment。
+
+* * *
+
+## **明天繼續**
+
+13 條 effects 今天 address 了 #8a 框架、#8b（Harness 套用）、#12（已寫進 filter rule），明天高優先：
+
+-   **#3 Agent 讀 vault** — 我點出的最大破口（vault 一直累積卻沒被 agent 工作時用到）
+    
+-   **#8a 寫成 feedback rule** — 讓未來 agent 偵測到任務轉換時自動 trigger 收官
+    
+
+* * *
+
+## **給其他在搭個人 agent 系統的人：3 個建議**
+
+1.  **先把「記憶」跟「知識」分開**，不要用同一個 vault 裝。
+    
+2.  **lifecycle log** 比進度表更重要——進度會 stale，演化軌跡才是長期 asset。
+    
+3.  **memory 寫入前過一次「3 個月後還 true 嗎」的篩子**，能擋掉 80% 的 transient 污染。
+<!-- DAILY_CHECKIN_2026-05-23_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 今天做了什麼：
 
 1\. Learning Agent 初始化
@@ -61,6 +294,7 @@ AI x Web3 School
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
+
 今天做了什麼
 
 發布 obsidian-knowledge-vault
@@ -80,6 +314,7 @@ repo 7 個 commit，今天從空目錄推到完整 README + prompt + annotated o
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 \## 今天做了什麼
@@ -153,6 +388,7 @@ HITL 模組要設計成 **「可被替代的層」**，不是 hardcode 必要的
 
 
 
+
 今天的主題是 Hermes Agent 安裝。
 
 因為看到直播裡很多夥伴卡在環境設定，就順手做了一份 Windows WSL2 + macOS 的完整安裝教程，在課程進行中同步解答問題。
@@ -173,6 +409,7 @@ HITL 模組要設計成 **「可被替代的層」**，不是 hardcode 必要的
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
