@@ -15,8 +15,18 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-23
+<!-- DAILY_CHECKIN_2026-05-23_START -->
+今日学习： Day 6 学习完成。AI 基础：框架（Frameworks）——理解了框架是系统边界的表达而非智能本身，学习了 LangChain、LangGraph、OpenAI Agents SDK、DSPy、Hermes、Learning Agent 六个知识节点及其适用场景，梳理了 AI Framework / Web3 基础设施 / 产品层的三层分工；Web3 基础：账户抽象（Account Abstraction）——理解了 EOA 的局限性和账户抽象的核心思路，学习了 ERC-4337 执行流程及 Smart Account、Bundler、Paymaster、Session Key 五个核心概念，以及 Session Key 对 AI Agent 权限控制的意义。
+
+收获 / 思考： 今天两个章节有一个共同主题：权限和边界。框架章节让我意识到 AI Framework 本质上是软件工程的关注点分离——把基础设施问题从业务逻辑里剥离出来，和后端框架解决的是同一类问题。账户抽象章节让我理解了 Session Key 不只是「过渡方案」，而是最小权限原则在链上的实现——给 Agent 的权限越精确，爆炸半径就越小，Prompt Injection 或上下文污染能造成的最坏损失就越有限。
+
+明日计划： AI 基础 → 氛围编程（Vibe Coding）；Web3 基础 → 去中心化金融（DeFi）
+<!-- DAILY_CHECKIN_2026-05-23_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 今日学习： Day 5 学习完成。AI 基础：智能体（Agent）——建立了「Agent 是被约束的执行循环」的第一性原理，学习了 Tool Use、Planning、State、Reflection、Multi-Agent 五个知识节点，梳理了工具设计的必备要素，以及 AI×Web3 Agent 的 8 步稳健架构；Web3 基础：网络（Network）——理解了 L1/L2/Rollup 的层级关系，以及 Optimistic 和 ZK 两种 Rollup 的核心区别，建立了选网络时看安全性、成本、生态三个维度的判断框架。  
 
 收获 / 思考： 今天最重要的认知升级是「工具让错误从答错变成做错」。普通 LLM 说错了可以再问一遍，但 Agent 触发了一笔链上交易、写入了一条数据库记录，就没有撤回键。这让我重新理解了为什么 Handbook 花那么多篇幅讲停止条件和人工确认——Agent 的权力越大，边界设计就越不是可选项，而是前提条件。L2 的理解也纠正了一个误区：L2 不是「降低了安全性换取速度」，而是继承 L1 安全性的同时，用延迟（Optimistic 的 7 天挑战期）或计算成本（ZK 证明）换取更低的链上费用。
@@ -27,6 +37,7 @@ AI x Web3 School
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
+
 今日学习： Day 4 学习完成。AI 基础：检索增强生成（RAG）——理解了 RAG 解决 LLM 知识截止和上下文成本问题的思路，学习了 Embedding、向量数据库、Chunk、相关性分数四个核心概念，梳理了离线建库和在线检索的完整流程，以及 RAG Poisoning 这一新攻击面；Web3 基础：开发栈（Dev Stack）——建立了 Solidity → Foundry/Hardhat → Anvil → ethers.js 四层工具链的整体印象，理解了本地链和测试网在开发工作流中的不同定位。
 
 收获 / 思考： 今天最大的认知升级是理解了 RAG 的本质：它不是「把更多东西塞进去」，而是把知识管理和语言生成分开——知识库是 Agent 的外部长期记忆，Context Window 是工作记忆，每次只按需取用相关片段。这也让我意识到 RAG Poisoning 的危险之处：攻击者不需要直接攻击 Prompt，只要在知识库里植入一块恶意文档，等它被检索进上下文就能影响 Agent 行为。Web3 这边建立了一个直觉：本地链是可以随意折腾的沙盒，合约有 Bug 直接重置重来；而测试网和主网一样受不可变性约束，部署前必须在本地把所有边界情况测透。
@@ -36,6 +47,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 今日学习： Day 3 学习完成。AI 基础：上下文（Context）——理解了上下文窗口的本质与上限，学习了 Context Window、Token、Context Poisoning、Lost in the Middle 四个核心概念，以及摘要压缩、RAG、信任分层三种管理策略，并梳理了上下文在 AI×Web3 Agent 中的安全含义；Web3 基础：智能合约（Smart Contract）——建立了「链上代码自动执行、部署后几乎不可撤回」的直觉，理解了 ABI、部署、不可变性、事件等基础概念，以及重入攻击、权限控制缺失、整数溢出三类常见风险。  
@@ -50,6 +62,7 @@ AI x Web3 School
 
 
 
+
 今日学习： Day 2 学习完成。AI 基础：提示词（Prompt）——理解了 Prompt 是软约束而非安全边界，学习了 Instruction/Few-shot/Structured Output/Prompt Injection 四个核心概念，以及完整的 AI×Web3 安全链路；Web3 基础：钱包（Wallet）——建立了连接钱包/签名/发送交易三类操作的风险直觉，理解了 EOA、助记词、Gas 等基础概念。
 
 收获 / 思考： 今天最大的收获是理解了 Prompt 的本质边界——它只是软约束，不是安全护栏，真正的拦截要靠代码层和人工确认。Prompt Injection 的 DeepSeek think 注入案例让我意识到，只要模型能执行动作，恶意输入就可能绕过规则产生真实危害。钱包部分建立了一个重要直觉：连接钱包只是「亮身份证」，发送交易才是「动用资产」，两者风险天差地别。
@@ -59,6 +72,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
