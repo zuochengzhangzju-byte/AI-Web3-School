@@ -15,8 +15,588 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-23
+<!-- DAILY_CHECKIN_2026-05-23_START -->
+Day 3 學習總結 — Retrieval Architecture 與 RAG Pipeline
+
+今天你正式進入：
+
+Production-grade Retrieval System Design
+
+你學到的已經不只是：
+
+「甚麼是 RAG」
+
+而是：
+
+RAG 真正怎樣運作
+
+\---
+
+1\. Vector DB
+
+你理解：
+
+Vector DB 不只是存 embeddings
+
+而是：
+
+Semantic Index System
+
+\---
+
+每個 chunk：
+
+通常保存：
+
+\---
+
+原文
+
+chunk text
+
+\---
+
+Embedding vector
+
+\[0.182, -0.774, ...\]
+
+\---
+
+Metadata
+
+例如：
+
+round
+
+category
+
+chunk\_type
+
+project\_name
+
+\---
+
+2\. Embedding Search 的真正本質
+
+你理解：
+
+Vector Retrieval = 意思距離搜尋
+
+\---
+
+query：
+
+也會變成 vector。
+
+然後：
+
+系統比較：
+
+query vector
+
+vs
+
+document vectors
+
+\---
+
+similarity：
+
+通常用：
+
+cosine similarity
+
+\---
+
+3\. ANN（Approximate Nearest Neighbor）
+
+你理解：
+
+production vector DB：
+
+不會：
+
+暴力比較全部 vectors
+
+因為太慢。
+
+\---
+
+所以：
+
+會用：
+
+ANN indexing
+
+例如：
+
+HNSW
+
+\---
+
+本質：
+
+建立向量鄰居地圖
+
+快速找：
+
+可能最近的 vectors
+
+\---
+
+4\. SQL vs Vector Retrieval
+
+你開始真正理解：
+
+\---
+
+SQL
+
+重視：
+
+exact structure
+
+例如：
+
+WHERE round = 'GG23'
+
+\---
+
+Vector Retrieval
+
+重視：
+
+semantic similarity
+
+例如：
+
+aging science
+
+≈ longevity research
+
+\---
+
+真正 production system：
+
+通常：
+
+SQL + Vector 一起
+
+\---
+
+5\. Dense vs Sparse Retrieval
+
+今天超重要核心之一。
+
+\---
+
+Sparse Retrieval
+
+例如：
+
+BM25
+
+Elasticsearch
+
+\---
+
+重視：
+
+keyword / exact terms
+
+\---
+
+優點：
+
+精準
+
+explainable
+
+deterministic
+
+\---
+
+缺點：
+
+不懂意思
+
+\---
+
+Dense Retrieval
+
+embedding retrieval。
+
+\---
+
+重視：
+
+semantic similarity
+
+\---
+
+優點：
+
+理解語意
+
+適合自然語言
+
+\---
+
+缺點：
+
+fuzzy
+
+semantic drift
+
+有時不穩
+
+\---
+
+Production 共識：
+
+Hybrid Retrieval 最強
+
+即：
+
+Sparse + Dense + Metadata
+
+一起。
+
+\---
+
+6\. Metadata Filtering（今天非常重要）
+
+你開始理解：
+
+Metadata 不只是附加資訊
+
+而是：
+
+Retrieval Boundary Control
+
+\---
+
+例如：
+
+round = GG23
+
+category = biology
+
+\---
+
+作用：
+
+縮小 retrieval search space
+
+\---
+
+這對 Spark 特別重要。
+
+因為：
+
+你的資料：
+
+本身高度 structured。
+
+\---
+
+7\. Reranking（今天最大核心）
+
+你理解：
+
+Retrieval 找：
+
+可能相關
+
+\---
+
+Reranker 判斷：
+
+真正 relevant
+
+\---
+
+Dense retrieval：
+
+像：
+
+快速粗搜尋
+
+\---
+
+Reranker：
+
+像：
+
+第二位仔細 reviewer
+
+\---
+
+Dense Retrieval：
+
+query/document：
+
+分開 encode。
+
+\---
+
+Reranker：
+
+query + document：
+
+一起閱讀。
+
+\---
+
+然後：
+
+輸出：
+
+relevance score
+
+例如：
+
+0.94 relevant
+
+\---
+
+8\. 為甚麼不直接用 reranker 做 retrieval？
+
+你理解：
+
+太慢。
+
+\---
+
+因為：
+
+reranker：
+
+是真正：
+
+深度 relevance 理解
+
+\---
+
+所以 production systems：
+
+通常：
+
+\---
+
+Fast Retrieval
+
+↓
+
+Small Candidate Set
+
+↓
+
+Reranking
+
+\---
+
+即：
+
+Candidate Generation
+
+Final Selection
+
+\---
+
+9\. 你今天真正開始理解的東西
+
+其實是：
+
+Retrieval Pipeline Engineering
+
+\---
+
+即：
+
+production RAG：
+
+不是：
+
+search → answer
+
+而是：
+
+multi-stage retrieval pipeline
+
+\---
+
+例如：
+
+Query
+
+↓
+
+Metadata Filter
+
+↓
+
+Sparse Retrieval
+
+↓
+
+Dense Retrieval
+
+↓
+
+ANN Search
+
+↓
+
+Reranking
+
+↓
+
+Context Assembly
+
+↓
+
+LLM
+
+\---
+
+10\. 對 Spark 的真正啟發（超重要）
+
+你開始看見：
+
+Spark 未來：
+
+不是：
+
+普通 project database
+
+而是：
+
+AI-native retrieval infrastructure
+
+\---
+
+因為：
+
+你的資料：
+
+天然適合：
+
+metadata filtering
+
+structured chunking
+
+semantic retrieval
+
+cross-round analysis
+
+memory generation
+
+\---
+
+11\. 今天最大的認知升級
+
+你開始理解：
+
+AI systems 很多時不是模型問題
+
+而是：
+
+Information Architecture 問題
+
+\---
+
+真正 production RAG：
+
+核心很多時是：
+
+schema
+
+metadata
+
+retrieval design
+
+reranking
+
+chunk quality
+
+不是：
+
+單純模型大小
+
+\---
+
+下一步（你現在最適合學的）
+
+你下一步最適合：
+
+Context Assembly 與 Context Compression
+
+因為：
+
+retrieval 完後：
+
+還有一個超大問題：
+
+AI 最終到底看到甚麼？
+
+\---
+
+包括：
+
+\---
+
+1\. Top-K Problem
+
+retrieve 幾多 chunks？
+
+\---
+
+2\. Context Ordering
+
+哪個 chunk 放前？
+
+\---
+
+3\. Context Compression
+
+retrieved chunks 太大怎辦？
+
+\---
+
+4\. Lost in the Middle Problem
+
+長 context 中間資訊容易被忽略。
+
+\---
+
+5\. Long-context vs Retrieval Debate
+
+超長 context window 是否取代 RAG？
+
+這是現在 AI infra 最大爭論之一。
+
+\---
+
+最後一句（今天真正核心）
+
+Retrieval 系統真正目標：
+
+不是：
+
+找最多資料
+
+而是：
+
+在最少 token 下
+
+給 AI 最 relevant knowledge。
+<!-- DAILY_CHECKIN_2026-05-23_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 學習總結 — Retrieval 與 RAG Architecture
 
 今天你已經正式進入：
@@ -525,11 +1105,13 @@ AI-native database：
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
+
 今天聽了Elon 老師的 AI x web3 課，感覺目前很多的例子都是大集團或者大公司的成功案例。暫時很少看到有個人開發者的應用例子。目前最集中的都是在 AI 如何協助 web3 錢包安全或者交易上的分析。
 <!-- DAILY_CHECKIN_2026-05-21_END -->
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 # 學習總結 — AI × Web3 Learning Journey
@@ -942,6 +1524,7 @@ workflow + tools + actions。
 
 
 
+
 # **Daily Note: 2026-05-19**
 
 ## **Today**
@@ -1036,6 +1619,7 @@ Proof link: [**https://github.com/Swiftevo/ai-web3-school-cohort-0**](https://gi
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
