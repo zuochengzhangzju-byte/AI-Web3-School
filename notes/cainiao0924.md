@@ -18,10 +18,13 @@ AI x Web3 School
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 学习了优秀心得分享。下一步我想建立关于国债期货自动复盘的量化分析。之前卡在抓取数据，现在暂时解决了，通过金融终端的API接口接数据。另外复习前面的知识点。
+
+![IMG_2847.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/cainiao0924/images/2026-05-23-1779550189336-IMG_2847.png)
 <!-- DAILY_CHECKIN_2026-05-23_END -->
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 结合当前对国债期货量化分析与 Polkadot/Web3 开发的学习进度，这节《Web3 运行原理》为我打通了底层架构与应用落地之间的关键脉络。以下是我的核心思考：
 
@@ -36,6 +39,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-20_START -->
 
 
+
 学完了Hermes的从0到1，自己也成功安装了Hermes，而且是在云服务器安装的。以前安装小龙虾开电脑麻烦。现在准备进一步连上飞书。希望能长期使用Hermes。
 
 ![207f68c0-8876-4247-b613-c36d7c27e41e.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/cainiao0924/images/2026-05-20-1779291495586-207f68c0-8876-4247-b613-c36d7c27e41e.png)
@@ -46,11 +50,13 @@ AI x Web3 School
 
 
 
+
 昨天学习了Web3的内容，老师说Web2其实很重要。钱包重要性也说了，我有meta mask，准备在自己的chrome里浏览器扩展。老师讲了抢特朗普儿子币的案例，永远都得注意安全，自己交易安全和链上DAPP的安全。关于栈等其他内容还需要深入学习。
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
