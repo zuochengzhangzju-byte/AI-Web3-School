@@ -15,8 +15,112 @@ timezone: UTC+8
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-23
+<!-- DAILY_CHECKIN_2026-05-23_START -->
+\# Daily Note: 2026-05-23
+
+\## 📋 今日计划
+
+\### 最小路径
+
+\- \[x\] LLM 实践：交易解释器（链上数据 → LLM 生成五维度解释）
+
+\- \[x\] Prompt 实践：交易风险摘要（设计 + 三组测试验证）
+
+\- \[x\] Context 实践：钱包授权检查 Context Spec（7 项上下文的 🔴🟡⚪ 分类）
+
+\- \[x\] RAG 实践：协议文档 RAG 问答（[zh.javascript.info](http://zh.javascript.info)，15 篇文档 → TF-IDF 检索 → 三组测试）
+
+\### 推荐路径
+
+\- \[ \] Prompt 三组测试未在 DeepSeek 重跑（已通过第一轮）
+
+\- \[ \] RAG 脚本可升级为 embedding 模型（sentence-transformers）
+
+\---
+
+\## 📚 学习摘要
+
+\### 核心概念
+
+| 主题 | 要点 |
+
+|------|------|
+
+| LLM + 交易解释 | 链上数据只能告诉你"谁转了多少给谁"，"为什么"和"接收方是谁"全部需要人类判断 |
+
+| Prompt 设计 | Prompt 不是写咒语，是写可机器校验的任务说明书；四段式结构 + 字段约束 + 失败兜底 |
+
+| Context 分层 | 每条信息进上下文必须带"身份标签"：🔴 实时查询 / 🟡 缓存可复用 / ⚪ 不可当事实 |
+
+| RAG 证据链 | TF-IDF 只做词频匹配，无语义理解——这正是 RAG 的核心课：检索结果不是事实，是候选证据 |
+
+\### 代码/实验
+
+\- `experiments/week1-llm-transaction-interpreter.md`
+
+\- `experiments/week1-prompt-risk-analyzer.md`
+
+\- `experiments/week1-context-context-spec.md`
+
+\- `experiments/week1-rag-qa.md`
+
+\- `experiments/week1-rag-qa/rag_demo.py`
+
+\### 疑问
+
+\- TF-IDF 在测试 1 没能把真正相关的"交互：alert、prompt 和 confirm"排进前三——升级为 embedding 模型后效果差距多大？
+
+\- RAG 脚本的 uncertainties 逻辑有缺陷（当检索不够精准时不会自动标注），如何改？
+
+\---
+
+\## ✅ 打卡草稿
+
+**今日进度**：
+
+\- 已完成：LLM / Prompt / Context / RAG 四篇配套实践（4/11）
+
+\- 进行中：AI 基础实践——剩余 7 篇（Agent → Inference）
+
+\- 阻塞项：无
+
+**关键收获**（2-3 句）：
+
+\> 今天把"学"变成了"做"：从 LLM 的交易解释器到 RAG 的最小可运行系统，每个实践都暴露了理论课上没说的问题——TF-IDF 没有语义理解、Context 分类容易搞反、Prompt 不是越长越好。AI 这篇反复强调的"模型输出是候选结果，不是事实本身"，在四个实践中被反复验证。
+
+**打卡链接**：\[[https://github.com/Flygreenbaby/ai-web3-learning/blob/main/daily/2026-05-23.md](https://github.com/Flygreenbaby/ai-web3-learning/blob/main/daily/2026-05-23.md)\]
+
+\---
+
+\## 🔗 参考资料
+
+\- Handbook LLM: [https://aiweb3.school/zh/handbook/ai/llm/](https://aiweb3.school/zh/handbook/ai/llm/)
+
+\- Handbook Prompt: [https://aiweb3.school/zh/handbook/ai/prompt/](https://aiweb3.school/zh/handbook/ai/prompt/)
+
+\- Handbook Context: [https://aiweb3.school/zh/handbook/ai/context/](https://aiweb3.school/zh/handbook/ai/context/)
+
+\- Handbook RAG: [https://aiweb3.school/zh/handbook/ai/rag/](https://aiweb3.school/zh/handbook/ai/rag/)
+
+\- 实验文件: experiments/week1-\*.md
+
+\---
+
+\## 📝 明日备忘
+
+\- 继续 AI 基础实践：Agent / Frameworks / Vibe Coding / MCP 篇
+
+\- RAG venv 保留（后续实践复用）
+
+\---
+
+_AI x Web3 School Day 6 课程完成 — 由 Hermes AI（模型：deepseek-v4-pro）在 2026-05-23 生成_
+<!-- DAILY_CHECKIN_2026-05-23_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 \# Daily Note: 2026-05-22
 
 \## 📋 今日计划
@@ -110,6 +214,7 @@ _AI x Web3 School Day 5 课程完成 — 由 Hermes AI（模型：deepseek-v4-pr
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 \# Day 4: rag + agent + frameworks + vibe-coding + mcp — AI 基础学习笔记
 
@@ -3463,6 +3568,7 @@ _AI x Web3 School Day 4 课程完成 — 由 Hermes AI（模型：deepseek-v4-pr
 
 
 
+
 📝 今日学习笔记预览 (Day 3)
 
 \# Day 3 学习笔记：Prompt Engineering & Context Engineering
@@ -3620,6 +3726,7 @@ _学习笔记结束_
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -4009,6 +4116,7 @@ NaN.  ✅ 校验靠 Schema（JSON Schema、Pydantic 等）
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
