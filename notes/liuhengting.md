@@ -15,8 +15,22 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-23
+<!-- DAILY_CHECKIN_2026-05-23_START -->
+今日学习打卡 ​
+
+学习了智能合约开发栈与 Web3 网络基础两个模块。
+
+合约开发工具上，Hardhat 适合全栈团队协作，Foundry 内置 fuzz/fork 测试，安全敏感场景首选；前端通过 viem/wagmi 直接调合约，后端主要承担索引、RPC 代理等周边职责。
+
+网络层面，USDT 是多链发行，转账必须保证收发同链；PoW 靠算力、PoS 靠质押保证安全，51% 类攻击的最大障碍是"你必须先重仓它，攻击成功后它立刻归零"；L2 用户体验快但最终安全依赖 L1，提现回主网需等待结算；CEX 内部转账不上链，只有提币到外部钱包才触发链上交易。  
+  
+详细笔记参考[daily\_note](https://github.com/liuhengting/ai-web3-school-bootcamp/blob/master/daily/2026-05-23.md)
+<!-- DAILY_CHECKIN_2026-05-23_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 ### Week 1 收尾 + Web3 入门实操
 
 完成内容：
@@ -52,6 +66,7 @@ AI x Web3 School
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
 
+
 今天参与了Swen老师的Co-Learning，顺便浏览了下老师的Twitter，了解到了Agent Economy的概念和ERC-8183协议，在脑子里建个索引，以后可以持续关注
 
 阅读了手册里的Agent章节，笔记记在了[daily\_note](https://github.com/liuhengting/ai-web3-school-bootcamp/blob/master/daily/2026-05-20.md)
@@ -62,6 +77,7 @@ AI x Web3 School
 
 
 
+
 昨天晚上直播观看了Web架构课，发现了以往对Web3相关的知识点只有零散的了解，无法把知识应用起来满足一个能通过安全Review的合约，Web3相对于Web2对安全这块需要格外注意，很多东西一上线后就无法挽回。  
   
 今天根据根据Learning Agent的学习规划，阅读Context、RAG章节，记录阅读疑问，笔记和疑问统一记录在个人学习Repo
@@ -69,6 +85,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
