@@ -15,8 +15,122 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-23
+<!-- DAILY_CHECKIN_2026-05-23_START -->
+### **开放代理经济：从 ERC-8004 / ERC-8183 到构建者之路**
+
+-   Ethereum（以太坊） **gemini回答版：** 是一台去中心化的“世界计算机”。
+    
+    -   用一个最直观的对比来理解它： 比特币 (Bitcoin)： 就像是一个“去中心化的账本”。它功能很单一，只做一件事——记录资金的转账（类似一个只能记账的计算器）。 以太坊 (Ethereum)： 就像是一部“去中心化的智能手机”。它不仅能记账，最厉害的是允许全世界的程序员在它的网络上安装和运行各种应用程序。
+        
+    -   以太坊的核心基石
+        
+        -   智能合约 (Smart Contracts) 这是以太坊的灵魂。你可以把它理解为一台“绝对不会违约的自动售货机”。程序员把交易规则写成一段代码存入以太坊（比如：如果航班延误两小时，自动向该地址赔付 500 元）。一旦条件触发，代码就会自动、强制执行。没有任何中间人（比如银行、保险公司或平台老板）能够拦截、篡改或反悔。这正是实现 Web3 “去信任化”的关键。
+            
+        -   去中心化应用 (DApps) 既然以太坊是智能手机，上面跑的程序就叫 DApps。现在的去中心化金融（DeFi，比如不用银行就能完成的抵押借贷）、NFT（数字艺术品产权）、甚至某些去中心化游戏，绝大多数都是直接搭建在以太坊网络上的。
+            
+        -   以太币 (ETH / Ether) 如果你想让以太坊这台“世界计算机”帮你运行智能合约、处理交易或存储数据，你不能白嫖全球矿工/验证者的算力，必须支付一笔“燃料费”（术语叫 Gas Fee）。用来支付这种费用的专属货币，就是以太币（ETH）。所以，ETH 既是一种资产，更是维持整个网络运转的“汽油”。
+            
+        -   Ethereum 不仅仅是一种加密货币，它真正伟大的地方在于提供了一个任何人都可以使用、但没有任何人可以独占或关闭的公开代码执行平台。它把区块链的用途从单纯的“货币”扩展到了“程序”层面。  
+            **分享会讲解：**  
+            AI and Etheruem:  
+            Because AI agents are different from human, there are many things that human can do but agents cannot, they cannot use human infrastructure,
+            
+    
+    ![image](https://private-user-images.githubusercontent.com/253259717/597142555-f4fc6015-0ee3-42f3-86e2-c56c204d41ab.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzk1NDkyMjQsIm5iZiI6MTc3OTU0ODkyNCwicGF0aCI6Ii8yNTMyNTk3MTcvNTk3MTQyNTU1LWY0ZmM2MDE1LTBlZTMtNDJmMy04NmUyLWM1NmMyMDRkNDFhYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyM1QxNTA4NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lMDhhMTEwMmU2YmU5ODIxZGUzOTg3YzkxOGQ5ZTg1YWUyOGFmOTJhYWIxOGQxMjNkM2I4N2ZhOGYyMDVmMTJmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.dp4Gle_Js-sRmfCW7KO5Pfb_bXJrQfIYVvjvxcPZ3ws)
+    
+    so we need infrastructure for agents， this raise some questions:
+    
+    ![image](https://private-user-images.githubusercontent.com/253259717/597141901-99dbe4e3-5db1-483b-b1a3-64a8832e8ac5.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzk1NDkyMjQsIm5iZiI6MTc3OTU0ODkyNCwicGF0aCI6Ii8yNTMyNTk3MTcvNTk3MTQxOTAxLTk5ZGJlNGUzLTVkYjEtNDgzYi1iMWEzLTY0YTg4MzJlOGFjNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyM1QxNTA4NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04Y2NmOGE0MmNkMzIzMjgzNjQ1NTE0YmZiMGM4MGNhMTBhZWNkYzRjZTU2NGZiMWQxMjk4ZWY1N2JkMjcwZTJjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.k9QTJ4FEOqh4XRXBkMfeuygciPjPB7swlo_Ug5sgjF8)
+    -   Ethereum for AI is Ethereum for human.
+        
+        -   Ethereum:
+            
+            ![image](https://private-user-images.githubusercontent.com/253259717/597143628-04df48f7-082d-420a-8f18-c5bd214815d6.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzk1NDkyMjQsIm5iZiI6MTc3OTU0ODkyNCwicGF0aCI6Ii8yNTMyNTk3MTcvNTk3MTQzNjI4LTA0ZGY0OGY3LTA4MmQtNDIwYS04ZjE4LWM1YmQyMTQ4MTVkNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyM1QxNTA4NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYjllN2I1OWIyZjEwYzhhN2E5NGZjM2VhZjA1MTRhYjFhZWI5MzFjNzk3ZDc1MTU0NzgwNTE0NzIxM2Y2MTBiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.mGOFaBi0Onpn0Nd1v8hwTObDQ1fQ_qnty1TY55WL2Q8)
+            
+            Etheruem's design principles: (CROPs)
+            
+            ![image](https://private-user-images.githubusercontent.com/253259717/597144475-69959740-d420-4b4c-a7d9-d3e5b2cc04b9.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzk1NDkyMjQsIm5iZiI6MTc3OTU0ODkyNCwicGF0aCI6Ii8yNTMyNTk3MTcvNTk3MTQ0NDc1LTY5OTU5NzQwLWQ0MjAtNGI0Yy1hN2Q5LWQzZTViMmNjMDRiOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyM1QxNTA4NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNGRhNzM2ZDQ2ZDRiMjMwYWNlOTRjYjVhMDk3OTFlYWJjODQxMzZkYWY3MTBjZDhhZTI5MGYwMGM5NWY0MzRlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.e_x3s2bb4lLM-qRYBxLVwyyMUGcRr-JHiCxgV0yKko8)
+            -   cencorship resistance: no single actor being able to block valid transactions or valid activity on the network. eg: smart contract
+                
+            -   open source and free: actual blockchain infrastructure and the code is open and free, anyone can copy and edit it.
+                
+            -   privacy: can prove sth is true without revealing underlying data.
+                
+            -   security: actually having the code and the blockchain do what it says to do, continue to do no matter what.
+                
+        -   why Ethereum's design fits AI agents?
+            
+            ![image](https://private-user-images.githubusercontent.com/253259717/597147371-f1b9cf5a-2c11-4a61-ab73-8c406cc0bd46.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzk1NDkyMjQsIm5iZiI6MTc3OTU0ODkyNCwicGF0aCI6Ii8yNTMyNTk3MTcvNTk3MTQ3MzcxLWYxYjljZjVhLTJjMTEtNGE2MS1hYjczLThjNDA2Y2MwYmQ0Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyM1QxNTA4NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mNGU4OTc1ZWU1NGI0ZThhMGJmNTdmNTkxYjQwZjdhNjQ2YTU2ODYwZTY4YTNmMzg1NmJhZTc5N2U2ZGRhZDM0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.lkYP4w4CjP5ML4V21uDq8Tg0R6cOqes0YM1H0DNYu6k)
+        -   EIP 8004: to set a standard that gives AI agents verifiable identity.
+            
+            ![image](https://private-user-images.githubusercontent.com/253259717/597147528-b2e9be1d-8a6e-4199-990f-2611176785d8.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzk1NDkyMjQsIm5iZiI6MTc3OTU0ODkyNCwicGF0aCI6Ii8yNTMyNTk3MTcvNTk3MTQ3NTI4LWIyZTliZTFkLThhNmUtNDE5OS05OTBmLTI2MTExNzY3ODVkOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyM1QxNTA4NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zYzE1M2QzY2Q4MmFmOTFhYWY5MzJjYmE3MzIyZDc4NTQ4MTc4ZWZhMjA4MTc0NzllZWRiMTk2OWNlZGFiZGE5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.ZQxLNSbqtH5SZAzLB8UJ6rgVoDRQ4vyr_cNMjQ50tCk)
+            
+            three parts: verify, registry, reputation
+            
+        -   x402: machine to machine payments
+            
+            ![image](https://private-user-images.githubusercontent.com/253259717/597148814-e4372b61-8518-4cdc-afc5-f3a5ea0f7b3e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzk1NDkyMjQsIm5iZiI6MTc3OTU0ODkyNCwicGF0aCI6Ii8yNTMyNTk3MTcvNTk3MTQ4ODE0LWU0MzcyYjYxLTg1MTgtNGNkYy1hZmM1LWYzYTVlYTBmN2IzZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyM1QxNTA4NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mY2EzNjQ1YWRhZGNiNGZkZWUwOTk2ZjYzZjdmYzM1YjZkZTQ4MTUwYTNiOTQ0YzhkMGM2ZWExMzAyMjNjOTAyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.3PRFpq0VUQofleHkst1tCGIEEvDb5ZWK1sk2lwJhpm0)
+            
+            pay with stablecoins, dont need credit card or API keys.
+            
+            ![image](https://private-user-images.githubusercontent.com/253259717/597149240-b1c11ffa-497d-43da-93a3-7376ef6d6d8e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzk1NDkyMjQsIm5iZiI6MTc3OTU0ODkyNCwicGF0aCI6Ii8yNTMyNTk3MTcvNTk3MTQ5MjQwLWIxYzExZmZhLTQ5N2QtNDNkYS05M2EzLTczNzZlZjZkNmQ4ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUyM1QxNTA4NDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mYzE4ZDA5ODFkZjcyMGNiM2Y3NzJmMTNmM2NhZjk0NGE3ZDVjMDg5MDk3MDg4YTY4NzAzMjNmODZkZjM2NTA1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.LzGpVUaXKfOovT56r-yESlrWb76JBf9AxF3CnTYLGyI)
+
+### **Network：链上应用不是直接写数据库，而是在一个公开、按区块推进、由网络共识维护的状态机上提交请求。**
+
+-   第一性原理：区块链不是存数据，而是由节点公开，可验证的执行交易的每个步骤。因此会造成延迟、费用等。
+    
+    -   以区块为节奏：状态不是实时更新而是按区块批量推进。
+        
+    -   共识是信任来源：因为由达成一致的网络规则。
+        
+    -   网络选择会改变体验：主网、测试网、L2 的费用、速度、安全假设和工具支持都不同。（？不是很懂：\*比如：主网花真钱但安全，测试网免费但不安全，L2 便宜但多了桥接和等待时间。：
+        
+-   block：交易被批量提交和排序的单位。很多比交易被打包进一个区块，节点执行这些交易。要注意交易有顺序，有gas fee，区块有gas limit, 新区块会引用前区块。
+    
+    -   gas limit:计算量的最高上限。
+        
+        1.  针对个人的：交易的 Gas Limit (Transaction Gas Limit) 这是你作为用户，在发起一笔转账或运行智能合约时，需要自己设定的一个上限。 通俗理解： 就像你打车去一个不熟悉的地方，为了防止被司机绕路坑钱，你提前定了个规矩：“这趟车我最多只出 50 块钱的油费（Gas Limit）。如果 50 块钱烧完了还没到目的地，你就立刻停车结束订单。” 核心作用： 保护你的钱包。防止网络拥堵或者某个写得有 Bug 的死循环合约，把你的余额（ETH）无休止地扣光。
+            
+    
+    2.  针对整个网络的：区块的 Gas Limit (Block Gas Limit) —— 你提到的核心 这指的是以太坊网络每十几秒打包产生的一个“区块”里，所有交易加起来能消耗的总计算量上限。 通俗理解： 把区块想象成一辆公交车。这辆车的限制标准不是“座位数”，而是“总载重量”（比如总上限 3000 万 Gas）。 如果都是普通转账（体积小、重量轻），一辆车可能装下 1000 笔。 但如果上来了一个极其复杂的 DeFi 智能合约结算（超级大胖子，一个人就消耗 1500 万 Gas），那这辆车可能装几个乘客就超重满载了，剩下的交易只能在车站排队，等下一个区块。
+        
+    
+    -   为什么区块一定要强制设定这个上限？ 防止网络瘫痪（防 DoS 攻击）： 如果区块的计算量没有上限，黑客只需要花一点钱，发送一个极度庞大或无限死循环的恶意代码，全世界负责记账的节点就会瞬间卡死在计算这行代码上，整个以太坊大动脉就会直接宕机。 维护“去中心化”的基石： 如果区块可以无限大，每天产生的数据量就会极其恐怖。最终会导致只有那些拥有超级计算机和超大服务器的大机构才能跑得动以太坊节点，普通人根本无法参与验证。设定合理的 Gas Limit，就是为了确保普通的设备也能跟上网络的同步速度。
+        
+    -   为什么新区块会引用前一区块：引用前区块”就是给数据盖上一个前后相连的“数字骑缝章”。 可以把每个区块想象成账本上的一页纸。 当第 1 页写满交易记录后，系统会通过复杂的数学公式，为这整页纸的内容计算出一个独一无二的“数字指纹”（术语叫哈希值/Hash）。 当大家开始写第 2 页时，系统强制要求：第 2 页的第一行，必须抄写上第 1 页的那个“数字指纹”。 以此类推，第 3 页的第一行必须写第 2 页的指纹。这就叫“引用前区块”。 这样做起到了什么绝对关键的作用？ 它的核心作用只有一个：实现极其变态的“防篡改”能力（牵一发而动全身）。 改一个字，指纹全变： 只要第一页里的哪怕一条交易金额被黑客偷偷改了一个数字，根据数学规律，第一页原本的“数字指纹”就会瞬间变成一串完全不同的乱码。 多米诺骨牌效应： 因为第一页的指纹变了，而第二页第一行抄写的还是“旧指纹”，这时候第二页和第一页的接口就“对不上”了。 全网报警： 网络里的所有人瞬间就能发现账本被人动过手脚。黑客如果想掩盖罪行，他不仅要改第一页，还要被迫重新计算第二页、第三页……直到最新的一页。在现实中，这需要耗费极其庞大的算力，根本不可能完成。
+        
+-   consensus：让节点再没有中心数据库的情况下，对区块的变化形成一致的看法。
+    
+-   PoS：质押ETH (交钱) 参与区块提议和证明，行为错误会被惩罚。为网络安全付费。
+    
+-   Testnet：用于模拟测试合约、前端和交易流程。有真实经济价值，但它能帮助你验证部署脚本、钱包连接、RPC 配置、合约调用、区块浏览器验证和前端状态处理。但不能代替主网安全审查。
+    
+-   L2：大量交易在主网之外执行，再把结果或证明提交回主网。对用户来说，L2 常见优势是费用更低、确认更快；但也多了桥、提现等待、排序器和跨链状态同步等复杂性。
+    
+-   Rollup: 流 L2 扩展路线，把执行搬到链下或 L2，再把数据和结果提交到 L1。Rollup 降低了单笔交易成本，但没有消除链上系统复杂度。你仍然要处理跨链资产、RPC、浏览器、合约地址、桥接风险和用户确认。
+    
+-   AI web3：使用agent时必须要知道在哪条网络上，什么chain id， 什么地址等。
+    
+
+### **Cryptography：私钥控制资产，签名表达授权，哈希固定数据，Merkle Tree 让大量数据可以被高效验证。**
+
+-   第一性原理：私钥：控制资产；签名：授权动作；哈希：验证数据是否被改
+    
+-   hash：一种函数，把数据映射成固定长度后输出。哪怕输入只改一个字符，输出也会完全不同，因此链上常用哈希来标识交易、区块、数据承诺和合约字节码，用于验证同一性和完整性。
+    
+-   public key：用于推导地址（从公钥进一步处理得到的短标识），验证签名是否来自对应私钥，但无法推出私钥。
+    
+-   private key：账户的控制权，用于生成签名，证明权限。但一旦忘记，很难找回或重置，因此不能泄露。
+    
+-   signature：由私钥生成，可被公钥和地址检查，是对某一消息或交易的授权证明。
+    
+-   merkle tree: 把很多数据逐层哈希，最后得到一个 root。只要 root 被可信记录下来，某个用户就可以用 Merkle proof 证明“我的数据在这批数据里”，而不用下载全部数据。
+<!-- DAILY_CHECKIN_2026-05-23_END -->
+
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 ### **RAG：让回答有来源、有版本、有边界**
 
 -   第一性原理：要知道检索结果不是事实，要做到回答的东西关键点可在原文追溯，找不到答案要能让模型说不确定，而不是产生幻觉。
@@ -75,6 +189,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 ### **今日课程：web 3 运行原理**
 
@@ -159,6 +274,7 @@ context 决定模型看到的是用户幻想、过期文档，还是可验证的
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -279,6 +395,7 @@ context 决定模型看到的是用户幻想、过期文档，还是可验证的
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
