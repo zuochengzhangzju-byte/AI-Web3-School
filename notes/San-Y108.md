@@ -15,19 +15,49 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-23
+<!-- DAILY_CHECKIN_2026-05-23_START -->
+今日学习内容：                                                                                                        
+
+     1. 完成 Web3 基础 Handbook 第四章「智能合约」阅读                                                                     
+
+        - 理解了读操作（免费）和写操作（花 Gas）的本质区别                                                                 
+
+        - 合约代码部署后不可改，修 bug 靠重新部署或可升级代理模式                                                          
+
+     2. 完成第五章「账户抽象」阅读                                                                                         
+
+        - EOA：一把私钥一个人，简单但单点故障                                                                              
+
+        - 多签：多人确认才能动钱，适合团队金库                                                                             
+
+        - 智能账户：可编程规则（限额、恢复、让 Agent 代操作）                                                              
+
+     3. 整理了学习过程中的踩坑认知，写了一篇推特串记录从零学 Web3 的核心洞察                                               
+
+     明日计划：                                                                                                            
+
+     - 完成智能合约和账户抽象的概念笔记                                                                                    
+
+     - 开始测试网交易实操（任务 2）
+<!-- DAILY_CHECKIN_2026-05-23_END -->
+
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 今天吧那个实习手册全部看完了，学了好多，也知道了区块链的发展方向和岗位需求。由于今天考试，所以只能做这么多了
 <!-- DAILY_CHECKIN_2026-05-20_END -->
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
 
+
 今天我完成了「创建课程 GitHub repo」任务，由于开了一整天的会，所以没有看hermes的直播，明天看。我理解到它不只是建立一个仓库，而是在搭建未来 4 周 的学习工作台。通过这个任务，我实践了 Git 的基础操作，包括初始化仓库、创建目录、commit 和 push；同时也学会了用项目化方式组织学习内容，例如用 `daily/` 记录每日学习、`tasks/` 保存任务 proof、`experiments/` 存放实验、`handbook-feedback/` 记录反馈、`hackathon/` 为后续项目预留空间。本次仓库初始化主要由 Hermes Agent 协助完成，包括创建目录结构、README、profile、learning-plan 和模板文件，我负责人工确认内容是否准确、结构是否合理，并检查没有提交 API Key、私钥、助记词、token、`.env` 等敏感信息。最终，我已经将仓库 push 到 GitHub，并完成了多次 commit，为后续课程学习、记录和提交打下了基础。
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 ![截屏2026-05-18 19.08.05.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/San-Y108/images/2026-05-18-1779109148126-__2026-05-18_19.08.05.png)
