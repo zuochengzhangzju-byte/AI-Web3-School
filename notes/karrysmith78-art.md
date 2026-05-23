@@ -15,8 +15,37 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-23
+<!-- DAILY_CHECKIN_2026-05-23_START -->
+## **方式 A（优先）：用系统盈余缓冲 Surplus Buffer填坑**
+
+-   协议平时会累积“盈余”（来自稳定费、PSM 手续费、RWA 收益等），先放进 **Surplus Buffer**。
+    
+-   如果某笔清算后仍有**缺口**（bad debt/系统赤字），就**先用缓冲里的 DAI**把缺口补上。
+    
+-   如果缓冲里的钱**足够**，事情到此结束。
+    
+
+## **方式 B（不足时）：启动债务拍卖 Debt Auction（Flop），增发 MKR 来补**
+
+-   若 Surplus Buffer **不够**，协议会**增发 MKR**，通过**债务拍卖（flop）**把 MKR 卖给出价者，**换回 DAI**来填补缺口。
+    
+-   这等于把风险**摊给 MKR 持有者**（被动稀释），确保 DAI 背后资产仍然完备。
+    
+
+> 对应的三类拍卖你可以这样记：
+> 
+> -   **抵押物拍卖**：卖抵押物换 DAI（清算本身，Liquidations 2.0 用荷兰式 “clip”）。
+>     
+> -   **盈余拍卖（flap）**：当系统 DAI 过多、超过缓冲时，用 DAI **回购并销毁 MKR**。
+>     
+> -   **债务拍卖（flop）**：当出现赤字时，**增发 MKR** 卖出换 DAI 补洞。
+>
+<!-- DAILY_CHECKIN_2026-05-23_END -->
+
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 ## **方式 A（优先）：用系统盈余缓冲 Surplus Buffer填坑**
 
 -   协议平时会累积“盈余”（来自稳定费、PSM 手续费、RWA 收益等），先放进 **Surplus Buffer**。
@@ -47,6 +76,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-19_START -->
 
 
+
 ## **1\. 清算机制**
 
 -   当抵押率过低时，系统会拍卖抵押物，确保 DAI 有足够资产支撑。
@@ -75,6 +105,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
