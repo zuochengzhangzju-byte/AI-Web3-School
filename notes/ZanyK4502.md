@@ -17,21 +17,6 @@ AI x Web3 School
 <!-- Content_START -->
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
-建议包含：
-
-1.  一个你重新理解的 AI 概念，例如 LLM、prompt、workflow、agent、tool use、AI coding。
-    
-2.  一个你重新理解的 Web3 概念，例如钱包、签名、交易、Gas、智能合约、测试网、区块浏览器。
-    
-3.  一个 AI × Web3 交叉问题，例如 Agent 是否可以发起支付、哪些动作必须人工确认、如何验证 AI 执行结果。
-    
-4.  你本周完成的一个 proof-of-work，例如 repo、tx hash、合约地址、流程图、学习日志或 demo。
-    
-5.  一个你还没解决的问题，或你下一周想继续探索的方向。
-    
-
-请写出自己的理解和真实学习过程，不要只贴截图或 AI 生成的空泛总结
-
 # 前置任务 **创建课程 GitHub repo**
 
 GitHub repo: [https://github.com/ZanyK4502/ai-web3-school-cohort-0](https://github.com/ZanyK4502/ai-web3-school-cohort-0)
@@ -147,6 +132,7 @@ AI / Agent 主要辅助完成任务理解、合约交互说明生成、资料查
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
+
 在学习，等下补笔记
 
 好忙好忙，在忙着做项目
@@ -154,6 +140,7 @@ AI / Agent 主要辅助完成任务理解、合约交互说明生成、资料查
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -166,11 +153,13 @@ AI / Agent 主要辅助完成任务理解、合约交互说明生成、资料查
 
 
 
+
 今天偷懒了嘿嘿，其实我已经把任务做完了
 <!-- DAILY_CHECKIN_2026-05-20_END -->
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -702,6 +691,7 @@ Bug 修复列表
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
