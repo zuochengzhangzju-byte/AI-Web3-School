@@ -15,8 +15,30 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-23
+<!-- DAILY_CHECKIN_2026-05-23_START -->
+# **Open Agentic Economy: From ERC-8004 / ERC-8183 to Builder Path**
+
+-   ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/SelinaAnn/images/2026-05-23-1779524951056-image.png)
+-   ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/SelinaAnn/images/2026-05-23-1779524982169-image.png)
+
+## ethereum
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/SelinaAnn/images/2026-05-23-1779525113825-image.png)
+
+-   CROPS
+    
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/SelinaAnn/images/2026-05-23-1779525016109-image.png)
+
+## ERC-8004:identity and trust for agents
+
+## X402 payments
+<!-- DAILY_CHECKIN_2026-05-23_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 # AI在WEB3的应用
 
 去中心化AI基础设施
@@ -46,6 +68,7 @@ AI驱动链上分析工具
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 # WEB 3 运行原理
 
@@ -118,6 +141,7 @@ AI驱动链上分析工具
 <!-- DAILY_CHECKIN_2026-05-20_START -->
 
 
+
 Hermes Agent学习
 
 ```
@@ -172,6 +196,7 @@ API 文档：https://web3career.build/llms.txt
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
