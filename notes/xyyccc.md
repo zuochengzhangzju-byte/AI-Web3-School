@@ -74,6 +74,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
 
+
 # 今天观看了AI下乡的学习视频
 
 AI+Web3是新技术+去中心化基建。
@@ -83,6 +84,7 @@ AI+Web3是新技术+去中心化基建。
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
