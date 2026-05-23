@@ -15,8 +15,14 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-23
+<!-- DAILY_CHECKIN_2026-05-23_START -->
+今天整理笔记
+<!-- DAILY_CHECKIN_2026-05-23_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 5.22参加了例会收获是：
 
 1.分享学习 AI 的方法，将学习拆成五步，即让 AI 讲清概念、放入熟悉场景、拆解最小可执行任务、自己实践、输出理解。建议从熟悉场景出发，找到与 AI 的交叉点，避免盲目追热点
@@ -26,6 +32,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 -   **AI 与 Web3 结合方向**：
     
@@ -46,6 +53,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 -   **Web3 运行原理概述**：
@@ -130,6 +138,7 @@ AI x Web3 School
 
 
 
+
 今天完成了 Week 1 Web3 向任务：整理 Web3 基础概念卡片。
 
 Proof-of-Work:
@@ -145,6 +154,7 @@ Proof-of-Work:
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
