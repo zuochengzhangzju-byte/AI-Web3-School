@@ -15,8 +15,16 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-23
+<!-- DAILY_CHECKIN_2026-05-23_START -->
+会看了5.20号 AI x Web3 School - Web3 的运行原理
+
+完成了三个任务
+<!-- DAILY_CHECKIN_2026-05-23_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 今天主要完成了 AI 基础、Context Engineering、RAG、Agent 与 Agent Wallet 相关内容的学习。上午重点学习了 Embedding、Transformer、Attention、Context Window 与 Context Engineering 的区别，进一步理解了模型如何将文本转化为向量，并通过上下文管理提升回答质量。RAG 部分重点梳理了文档切分、metadata、section\_path、向量检索和 Top-K 召回等流程，认识到检索增强不是简单塞资料，而是要通过结构化信息让模型拿到更准确、可信的内容。
 
 Agent 部分学习了 Plan、Reflection、Multi-Agent 等架构，也了解了 LangChain、LangGraph、OpenAI Agents SDK、MCP 等框架和协议。通过 “交易解释器” 和 “DAO 提案研究 Agent” 两个最小实践，进一步理解了 Agent 的设计重点：只读优先、来源标注、权限分级、simulation 预检查，尤其是在 Web3 场景中，安全和授权比自动执行更重要。
@@ -28,6 +36,7 @@ Agent 部分学习了 Plan、Reflection、Multi-Agent 等架构，也了解了 L
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 \## 一、普通人其实并不在意 Web3、隐私、去中心化
 
@@ -280,11 +289,13 @@ AI 自动完成。
 <!-- DAILY_CHECKIN_2026-05-19_START -->
 
 
+
 AI agent 入门
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
