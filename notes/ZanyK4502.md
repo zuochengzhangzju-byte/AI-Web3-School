@@ -15,8 +15,138 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-23
+<!-- DAILY_CHECKIN_2026-05-23_START -->
+建议包含：
+
+1.  一个你重新理解的 AI 概念，例如 LLM、prompt、workflow、agent、tool use、AI coding。
+    
+2.  一个你重新理解的 Web3 概念，例如钱包、签名、交易、Gas、智能合约、测试网、区块浏览器。
+    
+3.  一个 AI × Web3 交叉问题，例如 Agent 是否可以发起支付、哪些动作必须人工确认、如何验证 AI 执行结果。
+    
+4.  你本周完成的一个 proof-of-work，例如 repo、tx hash、合约地址、流程图、学习日志或 demo。
+    
+5.  一个你还没解决的问题，或你下一周想继续探索的方向。
+    
+
+请写出自己的理解和真实学习过程，不要只贴截图或 AI 生成的空泛总结
+
+# 前置任务 **创建课程 GitHub repo**
+
+GitHub repo: [https://github.com/ZanyK4502/ai-web3-school-cohort-0](https://github.com/ZanyK4502/ai-web3-school-cohort-0)
+
+说明： 这是我的 AI x Web3 School Cohort 0 个人学习仓库，用于记录 Week 1 学习目标、每日打卡、任务证明、实验记录、Handbook feedback 和 Hackathon 准备。
+
+2、仓库包含 README、[learning-plan.md](http://learning-plan.md)、[profile.md](http://profile.md)、daily/、tasks/、experiments/、handbook-feedback/、hackathon/、submissions/ 和 templates/ 等结构。 3、cfe477b Document Week 1 learning setup c8947f9 Initialize AI Web3 School learning repo 有两次 commit 记录 4、我使用 Learning Agent 初始化了仓库。Agent 帮助我阅读启动 Prompt 和 Handbook，创建仓库结构，生成 README、个人学习计划、每日打卡模板、任务模板和 feedback 模板，并协助完成 GitHub repo 创建和 push。
+
+我人工确认了仓库名 ai-web3-school-cohort-0、public 可见性、个人学习画像、中文输出偏好、不固定学习时间，以及首次 commit / push。
+
+![image.png](attachment:4295c852-eb2c-4147-b2f6-b3a90e31fcc6:image.png)
+
+这个任务我主要是利用 codex 做的，复制任务的提示词然后发给 codex ,在这个任务中主要区分了github CLI 和之前的 git 类命令把改动推到仓库，其实我感觉差不多，唯一区别就是 github 命令行版可以直接在远端创建仓库，仅此而已吧。
+
+# **前置任务：建立 AI × Web3 行业信息流关注清单**
+
+[https://www.notion.so/36490691588380638b96e246230d17d9?source=copy\_link](https://www.notion.so/36490691588380638b96e246230d17d9?source=copy_link)
+
+这个任务让我进一步熟知在推特上关于 AI 和 Web3 行业信息流获取渠道，虽然大部分都是英文，但是借助翻译也可以基础理解，问题不是很大，对我获取信息流有非常非常大的帮助
+
+# 0.**完成 AI 可交互学习产物**
+
+Demo 链接[https://contract-lens-ai-ochre.vercel.app/](https://contract-lens-ai-ochre.vercel.app/) 需开 vpn 访问 5个说明点：[https://www.notion.so/AI-36590691588380b9a709cbb79d57ffe7?source=copy\_link](https://www.notion.so/AI-36590691588380b9a709cbb79d57ffe7?source=copy_link)
+
+这个任务让我第一次做了一个比较真实 AI 产物 Demo,因为在上次SPARK 休闲黑客松做的那个并没有接入真实 AI ，只是用了SpoonOS 的框架，这次也提升了我做 Demo 的能力吧
+
+# 1\. AI 学习记录或概念卡片 :
+
+[https://www.notion.so/AI-3649069158838004833edd6a16430187?source=copy\_link](https://www.notion.so/AI-3649069158838004833edd6a16430187?source=copy_link)
+
+MCP，LLM 与外部工具的统一连接协议；Skills，可复用的高层指令集，支持自动发现和动态生成
+
+之前一直不太了解 MCP 的概念，这回理解了
+
+# 2\. Learning Agent / AI 工具实践记录:
+
+![image.png](attachment:696a7648-a06a-4a42-9eec-7be34e487cea:image.png)
+
+![image.png](attachment:bfd6da8d-e17c-488b-a129-8924d98e02eb:image.png)
+
+![image.png](attachment:c828aa83-a4cc-4d9d-a25d-cc46434cf2aa:image.png)
+
+![image.png](attachment:2dce56a3-2e71-4317-9aa2-a11ef8bfea40:image.png)
+
+![image.png](attachment:6b4b5518-e725-4787-b942-db102481c80c:image.png)
+
+用 codex 实践了一次让他变成学习小助手
+
+# 3.Web3 概念卡片和测试网交易记录、测试网交易哈希 / 合约地址 / 区块浏览器链接。
+
+## Web3 概念卡片
+
+[https://www.notion.so/Web3-365906915883807fb3c1f22a0ce14fc0?source=copy\_link](https://www.notion.so/Web3-365906915883807fb3c1f22a0ce14fc0?source=copy_link)
+
+主要对EOA 和 CA 账户有了更深刻的认知，原来是停留在 EOA 是外部账户，CA 是内部账户
+
+```
+EOA：普通私钥账户
+CA：合约账户
+Smart Account：一种用 CA 做的钱包
+Multisig：一种用 CA 做的多签钱包
+```
+
+## 测试网交易记录、测试网交易哈希 / 合约地址 / 区块浏览器链接。
+
+1、Sepolia
+
+2、从 0xAC6bede3415b714b13Ee18Ce51C5eC5f1CddeB7C 转到 0xCD44ffEb623bdC62A821a0301FAd91e1C44c3643
+
+3、trasaction hash :0x1a786442458e87663260da4c1b286240c9ba997adad0caf8bc85019fb5a11250 4、区块浏览器显示交易状态为 Success，说明这笔交易已经成功上链。 该交易被打包进区块 10879060（区块高度），截图中显示已有 3 个区块确认。 本次交易消耗的 Gas 费用为 0.000032640811602 ETH，gas 费用较难理解
+
+![image.png](attachment:b38bc4a1-8bd3-471c-9bd9-ccbd75595ce8:image.png)
+
+虽然上次冬季实习计划已经实践过了一次，但是这次对这个有了个更加清晰的概念，特别是区块编号，即区块高度，那越新出来的区块像搭积木一样肯定越高，所以叫区块高度
+
+# 4\. AI × Web3 最小交叉实验或流程图。
+
+这个流程解决的是：AI 可以帮人理解和生成链上操作方案，但不能替人直接完成高风险签名、授权或付款的问题。
+
+AI / Agent 主要辅助完成任务理解、合约交互说明生成、资料查询、区块浏览器/测试网工具调用和风险提示。
+
+必须人工确认的步骤包括：复核网络、地址、金额、授权内容，以及在钱包中进行签名、授权或支付 Gas 之前做最终判断。
+
+最终结果需要通过区块浏览器验证，例如查看 Tx Hash、交易状态、事件日志、合约地址，而不能只看钱包弹窗或 AI 的回复。
+
+主要风险点包括：AI 幻觉导致步骤错误、恶意签名或过度授权、主网/测试网选错、地址或合约填错，以及没有保存交易哈希、截图和日志等验证材料。
+
+![image.png](attachment:f9ec024c-1c77-4c92-aa37-a9701d0c9dc6:image.png)
+
+这个主要是让我理解了这个最小 MVP ，就是说这个 AI web3 结合的最小闭环，非常有意思
+
+# 5.**部署或调用一个最小智能合约**
+
+1、本次调用目标为 Sepolia 测试网上的 SimpleStorage 合约：0x83db29309d1032C57c959d40833415c5993c6526 2、[https://sepolia.etherscan.io/tx/0x7c4782ebce2105aad4150e297958f0bc0d834fab3d0ba92361da018e2b284700](https://sepolia.etherscan.io/tx/0x7c4782ebce2105aad4150e297958f0bc0d834fab3d0ba92361da018e2b284700) 3、我先在部署合约时设置初始值：Hello Web3，随后调用写入函数 setMessage，将链上保存的 message 修改为：Hello AI x Web3，之后我再次调用读取函数 getMessage，Remix 返回结果为：0:string: Hello AI x Web3，这说明写入函数调用成功，并且链上状态已经被更新。
+
+4、[https://gist.github.com/ZanyK4502/d54197176f58b1ee71b2fb589e926fdc5、本次我使用](https://gist.github.com/ZanyK4502/d54197176f58b1ee71b2fb589e926fdc5、本次我使用) Remix 在 Sepolia 测试网上部署了一个最小智能合约 SimpleStorage。该合约包含 getMessage 读取函数和 setMessage 写入函数。getMessage 只是读取链上状态，不需要钱包确认，也不消耗 Gas；setMessage 会修改链上状态，因此需要通过 MetaMask 进行人工确认，并支付 Sepolia 测试网 Gas。本次写入交易在 Sepolia Etherscan 上显示为 Success，我通过交易哈希、合约地址、区块高度和交易状态验证了调用结果。
+
+虽然我未来可能不做技术方面，但是这个对我对区块链的那些合约工程师所干的工作有了一个具体的认知
+
+# 6.**比较 EOA、智能账户、多签的权限差异**
+
+[https://www.notion.so/Web3-365906915883809ab521e25223db782a?source=copy\_link](https://www.notion.so/Web3-365906915883809ab521e25223db782a?source=copy_link)
+
+像我前面所说的，像之前有一次黑客松发放奖金，对方不是普通的EOA,而是一个合约地址，当时我有点不理解，现在我明白了，还有就是那些 Web3 的项目方金库一般都是 Safe 多签钱包
+
+# 7.**拆解 1 个 AI × Web3 项目**
+
+[https://www.notion.so/AEON-36590691588380e3a41cf1f66068cc78?source=copy\_link](https://www.notion.so/AEON-36590691588380e3a41cf1f66068cc78?source=copy_link)
+
+从拆解这几个项目，我受了很大的启发，现在的轮子已经造的差不多了，缺应用场景，特别是 Agentic economy 经济、agent trading 交易、Agent payments （支付、Agent wallet 、agent commerrce（贸易
+<!-- DAILY_CHECKIN_2026-05-23_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 在学习，等下补笔记
 
 好忙好忙，在忙着做项目
@@ -24,6 +154,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 今天休息了一天，嘿嘿
@@ -34,11 +165,13 @@ AI x Web3 School
 
 
 
+
 今天偷懒了嘿嘿，其实我已经把任务做完了
 <!-- DAILY_CHECKIN_2026-05-20_END -->
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -569,6 +702,7 @@ Bug 修复列表
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
