@@ -15,8 +15,70 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+## **This week’s learning summary（简短版）**
+
+This week felt like the moment my view of _AI × Web3_从「很多酷项目」变成「一整套经济系统」。
+
+## **1\. 从“AI 会聊天”到“AI 会行动”**
+
+-   通过 AI x Web3 Project Map，我开始用一句话看这条赛道：  
+    **AI 负责理解和决策，Web3 负责身份、支付、结算和审计。**
+    
+-   真正有意思的不是「AI 项目发不发币」，而是：当 AI 变成能租算力、买数据、发交易、管理资产的 agent，它就需要钱包、权限、预算和可追责的记录。
+    
+
+## **2\. 学会用 “Agent 经济栈” 看项目**
+
+这一周我反复在练习一个思路：  
+不要先记住所有项目名，而是先看它在整条栈里解决哪一层的问题：
+
+-   资源层：如 Bittensor、Render、Akash，解决 AI 需要的算力、存储、数据和模型服务从哪儿来，怎么用市场/激励机制组织起来。
+    
+-   账户层（Agent + 钱包）：如 Coinbase AgentKit、MoonPay Agents，让 AI 不只是「给建议」，而是能在授权范围内真的发交易、转账、swap。
+    
+-   认知层（链上分析）：如 Arkham、Nansen、Dune，把地址和资金流翻译成可理解的情报，为人和 agent 提供决策依据。
+    
+-   用户保护层：如 Blockaid、Rabby、Safe，通过交易模拟、权限管理和智能账户，帮普通用户看懂「点确认之前会发生什么」。
+    
+-   机构风控层：如 Chainalysis、Forta、Chaos Labs，帮助交易所和协议做 KYT、攻击预警、参数风险建模。
+    
+
+这也改变了我看项目的习惯：
+
+> **先问：它在 Agent 经济栈里补的是哪一个环节？ 而不是只看叙事和价格。**
+
+## **3\. 风险边界意识被拉高了一档**
+
+这一周一个很重要的提醒是：
+
+-   模型输出 ≠ 执行权。就算是很聪明的 agent，真正动钱那一刻，仍然需要授权、限额、日志和可撤销机制，否则 prompt injection 直接变资金损失。
+    
+-   链上标签是概率判断，不是法律事实，合规和风控需要证据链和人工复核。
+    
+-   钱包体验可以做得很丝滑，但「用户看得懂自己在干嘛」这一点不能牺牲。
+    
+
+这让我开始把「安全设计、权限边界和风控思维」当成产品设计的一部分，而不是事后补救。
+
+## **4\. 自己的角色感：从旁观者到“想动手做的人”**
+
+综合下来，这一周对我的影响有两点：
+
+-   心态上：从「看热闹」变成「想搞懂整个系统」，并且尝试用 Agent 经济栈来定位每一个新项目。
+    
+-   行动上：开始酝酿一个与**钱包体验 + 安全 + agent**相关的黑客松方向——做一个帮普通用户「读懂链上操作后果」的小型 agent / 安全层工具，把这周学到的账户、分析和安全结合起来。
+    
+
+如果用一句话总结这周：
+
+> **AI 让软件开始自己“行动”，Web3 给这些行动一个可以被授权、被结算、被追责的舞台，而我正在学习如何看懂、设计这整套舞台。**
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 Today I watched an English broadcast about AI × Web3 and one idea clicked for me:
 
 > **AI is moving from “answering questions” to “taking actions”, and Web3 is the economic layer that makes those actions accountable.**
@@ -44,6 +106,7 @@ In the talk, they broke it down into a simple stack that really helped my unders
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 这周对我影响最大的一句话是：
 
@@ -81,6 +144,7 @@ In the talk, they broke it down into a simple stack that really helped my unders
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 今天认真看完了这份《AI x Web3 Project Map》，用 Bittensor、Coinbase AgentKit、Arkham、Blockaid、Chainalysis 五个主案例，把「AI 走进 Web3 经济系统」需要的整套能力串了起来：从资源、账户，到认知、安全和风控，感觉像是第一次从「系统视角」去看 AI x Web3。
@@ -126,6 +190,7 @@ In the talk, they broke it down into a simple stack that really helped my unders
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
