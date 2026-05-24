@@ -15,8 +15,55 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+### 一、 实践目标
+
+本周的实践旨在将 AI 工具链与 Web3 交互流程串联，验证从“自然语言意图”到“链上状态变更”的完整任务链。本次我选择的实践环节是：**通过 Vibe Coding 完成智能合约的编写，并将其部署到以太坊测试网。**
+
+### 二、 实践记录：ERC-20 代币合约部署
+
+1\. 成功案例 (Success Case)
+
+-   **操作环节：** AI Coding / 合约生成
+    
+-   **使用工具：** Cursor / ChatGPT (作为编程 Agent) + Remix IDE
+    
+-   **Prompt (提示词)：** “请作为资深的 Web3 开发者，帮我写一个标准的 ERC-20 智能合约。代币名称为 VibeCoin，符号为 VBC，初始发行量 10000 枚给合约部署者。请直接引用 OpenZeppelin 库以确保安全性。”
+    
+-   **执行结果：** 顺利成功。LLM 精准理解了意图，不仅生成了无语法错误的 Solidity 代码，还正确引入了 `@openzeppelin/contracts`。将代码复制到 Remix IDE 中，一次性编译通过。这验证了通过 **Prompt** 和 **AI Coding** 可以极大降低 **智能合约** 的编写门槛。
+    
+
+2\. 失败案例 (Failure Case)
+
+-   **操作环节：** 钱包连接与测试网部署
+    
+-   **失败现象 1（Gas 耗尽/不足）：** 在 Remix 中将 Environment 切换为 Injected Provider (MetaMask) 准备部署时，**钱包** 弹窗报错：`Insufficient funds for gas * price + value`。
+    
+-   **失败现象 2（RPC 节点失效）：** 尝试让 AI 给出一份 Hardhat 的本地部署 **workflow** 脚本时，AI 提供的 Alchemy/Infura 测试网 RPC 节点 URL 是失效的占位符，导致终端一直报错网络连接失败。
+    
+
+3\. 人工修正 (Manual Fix)
+
+-   **解决 Gas 费用问题：** 深刻意识到 **测试网** 的环境模拟了真实主网，任何 **交易 (Transaction)** 的发起都需要消耗 **Gas**。我手动前往 Sepolia 测试网的 Faucet (水龙头) 网站，输入自己的钱包地址，领取了测试用的 ETH。
+    
+-   **修正网络配置与完成签名：** 手动在 Web3 基础设施平台（如 Alchemy）注册并申请了专属的 API Key，替换了 AI 脚本中的无效链接。重新发起部署请求后，MetaMask 弹出确认框，我核对信息后完成 **签名 (Signature)**，支付 Gas 费，等待区块打包，最终成功获取了上链的合约地址。
+    
+
+### 三、 概念串联与学习反思 (Key Takeaways)
+
+通过这一条完整的任务链，我将本周的核心概念建立起了“共同语言”：
+
+1.  **意图与代码的鸿沟被抹平：** 借助 **LLM** 和 **Agent** 强大的代码理解能力，**Vibe Coding** 让我只需专注于业务逻辑的设计。甚至复杂的环境配置，都可以通过 **Tool use** 让 AI 协助生成脚手架。
+    
+2.  **Web3 的核心在于“验证与执行”：** 传统 Web2 编程跑通代码即可，但在 Web3 中，AI 产出的代码必须经过严谨的执行链条。**钱包** 是我的身份，**签名** 是我的授权，**交易** 是动作的载体，而 **Gas** 是占用去中心化计算资源的成本。
+    
+3.  **AI 的边界与人的主导：** 尽管 AI 极大提升了效率，但它缺乏实时的链上状态感知（例如它不知道我的钱包里没钱了，也不知道某个公用的 RPC 节点宕机了）。因此，在当前的 **Workflow** 中，人
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 -   **Web3 为 AI 赋能**：
     
     -   **赋能思路**：AI 模型的算力和数据集中存在问题，若像区块链一样将其分散到世界各地，可摆脱政策和文化差异限制，使 AI 真正属于全世界。
@@ -42,6 +89,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 钱包、私钥与个人主权
 
@@ -158,6 +206,7 @@ Web3 核心特性
 <!-- DAILY_CHECKIN_2026-05-19_START -->
 
 
+
 1.  聊天型 AI：ChatGPT、Deepseek、Gemini
     
 2.  AI 编程助手：CausalAnti、Gravity、Copilot
@@ -261,6 +310,7 @@ Web3 核心特性
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
