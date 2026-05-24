@@ -15,8 +15,46 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+\### ✅ 完成：Vibe Coding 架构设计
+
+今天凌晨我们把 vibe coding 的分层架构落地成文档了，存在 `plans/vibe-coding-architecture.md`。
+
+**核心架构（三层）：**
+
+层 谁 模型 干啥
+
+**调度层** Hermes（我） DeepSeek v4（便宜） 规划、答疑、启动 agent、总结
+
+**执行层** OpenCode DeepSeek v4 Pro（强） 写代码、改文件、跑命令
+
+**展示层** VSCode + tmux 无 你 SSH attach 看一手输出
+
+**关键决策已落地：**
+
+\- ✅ Code Agent 选 **OpenCode + DeepSeek v4 Pro**（零摩擦起步，后续无缝切 Claude）
+
+\- ✅ 代码同步用 **VSCode Remote SSH**（零推拉，就像本地文件）
+
+\- ✅ 信息流模式：我不当传话筒 → 规划阶段我介入，执行阶段你直接跟 agent 对话
+
+\- ✅ 成本估算：按 vibe coding 强度月费 ≈ **¥10-30**
+
+**待完成（还没实施的）：**
+
+\- ⬜ 服务器装 tmux
+
+\- ⬜ 安装 OpenCode CLI
+
+\- ⬜ 配置 DeepSeek API Key
+
+\- ⬜ 试跑一次端到端
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 \### Web3 基础 — 过了一遍
 
 章节 核心收获
@@ -43,6 +81,7 @@ AI x Web3 School
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
+
 🧭 2026 核心趋势 Agents with Wallets — Agent 自己管钱自己花
 
 📦 项目全景表 基础设施层 / 钱包支付层 / 应用层，每个都有简介
@@ -60,6 +99,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 Web3 底层原理
@@ -88,6 +128,7 @@ Web3 底层原理
 
 
 
+
 \## 📋 5月19日学习总结
 
 \### ✅ 已完成
@@ -109,6 +150,7 @@ Web3 底层原理
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
