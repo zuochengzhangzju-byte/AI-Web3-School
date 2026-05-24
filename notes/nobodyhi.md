@@ -15,8 +15,226 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+\# GLM MaaS API 入门：5分钟跑通第一个请求
+
+GLM 系列模型（如 GLM-5.1）提供 OpenAI 兼容接口，只需换一个 `base_url` 和 `api_key`。
+
+\---
+
+\## 第一步：获取 API Key
+
+首先需要一个智谱 BigModel 平台的 API Key：
+
+1\. 访问 \[智谱AI开放平台\]([https://open.bigmodel.cn/](https://open.bigmodel.cn/)) 注册账号
+
+2\. 登录后进入控制台，找到「API Keys」页面
+
+3\. 点击「创建 API Key」，生成形如 `xxxxxxxx.xxxxxxxxxxxxxxxx` 的密钥
+
+\> 💡 **安全提醒**：不要将 API Key 硬编码在代码中，建议使用环境变量。
+
+\---
+
+\## 第二步：环境准备
+
+确保你的 Python 版本 ≥ 3.8，然后安装 OpenAI SDK（推荐方式）：
+
+\`\`\`bash
+
+pip install --upgrade openai>=1.0
+
+\`\`\`
+
+\---
+
+\## 第三步：发起第一个请求
+
+\### 方式一：使用 OpenAI SDK（推荐）
+
+由于 GLM API 完全兼容 OpenAI 接口格式，直接用 OpenAI SDK 改一下 `base_url` 即可：
+
+\`\`\`python
+
+import os
+
+from openai import OpenAI
+
+\# 初始化客户端，指向智谱的 API 地址
+
+client = OpenAI(
+
+api\_key=os.environ.get("BIGMODEL\_API\_KEY"), # 替换为你的 API Key
+
+base\_url="[https://open.bigmodel.cn/api/paas/v4/](https://open.bigmodel.cn/api/paas/v4/)"
+
+)
+
+\# 发起对话请求
+
+response = [client.chat](http://client.chat).completions.create(
+
+model="glm-5.1", # 模型名称
+
+messages=\[
+
+{"role": "user", "content": "用一句话解释什么是量子计算"}
+
+\],
+
+max\_tokens=1024,
+
+temperature=0.7
+
+)
+
+\# 打印模型回复
+
+print(response.choices\[0\].message.content)
+
+\`\`\`
+
+**预期输出示例**（模型实际生成内容可能略有不同）：
+
+\`\`\`
+
+量子计算是利用量子力学原理（如叠加和纠缠）进行信息处理的计算方式，能够在特定问题上远超经典计算机的计算能力。
+
+\`\`\`
+
+\### 方式二：使用 curl（无编程环境）
+
+\`\`\`bash
+
+curl [https://open.bigmodel.cn/api/paas/v4/chat/completions](https://open.bigmodel.cn/api/paas/v4/chat/completions) \\
+
+\-H "Authorization: Bearer $BIGMODEL\_API\_KEY" \\
+
+\-H "Content-Type: application/json" \\
+
+\-d '{
+
+"model": "glm-5.1",
+
+"messages": \[{"role": "user", "content": "用一句话解释什么是量子计算"}\],
+
+"max\_tokens": 1024
+
+}'
+
+\`\`\`
+
+\---
+
+\## 响应格式解析
+
+返回的 JSON 结构与 OpenAI 完全一致：
+
+\`\`\`json
+
+{
+
+"id": "chatcmpl-abc123",
+
+"object": "chat.completion",
+
+"created": 1744000000,
+
+"model": "glm-5.1",
+
+"choices": \[
+
+{
+
+"index": 0,
+
+"message": {
+
+"role": "assistant",
+
+"content": "量子计算是利用量子力学原理..."
+
+},
+
+"finish\_reason": "stop"
+
+}
+
+\],
+
+"usage": {
+
+"prompt\_tokens": 18,
+
+"completion\_tokens": 35,
+
+"total\_tokens": 53
+
+}
+
+}
+
+\`\`\`
+
+\- `choices[0].message.content`：模型生成的回复内容
+
+\- `usage`：本次请求消耗的 Token 数量，可用于监控配额
+
+\---
+
+\## 常见问题
+
+\### Q1：API Key 格式和 OpenAI 不一样能用吗？
+
+可以。智谱的 API Key 是 `xxx.xxx` 格式（而非 OpenAI 的 `sk-xxx`），但放在 `Authorization: Bearer` 头中完全兼容，SDK 会自动处理。
+
+\### Q2：想看模型边想边输出怎么办？
+
+设置 `stream=True`，可以逐字接收响应，适合需要实时展示的场景：
+
+\`\`\`python
+
+stream = [client.chat](http://client.chat).completions.create(
+
+model="glm-5.1",
+
+messages=\[{"role": "user", "content": "写一首关于夏天的短诗"}\],
+
+stream=True
+
+)
+
+for chunk in stream:
+
+if chunk.choices\[0\].delta.content:
+
+print(chunk.choices\[0\].delta.content, end="", flush=True)
+
+\`\`\`
+
+\### Q3：GLM-5.1 和 GLM-4 有什么区别？
+
+GLM-5.1 是智谱2026年4月发布的旗舰模型，在代码能力和长任务执行上显著增强，适合 Agent 场景（工具调用、多步规划等）。如果是简单对话，GLM-4 系列也完全够用。
+
+\---
+
+\## 总结
+
+三步搞定：
+
+1\. **注册** → 获取 API Key
+
+2\. **安装** → `pip install openai`
+
+3\. **运行** → 替换 `base_url` 和 `api_key`，其他和 OpenAI 一模一样
+
+如果你想进一步了解流式输出、工具调用（Function Calling）等进阶用法，随时可以问我！
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 \## Getting Started with the Claude API
 
 \### 1. **Installation & Setup**
@@ -273,11 +491,13 @@ print(f"API error: {e}")
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
+
 web3
 <!-- DAILY_CHECKIN_2026-05-22_END -->
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 ## **1\. Getting Started with the OpenAI API**
@@ -426,6 +646,7 @@ vector = response.data[0].embedding
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
