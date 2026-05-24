@@ -15,8 +15,31 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+📚 AI × Web3 School Day 6 — 智能体（Agent）
+
+💡 3 个核心理解：
+
+1.  Agent 不是自主权，是被约束的执行循环——目标、工具、状态、权限、停止条件缺一不可
+    
+2.  2\. 工具让 Agent 从「会回答」到「能做事」，但每类工具的风险等级不同：读 < 写 < 授权 < 支付
+    
+3.  3\. Self-reflection 可以提高质量，但确定性检查才能承载风险——写入、授权、支付不能只靠模型自我审查
+    
+
+🎯 最大收获：Agent 的核心不是让模型更像人，而是让执行循环有清楚边界。最危险的设计是模糊目标 + 广泛工具 + 长期记忆 + 大额资产权限同时存在。
+
+❓ 我现在每天用的 Hermes Agent 就是一个典型的 Agent 系统。它的 tool use、state management、planning 和 stop 条件是怎么设计的？和 Handbook 里画的理想架构有多大差距？
+
+🔗 [https://github.com/Joea529/ai-web3-school-cohort-0](https://github.com/Joea529/ai-web3-school-cohort-0)
+
+📖 https://aiweb3.school/zh/handbook/agent/
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 📚 AI × Web3 School Day 5 — 检索增强生成（RAG）
 
 💡 3 个核心理解：
@@ -39,6 +62,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 +📚 AI × Web3 School Day 5 — 检索增强生成（RAG）
 
@@ -71,6 +95,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
 
+
 📚 AI × Web3 School Day 4 — 上下文（Context）
 
 💡 3 个核心理解：
@@ -93,6 +118,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -123,6 +149,7 @@ AI x Web3 School
 
 
 
+
 📚 AI × Web3 School Day 2 — 提示词（Prompt）
 
 💡 对照手册学完 4 个知识节点：
@@ -146,6 +173,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
