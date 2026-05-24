@@ -15,8 +15,33 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+# Day 7
+
+-   Reviewed core Week 1 concepts:
+    
+      - AI: LLM → Prompt → Context → RAG → Agent fundamentals
+    
+      - Web3: Network → Cryptography → Wallet → Smart Contract → Account Abstraction
+    
+-   Pre-read Handbook Bridge chapters for Week 2: Web3 Tool Use & Agent Wallet
+    
+-   Key takeaway from Agent Wallet: Agents should never control master private keys. Instead, they get verifiable, restrictable, revocable permission spaces via Session Keys + Smart Account policies
+    
+
+## Next week:
+
+-   Dive into AI × Web3 Bridge: Chain-aware Context, Web3 Tool Use, Agent Wallet
+    
+-   Set up testnet environment (Sepolia ETH from faucet)
+    
+-   Start experimenting with a minimal Web3 read-only agent toolchain
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 # Day 4
 
 -   Watched 5.18 Recording: Web3 Architecture Skills in the AI Era
@@ -40,6 +65,7 @@ AI x Web3 School
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
+
 # Day 3
 
 -   Learned Transformer by reading Hugging Face LLM Course Chapter 1
@@ -60,6 +86,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 # Day 2:
@@ -84,6 +111,7 @@ Read Handbook chapters (Network → Cryptography → Wallet → Smart Contract),
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
