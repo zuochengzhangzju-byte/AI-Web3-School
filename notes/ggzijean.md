@@ -15,8 +15,18 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+### **学习进度：**
+
+-   **05-24 16:00 - 17:30** 翻阅handbook并整理笔记
+    
+-   **05-24 22:30 - 00:00** AI基础理论知识get 待实践应用
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 ### **学习进度：**
 
 -   **05-23 20:30 - 23：00** 阅读Hung-yi Lee老师的生成式人工智慧课程
@@ -26,6 +36,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 ### **学习进度：**
 
@@ -38,6 +49,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 ### **学习进度：**
@@ -53,6 +65,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -115,6 +128,7 @@ AI x Web3 School
 
 
 
+
 # 每日学习笔记
 
 日期: 2026-05-19
@@ -158,6 +172,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
