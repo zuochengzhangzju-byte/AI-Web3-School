@@ -15,8 +15,78 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+### **📖 理论**
+
+区块链上每笔交易、钱包余额、合约状态都可公开读取；AI Agent 可分析数百万地址的模式，无需协商 API 权限——区块链本身就是数据库。与传统金融需要中间人不同，AI 可以直接与智能合约交互。
+
+### **🛠️ 实操**
+
+安装依赖：`pip install web3`
+
+编写核心 Bridge 脚本 `bridge.py`：
+
+```
+Python
+```
+
+```
+import json, os
+from web3 import Web3
+from dotenv import load_dotenv
+from ai_analyzer import analyze_market_sentiment
+
+load_dotenv()
+
+# 连接到 Sepolia
+w3 = Web3(Web3.HTTPProvider(os.getenv("SEPOLIA_RPC_URL")))
+assert w3.is_connected(), "❌ Web3 连接失败"
+
+# 加载合约
+with open("artifacts/contracts/AIDataStore.sol/AIDataStore.json") as f:
+    abi = json.load(f)["abi"]
+
+contract = w3.eth.contract(
+    address=os.getenv("CONTRACT_ADDRESS"),
+    abi=abi
+)
+
+account = w3.eth.account.from_key(os.getenv("PRIVATE_KEY"))
+
+def push_ai_result_to_chain(news: str):
+    # Step 1: AI 分析
+    ai_result = analyze_market_sentiment(news)
+    print(f"[AI] 分析结果: {ai_result}")
+    
+    # Step 2: 构造并发送交易
+    tx = contract.functions.updateResult(ai_result).build_transaction({
+        "from": account.address,
+        "nonce": w3.eth.get_transaction_count(account.address),
+        "gas": 200000,
+        "gasPrice": w3.eth.gas_price
+    })
+    
+    signed = account.sign_transaction(tx, private_key=os.getenv("PRIVATE_KEY"))
+    tx_hash = w3.eth.send_raw_transaction(signed.raw_transaction)
+    receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+    
+    print(f"[Chain] ✅ 已上链！TxHash: {tx_hash.hex()}")
+    print(f"[Chain] Gas Used: {receipt['gasUsed']}")
+    return tx_hash.hex()
+
+if __name__ == "__main__":
+    push_ai_result_to_chain(
+        "Ethereum upgrade boosts network efficiency; analysts predict strong Q3."
+    )
+```
+
+**产出**：终端显示 `✅ 已上链！TxHash: 0x...`，在 Etherscan 上可查到交易 ✅
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 ### **🎯 今日目标**
 
 搭建 AI 分析脚本，模拟"链下 AI 推理"环节。
@@ -66,6 +136,7 @@ if __name__ == "__main__":
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 ### **🎯 今日目标**
 
@@ -120,6 +191,7 @@ npx hardhat run scripts/deploy.js --network sepolia
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 ### **🎯 今日目标**
@@ -187,6 +259,7 @@ npx hardhat test  # 跑通默认测试
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -542,6 +615,7 @@ text
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -1077,6 +1151,7 @@ text
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
