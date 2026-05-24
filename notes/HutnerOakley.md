@@ -15,8 +15,56 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+-   Foundry / Hardhat：编译、测试、部署合约的开发框架
+    
+-   OpenZeppelin：常用安全合约库，比如 ERC-20、ERC-721、权限控制、代理升级
+    
+-   EVM：运行智能合约的虚拟机环境
+    
+-   RPC Provider：连接区块链节点的服务，比如 Alchemy、Infura、QuickNode
+    
+-   ethers.js / viem / web3.js：前端或脚本调用合约的库
+    
+-   ABI：前端理解和调用合约的接口说明
+    
+-   Wallet：用户签名交易的工具，比如 MetaMask、OKX Wallet
+    
+-   Frontend：网页应用，比如 React、Next.js、Vue
+    
+-   Indexer：索引链上事件和数据，比如 The Graph、自建监听服务
+    
+-   Storage：去中心化存储，比如 IPFS、Arweave
+    
+
+一个典型流程是：
+
+1.  用 Solidity 写合约
+    
+2.  用 Foundry 或 Hardhat 测试和部署
+    
+3.  用 OpenZeppelin 引入标准合约
+    
+4.  部署到 EVM 链
+    
+5.  前端用 ABI + ethers.js/viem 调用合约
+    
+6.  用户通过钱包签名
+    
+7.  后端或索引器监听 Event
+    
+8.  图片、元数据等放到 IPFS/Arweave
+    
+
+一句话总结：
+
+Dev Stack 就是开发一个 Web3 应用所需的“工具箱”和“工作流”。它不是某一个工具，而是一整套配合起来的技术组合。
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 Solidity 是以太坊生态里最常用的智能合约编程语言。
 
 一般用它来写合约逻辑，比如：
@@ -184,6 +232,7 @@ Upgrade 指的是“已部署合约如何升级”。
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
+
 # 智能合约（Smart Contract）
 
 是部署在区块链上的一段程序，按照事先写好的规则自动执行。
@@ -269,6 +318,7 @@ Upgrade 指的是“已部署合约如何升级”。
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 # 密码学
@@ -499,6 +549,7 @@ Web3 的密码学，本质上是在“没有中心机构”的前提下，用数
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
