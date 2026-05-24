@@ -15,8 +15,46 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+### 1\. Agentic commerce 的下一个突破在哪里？
+
+**大型企业的支付场景**（Stripe、Bridge、Visa 等正在布局 AI 驱动的支付与交易）。
+
+### 2\. 新协议 vs. 真实应用，哪个更重要？
+
+**应用更重要**。  
+新 builder 最大的优势是**对特定市场的理解**，基于 primitives 构建**定制的、真实场景的应用**，比等待协议覆盖一切更有价值。
+
+### 3\. 用户会选择方便还是去中心化？
+
+用户通常选择**最简单、最方便**的路径。  
+因此 **builder 的选择决定未来**：
+
+-   让一家公司控制 agent 基础设施？
+    
+-   还是让 agent 经济运行在**中立的、去中心化的基础设施**上？
+    
+
+### 4\. 如何避免 scam？
+
+**自己做足尽调（DYOR）**。Sophia 不评论具体 token，鼓励成为 builder 而非 trader。
+
+## 总结：三条判断
+
+1.  **Agent 需要经济账户**  
+    支付、身份、声誉、可执行协议缺一不可。
+    
+2.  **基础设施决定经济形态**  
+    现在对 agent 交易设施的设计选择，会随着 AI 活动规模放大而固化。
+    
+3.  **开放 vs. 封闭 由 builder 决定**  
+    Ethereum 提供了中立层，但最终是否使用、如何定制，取决于开发者。
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 ## 一、Ethereum 的角色：价值与承诺的协调层
 
 Ethereum 是一个**公共、可编程的区块链**，核心能力：
@@ -91,6 +129,7 @@ Ethereum Foundation 已试点让 AI agent 参与**分配数十万美元给数百
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
+
 一、实现原理
 
 1.  **Bittensor**：子网定义规则 → 矿工提供服务 → 验证者评分 → 链上结算 → 奖励
@@ -119,6 +158,7 @@ Ethereum Foundation 已试点让 AI agent 参与**分配数十万美元给数百
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
 
+
 | 方向 | 解决什么问题 | 主案例 | 核心原理 |
 | --- | --- | --- | --- |
 | 1. 去中心化 AI 基础设施 | 算力、存储、模型服务如何组织与激励 | Bittensor | Subnet 定义任务 → Miner 提供服务 → Validator 评估质量 → 链上共识 → Token 奖励优质供给 |
@@ -130,6 +170,7 @@ Ethereum Foundation 已试点让 AI agent 参与**分配数十万美元给数百
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -145,6 +186,7 @@ Ethereum Foundation 已试点让 AI agent 参与**分配数十万美元给数百
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
