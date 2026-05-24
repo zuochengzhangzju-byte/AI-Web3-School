@@ -15,8 +15,138 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+\### 🤖 AI 在审计中能做什么
+
+1\. 静态分析 + 漏洞识别
+
+AI 扫描合约代码，自动检测已知漏洞模式：
+
+\`\`\`
+
+常见漏洞类型 AI 检测能力
+
+─────────────────────────────────────────
+
+重入攻击 (Reentrancy) ✅ 强
+
+整数溢出/下溢 ✅ 强
+
+访问控制缺失 ✅ 强
+
+闪电贷攻击向量 ⚠️ 中等
+
+逻辑业务漏洞 ⚠️ 较弱
+
+跨合约交互漏洞 ⚠️ 较弱
+
+\`\`\`
+
+2\. 代码生成与自动修复
+
+AI 不仅找漏洞，还能直接给出修复方案：
+
+\`\`\`solidity
+
+// ❌ 有漏洞的代码
+
+function withdraw(uint amount) public {
+
+require(balances\[msg.sender\] >= amount);
+
+(bool success,) = msg.sender.call{value: amount}(“”); // 重入点
+
+balances\[msg.sender\] -= amount; // 状态更新滞后
+
+}
+
+// ✅ AI 建议修复后
+
+function withdraw(uint amount) public {
+
+require(balances\[msg.sender\] >= amount);
+
+balances\[msg.sender\] -= amount; // 先更新状态
+
+(bool success,) = msg.sender.call{value: amount}(“”);
+
+require(success, “Transfer failed”);
+
+}
+
+\`\`\`
+
+3\. 模糊测试（Fuzzing）辅助
+
+AI 自动生成边界测试用例，覆盖人工难以想到的极端输入场景。
+
+4\. 形式化验证辅助
+
+将自然语言的业务逻辑转化为数学规范，交由形式化验证工具（Certora、K Framework）验证。
+
+🛠️ 主流 AI 审计工具对比
+
+| 工具 | 类型 | 优势 | 局限 |
+
+|Slither| 静态分析 | 开源、快速、规则丰富 | 误报率较高 |
+
+| MythX | 符号执行+AI | 深度分析 | 速度慢、付费 |
+
+| Audit Wizard| GPT驱动 | 交互式、解释清晰 | 依赖 LLM 准确性 |
+
+| OpenZeppelin Defender | 监控+AI | 实时链上监控 | 侧重运行时 |
+
+| ChatGPT / Claude| LLM | 灵活、可解释 | 无上下文限制保障 |
+
+⚙️ 实际工作流（AI 辅助审计）
+
+1\. 代码提交
+
+↓
+
+2\. AI 静态扫描（Slither/MythX）→ 输出漏洞报告
+
+↓
+
+3\. LLM 分析（Claude/GPT）→ 解释漏洞、评估严重性
+
+↓
+
+4\. AI 生成修复建议
+
+↓
+
+5\. 人工审计员复核（AI 无法替代的部分）
+
+↓
+
+6\. 形式化验证关键逻辑
+
+↓
+
+7\. 链上部署 + AI 实时监控
+
+理解复杂的业务逻辑语义（“这笔钱该不该转”）
+
+跨协议的组合性攻击（多个合约联动漏洞）
+
+经济模型攻击（代币激励机制设计缺陷）
+
+幻觉问题：LLM 可能自信地报告不存在的漏洞
+
+⚠️ 结论：AI 是审计师的\*\*加速器\*\*，而非替代品。人工复核仍不可缺少。
+
+AI 审计即服务正在兴起，成本有望从 $50k 降至 $5k
+
+头部审计机构（Trail of Bits、Certik）已在内部集成 AI 工具
+
+链上实时监控（Forta Network）结合 AI 异常检测，漏洞响应时间从小时级降
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 一、核心概念：Agentic Economy（智能体经济）
 
 定义：由AI智能体自主完成服务发现、信任校验、任务协作、链上支付、自动结算的去中心化经济体系，实现机器对机器（M2M）的自主商业闭环。
@@ -111,6 +241,7 @@ ERC-8004/8183如何适配多链、跨链Agent协作？
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
+
 Web3 + AI 结合：核心逻辑、落地场景、优势与挑战Web3 解决所有权、信任、价值分配；AI 解决效率、智能决策、内容生成，二者结合=智能、可信、用户拥有主权的下一代互联网。
 
 一、底层互补：为什么天生适配
@@ -176,6 +307,7 @@ AI 内容平台：AI 生产内容，Web3 分发确权，用户直接赚币
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
 
+
 Web3 是下一代互联网，核心是去中心化、用户拥有数据和数字资产，和我们现在用的互联网（Web2）完全不一样。
 
 一、三代互联网对比
@@ -231,6 +363,7 @@ DAO：去中心化自治组织，社群共同决策
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
