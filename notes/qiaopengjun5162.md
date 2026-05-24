@@ -15,8 +15,33 @@ Web3 开发者 Python Go  Rust  Solidity
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+026-05-24 (Day 7) — Week 1 收尾：Web3 基础扫读，双基础通关  
+  
+**今日学习内容：**  
+\- Handbook Web3 — Network（网络）：区块、共识机制、L2、RPC 与链上状态环境  
+\- Handbook Web3 — Account Abstraction（账户抽象）：Smart Account 的 Session Key + Policy 权限模型  
+\- Handbook Web3 — DeFi（去中心化金融）：AMM 常数积模型、借贷超额抵押、流动性挖矿  
+\- Handbook Web3 — Oracle（预言机）：链外数据上链信任模型——AI 输出 + 来源记录 + 置信度 + 挑战机制  
+\- Handbook Web3 — Indexing（索引）：链上事件/交易整理成 queryable 结构化数据层  
+\- Handbook Web3 — Security（安全）：模型建议 → 工具返回事实 → policy 限制权限 → simulation 预演 → human check → monitoring 记录  
+  
+**笔记摘要：**  
+\- 本周完成 AI 基础 11 章 + Web3 基础 10 章，双基础全部通关  
+\- 核心框架：「AI 做建议和编排 → 钱包做授权确认 → 合约做可验证执行 → 监控记录结果」  
+\- Oracle → AI 信任链路：AI 给出结果，系统记录来源和置信度，高风险引入 human-in-the-loop、挑战期、经济惩罚  
+\- Security 流水线：模型可以建议，工具返回事实，policy 限制权限，simulation 预演结果，human check 确认高风险动作，monitoring 记录执行后果  
+\- Account Abstraction 的灵活权限模型是 Agent Wallet 的核心基础设施  
+  
+**明日计划：**  
+\- 进入 AI × Web3 Bridge 章节  
+\- 整理 Week 1 学习总结
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 2026-05-23 (Day 6) — Web3 基础：密码学 → 钱包 → 智能合约 → 开发栈  
   
 **今日学习内容：**  
@@ -39,6 +64,7 @@ Web3 开发者 Python Go  Rust  Solidity
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 026-05-22 (Day 5) — Evaluation, Fine-tuning, Inference & PoW Pack  
   
@@ -63,6 +89,7 @@ Web3 开发者 Python Go  Rust  Solidity
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
 
+
 2026-05-21 (Day 4) — MCP & Vibe Coding 学习  
   
 **今日学习内容：**  
@@ -85,6 +112,7 @@ Web3 开发者 Python Go  Rust  Solidity
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -139,6 +167,7 @@ Vibe Coding 不是"把需求丢给 AI 等代码"，而是人负责方向/约束/
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
