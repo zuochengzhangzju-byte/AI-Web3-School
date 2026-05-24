@@ -15,8 +15,41 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+今天主要是做任务
+
+1.**AI × Web3 最小交叉流程图：**用 Excalidraw 画了从「用户自然语言输入」到「链上执行验证」的完整流程图，把 Week 1 学的 LLM、Prompt、Context、RAG、Agent、钱包、合约串成一条链路。
+
+这个过程中有几个风险点：LLM 幻觉 / RAG 检索不准 / 人工复核形同虚设 / 交易不可逆 / 私钥泄露+盲签
+
+**总结：AI 负责推理和生成，人负责决策和签名，链负责执行和记录——三方各守边界，才是可信的 AI × Web3 系统。**
+
+**2.建立 AI × Web3 行业信息流关注清单：**
+
+然后后续想观察的问题：
+
+-   Agent Wallet 权限边界怎么设计
+    
+-   Go 后端开发者如何切入 AI × Web3——Grant 路径和就业路径有什么实质区别
+    
+
+**3.部署了一个最小的智能合约：**
+
+用 Remix 在测试网部署了一个简单的合约 ，跑通了部署-》读取->写入的流程
+
+链上记录：
+
+-   部署交易：[https://sepolia.etherscan.io/tx/0x2abf89c26601a8a450ea3e484c3ee9488dc77185aaf051b5e69a2479e90e7bf1](https://sepolia.etherscan.io/tx/0x2abf89c26601a8a450ea3e484c3ee9488dc77185aaf051b5e69a2479e90e7bf1)
+    
+-   方法调用：[https://sepolia.etherscan.io/tx/0xf7617b43ce5fc65f50b9e65120f0eb216a73b4eaef6e53449d1d96697b08551f](https://sepolia.etherscan.io/tx/0xf7617b43ce5fc65f50b9e65120f0eb216a73b4eaef6e53449d1d96697b08551f)
+    
+-   合约地址：[https://sepolia.etherscan.io/address/0x2cbdfd05c0c05260e0950ed312476b65d7fd0e8d](https://sepolia.etherscan.io/address/0x2cbdfd05c0c05260e0950ed312476b65d7fd0e8d)
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 今日学习
 
 用 Excalidraw 画了一张从 用户发起任务 到 链上执行验证 的完整流程图，把 Week 1 学的 LLM、Prompt、Context、RAG、Agent、钱包、合约串成了一条链路。
@@ -42,6 +75,7 @@ RPC 广播 → mempool →
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
+
 Day 5 打卡｜概念卡片整理：AI 6 个 + Web3 8 个  
   
 前两天把 Handbook 四章读完了，今天没读新东西，把读过的概念用自己的话整理成了卡片，方便以后翻。  
@@ -65,6 +99,7 @@ ERC-4337 是新东西，看了 UserOperation → Bundler → EntryPoint → Paym
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 # **今日学习的内容**
@@ -192,6 +227,7 @@ EOA（外部账户）= 裸数据库连接，私钥就是连接串，丢了全完
 
 
 
+
 ## 单笔交易流转流程
 
 钱包签名→节点网络传播→内存池排队→构建者排序→验证者打包出块→区块上链可查询
@@ -242,6 +278,7 @@ EOA（外部账户）= 裸数据库连接，私钥就是连接串，丢了全完
 
 
 
+
 今日的学习笔记作结
 
 ```markdown
@@ -274,6 +311,7 @@ EOA（外部账户）= 裸数据库连接，私钥就是连接串，丢了全完
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
