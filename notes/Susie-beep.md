@@ -15,8 +15,27 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+是否引入大模型开发框架，例如langchain：
+
+引入框架的触发条件：
+
+-   流程 > 5 步、多分支
+    
+-   需要高级 RAG（重排序、混合检索）
+    
+-   需要 Agent 式决策
+    
+-   团队协作、生产部署
+    
+
+当固定流水线 → 纯 Python 脚本。
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 【日期】2026-05-23 【今日完成】
 
 -   法规文档自动化解析需求的思考：技术选型与架构决策笔记（daily/2026-05-23.md）
@@ -30,11 +49,13 @@ AI x Web3 School
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
 
+
 研究了下Agent API，为什么只能查任务不能替我打卡
 <!-- DAILY_CHECKIN_2026-05-20_END -->
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 【日期】2026-05-19 【今日完成】
@@ -60,6 +81,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
