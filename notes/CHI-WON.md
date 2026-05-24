@@ -15,8 +15,26 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+今日学习：Web3 安全地基重建 🏗️
+
+串联了密码学 → 钱包 → 网络 → Smart Contract → Security 五章，建立了从「私钥签名」到「mempool 抢跑」到「合约重入」的完整攻击面地图。核心收获：
+
+1\. Web3 安全必须从底层理解——每一层都是攻击面，不能孤立看 Security 章节
+
+2\. mempool 公开 + 交易有序 + gas 竞价 = MEV 的物理基础，不是 bug 是透明性的代价
+
+3\. tx.origin ≠ msg.sender、审计 ≠ 安全保证书、Simulation 挡不住 mempool 变化
+
+4\. Agent 不应直接持有私钥——五层安全分层：建议 → 事实 → policy → simulation → human check
+
+明天计划：Security quiz 验证 + 推进 DeFi / 预言机 / 索引章节。
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 今日学习：Phase 1 AI 基础全通关 🎉
 
 今天一口气完成了 Handbook AI 基础部分全部剩余 9 章（Context / RAG / Agent / MCP / Frameworks / Vibe Coding / Evaluation / Fine-tuning / Inference），加上前两天完成的 LLM 和 Prompt，Phase 1 正式收官。
@@ -50,6 +68,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 今日学习：Phase 1 AI 基础全通关 🎉
 
@@ -88,6 +107,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-20_START -->
 
 
+
 今日学习：Context + RAG + Agent 三合一
 
 今天把 Handbook AI 基础部分三个核心概念串联学习：上下文（Context）、检索增强生成（RAG）、智能体（Agent）。这三者是自然的 pipeline——Knowledge Base → RAG（检索+引用）→ Context（分层放置）→ Agent（读状态+调工具+验证）。
@@ -108,6 +128,7 @@ AI x Web3 School
 
 
 
+
 📖 今日学习：Handbook Prompt 章节（最小路径）
 
 \> 学了 Instruction 四段写法（任务目标/可用输入/禁止行为/输出格式）和 Structured Output 的设计原则（输出变成可机器校验的字段，不做散文解析）。核心认知：Prompt 是软约束，真正的安全边界由 code 层的 schema 校验 + guard 规则 + human approval 承担。
@@ -119,6 +140,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
