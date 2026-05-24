@@ -15,8 +15,38 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-24
+<!-- DAILY_CHECKIN_2026-05-24_START -->
+今天没有学习任务，自己好奇了解了一下web4.0
+
+1.web4.0定义
+
+借助AI + 环境智能 + IoT + 可信区块链 + XR（扩展现实），让数字世界和物理世界全面融合，形成直观、沉浸、无缝的体验。
+
+AI / 环境智能 → 系统的"大脑"（感知、推理、决策）
+
+IoT → 系统的"神经末梢"（物理世界接入）
+
+可信区块链 → 系统的"信任底座"（AI之间交互可验证）
+
+XR / 虚拟世界 → 系统的"交互界面"（虚实边界消融）
+
+2.symbiotic web
+
+AI 不再是"网站上的一个功能"，而是网络的原生居民——有自己的数字身份（DID），能自主管理预算、与其他 AI 或人类签智能合约，从工具升格为行为者。
+
+3\. 产业/加密叙事（2026年被引爆的讨论）
+
+Sigil Wen 的 Web 4.0 宣言：瓶颈不是 AI 不够聪明，而是权限和支付机制不让它独立行动。Web 4.0 要解决的就是——让 AI Agent 能自主浏览、调用服务、发起交易、与其他 Agent 谈判协作。机器支付是它的经济基石。
+
+机器支付之所以成为独立议题，正是因为 Web 4.0 需要 AI Agent 成为经济主体。 一个不能花钱的 Agent 永远只是个聊天框；只有配上支付能力 + 数字身份 + 信任机制，它才真正变成一个在网络里替人办事的独立行动者。
+
+（机器支付的重要性）
+<!-- DAILY_CHECKIN_2026-05-24_END -->
+
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 机器支付：
 
 1.定义
@@ -62,6 +92,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 \# Day 3: 提示词（Prompt）
 
@@ -230,6 +261,7 @@ Prompt → Context → Model → Code → Guard/Simulation → Human Check
 <!-- DAILY_CHECKIN_2026-05-19_START -->
 
 
+
 Topic: 大语言模型（LLM）
 
 Permalink: Topic: 大语言模型（LLM）
@@ -293,6 +325,7 @@ Permalink: Next Steps
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
