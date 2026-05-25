@@ -15,8 +15,84 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+```yaml
+title: 链感知上下文（Chain-aware Context）
+created: 2026-05-25
+updated: 2026-05-25
+type: concept
+tags: [ai, web3, context, architecture]
+sources: [raw/articles/链感知上下文（Chain-aware Context）.md]
+confidence: high
+```
+
+# 链感知上下文（Chain-aware Context）
+
+## 概述
+
+Chain-aware Context 指的是让 AI 在回答或行动前，能看见正确的链、地址、合约、交易、事件、余额、授权和数据来源，而不是只靠用户一句话猜测链上状态。
+
+## 为什么要学
+
+普通 AI 上下文来自文档和聊天历史。AI×Web3 多了一层：**链上状态持续变化，且直接影响资产和权限**。
+
+如果 Agent 不知道当前 chain id、合约地址、ABI、用户授权、交易历史，就可能给出错误建议甚至生成危险交易。
+
+## 第一性原理
+
+> **模型不能凭语言记忆判断链上事实，链上事实必须从工具和索引层读取。**
+
+### 三项原则
+
+1.  **链上状态有时间性** — 同一地址的余额、授权、仓位随区块变化
+    
+2.  **上下文要带来源** — 合约地址、区块号、交易哈希、explorer 链接都应可追溯
+    
+3.  **上下文要区分事实和解释** — 工具返回事实，模型负责解释，不要把模型猜测当事实
+    
+
+## 上下文类型
+
+| 上下文 | 难度 | 说明 |
+| --- | --- | --- |
+| On-chain Data | 初级 | 余额、交易、日志等链上可验证数据。需带 chain id、block number |
+| Contract Docs | 初级 | ABI 之外的业务语义。NatSpec、README、审计报告 |
+| ABI / Event | 中级 | 合约可调用能力和业务日志。能调用≠应该调用 |
+| Transaction History | 中级 | 用户/合约过去行为。需保留 tx hash、block number、logs |
+| Explorer Context | 初级 | 区块浏览器提供的可检查入口和证据链接 |
+| Indexing Context | 中级 | 把事件整理成面向产品查询的数据。需带时间戳和同步状态 |
+| Citation | 初级 | 结论引用具体链上证据。没有 citation 的解释只是观点 |
+
+## 理想上下文包
+
+一个好的链感知上下文应包含：
+
+-   用户目标
+    
+-   当前 chain id 和网络名称
+    
+-   用户地址和余额
+    
+-   相关合约地址、ABI、文档和风险提示
+    
+-   最近交易和授权
+    
+-   索引数据更新时间
+    
+-   每条关键结论的 citation
+    
+
+## 关联概念
+
+-   [Web3 工具调用](web3-tool-use) — 依赖本上下文作为输入层
+    
+-   [AI x Web3 School](ai-web3-school) — 来源课程
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 # obsidian
 
 1.  obsidian为本地md文档，方便与AI结合
@@ -38,11 +114,13 @@ AI x Web3 School
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
+
 今天了解到obsidian和subagent，明后天会重点学习下。
 <!-- DAILY_CHECKIN_2026-05-22_END -->
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 # task3存在的问题
@@ -52,6 +130,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -98,6 +177,7 @@ ok，按照开发计划开始开发吧
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
