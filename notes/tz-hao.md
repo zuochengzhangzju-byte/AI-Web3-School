@@ -15,13 +15,64 @@ timezone: UTC+8
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+## **深度知识：Agent 架构模式**
+
+> 补充 Handbook 没覆盖的工程层面知识
+
+### **决策循环三模式**
+
+| 模式 | 一句话 | Web3 类比 |
+| --- | --- | --- |
+| ReAct | 想一步，做一步，看一眼，再想一步 | 手动盯盘，边看边交易 |
+| Plan-Execute | 先画完整地图，再逐步执行 | TWAP 定投，定好计划自动跑 |
+| Multi-Agent | 多个 Agent 分头干活，统一汇报 | DAO 工作组分工 |
+
+-   ReAct 是 Hermes 的底层模式（Thought → Action → Observation 循环）
+    
+-   死循环的根源：Agent 无法区分"没查到"和"方法不对"
+    
+-   解决：设最大步数、要求 Agent 换思路、工具返回加元数据
+    
+
+### **Multi-Agent 深入**
+
+**任务分配**：
+
+-   Centralized（Orchestrator 说了算）→ 实用，90% 的系统用这个
+    
+-   Decentralized（Agent 自己商量）→ 灵活但协调成本高
+    
+
+**拆分维度**：
+
+-   按领域：Solidity 写手 / 前端写手 / 审计 → 适合并行任务
+    
+-   按阶段：研究 → 策略 → 执行 → 验证 → 适合流水线任务
+    
+
+**安全保障（三道防线）**：
+
+1.  Orchestrator 做 sanity check
+    
+2.  独立 Reviewer Agent 审查
+    
+3.  涉及钱的留给人类确认
+    
+
+**经验法则**：能用一个 Agent 搞定的，不要用多个。
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 今天学习了一下web3xai有一些大概的总结：从 Agent Workflow 的 human-in-the-loop，到 Escrow 的多签仲裁，到 Sovereignty 的一键 kill switch，到 Governance AI 的「AI 不替你做投票建议」——**自动化程度越高，撤回机制必须越强**。
 <!-- DAILY_CHECKIN_2026-05-24_END -->
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 上午听了一下直播，感觉还是有点蒙  
   
@@ -45,6 +96,7 @@ timezone: UTC+8
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
 
+
 **1\. Web3 Tool Use（学完）**  
 \- 工具分层：只读（RPC/Contract Read）↔️ 写交易（Contract Write/Wallet）必须硬分离  
 \- 写交易前 7 步检查链：chain id → 合约地址 → ABI → value → gas → simulation → policy+确认  
@@ -61,6 +113,7 @@ timezone: UTC+8
 
 
 
+
 核心收获：  
 1\. Web3 工具必须**读写分离**——读链和写链是不同工具、不同权限，不能混在一个"万能 RPC"里  
 2\. 写交易前需要完整的 7 步检查链：chain id → 合约 → ABI → value → gas → simulation → policy  
@@ -70,6 +123,7 @@ timezone: UTC+8
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -84,11 +138,13 @@ timezone: UTC+8
 
 
 
+
 今天终于把hermes弄好，也学习了一些ai的知识
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
