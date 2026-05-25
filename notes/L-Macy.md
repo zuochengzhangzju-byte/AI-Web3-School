@@ -15,8 +15,64 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+nthropic 认为，Memory（记忆） 是继 MCP、Claude Code/Agent SDK、Skills 之后，下一个关键的 Agent Primitive。为什么重要？  
+传统 Agent 只是“调用工具 + 执行技能”，而 Memory 让 Agent 真正具备持续学习能力：
+
+-   从自身任务、环境反馈、失败经验中学习
+    
+-   从其他 Agent 的工作中学习
+    
+-   支持长时间运行 + 多 Agent 并行的复杂任务
+    
+
+这才是真正走向“组织级智能体”的关键一步。
+
+* * *
+
+Anthropic Memory 的设计重点（企业级文件系统）把记忆抽象成 Agent 自主管理的文件系统，并注入企业级能力：
+
+-   权限范围（Permission Scopes）：精细控制谁能读写哪些记忆
+    
+-   乐观并发（Optimistic Concurrency）：支持高并发安全更新
+    
+-   版本历史（Version History）：完整变更追踪
+    
+-   归因元数据（Attribution Metadata）：记录每条记忆来自哪个 Agent、哪个 Session
+    
+-   独立 API：Memory 可被单独调用和管理
+    
+
+目标：让上百到上千个 Agent 安全地共享、实时更新、审计同一套记忆库，实现真正意义上的集体智能。
+
+* * *
+
+即将发布的重磅功能：Dreaming
+
+-   本质：一个异步后台过程（类似“做梦”）
+    
+-   工作内容：
+    
+    -   读取近期所有 Agent Sessions / Transcripts
+        
+    -   自动发现：
+        
+        -   共性错误（Common Pitfalls）
+            
+        -   有效策略（Winning Patterns）
+            
+        -   重复/过期的记忆
+            
+    -   生成可审核的 Memory Diff（差异建议）
+        
+-   核心价值： 把单个 Agent 的局部经验，快速沉淀为组织级知识，第二天所有 Agent 都能直接复用。  
+    → 实现真正的知识飞轮和集体进化。
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 1.Blocks（区块）
 
 -   出块时间：每个 Slot 为 12 秒，一个区块通常在一个 Slot 内由随机选出的 Validator 提议。
@@ -134,6 +190,7 @@ eth\_call 的特殊性：
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
+
 1.核心摘要（一句话记住）AI Agent 在链上操作时最核心的安全威胁有三大类：私钥泄漏、恶意授权、不可信 RPC 数据源。  
 核心防御思路是：物理人在回路 + 多源 RPC 跨校验，建立多层安全底线。
 
@@ -234,11 +291,13 @@ eth\_call 的特殊性：
 <!-- DAILY_CHECKIN_2026-05-20_START -->
 
 
+
 今天的学习让我把 Web3 基础知识重新串成了体系，也第一次更清晰地把 AI 和 Web3 结合到实际项目里。我一边复习了区块链机制、智能合约、DeFi 生态与常见安全问题，一边动手做了一个 Web3 AI Assistant，完成了安全审计、合约生成、合约解释和 Gas 优化 4 个核心工具，并通过测试脚本验证了整体功能。这次实践让我意识到，专业 Agent 的价值不在“什么都能做”，而在于聚焦真实场景、沉淀领域知识、提供高频且实用的能力；同时也更深刻地理解了智能合约安全的重要性，以及 AI 在开发中的正确定位是“增强效率、辅助判断”，而不是替代开发者。下一步，我希望继续探索静态分析与 AI 结合、链上数据查询以及 RAG + Web3 的应用，逐步把这个方向做得更深入、更系统。
 <!-- DAILY_CHECKIN_2026-05-20_END -->
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -259,6 +318,7 @@ Hermes Agent 核心亮点（为什么适合这个学习计划）：
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
