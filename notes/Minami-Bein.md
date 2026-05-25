@@ -16,14 +16,14 @@ I am‘s Bein.
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
-Day 8 | 高保真Prompt工程与链感知上下文架构设计
+## Day 8 | 高保真Prompt工程与链感知上下文架构设计
 
 技术报告：Web3复杂交互的LLM提示词工程与链感知上下文架构
 Technical Report: LLM Prompt Engineering and Chain-aware Context Architecture for Complex Web3 Interactions
 
 
 
-🔍 目录
+## 🔍 目录
 
 - 1. Executive Summary & Problem Space
 - 2. System Architecture & Topology
@@ -35,32 +35,32 @@ Technical Report: LLM Prompt Engineering and Chain-aware Context Architecture fo
 
 
 
-1. Executive Summary & Problem Space
+## 1. Executive Summary & Problem Space
 
-摘要（Abstract）
+**摘要（Abstract）**
 
 本文档记录第8天学习成果，聚焦于将Web3复杂交互场景转化为高保真Prompt工程的核心方法论，并系统性设计链感知上下文（Chain-aware Context）架构。核心挑战在于：大语言模型（LLM）作为Web3交互的中枢决策层，必须实时感知链上状态变化，同时在自然语言创造力与程序化安全约束之间保持动态平衡。本报告提出Read/Write操作隔离策略与滑动窗口上下文管理方案，为构建可验证、安全、可复现的链上AI Agent系统提供理论框架与工程蓝图。
 
-In-Scope / Out-of-Scope
+**In-Scope / Out-of-Scope**
 
 包含范围：链感知上下文架构设计、LLM Prompt模板工程、安全护栏机制、上下文截断控制策略。
 
 排除范围：智能合约具体实现、底层RPC协议调优、非AI辅助的链上交互流程。
 
-问题空间定义：当LLM需要做出链上决策时，其推理质量高度依赖上下文信息的时效性与完整性。传统静态Prompt无法应对链上状态频繁变更的场景，需要构建动态、链感知的推理背景系统。
+**问题空间定义**：当LLM需要做出链上决策时，其推理质量高度依赖上下文信息的时效性与完整性。传统静态Prompt无法应对链上状态频繁变更的场景，需要构建动态、链感知的推理背景系统。
 
-系统边界约束：
+**系统边界约束**：
 
 SystemBoundary = {Context, Prompt, Agent, Chain State}
 Constraint = {Isolation(Read, Write), Token Budget, Security Gate}
 
 
 
-2. System Architecture & Topology
+## 2. System Architecture & Topology
 
-系统概念脑图
+### 系统概念脑图
 
-mermaid
+```mermaid
 mindmap
   root((链感知上下文架构))
     核心输入层
@@ -85,12 +85,11 @@ mindmap
     输出执行层
       链上交易签名
       状态验证提交
+```
 
+### 组件拓扑图
 
-
-组件拓扑图
-
-mermaid
+```mermaid
 graph TD
     subgraph 数据源层
         RPC[RPC Gateway]
@@ -132,6 +131,7 @@ graph TD
     LLM --> Sign
     Sign --> Verify
     Verify -->|提交| Contract
+```
 
 系统拓扑说明：
 
@@ -153,7 +153,7 @@ LLM Engine          Prompt模板, 安全护栏   输入/输出    Token上限
 
 
 
-3. Theoretical Framework & Formal Taxonomy
+## 3. Theoretical Framework & Formal Taxonomy
 
 核心术语定义表
 
@@ -205,11 +205,11 @@ $$w_{constraint}(t) = \alpha \cdot risk\_level(t) + \beta \cdot complexity(t) + 
 
 
 
-4. State Machine & Protocol Walkthrough
+## 4. State Machine & Protocol Walkthrough
 
-状态机与时序图
+### 状态机与时序图
 
-mermaid
+```mermaid
 sequenceDiagram
     participant User as 用户
     participant Agent as AI Agent
@@ -240,6 +240,7 @@ sequenceDiagram
     Agent->>Signer: 发起签名请求
     Signer->>Chain: 提交交易
     Chain-->>Agent: 交易确认
+```
 
 状态阶段细化
 
@@ -273,11 +274,11 @@ sequenceDiagram
 
 
 
-5. Agent Autonomous Integration & Optimization
+## 5. Agent Autonomous Integration & Optimization
 
 AI Agent自动化架构设计
 
-自主集成架构
+### 自主集成架构
 
 Agent自主决策流程：感知 → 理解 → 规划 → 执行 → 反馈
 
@@ -287,7 +288,7 @@ Agent自主决策流程：感知 → 理解 → 规划 → 执行 → 反馈
 执行层：通过安全护栏验证后，执行链上操作并处理交易签名。
 反馈层：将链上执行结果反馈至上下文引擎，更新历史记录和Token预算。
 
-任务调度策略
+### 任务调度策略
 
 优先级队列管理：
 
@@ -296,7 +297,7 @@ Agent自主决策流程：感知 → 理解 → 规划 → 执行 → 反馈
 状态监控              中        周期性轮询，事件驱动     延迟<3s
 写操作交易            高        实时优先，独立执行       即时确认
 
-智能优化方案
+### 智能优化方案
 
 Token消耗优化：通过MAX_HISTORY滑动窗口动态裁剪历史消息，确保Token消耗始终在预算范围内。核心算法：LRU（最近最少使用）+ 重要性评分。
 
@@ -310,7 +311,7 @@ LLM响应延迟            2.3s        1.1s        52%
 上下文截断发生率       18%         3%          83%
 回答相关度评分          0.72        0.91        26%
 
-数据流与反馈闭环
+### 数据流与反馈闭环
 
 状态变更事件 → RPC推送 → 上下文更新 → Prompt重新生成 → LLM推理 → 执行结果 → 历史归档 → 反馈至状态监控
 
@@ -320,9 +321,9 @@ LLM响应延迟            2.3s        1.1s        52%
 
 
 
-6. Vulnerability Vector & Edge Case Verification
+## 6. Vulnerability Vector & Edge Case Verification
 
-安全漏洞报告
+### 安全漏洞报告
 
 漏洞类型：提示词越狱（Prompt Injection）
 
@@ -385,13 +386,13 @@ LLM输出格式异常            安全护栏拦截，错误上报        待验
 
 
 
-7. 学术标签
+## 7. 学术标签
 
 #链感知上下文 #Chain-aware Context #高保真Prompt工程 #LLM安全护栏 #指令约束平衡 #Read/Write操作隔离 #滑动窗口上下文管理 #Web3 AI Agent #上下文截断控制 #Token预算优化
 
 ---
 
-学习心得：
+## 学习心得
 
 第8天的核心收获在于理解了链感知上下文架构的必要性——LLM作为Web3智能交互的中枢，必须在实时性与安全性之间找到精确的平衡点。RPC Gateway拉取智能合约状态的设计，让AI真正拥有了"当天最新报纸"式的推理背景，而非依赖陈旧数据做出滞后决策。
 
