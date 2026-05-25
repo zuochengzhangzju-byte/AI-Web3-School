@@ -832,7 +832,7 @@ more information
 | [willy77990](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/willy77990.md) | ⭕️ | ⭕️ | ✅ | ✅ | ❌ | | | | | | | | | | | | | | | | | | | | | | | |
 | [Hua-lar](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Hua-lar.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | | | | | | |
 | [Creator613](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Creator613.md) | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ❌ | | | | | | | | | | | | | | | | | | | | | | |
-| [wayneelliotte](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/wayneelliotte.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | |
+| [wayneelliotte](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/wayneelliotte.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | | | | | | | | | | | | | | | | | | | | |
 | [CyberAngel0226](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/CyberAngel0226.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ |   | | | | | | | | | | | | | | | | | | | | |
 | [xxxmingyue](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/xxxmingyue.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [liji3597](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/liji3597.md) | ⭕️ | ✅ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1233,6 +1233,7 @@ more information
 | [blueshark71](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/blueshark71.md) | ⭕️ | ⭕️ | ✅ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | |
 | [yisueh163](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/yisueh163.md) | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
