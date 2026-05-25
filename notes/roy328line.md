@@ -15,8 +15,46 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+\# 2026-05-25
+
+<!-- DAILY\_CHECKIN\_2026-05-25\_START -->
+
+今日學習：深讀 Settlement & Escrow 模組
+
+GitHub 筆記：[https://github.com/roy328line/ai-web3-school-cohort-0/blob/main/daily/2026-05-25.md](https://github.com/roy328line/ai-web3-school-cohort-0/blob/main/daily/2026-05-25.md)
+
+\## 核心整理
+
+**Settlement & Escrow** 解決的是 Agent 經濟裡「錢什麼時候釋放、服務怎麼算完成、失敗怎麼退款、爭議怎麼處理」，把支付從一次轉帳變成完整交易流程。
+
+**第一性原理**：自動化交易必須有明確完成條件，否則支付就無法安全自動化。Escrow 設計首先要定義狀態機，而不是先寫付款代碼。
+
+**Escrow**：鎖定資金直到交付條件滿足後釋放，最小狀態機：Created → Funded → Delivered → Accepted → Released（或 Refunded / Disputed）。好的 escrow 先定義業務流程，再定義資金流。
+
+**Receipt**：不只是「已付款」，應同時服務人和機器：記錄任務 ID、交易 hash、驗收狀態，並成為 reputation 的輸入。
+
+**Delivery Proof**：服務方交付的可驗證證明（文件 hash、API 日誌、模型輸出簽名等），必須能和原始任務對應，避免「結果存在但不可驗證」。
+
+**Acceptance**：驗收可自動也可人工，高價值任務建議「AI 初審 + challenge window + 人工復核」組合。
+
+**Refund**：退款規則必須在任務開始前寫清楚，並考慮部分交付的按比例退款。
+
+**Dispute**：爭議記錄是聲譽系統的重要輸入，設計需回答：誰能發起、成本多少、誰有裁決權、是否可申訴。
+
+**ERC-8183**：Agentic Commerce 草案標準，把 Agent 交易從「轉帳」提升到「狀態轉換」維度，與 ERC-8004 互補（ERC-8004 偏身份聲譽，ERC-8183 偏任務支付交付）。
+
+\## 核心發想
+
+Settlement & Escrow 的本質不是「鎖錢」，而是「把整個業務流程狀態機化」。Builder 機會：設計「狀態透明、proof 可驗證、dispute 有成本但可處理」的 Agentic Escrow 系統，讓 AI Agent 之間的委托和交易真正可信任。
+
+<!-- DAILY\_CHECKIN\_2026-05-25\_END -->
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 \# 2026-05-24
 
 <!-- DAILY\_CHECKIN\_2026-05-24\_START -->
@@ -41,6 +79,7 @@ Machine Payment 核心整理：
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
+
 學習日誌 · 2026-05-23（Day 7）
 
 今日學習：Open Agentic Economy: From ERC-8004 / ERC-8183 to Builder Path（直播）+ Agent Wallet 模組深讀
@@ -60,6 +99,7 @@ GitHub 筆記：https://github.com/roy328line/ai-web3-school-cohort-0/blob/main/
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
 
+
 學習日誌 · 2026-05-22（Day 6）
 
 今日學習：Co-learning 任務推進 + 例會分享 + Week 1 整體複習
@@ -77,6 +117,7 @@ GitHub 筆記：https://github.com/roy328line/ai-web3-school-cohort-0/blob/main/
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -131,6 +172,7 @@ GitHub 筆記：https://github.com/roy328line/ai-web3-school-cohort-0/blob/main/
 
 
 
+
 今日學習：Frameworks 模組深讀（LangChain / LangGraph / OpenAI Agents SDK / Hermes）+ Hermes 安裝實作
 
 主要收穫：
@@ -149,6 +191,7 @@ GitHub 筆記：https://github.com/IntensiveCoLearning/AI-Web3-School/pull/29
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -179,6 +222,7 @@ Hermes Agent 預習：Skills 可復用高層指令集 / Long-term Memory 跨 ses
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
