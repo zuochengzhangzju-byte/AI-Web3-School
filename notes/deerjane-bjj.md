@@ -15,8 +15,28 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+昨天做完最小的实践后再和朋友聊了一下，我才发现我理解的Prompt和handbook中的prompt是不一样。
+
+我一直理解的prompt是指用户层面输入的内容，就是user prompt；可是handbook里面的prompt是internal prompt 内部Prompt/ system prompt。两者是不一样的东西。这么一来就解释了handbook多次提及的instructions 规则。 我还一直在想在用户层面上的prompt有这么大权力去控制agent的工作？（笑死）我的疑惑也解开了。所以这次我搭建的Ai agent工作流程简单而言就是：
+
+### _用户输入交易信息 （user prompt）  
+↓  
+你的程序把「_**_内部 prompt + 用户输入_**_」一起发给模型  
+↓  
+模型按照_**_内部 prompt_** _的规则分析  
+↓  
+返回固定 JSON  
+↓  
+你的页面显示风险结果_
+
+下一次再需要搭建Agent的话，我会记住这个concept，然后加入在script里面。
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 今天根据handbook的建议，完成了Prompt的最小实践。我用Codex搭建了一个小demo：[https://github.com/deerjane-bjj/aixweb3-learning/tree/Handbook-AI-Prompt-exe](https://github.com/deerjane-bjj/aixweb3-learning/tree/Handbook-AI-Prompt-exe)
 
 这个任务比想象中有挑战。最开始他给我的版本是用户需要自己输入包括以下内容：交易目标地址、函数名、参数、资产变化、simulation 结果、用户原始意图的Json，增加了用户使用的难度（包括我）。于是我调整了一下，看看能不能输入自然语言。结果demo读不懂自然语言，Chatgpt告诉我需要另外做一个prompt去让模型抽取信息转化成json后，再把这段json发给风险分析的prompt。我觉得这个练习的目的是为了了解Prompt的明确输入边界，这么做可能令焦点模糊，于是我改用一个固定模版，使用者只需要跟着格式更改内容就可以。相对最开始的版本，使用的难度减少了。
@@ -34,6 +54,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
 
+
 今日主要是補听了之前的分享，包括Web3 的运行原理和Web3下乡计划。前者的分享者Bruce 老师在结束分享时提供了几个问题（附截图），值得好好思考一下，因为我也很认同老师所说的Web3 并不是只有技术本身，还是由密码学、经济学和社会学三种学科交集的中心。我的专业是社会学，难怪会被Web3这个大概念吸引。但他蕴含的底层逻辑和核心思想还是需要深刻的思考和认识。除此之外，老师也简介了Web3的一些基本概念和运行，这部分也加深我的认识，特别是节点等。不过因为我也使用过Web3产品（例如钱包、defi、domain等等），所以有一定的理解。
 
 第二个分享是Web3下乡计划，这个我有点难过，因为recording的质量很差，声音很小，有起码一半时间并没有声音。所以我也没有浪费时间继续听下去。有点遗憾。
@@ -49,6 +70,7 @@ AI x Web3 School
 
 
 
+
 今天去了例會，裡面的小夥伴都很厲害！！特別是Luvia，她只有大一而已，真的後生可畏！！我也要好好加油！！另外一樣有趣的事情，就是大家都有不同程度的焦慮，果然焦慮都是亞洲人的標配啊。。。
 
 今天沒有真實使用到Hermes Agent，這個要留到明天才可以用了。今天就只看了handbook的內容，重點還是focus在AI方面。可能我也了解一下Obsidian怎麼用去打造屬於我的知識庫吧！
@@ -58,6 +80,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -92,6 +115,7 @@ AI x Web3 School
 
 
 
+
 今日目標是要做3樣東西：
 
 1）根據ChatGPT提供的Study Plan，在Github建立Repo，並將Day1、2的筆記錄入。  
@@ -112,6 +136,7 @@ AI x Web3 School
 
 
 
+
 Day2
 
 My note is saved in Google docs: [https://docs.google.com/document/d/18Bv98uTSMrQCXBd3qxowlZqXCX\_dfMbQRMUDxJcWA0k/edit?usp=sharing](https://docs.google.com/document/d/18Bv98uTSMrQCXBd3qxowlZqXCX_dfMbQRMUDxJcWA0k/edit?usp=sharing)
@@ -121,6 +146,7 @@ Basically I just read the handbook and clarify the ideas of different AI concept
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
