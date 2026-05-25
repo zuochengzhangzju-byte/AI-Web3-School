@@ -15,13 +15,20 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+打卡
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 今天听完了sophia分享的 以太坊builder情况
 <!-- DAILY_CHECKIN_2026-05-23_END -->
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 今天补了  
 **「AI 下乡计划」24 小时让 Agent 上工！**  
@@ -32,11 +39,13 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
 
+
 昨天忘记打卡了
 <!-- DAILY_CHECKIN_2026-05-21_END -->
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
