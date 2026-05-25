@@ -15,8 +15,16 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+今日听完co-learning和ai的长记忆功能，感觉如果給ai做好长记忆挺困难的。后面要深度研究下
+
+![262da3579b66b8f7b0dfb6dc64518280.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/corinnashisi/images/2026-05-25-1779723117593-262da3579b66b8f7b0dfb6dc64518280.png)
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 边喝着小酒边复习着本周前面的课程。现在复习的是dragon老师的《**AI Agent 入门 —— Hermes 从 0 到 1》**
 
 **已经成功在mac上安装完homebrew，github并完成github的授权。**
@@ -33,6 +41,7 @@ AI x Web3 School
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
+
 早上听了**Open Agentic Economy的分享，英文的分享对我还是有压力。只能后面看逐字稿补课。**  
 
 今天还是正式用Hermes来制定学习计划了，在不**homebrew和github的安装。先把学习计划搞定，后面每日安装学习计划执行。**
@@ -42,6 +51,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 哎……现在还在应酬，今日只能流水账了
@@ -54,6 +64,7 @@ AI x Web3 School
 
 
 
+
 今日#流水账#
 
 这两天工作太多，没法抽出过多的时间学习和实践。晚8坚持听完老师的分享，agent payment是近期ai在web3实践的课题，老师也分享了。后续会着重看看这个方向。
@@ -63,6 +74,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -83,6 +95,7 @@ AI x Web3 School
 
 
 
+
 已经完成hermes的安排，虽然ollama的本地模型没有调用成功，但用api key的方式已经成功用hermes帮我做学习计划。
 
 计划随时学习的过程逐步深入使用agent帮我完成更多的任务。
@@ -92,6 +105,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
