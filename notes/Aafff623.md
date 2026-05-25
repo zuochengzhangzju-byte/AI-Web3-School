@@ -15,8 +15,54 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+# **2026-05-25**
+
+> Week 2 · Day 2 · 周一
+
+## **今天做了什么**
+
+-   **19:00-20:00**：实时参加 Co-learning — 带着 Week 2 repo 和 Hackathon 候选方向问题去讨论，主要聊了 Smart Account + Session Key  
+    方案的可行性，从其他学员那里拿到了几个参考项目
+    
+-   **20:00-21:00**：实时参加 Long-term Memory for AI Agents — 讲了 Agent 长期记忆的三种模式（短期上下文、外部存储、参数微调），结合  
+    Hackathon 选题听了 Agent 持久化上下文的部分，重点记了 3 条笔记
+    
+
+## **产出与检验**
+
+### **1\. Co-learning 实时参加（+20 学分）**
+
+-   带着 repo 和问题参加了讨论
+    
+-   主要议题：Week 2 方向探索进展、Hackathon 选题初步想法（Smart Account + Session Key）
+    
+-   从同学那里了解到几个相关参考：ERC-4337 入口合约、ZeroDev Session Key SDK、Biconomy 的 paymaster 模式
+    
+
+### **2\. Long-term Memory for AI Agents 实时参加（+20 学分）**
+
+3 条有效笔记：
+
+1.  **短期上下文窗口 vs 外部存储** — Agent 长期记忆的核心矛盾是 token 成本和信息完整性的 trade-off，RAG + 向量数据库是目前主流解法
+    
+2.  **参数微调不适合频繁更新** — 适合沉淀稳定知识，不适合动态对话记忆，这个结论对 Hackathon 选型有参考价值
+    
+3.  **On-chain 记忆的可能性** — 把 Agent 状态写到链上作为可验证记忆，和 Web3 结合点很自然，直接对应 Hackathon 候选方向 #4
+    
+
+## **收获 / 卡点**
+
+-   Long-term Memory 那个 talk 直接把 Hackathon 候选方向 #4（On-chain Data Analysis Agent）和 #1（Smart Account）串起来了 — Agent  
+    需要持久化记忆，链上记忆是自然延伸，但 gas 成本是个实操问题
+    
+-   Co-learning 上和其他学员交流后，Smart Account + Session Key 方向的可行性比预想的高，生态工具也比较成熟了
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 # **2026-05-23**
 
 > Week 1 · Day 7 · 周六 · Week 1 收尾日
@@ -150,6 +196,7 @@ AI x Web3 School
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
+
 # **2026-05-22**
 
 > Week 1 · Day 6 · 周五
@@ -201,6 +248,7 @@ AI x Web3 School
 
 
 
+
 # **2026-05-21**
 
 > Week 1 · Day 5 · 周四 , 直达 Github Repo: [https://github.com/Aafff623/web3career-study-track/tree/master/daily-log/week-1/2026-05-21](https://github.com/Aafff623/web3career-study-track/tree/master/daily-log/week-1/2026-05-21)
@@ -246,6 +294,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -363,6 +412,7 @@ Github 直达地址: [https://github.com/Aafff623/web3career-study-track/tree/ma
 
 
 
+
 Github repo 直达地址: [https://github.com/Aafff623/web3career-study-track/tree/master/daily-log/week-1/2026-05-19](https://github.com/Aafff623/web3career-study-track/tree/master/daily-log/week-1/2026-05-19)
 
 # **2026-05-19**
@@ -416,6 +466,7 @@ Github repo 直达地址: [https://github.com/Aafff623/web3career-study-track/tr
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
