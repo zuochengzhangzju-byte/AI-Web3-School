@@ -15,8 +15,16 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+今天听了关于大模型agent保持长期记忆性的重要性，老师花了很长篇幅讲述了有记忆的agent对用户的体验是很有拔高作用的，还举例了chatgpt，claude code和openclaw的例子。agent回复所经过的链条越长，记忆就越容易丢失。所以单纯聊天的大模型是比较擅长记忆的，而像openclaw这样的要有交付件的agent就会出现记忆扁平化的问题。下一步可能要探索一下hermes是不是更好用一些，在记忆的表现上会不会更好一些。
+
+![72da73aa0b637f20f4343af7e0bdddb8.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Twinstars526/images/2026-05-25-1779717797914-72da73aa0b637f20f4343af7e0bdddb8.png)
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 今天是优秀笔记分享会，老师主要展示了一些优秀学员的笔记，图文并茂，心得满满。用AI来帮助整理笔记也是一个不错的选择，还可以随时回看索引。下一步准备继续跟随AI的计划进行学习和总结。
 
 ![020b83b8ae8b6a19c81f2b4cd0f122cb.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Twinstars526/images/2026-05-22-1779465038105-020b83b8ae8b6a19c81f2b4cd0f122cb.png)
@@ -26,6 +34,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
 
+
 今日深耕 AI 与 Web3 融合相关知识，熟悉了两类典型落地应用：一是利用 AI 技术排查智能合约漏洞、自动优化合约逻辑，降低安全风险；二是通过 AI 解析链上用户行为，甄别违规操作行为。同时也了解到行业前沿痛点，AI 模型在区块链网络中运行消耗极大，落地规模化应用难度颇高。此外收获了老师的暖心勉励，谈及普遍存在的 AI 焦虑心态，老师表示焦虑是常态，只要一直走在持续学习的路上，就能从容应对各类未知考验。
 
 ![6c223e28c46b0850d553b4425f0f0ba6.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Twinstars526/images/2026-05-21-1779377587158-6c223e28c46b0850d553b4425f0f0ba6.png)
@@ -33,6 +42,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -47,6 +57,7 @@ AI x Web3 School
 
 
 
+
 今天听了关于Hermes的安装和应用课程，了解了一些本地AI agent能帮人做到的事情，还有一些安装方法。不过agent的选择是不约束的，我选择了qclaw作为本地学习助手，命令输入和安装更简单。今天用学习助手开始基于handbook进行深入的概念学习，正式开始了学习之旅。以下是学习的截图。
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Twinstars526/images/2026-05-19-1779204342095-image.png)
@@ -54,6 +65,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
