@@ -15,8 +15,50 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+今日学习：Security 验证 + DeFi 地基 + Oracle/Indexing 🔐
+
+Week 2 第一天，今天三件事：
+
+1\. Security quiz 验证（昨天重建的 Web3 安全地基）
+
+过了 4 道场景题覆盖核心盲区：
+
+\- Reentrancy：为什么 balances\[msg.sender\] = 0 必须在 call 之前（Checks-Effects-Interactions）
+
+\- tx.origin ≠ msg.sender：tx.origin 是最外层 EOA，msg.sender 是当前调用者——钓鱼攻击利用的就是这个差
+
+\- Flash Loan + MEV Sandwich：闪电贷借→推高 AMM 价格→用户成交在更差价格→卖回还贷——整套在一笔交易内完成，因为区块链交易是原子的。滑点保护部分有效但不是根治方案
+
+\- Agent 私钥五层安全：建议层→事实层→Policy→Simulation→人工确认。签名权永远是最后防线
+
+2\. DeFi 五积木串联
+
+Token → AMM → Lending → Stablecoin → Liquidity，五块积木的依赖关系。核心认知：
+
+\- DeFi 不是"去掉中介"，是把金融规则写成可组合、可验证、也可被攻击的链上协议
+
+\- Lending 清算靠 Oracle 喂价触发——预言机延迟/操纵直接导致坏账或错误清算
+
+\- Flash Loan 不只用于 Sandwich，清算攻击（砸盘→触发清算→拿折扣抵押品）是另一个经典场景
+
+\- Stablecoin 的"稳定"靠机制维持——法币抵押型（USDC）怕监管冻结，加密超额抵押型（DAI）怕抵押品暴跌连锁清算
+
+AI 在 DeFi 的边界：做信息整理和风险辅助（解释交易、监控仓位），不做自动执行（swap/借贷/加杠杆）。
+
+3\. Oracle + Indexing：数据进和出
+
+\- Oracle：外部数据进链上——Price Feed 喂价格、Data Feed 喂事件结果、AI Oracle 喂模型判断。数据源就是信任边界
+
+\- Indexing：链上数据拉出来——Event Indexing → Subgraph → Data Pipeline，三层从监听合约日志到给 Agent 提供结构化上下文
+
+\- AI Oracle 特殊问题：模型判断不是客观事实，必须有输入可追溯、输出可复核、允许挑战、错误有惩罚
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 今日学习：Web3 安全地基重建 🏗️
 
 串联了密码学 → 钱包 → 网络 → Smart Contract → Security 五章，建立了从「私钥签名」到「mempool 抢跑」到「合约重入」的完整攻击面地图。核心收获：
@@ -34,6 +76,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 今日学习：Phase 1 AI 基础全通关 🎉
 
@@ -68,6 +111,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 今日学习：Phase 1 AI 基础全通关 🎉
@@ -108,6 +152,7 @@ AI x Web3 School
 
 
 
+
 今日学习：Context + RAG + Agent 三合一
 
 今天把 Handbook AI 基础部分三个核心概念串联学习：上下文（Context）、检索增强生成（RAG）、智能体（Agent）。这三者是自然的 pipeline——Knowledge Base → RAG（检索+引用）→ Context（分层放置）→ Agent（读状态+调工具+验证）。
@@ -129,6 +174,7 @@ AI x Web3 School
 
 
 
+
 📖 今日学习：Handbook Prompt 章节（最小路径）
 
 \> 学了 Instruction 四段写法（任务目标/可用输入/禁止行为/输出格式）和 Structured Output 的设计原则（输出变成可机器校验的字段，不做散文解析）。核心认知：Prompt 是软约束，真正的安全边界由 code 层的 schema 校验 + guard 规则 + human approval 承担。
@@ -140,6 +186,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
