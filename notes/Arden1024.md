@@ -16,8 +16,19 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+0525筆記  
+  
+上週成功將api導入LLM中，並成功開啟對話模型。  
+
+今天開始有新的想法，會將LLM與claude結合，能夠自動產出素材，同時持續研究web3領域的技術  
+將來結合自動產出功能，也能為新的技術宣傳做出貢獻。
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 0524筆記  
   
 今天搭建LLM的時候遇到很多問題，一開始是完全無法啟動，原來是版本太新。  
@@ -29,6 +40,7 @@ AI x Web3 School
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
+
 0523筆記  
   
 今天開始進行運用VS CODE搭建虛擬環境，並引入openai進行建置。  
@@ -37,6 +49,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 0522筆記
@@ -52,6 +65,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -75,6 +89,7 @@ AI x Web3 School
 
 
 
+
 0519筆記  
   
 透過Hermes指定一个“大脑”，也就是大语言模型。  
@@ -85,6 +100,7 @@ Hermes Agent支持众多主流模型，包括**OpenAI、Anthropic Claude。**
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
