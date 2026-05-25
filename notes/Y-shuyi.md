@@ -15,19 +15,105 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+# 打卡日志 — 2026-05-25
+
+**学习时长**：\_ \_ 小时
+
+## ✅ 今日完成
+
+-   \[x\] 配置 Claude 工作流 hook（自动提醒 /rename 和 /export）
+    
+-   \[x\] 修复 hook shell 语法错误
+    
+-   \[x\] 学习 Hermes Agent 使用逻辑
+    
+-   \[x\]co-learning session
+    
+
+## 💡 核心收获
+
+-   建立了对话管理工作流：新对话用 `/rename` 命名，结束用 `/export` 保存 md
+    
+-   搞清楚终端对话窗口里不能直接发 shell 命令——输入的所有内容都是"聊天内容"，不是 terminal 指令
+    
+-   理解了 Hermes vs Claude 的核心差异：Claude 自带"手脚"（Bash/Read/Edit 工具）；Hermes 是纯语言模型，工具执行层需要自己搭
+    
+-   Hermes 可以通过 tool use / function calling 装手脚，但执行器要自己写
+    
+
+### co-learning
+
+Q:不怎么了解黑客松，做哪些方向比较好？ A:马铃薯
+
+-   做有趣的UX，因为交易一般都很无聊；可以去看看有趣的UX是怎么做的。
+    
+-   隐私赛道也不错。
+    
+-   多与AI 聊天，积极和学霸组队！
+    
+
+## ❓ 遇到的问题 / 待解决
+
+-   Hermes `/resume` / title 功能显示不出历史对话列表（原因待查，下次从 `hermes --help` 入手）
+    
+
+## 🔗 参考资料
+
+-   Nous Research：[https://nousresearch.com](https://nousresearch.com)
+    
+-   Clippings/你好，我是小白，能白話的跟我說說啥是Kohaku跟Railgun嗎？[https://x.com/0xMalingshu/status/2016137832465682514](https://x.com/0xMalingshu/status/2016137832465682514)
+    
+
+## 📝 Handbook Feedback（如有）
+
+-   章节：
+    
+-   反馈：
+    
+
+* * *
+
+## 🗒 会话总结（/rename about hermes agent）
+
+### 今日决策
+
+-   Claude 工作流规则确立：每次新对话先 `/rename`，结束前 `/export`
+    
+-   正确命令确认：`/rename`（不是 `/title`），`/export`（不是其他）
+    
+-   Hermes 学习策略：先理解"模型 vs 客户端"的分层，再看具体功能
+    
+
+### 变更文件
+
+-   `~/.claude/settings.json`：新增 SessionStart hook（提醒 /rename）和 Stop hook（提醒 /export）
+    
+
+### 明天第一步
+
+-   查 `hermes --help` 或 Hermes 文档，找到历史对话 session 管理的正确用法
+    
+-   继续 Hermes agent 工具调用（tool use）的实践
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 ![Screenshot 2026-05-24 at 23.57.18.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Y-shuyi/images/2026-05-24-1779638290862-Screenshot_2026-05-24_at_23.57.18.png)
 <!-- DAILY_CHECKIN_2026-05-24_END -->
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
+
 ![Screenshot 2026-05-23 at 23.59.19.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Y-shuyi/images/2026-05-23-1779551983031-Screenshot_2026-05-23_at_23.59.19.png)![Screenshot 2026-05-23 at 23.59.11.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Y-shuyi/images/2026-05-23-1779551995589-Screenshot_2026-05-23_at_23.59.11.png)
 <!-- DAILY_CHECKIN_2026-05-23_END -->
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 ![Screenshot 2026-05-22 at 23.57.21.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Y-shuyi/images/2026-05-22-1779465443887-Screenshot_2026-05-22_at_23.57.21.png)
@@ -37,6 +123,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -86,11 +173,13 @@ Further question/action：
 
 
 
+
 今天主要听了Bruce分享的Web3的运行基础。之前我也听不同的人讲过这个部分，其它部分Bruce老师的解读其实能发现是从技术底层逻辑上去拆解为什么其中某一个环节的存在对于整个系统会有影响——这一点其实我还不够问自己更深。最后的Takeaway是web3不仅是关于技术，技术只是基础设施，而更涉及到社会学、经济学和密码学。
 <!-- DAILY_CHECKIN_2026-05-20_END -->
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -110,6 +199,7 @@ X博主分享：
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
