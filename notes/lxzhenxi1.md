@@ -15,8 +15,18 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+![截屏2026-05-25 下午8.06.15.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/lxzhenxi1/images/2026-05-25-1779713908494-__2026-05-25___8.06.15.png)
+
+ChatGPT Saved memory/ChatHistory Claude Project
+
+![2646C492-1119-4BA8-89D2-519DD4AB5BD8_副本.jpeg](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/lxzhenxi1/images/2026-05-25-1779713984586-2646C492-1119-4BA8-89D2-519DD4AB5BD8___.jpeg)
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 Future of AI \* Ethereum: Ethereum becoming the coordination layer of value commitment for machines in the machine economy, with humans at center. ERC-8004: Trustless Agent went live same week as OpenClaw.
 
 Core thesis: Ethereum moves value and encforces agreement without needing a central operator.- AI Agent Infrastructure.
@@ -37,6 +47,7 @@ Example: Deep funding. Allocate funding to github repos.
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
+
 练习用AI生成定期行业简报，流程图以及行业研究
 <!-- DAILY_CHECKIN_2026-05-23_END -->
 
@@ -44,11 +55,13 @@ Example: Deep funding. Allocate funding to github repos.
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
 
+
 学习优秀笔记
 <!-- DAILY_CHECKIN_2026-05-22_END -->
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -73,6 +86,7 @@ web3 核心：密码学 经济学 社会学
 
 
 
+
 成功设置hermes agent Telegram channel 并创建GitHub Repo
 
 [https://github.com/lxzhenxi1/ai-web3-school-cohort-0](https://github.com/lxzhenxi1/ai-web3-school-cohort-0)
@@ -85,11 +99,13 @@ web3 核心：密码学 经济学 社会学
 
 
 
+
 成功安装Hermes Agent
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
