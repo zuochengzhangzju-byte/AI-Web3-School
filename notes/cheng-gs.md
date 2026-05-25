@@ -15,8 +15,37 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+今天我主要完成了 **模块 A：AI × Web3 方向扫描与主方向选择** 的学习和初步选题。
+
+首先，我快速梳理了 AI × Web3 的几个主要交叉方向，包括 Payment / Commerce、Identity / Reputation、Wallet / Permission、Privacy / Security、Dev Tooling / Agent Workflow 和 Governance / Coordination。我理解到，这一阶段的重点不是同时做很多项目，而是先看清不同方向分别在解决什么问题、适合什么类型的学员，以及它们更可能落在产品、工具、协议、风控模型还是研究层。
+
+然后，我明确了 **Agent DeFi Execution** 的定位。它不是一个新的基础方向，而是一个 sponsor-defined applied path，主要是把 Payment / Commerce、Wallet / Permission 和 Privacy / Security 放到 DeFi 链上执行场景中集中检验。它可以作为 Cobo 相关 Hackathon / workshop 的优先应用路径。
+
+在主方向选择上，我初步选择了两个自己感兴趣的方向：
+
+1.  **Privacy / Security / Sovereignty**
+    
+2.  **Dev Tooling / Agent Workflow**
+    
+
+对于 **Privacy / Security / Sovereignty**，我认为真实用户是那些希望使用 AI agent 提升效率，但又不能接受敏感数据、权限、资产或身份失控的 Web3 用户和团队。这个方向的问题在于，agent 一旦接触钱包、API key、私钥、治理权限或敏感信息，就会带来 prompt injection、tool abuse、权限滥用和数据泄露等风险。如果没有 AI，很难实时、低成本地识别这些复杂风险；如果没有 Web3，这个问题又会缺少资产、身份、链上权限和可验证执行这些关键场景。因此，这个方向更适合做 risk model、security tooling 或 research memo。
+
+对于 **Dev Tooling / Agent Workflow**，我认为真实用户是 Web3 builder，包括智能合约开发者、Hackathon 参赛者、协议团队工程师、DevRel 和安全研究人员。这个方向关注的是 AI 能否真正改善 Web3 开发流程，例如合约阅读、交易解释、docs-to-agent、部署助手、测试脚本生成和 repo 自动维护。如果没有 AI，Web3 开发流程中的信息整合、代码理解、错误解释和上下文切换会非常低效；如果没有 Web3，这个方向就只是普通开发者工具，缺少链上状态、智能合约、交易执行和协议组合这些独特场景。因此，这个方向更适合做 developer tooling 或 product demo。
+
+目前我的初步判断是：如果要快速做出 Hackathon demo，**Dev Tooling / Agent Workflow** 会更容易落地；如果要做长期研究或安全框架，**Privacy / Security / Sovereignty** 更有结构性价值。
+
+我也发现这两个方向其实可以结合起来，形成一个更聚焦的主线：
+
+**Secure Dev Tooling for Web3 Agents**
+
+也就是做一个面向 Web3 builder 的安全型开发者 agent。它不仅能解释合约、交易和文档，还可以标注权限风险、敏感数据风险和 agent 执行风险。这个方向既有 developer tooling 的可展示性，也能承接 privacy / security 的长期价值。
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 * * *
 
 # **Week 1 总结**
@@ -38,6 +67,7 @@ AI x Web3 School
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 \# AI × Web3 助手 Stage 2 实现说明
 
@@ -352,6 +382,7 @@ Stage 2 虽然更强，但安全边界没有变：
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 # Remix + AI Web3 助手网页介绍
@@ -685,6 +716,7 @@ Stage 2 虽然更强，但安全边界没有变：
 
 
 
+
 今天我主要完成了 Week 1 Proof-of-Work Pack 的收口工作，把零散材料整理成了可提交、可审核的公开入口。核心产出是把 \[[README.md](http://README.md)\]重写成 Week 1 总入口，并补上了 \[tasks/[minimal-ai-web3-workflow.md](http://minimal-ai-web3-workflow.md)\]，用最小流程说明了 AI 生成、人工复核、钱包确认、测试网执行和区块浏览器验证之间的边界。
 
 今天还补充了对这个最小 AI × Web3 工作流的简短说明，明确了它解决什么问题、哪些步骤由 AI / Agent 辅助、哪些步骤必须人工确认、如何验证最终结果，以及主要风险点。最后，这些更新已经提交并推送到 GitHub
@@ -692,6 +724,7 @@ Stage 2 虽然更强，但安全边界没有变：
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -852,6 +885,7 @@ Stage 2 虽然更强，但安全边界没有变：
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
