@@ -15,8 +15,36 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+今天的学习主线是 Agent Memory 和 Agent wallet。
+
+整理了 Long Term Memory for AI Agents 课程笔记。我最大的收获是：Agent Memory 不是简单的向量数据库，也不是把上下文无限拉长。更关键的问题是如何对内容进行高质量压缩，如何形成可触发的记忆节点，如何在正确任务里召回少量关键记忆，以及如何在召回后重新解释、更新和遗忘。
+
+我也把自己的问题写进了笔记：人的记忆不是一个超长上下文，而是通过节点触发、联想和再解释来工作。Agent Memory 是否也应该朝这个方向设计？
+
+下午整理了一个 0G 生态外部分享，主题是当 AI Agent 拥有钱包、资产和自我主权后会发生什么。其中 memory as an asset、Agent prediction market、Agent ID、隐私计算和链上审计轨迹，都和我的黑客松方向产生了连接。
+
+今天对 AI Wallet Clear Intent Guard 的理解又推进了一步：它不应该只是交易解释器，而应该逐步考虑用户意图、确定性的交易事实、权限策略、memory source、permission history 和 payment route。第一版 demo 仍然要保持很小，不做完整钱包，不接触真实私钥，不自动签名。
+
+今日记录：
+
+[**https://github.com/pillowtalk-Qy/ai-web3-school-cohort-0/blob/main/daily/2026-05-25.md**](https://github.com/pillowtalk-Qy/ai-web3-school-cohort-0/blob/main/daily/2026-05-25.md)
+
+Today I focused on Agent Memory and agent wallets.
+
+The key insight from the Long Term Memory for AI Agents class is that memory is not just a vector database or a longer context window. The deeper questions are compression, triggering, retrieval, reinterpretation, update, and forgetting.
+
+I also added my own question into the note: human memory does not work like an infinite context window. It works through triggered memory nodes, association, and reinterpretation. Agent Memory may need to be designed in a similar direction.
+
+The 0G ecosystem meeting connected this memory topic with agent wallets, memory assets, AI prediction markets, Agent ID, privacy computing, and onchain audit trails.
+
+My AI Wallet Clear Intent Guard direction moved one step forward: it should eventually compare user intent, transaction facts, policy constraints, memory source, permission history, and payment route before a human signs. The first MVP still needs to stay small and safe: no full wallet, no real private keys, and no automatic signing.
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 今天我继续整理 AI x Web3 School 第一周后半段的学习成果，完成了 AI 基础概念卡片、Web3 基础概念卡片，并围绕自己的黑客松方向拆解了两个 AI 钱包相关项目：Cobo Agentic Wallet 和 Coinbase AgentKit / Agentic Wallet / x402。
 
 这次最大的收获是，AI 钱包方向不能简单理解成“让 AI 帮我操作钱包”。更安全、更适合黑客松的切口是签名前 review layer：先把用户自然语言意图、确定性的交易事实、权限策略和支付路径放在一起检查，再由人决定是否签名。
@@ -37,6 +65,7 @@ Cobo taught me to think in terms of task-scoped, policy-enforced, reviewable, an
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
+
 今天是 Week 1 的集中收尾日。我把前几天分散完成的 AI、Web3、AI x Web3 综合任务整理成一组更完整的 public proof：测试网交易、只读智能合约调用、EOA / 智能账户 / 多签权限比较、AI x Web3 最小交叉流程图、Week 1 Proof-of-Work Pack，以及一个受限 Web3 助手 workflow。
 
 这次最大的收获是，AI x Web3 的安全边界不能停留在一句“人工确认”。它需要被拆成具体流程：AI 可以解释和准备，工具可以验证公开事实，钱包负责展示待签名动作，人负责确认或拒绝，链上系统负责执行并留下可验证记录，public repo 负责保存脱敏后的 proof。
@@ -56,6 +85,7 @@ I also organized Sophia's guest talk on Open Agile Economy / AI Agent Economy. A
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 今天我完成了 Week 1 的一个关键 Web3 实践闭环：用 Sepolia 测试网完成一笔基础交易，通过区块浏览器和公开 RPC 验证交易状态、gas、区块高度和时间，并整理成 GitHub proof 提交到 WCB。
@@ -84,6 +114,7 @@ I also reported a platform-review issue today. In a Web3 operating-principles ta
 
 
 
+
 今天我整理了 2026-05-21 AI 与 Web3 结合方向分享会笔记。最大的收获是，AI x Web3 不是单向叠加，而是双向关系：Web3 可以为 AI 提供更开放的算力、数据和激励网络，AI 也可以帮助 Web3 在钱包安全、链上数据理解和语义化交互上变得更可用。
 
 另外，我也记录了一个自己主动寻找和分析外部参考后形成的黑客松候选方向：围绕 AI 钱包签名安全，探索 AI 如何在用户确认前帮助理解风险。这个方向和课程主题有关联，但不是课程直接给出的题目。考虑到 idea 还在早期，我只保留低信息量公开版本，不展开具体产品细节。public repo 是学习证明，不等于把所有想法都公开。
@@ -103,6 +134,7 @@ I also recorded a Hackathon candidate direction formed through my own external r
 
 
 
+
 今天我整理了 2026-05-20 Web3 运行原理分享会笔记，从第一性原理复盘了一笔交易如何从钱包签名开始，经过 RPC、mempool、builder、validator、出块和确认，最终成为链上状态。
 
 最大的收获是：Web3 不是几个孤立概念，而是一条从私钥到 finality 的完整系统链路。钱包负责控制签名，交易表达用户意图，gas 定价链上资源，RPC 连接用户和网络，智能合约承载公开规则，协议升级则依赖技术实现和社会共识共同完成。
@@ -118,6 +150,7 @@ The biggest takeaway is that Web3 is not a set of isolated concepts. It is a ful
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -147,6 +180,7 @@ Another important takeaway is that the direction of Qy Knowledge Hub became clea
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
