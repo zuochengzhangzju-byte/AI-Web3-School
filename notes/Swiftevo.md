@@ -15,8 +15,620 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-26
+<!-- DAILY_CHECKIN_2026-05-26_START -->
+Day 4 學習總結 — Long-term Memory、Knowledge Infrastructure 與 AI-native Architecture
+
+今天你開始真正進入：
+
+AI Agent 長期記憶與知識基礎設施
+
+這已經不是：
+
+「怎樣用 AI」
+
+而是：
+
+怎樣建立 AI-native knowledge systems
+
+\---
+
+1\. Long-term Memory 問題
+
+今天最大核心之一：
+
+LLM 本身沒有真正長期記憶
+
+\---
+
+模型：
+
+只有：
+
+context window
+
+\---
+
+即：
+
+只能看到：
+
+當前輸入
+
+\---
+
+所以：
+
+真正 Agent：
+
+如果想：
+
+長期一致
+
+有 persistent identity
+
+記得 ecosystem history
+
+保持 reviewer continuity
+
+就必須：
+
+建立 external memory system
+
+\---
+
+2\. 你理解了不同 Memory 類型
+
+\---
+
+Episodic Memory
+
+記：
+
+發生過甚麼
+
+例如：
+
+reviewer outputs
+
+user interactions
+
+funding rounds
+
+\---
+
+Semantic Memory
+
+記：
+
+長期理解
+
+例如：
+
+某團隊長期 execution 穩定
+
+\---
+
+Procedural Memory
+
+記：
+
+怎樣做 workflow
+
+\---
+
+Identity Memory
+
+最難。
+
+即：
+
+Agent 的風格、價值觀、一致性
+
+\---
+
+3\. 現在 AI 世界主流 Memory 做法
+
+你理解：
+
+目前主流其實是：
+
+Retrieval-based Memory
+
+\---
+
+即：
+
+conversation / notes / summaries：
+
+embedding 後：
+
+存進 retrieval system。
+
+\---
+
+需要時：
+
+再 retrieve。
+
+\---
+
+本質：
+
+Memory 其實也是 RAG
+
+\---
+
+4\. Summary-based Memory
+
+你也理解：
+
+另一種做法：
+
+定期壓縮歷史
+
+例如：
+
+User prefers evidence-heavy reviews.
+
+\---
+
+優點：
+
+token 少
+
+長期 continuity 較穩
+
+\---
+
+缺點：
+
+information loss
+
+summary bias
+
+\---
+
+5\. Knowledge Graph Memory
+
+更高級做法：
+
+graph-based relationships
+
+例如：
+
+CancerDAO
+
+→ participated\_in → GG23
+
+\---
+
+優點：
+
+structure 強
+
+explainable
+
+\---
+
+缺點：
+
+schema 複雜
+
+很難維護
+
+\---
+
+6\. Obsidian + AI Agent
+
+今天很重要部分。
+
+你理解：
+
+Obsidian 本質：
+
+External Human-readable Memory Layer
+
+\---
+
+它：
+
+不是：
+
+真正 AI memory
+
+而是：
+
+AI 可 retrieval 的第二大腦
+
+\---
+
+優點
+
+markdown-native
+
+backlinks graph
+
+local ownership
+
+適合 research workflows
+
+\---
+
+缺點
+
+\---
+
+Obsidian 不是真正 memory engine
+
+AI：
+
+仍需：
+
+retrieval
+
+reranking
+
+summarization
+
+\---
+
+容易 context explosion
+
+knowledge 太多後：
+
+retrieval quality 很難維持。
+
+\---
+
+Human notes ≠ AI-native retrieval structure
+
+\---
+
+7\. Fine-tuning（今天重要新概念）
+
+你理解：
+
+Fine-tuning = 再教育模型
+
+\---
+
+不是：
+
+給 AI 新 database
+
+\---
+
+而是：
+
+改變 AI 行為傾向
+
+\---
+
+Prompt
+
+只是：
+
+臨時指令
+
+\---
+
+Fine-tuning
+
+則：
+
+改變模型內部權重
+
+\---
+
+你也理解：
+
+\---
+
+RAG
+
+適合：
+
+變動知識
+
+例如：
+
+funding history
+
+GitHub activity
+
+proposals
+
+\---
+
+Fine-tuning
+
+適合：
+
+穩定 behaviour
+
+例如：
+
+reviewer style
+
+formatting
+
+tone
+
+reasoning habit
+
+\---
+
+8\. Notion vs GitHub（今天超重要）
+
+你開始真正理解：
+
+Human Workspace
+
+vs
+
+Canonical Archive
+
+vs
+
+AI Retrieval Layer
+
+\---
+
+Notion
+
+更像：
+
+Human Coordination Layer
+
+適合：
+
+editing
+
+collaboration
+
+dashboards
+
+workflow
+
+\---
+
+但：
+
+不適合作：
+
+長期 canonical AI memory source
+
+\---
+
+GitHub
+
+更像：
+
+Canonical Structured Archive
+
+\---
+
+優點：
+
+version control
+
+snapshots
+
+auditability
+
+structured exports
+
+\---
+
+非常適合：
+
+AI retrieval indexing
+
+\---
+
+9\. 真正 AI Retrieval Source 是甚麼？
+
+今天超重要理解：
+
+Agent 不應直接 retrieval Notion
+
+\---
+
+而應：
+
+Retrieval AI-ready exported knowledge layer
+
+\---
+
+理想流程：
+
+Notion
+
+↓
+
+Structured Export
+
+↓
+
+GitHub Archive
+
+↓
+
+Chunking
+
+↓
+
+Embeddings
+
+↓
+
+Vector DB
+
+↓
+
+Agent Retrieval
+
+\---
+
+10\. Spark 未來真正架構（今天逐漸清晰）
+
+你開始看到：
+
+Spark 未來：
+
+其實可能是：
+
+\---
+
+Human Coordination Layer
+
+Notion / Telegram。
+
+\---
+
+Canonical Archive Layer
+
+GitHub snapshots。
+
+\---
+
+AI Retrieval Layer
+
+chunking + vector DB。
+
+\---
+
+Memory Layer
+
+persistent understanding。
+
+\---
+
+Agent Layer
+
+reviewer / query / analysis agents。
+
+\---
+
+11\. 今天最大的認知升級
+
+你開始真正理解：
+
+AI Agent 不只是模型
+
+而是：
+
+Information Infrastructure
+
+\---
+
+真正關鍵：
+
+很多時：
+
+不是：
+
+模型有多強
+
+而是：
+
+memory architecture
+
+retrieval pipeline
+
+canonical knowledge design
+
+governance structure
+
+information persistence
+
+\---
+
+12\. 現在你所在的位置
+
+你其實已經開始：
+
+AI-native Institutional Memory Design
+
+這跟：
+
+普通 chatbot project
+
+已經完全不同。
+
+\---
+
+下一步最適合學的
+
+你下一步最適合：
+
+Context Assembly & Context Compression
+
+即：
+
+\---
+
+AI 最終到底看到甚麼？
+
+\---
+
+包括：
+
+\---
+
+1\. Long Context Problem
+
+context 太長怎辦？
+
+\---
+
+2\. Lost in the Middle
+
+LLM 會忽略中間資訊。
+
+\---
+
+3\. Context Prioritization
+
+哪些 retrieval chunks 最重要？
+
+\---
+
+4\. Compression Layer
+
+怎樣 summary retrieval 結果？
+
+\---
+
+5\. Memory Activation
+
+甚麼 memory 應被 activate？
+
+\---
+
+6\. Persistent Identity Problem
+
+怎樣避免 Agent drift？
+
+\---
+
+最後一句（今天真正核心）
+
+未來 AI Agent 的核心競爭力：
+
+很多時不是：
+
+模型本身
+
+而是：
+
+長期知識如何被組織、記憶、檢索與持續理解。
+<!-- DAILY_CHECKIN_2026-05-26_END -->
+
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 # Day 3 學習總結 — Retrieval Architecture 與 RAG Pipeline
 
 今天你正式進入：
@@ -619,6 +1231,7 @@ retrieved chunks 太大怎辦？
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
+
 Day 3 學習總結 — Retrieval Architecture 與 RAG Pipeline
 
 今天你正式進入：
@@ -1200,6 +1813,7 @@ Retrieval 系統真正目標：
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
 
+
 學習總結 — Retrieval 與 RAG Architecture
 
 今天你已經正式進入：
@@ -1710,11 +2324,13 @@ AI-native database：
 
 
 
+
 今天聽了Elon 老師的 AI x web3 課，感覺目前很多的例子都是大集團或者大公司的成功案例。暫時很少看到有個人開發者的應用例子。目前最集中的都是在 AI 如何協助 web3 錢包安全或者交易上的分析。
 <!-- DAILY_CHECKIN_2026-05-21_END -->
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -2131,6 +2747,7 @@ workflow + tools + actions。
 
 
 
+
 # **Daily Note: 2026-05-19**
 
 ## **Today**
@@ -2225,6 +2842,7 @@ Proof link: [**https://github.com/Swiftevo/ai-web3-school-cohort-0**](https://gi
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
