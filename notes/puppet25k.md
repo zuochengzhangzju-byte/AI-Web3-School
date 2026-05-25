@@ -15,8 +15,66 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+### **Co-Learning — Railgun & Kohaku 隐私系统详解**
+
+1.  参加了 @0xMalingshu 的 Co-Learning 分享（冬天の馬鈴薯🥔，Co-CTO @Zzyzx\_labs）
+    
+2.  理解了以太坊三大隐私痛点：交易透明、RPC 中心化暴露 IP、代币发现泄露数据
+    
+3.  学习了 **Kohaku** — 隐私工具箱，把 Railgun 4 步流程封装成一行 `transfer`
+    
+4.  学习了 **Railgun** 的核心运作机制：
+    
+    -   UTXO 模型替代 Account 模型实现完全匿名
+        
+    -   0zk 地址 = Spending Key（控制权）+ Viewing Key（观察权）
+        
+    -   Broadcaster + Waku 隐藏 IP 地址（P2P 路由类似 Tor）
+        
+5.  掌握了 **PPOI（清白证明）** — ZK 证明资金来源干净，1 小时观察期 + 证明随币流动
+    
+6.  了解了 RAIL 治理代币的质押收益和治理流程
+    
+7.  理解了 Railgun vs Tornado Cash 的关键差异：完全匿名 vs 断地址关联、任意金额 vs 固定面额
+    
+
+### **Agent Memory Deck 分享**
+
+1.  参加了 Agent Memory Deck 分享会 — Agent 记忆系统架构设计
+    
+2.  理解了记忆问题的两个视角：Product View（用户连续性）vs Engineering View（生命周期管理）
+    
+3.  掌握了三层架构：Context（模型看到什么）→ Prompt（如何提问）→ Harness（循环、工具与控制）
+    
+4.  学习了记忆分类双轴：时间轴（当前上下文 vs 持久记忆）× 内容轴（情景/语义/程序记忆）
+    
+5.  理解了记忆三操作：Write（写入）→ Retrieve（检索，关键是选择问题）→ Revise（新证据更新旧信息）
+    
+6.  了解了记忆演变路径：便利性 → 控制层 → 基础设施（Agency 越高记忆越重要）
+    
+7.  案例对比：ChatGPT 双层记忆（Saved Memory + Chat History）vs Claude Code 项目连续性
+    
+8.  行业趋势：记忆正从孤立功能变成可复用的系统层
+    
+
+### **随堂笔记**
+
+> Railgun 让我们在区块链上把「衣服」穿回去，拿回自由和权利。 PPOI 告诉世界：合规与隐私并不冲突。
+
+### **下一步工作**
+
+1.  继续 Handbook Web3 基础学习 — 下一站 **钱包（Wallet）**
+    
+2.  跟进 Week 2 AI×Web3 交叉实践课程
+    
+3.  开始动手实操钱包和链上交互
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 ### **密码学（Cryptography）**
 
 1.  深入学习 Handbook 密码学章节，掌握了 5 个核心概念
@@ -100,6 +158,7 @@ AI x Web3 School
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
+
 ### **Open Agentic Economy**
 
 1.  参加了 Sophia ([Z.AI](http://Z.AI)) 的 "Open Agentic Economy" 分享会
@@ -122,6 +181,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 \### Co-Learning
@@ -169,6 +229,7 @@ AI x Web3 School
 
 
 
+
 1\. 参加了 "AI 下乡计划｜在 Web3 的应用" 分享会（ELON）
 
 2\. 理解了 AI + Web3 的核心框架：AI 负责理解与决策，Web3 负责身份、支付、结算和审计
@@ -184,6 +245,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -248,11 +310,13 @@ AI x Web3 School
 
 
 
+
 我今天在分享会过程中，把hermes和openclaw迁移到云服务器并且成功使用，也把和飞书的连接，以及日历的每日提醒完成了，明天会继续学习ai x web3指导文档中的内容。
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
