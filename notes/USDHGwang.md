@@ -15,8 +15,134 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+學院筆記 — Agent Memory
+
+\## 課堂訊號
+
+來賓演講主題：Agent memory。內容偏基礎（已懂層級），對自己 value 偏低。
+
+但剛好是最近研究方向，因此另外補一段影片素材，並延伸出「三層 memory」的 framing。
+
+\---
+
+\## 補充素材：影片 _AI Agent Development: From Theoretical Frameworks to Practical Implementation_
+
+\### 三個關鍵 architecture transitions
+
+1\. **Flattening infrastructure** — 用 Skills（dynamic prompt injection）取代 sub-agents，降低 communication cost、改善 context inheritance。
+
+2\. **Managing context attention** — 用 Restatement（週期性重述任務與規則）對抗 long task 的 lost-in-the-middle / rule decay。
+
+3\. **Strategic context isolation** — 重新引入 sub-agent，不是為了「結構好看」，而是給 clean context window 避免 output 同質化。
+
+\### Plan-Execute 教科書架構的實務坑
+
+\- 小改動成本太高（單行改也要跑整條 hierarchy）
+
+\- Role overstepping：再嚴格的 system prompt 也擋不住 main agent 越界寫 code
+
+\- OpenCode 等工業實作允許 **functional redundancy**，跟教科書「乾淨分層」反向
+
+\### Long-running task 的三種 failure mode
+
+\- **Step merging** — 合併步驟趕完
+
+\- **Rule decay** — 早期規則被「看不見」
+
+\- **Output homogenization** — 後期模仿前期自己
+
+**根因**：LLM attention 集中在 system prompt + 最近輸出，中間段被埋。
+
+\### 工程解法
+
+\- **Restatement**：把當前狀態 + 下一步推回高 attention 區（context 尾端）。
+
+\- **KV cache 經濟學**：
+
+\- **靜態規則**（code style）→ 放 system prompt
+
+\- **動態資訊**（ToDo、specific skills）→ 接在 context 尾端，避免破壞 KV cache chain
+
+\- **Context isolation**：sub-agent 解決的是隔離需求，不是組織美學
+
+\### 影片結論
+
+Agent 架構應由系統的\*\*具體 failure point\*\* 驅動（context anxiety vs unwanted imitation），不是追 buzzword（「Harness」這種詞本身不解決問題）。
+
+\---
+
+\## 我的延伸思考
+
+\### 一、影片在談的是 working memory，不是 long-term memory
+
+影片講的「memory」窄化成 **working memory / attention 管理**——單一 context window 內的事。對「\*\*long-term memory across sessions\*\*」幾乎沒著墨。
+
+而這正是：
+
+\- 我最近研究方向
+
+\- Hermes 的核心問題
+
+\- 真正讓重度 user 體驗差異化的層
+
+\### 二、Power user 系統其實是三層 memory
+
+| 層 | 內容 | 召回方式 | 範例 |
+
+|---|---|---|---|
+
+| **1\. Working memory** | 當前 context window | attention 分布 | 影片講的所有東西 |
+
+| **2\. Structured personal memory** | 高密度、typed、帶 why 的個人記憶 | 顯式索引 + frontmatter | Claude 的 `MEMORY.md` + 各 memory file |
+
+| **3\. Vault / RAG corpus** | 長文素材、原始筆記 | semantic search / read tool | `knowledge-base` vault |
+
+自己其實已經三層都在用，只是還沒命名出來。影片的盲點是只看到第 1 層。
+
+\### 三、Memory vs RAG：互補不是競爭
+
+| | RAG | Structured Memory |
+
+|---|---|---|
+
+| 召回 | embedding similarity | 顯式 type + frontmatter |
+
+| 狀態 | stateless（同 query 同結果） | stateful（積累判斷） |
+
+| 強項 | 大量非結構化檢索 | user model、cross-session continuity |
+
+| 弱項 | 不知道「誰」在問、無判斷層 | scale 不上去（千筆事實壓垮 context） |
+
+兩者解的問題交疊但取捨不同。Power user 系統需要\*\*同時\*\*有結構化的第 2 層（memory）跟可檢索的第 3 層（vault as RAG corpus）。
+
+\### 四、Push back 自己原本的 framing
+
+**原想法**：「一般用戶不需要龐大記憶框架，工程師/重度用戶需要。」
+
+**更精準**：一般用戶不需要「\*\*手動維護\*\*」記憶框架。ChatGPT 也有 memory feature——一般用戶也需要 memory，只是維護成本要趨近於零。
+
+工程師 vs 一般用戶的差別不是「\*\*需不需要\*\*」，是「\*\*願不願意手動 curate 換取更高訊號密度\*\*」。
+
+**對 Harness 設計的含義**：產品決策不是「要不要做 memory」，是「\*\*curation 的 friction 設多高\*\*」——對應不同 user segment。
+
+\---
+
+\## Open questions（給未來自己 / Hermes）
+
+\- 第 2 層（structured memory）跟第 3 層（vault）的邊界在哪？哪些東西該升到 memory，哪些留在 vault？
+
+\- 影片那種 working-memory 級的 Restatement 機制，能延伸到 cross-session 嗎？例如每次 session 開頭自動 restate「你是誰、你在做什麼」？
+
+\- Curation friction 的 spectrum 設計：auto-write（零 friction、低訊號）→ confirmed-write（中 friction）→ manual-only（高 friction、最高訊號）——各自的 trigger 條件？
+
+\- 影片提的「functional redundancy」（main agent 也能寫 code）vs「context isolation」（sub-agent 給 clean window）這兩個原則，何時衝突、何時互補？
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 ```
 # Vault for Agents, Not Self-Review — 一個 PKM Reframe 紀錄
 ```
@@ -169,6 +295,7 @@ Agent 進 vault 從 top MOC 開始，**不全 grep**。比 pure Zettelkasten「h
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 # 跟 Claude 深挖 Agent 記憶架構
 
@@ -405,6 +532,7 @@ Claude 的 MEMORY.md                  Hermes 的 MEMORY.md
 
 
 
+
 今天做了什麼：
 
 1\. Learning Agent 初始化
@@ -452,6 +580,7 @@ Claude 的 MEMORY.md                  Hermes 的 MEMORY.md
 
 
 
+
 今天做了什麼
 
 發布 obsidian-knowledge-vault
@@ -471,6 +600,7 @@ repo 7 個 commit，今天從空目錄推到完整 README + prompt + annotated o
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -550,6 +680,7 @@ HITL 模組要設計成 **「可被替代的層」**，不是 hardcode 必要的
 
 
 
+
 今天的主題是 Hermes Agent 安裝。
 
 因為看到直播裡很多夥伴卡在環境設定，就順手做了一份 Windows WSL2 + macOS 的完整安裝教程，在課程進行中同步解答問題。
@@ -570,6 +701,7 @@ HITL 模組要設計成 **「可被替代的層」**，不是 hardcode 必要的
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
