@@ -15,8 +15,64 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+Agent Memory
+
+一、核心概念
+
+Agent Memory 不只是「聊天紀錄」，而是一種能讓 AI 持續理解使用者、延續任務狀態的基礎架構。其中我覺得最重要的概念是：Memory = Cross-time Intent-State Management，意思是：使用者的需求通常不是一次就完整的。
+
+AI 需要記住過去的脈絡、任務進度與偏好，才能讓後續行動具有「連續性」，例如：ChatGPT 的 Saved Memory 偏向記住使用者偏好、Claude 則更偏向記住 coding workflow、repo 規範與過去經驗。
+
+因此，Memory 不只是「記得」，而是：
+
+•   持續維持 project continuity
+
+•   幫助 agent 做出下一步決策
+
+•   成為 AI Agent 的基礎 infrastructure
+
+二、方法／架構
+
+Agent Memory 的核心流程可以拆成三步：
+
+1\. Write：保存有用的狀態與資訊
+
+2\. Retrieve：在需要時找到相關記憶
+
+3\. Revise：持續更新與淘汰舊記憶
+
+另外還提到Memory 可以轉成 vectors（向量），再透過 embedding 與 retrieval 系統進行選擇性召回。
+
+這代表未來 AI 的關鍵不只是模型能力，而是：「如何選擇該記什麼、何時取回、何時更新。」
+
+三、案例
+
+•   ChatGPT：Saved Memory / Chat History
+
+•   Claude：Code command、Repo conventions、Prior lessons
+
+這些其實都代表：
+
+AI 開始從「單次問答工具」變成「長期協作系統」。
+
+例如：AI 幫工程師記住專案規範、記住之前 debug 過的錯誤、延續多輪任務狀態。這會讓 Agent 更像真正的 collaborator。
+
+四、行動
+
+我想開始嘗試：「建立自己的 AI 研究 Memory Workflow」，例如：把我做過的 alpha research、因子測試結果、過去問過的問題與結論，整理成可被 AI 持續引用的知識庫。因為我發現現在很多時間其實浪費在「重新解釋背景」，如果 Memory 做得好，AI 可以真正累積研究脈絡與思考方式。
+
+五、問題：「AI 該如何判斷哪些記憶值得被永久保存？」
+
+因為記太多會造成噪音、記太少又會失去 continuity。所以selective memory、memory decay、long-term vs short-term memory，可能才是 Agent 系統真正困難的地方。
+
+![截圖 2026-05-25 下午11.36.15.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/1118sophie/images/2026-05-25-1779723386406-___2026-05-25___11.36.15.png)![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/1118sophie/images/2026-05-25-1779723291336-image.png)
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 1\. 合約安全審計的實踐與成果
 
 •   實際操作：講者提到實際使用了 OpenAI 推出的EVM Bench工具進行智能合約審計。此外，他們團隊還設計了一套合約審計知識庫（Wiki），將歷史發現的安全問題與風險分級存入服務端。
@@ -38,6 +94,7 @@ AI x Web3 School
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 回放**AI Agent 入门 —— Hermes 从 0 到 1**
 
@@ -92,6 +149,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 **1\. AI Agent 的本質與演進**
@@ -164,6 +222,7 @@ AI x Web3 School
 
 
 
+
 **在 AI 時代，開發者的價值不在於編碼速度，而是在於對底層知識的掌握與架構設計能力。**
 
 **1\. AI 時代下開發者的角色轉變：從「執行者」變為「架構師」**
@@ -209,6 +268,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
