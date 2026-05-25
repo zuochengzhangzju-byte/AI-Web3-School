@@ -15,8 +15,24 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-25
+<!-- DAILY_CHECKIN_2026-05-25_START -->
+今天co learning 马铃薯讲的隐私
+
+Railgun
+
+Tornado cash
+
+即使是09年到现在 区块链技术还很新
+
+然后ai agent memory 也是刚需
+
+可是太卡了
+<!-- DAILY_CHECKIN_2026-05-25_END -->
+
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 周末好好复习肖老师的区块链原理
 
 YouTube是好东西
@@ -26,6 +42,7 @@ Web 3 career 也是行业明灯
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 今天学到某大佬说的
 
@@ -48,6 +65,7 @@ Web 3 career 也是行业明灯
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
 
+
 今晚八点Elon 老师 讲解的AI in Web 3 application
 
 这是刚需 也是大方向
@@ -55,6 +73,7 @@ Web 3 career 也是行业明灯
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -72,6 +91,7 @@ Web 3的运行原理
 
 
 
+
 为什么用爱马仕
 
 因为更beginner friendly
@@ -79,6 +99,7 @@ Web 3的运行原理
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
