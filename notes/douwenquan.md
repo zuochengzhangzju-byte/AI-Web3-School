@@ -15,8 +15,26 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-26
+<!-- DAILY_CHECKIN_2026-05-26_START -->
+**第一部分：今日学习总结**
+
+> 今天重点完成了 Week 1 收尾任务和 Week 2 预热：
+> 
+> ① **WCB 任务全量审计** — 通过 Agent API 获取了 62 个完整任务列表，理清了所有任务的 APPROVED/SUBMITTED/NOT\_STARTED 状态。
+> 
+> ② **拆解 INFINIT 项目** — 分析了 AI 驱动 DeFi 执行层 INFINIT 的项目全貌，覆盖 Agent Swarm（35+ 专业代理）、三层安全体系（确定性代码编译 + 内部验证 + 模拟审批）、代币经济学和竞品对比。拆解笔记已提交 WCB ✅
+> 
+> ③ **Agent 记忆系统调研规划** — 参考同学笔记，列出了 MemGPT/Letta、Mem0、Zep、LangChain Memory 四种产品的待研究任务清单。
+
+**第二部分：今日会议**
+
+> **Cobo Agentic Wallet** — 围绕 AI Agent 链上资产安全展开：当前 Agent 经济规模庞大但存在权限失控、隐私泄露等风险。Cobo 通过 MPC 私钥分片、Pack 授权规范、Recipe 技能层构建安全可控体系，涵盖小额免密、极端兜底等风控方案及人机协作平衡思路。
+<!-- DAILY_CHECKIN_2026-05-26_END -->
+
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 **第一部分：Web3 基础学习总结**
 
 > 今天完成了 Web3 基础 Phase 1 的全部剩余 6 个章节学习：Network（区块/共识/PoS/L2/Rollup）、Account Abstraction（ERC-4337/Smart Account/Bundler/Paymaster/Session Key）、DeFi（Token/AMM/滑点/无常损失/Lending/Stablecoin/Liquidity）、Oracle（Price Feed/Oracle Risk/AI Oracle）、Indexing（Event Indexing/Subgraph/Data Pipeline）、Security（Reentrancy/Access Control/Audit/Simulation/Monitoring）。共产出 7 份结构化学习笔记沉淀到 GitHub 仓库。
@@ -31,11 +49,13 @@ AI x Web3 School
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
 
+
 今天主要学习和了解web3的相关文档和知识。
 <!-- DAILY_CHECKIN_2026-05-24_END -->
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 今日学习总结：  
@@ -83,6 +103,7 @@ AI x Web3 School
 
 
 
+
 今天完成了两部分学习：  
   
 一、AI 基础概念深化  
@@ -122,6 +143,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -187,6 +209,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -297,6 +320,7 @@ AI x Web3 School
 
 
 
+
 今日学习总结：  
 今天系统阅读了 AI 基础文档，对已有知识进行了梳理和补充：  
 已熟悉的概念（复习巩固）：
@@ -323,6 +347,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
