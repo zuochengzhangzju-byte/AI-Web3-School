@@ -15,8 +15,26 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-26
+<!-- DAILY_CHECKIN_2026-05-26_START -->
+**今天學到的 3 個重點**
+
+**① Prompt 是接口設計，不是咒語**
+
+它不是「怎麼問 AI」，而是把**任務目標、輸入邊界、輸出格式、安全規則**寫成可執行的溝通協議。好的 prompt 不是讓模型更自信，而是讓模型在**不確定的時候停下來**。
+
+**② Instruction 拆四段最實用**
+
+寫 prompt 時應該包含：任務目標 → 可用輸入 → 禁止行為 → 輸出格式／失敗格式。尤其要區分「解釋」和「執行」，模型可以分析但不能擅自確認。
+
+**③ Few-shot + Structured Output = 生產力**
+
+Few-shot 用範例教風格，Structured Output 用 JSON Schema 強制輸出的機器可讀性，讓後續程式碼能自動檢查、拒絕、回歸測試。
+<!-- DAILY_CHECKIN_2026-05-26_END -->
+
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 ### 《上下文（Context）》學習筆記
 
 **1\. 核心認知（第一性原理）**
@@ -57,6 +75,7 @@ AI x Web3 School
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
 
+
 ### 《提示詞（Prompt）》學習筆記
 
 **1\. 核心認知（第一性原理）**
@@ -86,6 +105,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
 
+
 完成 Hermes Agent 的配置！
 
 我是用NVIDIA 模型的免費API，參考了[網路上的文章](https://www.blocktempo.com/nvidia-build-free-api-key-kimi-deepseek-llama-minimax-models/#4_%E6%AD%A5%E9%A9%9F%E6%8B%BF%E5%88%B0_API_Key)
@@ -101,6 +121,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -139,6 +160,7 @@ AI x Web3 School
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -183,6 +205,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
