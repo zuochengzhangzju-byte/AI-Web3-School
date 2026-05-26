@@ -17,11 +17,18 @@ AI x Web3 School
 <!-- Content_START -->
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
-今天回看了课程，主要讲Agentic Wallet 的本质是把 Web3 的信任最小化理念应用到 AI Agent 上，让 Agent 强大但不失控、可信且可审计。
+今天回看了课程，AI Agent 能力越强（能转账、支付、交互合约），风险也越大：权限失控、资金丢失、恶意调用、不可追溯等。
+
+传统钱包设计针对人类用户，而 Agent 是**自主执行**
+
+**另外**主要讲Agentic Wallet 的本质是把 Web3 的信任最小化理念应用到 AI Agent 上，让 Agent 强大但不失控、可信且可审计。
+
+![ce72ca5c-9091-4a7c-966b-02b5b8eef82e.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/cainiao0924/images/2026-05-26-1779807749803-ce72ca5c-9091-4a7c-966b-02b5b8eef82e.png)
 <!-- DAILY_CHECKIN_2026-05-26_END -->
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 今晚的分享让我对 AI Agent 的理解又深了一层。以前我主要关注 Agent 的**工具调用**和**即时执行能力**，但长期记忆才是让 Agent 从临时助手变成真正伙伴的关键开关。
 
@@ -41,11 +48,13 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-24_START -->
 
 
+
 今天主要是休息，还要回放周六上午的**Open Agentic**
 <!-- DAILY_CHECKIN_2026-05-24_END -->
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 
@@ -56,6 +65,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -78,6 +88,7 @@ AI x Web3 School
 
 
 
+
 学完了Hermes的从0到1，自己也成功安装了Hermes，而且是在云服务器安装的。以前安装小龙虾开电脑麻烦。现在准备进一步连上飞书。希望能长期使用Hermes。
 
 ![207f68c0-8876-4247-b613-c36d7c27e41e.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/cainiao0924/images/2026-05-20-1779291495586-207f68c0-8876-4247-b613-c36d7c27e41e.png)
@@ -92,11 +103,13 @@ AI x Web3 School
 
 
 
+
 昨天学习了Web3的内容，老师说Web2其实很重要。钱包重要性也说了，我有meta mask，准备在自己的chrome里浏览器扩展。老师讲了抢特朗普儿子币的案例，永远都得注意安全，自己交易安全和链上DAPP的安全。关于栈等其他内容还需要深入学习。
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
