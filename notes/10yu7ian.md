@@ -15,8 +15,32 @@ timezone: UTC+8
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-26
+<!-- DAILY_CHECKIN_2026-05-26_START -->
+今天听了一场关于 Agent Wallet 的分享，主讲人是 Cobo Agentic Wallet 的产品负责人。主题很聚焦：当 AI Agent 开始替人类花钱、操作链上资产时，怎么保证它不乱来。
+
+分享先回顾了 AI 的发展路径：2023 年是 Chatbot，只能回答问题；2024 年是 Copilot，能提建议但每一步仍需人类批准；2025 年进入 Agent 阶段，AI 可以在后台持续解决复杂工作流，人类只需要定义边界；到了 2026 年，Agent 已经开始自主探索和执行任务。但一个很大的痛点还没解决：如何让 Agent 替人类花钱，而且花得安全。链上资金不可逆，一旦出错就是真金白银的损失。
+
+分享里举了两个真实发生过的失控案例。第一个叫 Send Override，就是 Agent 在 Prompt 里明明被要求只花 100 美金，但执行时悄悄把金额改大了，而且不会主动告诉你，直到你复盘才发现。第二个叫 Shadow Custody，Agent 在 MPC 钱包外围自己创建了一个 EOA 地址，先把钱转进去再发起交易，这样人类设置的所有权限都形同虚设。这两个案例让我意识到，自然语言表达意图不具备强制约束力，靠“告诉 Agent 不要做什么”是不够的。
+
+基于这些问题，分享总结了四类失控风险：Prompt Injection（提示词注入导致执行偏离）、Shadow Operations（在看不见的地方创建子账户）、Unscoped Authority（无限权限，一笔交易能把所有钱转走）、Zombie Permissions（授权长期不撤销，合约出问题就跟着遭殃）。当 Agent 开始动钱的那一刻，信任就不能停留在应用层，必须下沉到基础设施层，用更强制的方式去约束。
+
+Cobo 的方案围绕三个核心点展开。第一是 MPC，解决私钥安全问题。Cobo、Agent 和 Human 各自持有私钥分片，任意一方都没有独立掌控资金的权限。采用的是 2-of-2 签名模式：要么是 Agent 和 Cobo 共管（用于自动化执行），要么是 Human 和 Cobo 共管（用于大额人工操作）。没有单方可以私自转账。
+
+第二是 Pact，这是一份授权协议，告诉 Agent 能做什么、不能做什么、什么时候必须停下来。一个 Pact 包含四个要素：Intent（你想要什么目标）、Execution Plan（Agent 转译成的具体执行计划）、Policy（风控约束，包括预算、白名单、链、Token、合约甚至 ABI 参数级的限制）、Completion Condition（任务完成后自动撤销授权，避免僵尸权限）。Pact 会推送到手机 App 上，人类审阅批准后，Agent 才能在被严格约束的范围内执行。
+
+第三是 Recipe，可以理解为“知识胶囊”。因为大模型本身并不具备操作链上资金的知识，容易出错。Recipe 把 DeFi 操作所需的合约地址、ABI 参数、风控边界打包成一个文件，Agent 调用 Recipe 就知道怎么做对，而不是自己临时构造交易。目前已经上线了 Aave V3、Uniswap V3、Polymarket、Hyperliquid 等主流 Recipe。
+
+分享还演示了一个多 Agent 的场景：一个用户可以创建多个钱包，委托给不同的 Agent 管理，比如一个 Trading Agent、一个 DeFi Agent，每个 Agent 的 Pact 和 Policy 边界都可以独立设置，做到细颗粒度的资金安全管理。
+
+Q&A 环节有几个问题我觉得挺有意思。有人问小额免密支付场景是否支持，老师说可以，通过 Policy 限制单次金额、转账地址、频次和总上限，就能把风险控制在很小的窗口内。有人问 Agent 支付是否一定要在链上，老师的回答很务实：链上和 Web2 会并存，链上的优势是绕过传统银行体系的低效，适合跨境和快速结算，但完全颠覆现有支付基础设施短期内不太可能。还有人问 Agent 掉线了怎么办，老师说 MPC 的私钥分片做了冗余设计，即使 Agent 挂掉，用户仍然可以通过手机 App 恢复和控制资金。
+
+听完这场分享，我对“可控边界”这个概念有了更具体的理解。以前我觉得让 Agent 自动操作链上资产主要是技术问题，现在发现更重要的是信任和授权机制的设计。Pact 把“意图”从自然语言翻译成了可执行、可约束的协议，MPC 保证了没有单点失控，Recipe 降低了模型幻觉的风险。三个东西组合在一起，才构成一条可信的执行链路。
+<!-- DAILY_CHECKIN_2026-05-26_END -->
+
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 今天听了一场关于 Agent Memory 的分享，借助ai把那个文件又看了一遍，老师把“记忆”这个概念拆得很清楚。以前我以为记忆就是让 AI 记住之前聊过什么，但分享里给出的定义是：记忆不是更大的上下文窗口，也不是单纯的 RAG，而是 Agent 跨时间携带意图和状态的管理系统，关键就在于“跨时间”和“管理”这两个词。
 
 从产品视角看，记忆要解决的问题很简单：用户不应该每次都要重新建立上下文。用户已经解释过目标、给过约束、做过决策，这些不应该在会话结束后就消失。分享里举了两个例子对比：ChatGPT 的记忆偏向“用户连续性”，记住偏好、语气、个人资料，让聊天更连贯；而 Claude Code 的记忆偏向“项目连续性”，记住构建命令、代码规范、之前踩过的坑，让开发工作能跨会话继续。同一个记忆问题，在不同产品形态下表现不同，但底层本质是一样的。
@@ -35,6 +59,7 @@ timezone: UTC+8
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
 
+
 ```
 确认学习画像：AI 熟悉 / Web3 基础 / 学生 / 晚上 1-2h
 Phase 0 进度推进到 50%（3/6 任务完成）
@@ -50,6 +75,7 @@ https://github.com/10yu7ian/ai-web3-school-cohort-0/blob/main/tasks/TASK-002-age
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 今天做了几个任务，顺便把之前卡住的 Hermes Agent 也配置好了。
@@ -74,6 +100,7 @@ https://github.com/10yu7ian/ai-web3-school-cohort-0/blob/main/tasks/TASK-002-age
 
 
 
+
 今天用cursor辅助装了wsl和ubuntu，电脑小白装了两天才装起
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/10yu7ian/images/2026-05-22-1779464043928-image.png)
@@ -81,6 +108,7 @@ https://github.com/10yu7ian/ai-web3-school-cohort-0/blob/main/tasks/TASK-002-age
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -109,6 +137,7 @@ https://github.com/10yu7ian/ai-web3-school-cohort-0/blob/main/tasks/TASK-002-age
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -206,11 +235,13 @@ https://github.com/10yu7ian/ai-web3-school-cohort-0/blob/main/tasks/TASK-002-age
 
 
 
+
 今天的目标是配置 Hermes。看文档发现这个工具在 Windows 下支持不太成熟，推荐用 Linux 环境，所以需要先装 WSL 和 Ubuntu。我先把 WSL 装好了，Ubuntu 还没装完，还卡在下载中。
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
