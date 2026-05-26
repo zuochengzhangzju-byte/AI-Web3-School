@@ -15,8 +15,22 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-26
+<!-- DAILY_CHECKIN_2026-05-26_START -->
+今天我学习了**Payment / Commerce / Settlement相关的内容。**
+
+这部分内容主要关于Agent变得可进行web3 钱包支付操作的实现和应用。
+
+ERC-8004用NFT的方式给每个agent赋予专属ID，负责agent身份和声誉的验证。
+
+ERC-8183引入了第三方验证者，在用户委托agent办事时负责工作验证，支付和结算。
+
+MPP和x402类似，都运用于agent相关的商业活动，通过协议在http层上保证agent和资源服务器的正常交易。
+<!-- DAILY_CHECKIN_2026-05-26_END -->
+
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 [https://www.notion.so/AI-Web3-Problem-Mapping-and-Main-Direction-Selection-36bbbd522ac780a7ab30fb6a187bff4c?source=copy\_link](https://www.notion.so/AI-Web3-Problem-Mapping-and-Main-Direction-Selection-36bbbd522ac780a7ab30fb6a187bff4c?source=copy_link)  
 今天完成了路径的选择任务，决定了通过agent实现账户抽象的技术发展方向。
 
@@ -25,6 +39,7 @@ AI x Web3 School
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 [https://www.notion.so/AI-Web3-Week-1-Proof-of-Work-Pack-36abbd522ac780fca5d9eb09e034768a?source=copy\_link](https://www.notion.so/AI-Web3-Week-1-Proof-of-Work-Pack-36abbd522ac780fca5d9eb09e034768a?source=copy_link)
 
@@ -37,11 +52,13 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
 
+
 今天我完成了多个任务，参加了colearning和周分享会
 <!-- DAILY_CHECKIN_2026-05-22_END -->
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -54,6 +71,7 @@ AI x Web3 School
 
 
 
+
 今天学校课程比较忙，所以我看了学习面板中的一些对AI介绍的视频，对LLM模型又来了大概的了解，LLM通过对数据的收集和处理，判断一句话下一秒生成每种词语的概率，生成决策树，再通过决策树的分析，回答用户的问题。
 
 我听了Draken老师的课，大致了解了Hermes的配置流程，不过我已经在wsl2中配置好了Hermes并使其连接tg进行贡藕做，就没继续做
@@ -61,6 +79,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
