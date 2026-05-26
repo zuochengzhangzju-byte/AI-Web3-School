@@ -15,8 +15,86 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-26
+<!-- DAILY_CHECKIN_2026-05-26_START -->
+### **Account Abstraction：把账户控制权从单一私钥扩展成可编程规则。**
+
+-   第一性原理：用户可以定制验证逻辑如多签、Passkey、社交恢复或模块规则；可以定制gas由什么（用户、应用、paymaster 或其他资产）承担；权限可以最小化：session key 可以只允许特定合约、额度、时间和方法。
+    
+-   ERC-4337：一种账户抽象标准。流程为：
+    
+    -   用户或应用生成 UserOperation。
+        
+    -   智能账户验证签名、nonce、余额或策略。
+        
+    -   Bundler 打包并提交操作。
+        
+    -   EntryPoint 调用账户执行目标动作。
+        
+    -   Paymaster 可选择赞助 gas。
+        
+-   smart account：由合约控制的账户，可以把权限、恢复、批量执行和策略写进账户逻辑。可以规定验证逻辑（多签，可恢复等），可以规定权限（小额交易自动通过，交易批量执行等）。风险是合约本身的bug，模块的权限等。
+    
+-   bundler：收集UserOperation，模拟验证并提交到 EntryPoint。需要判断操作是否有效、是否能支付 gas、是否会在执行中失败。
+    
+-   paymaster：允许第三方为用户操作支付 gas，或者让用户用非原生资产承担费用。注意：需要风控。
+    
+-   session key：给应用或 Agent 的临时权限:只在某段时间有效，只能调用某个合约，只能使用某些方法，只能花费某个额度，只能在特定链上执行。这样保证agent执行的操作是低风险的。
+    
+
+### **DeFi: 去中心化金融：把金融规则变成可组合、可验证、也可被攻击的链上协议。**
+
+-   第一性原理：把余额、抵押、债务、流动性、交易和清算放进合约系统。资产的状态等都会影响协议行为；流动性决定可执行性，由于可组合，一个协议出问题会影响依赖它的多个协议。
+    
+-   token：DeFi的资产单位。
+    
+    -   看 token 时不要只看名称和图标，至少检查：
+        
+        -   合约地址是否正确。
+            
+        -   decimals 是多少。
+            
+        -   总供应量和发行权限。
+            
+        -   是否可暂停、冻结、增发或升级。
+            
+        -   是否有特殊转账税或黑名单逻辑。
+            
+-   AMM：用流动性池和定价公式替代传统订单簿，让用户可以直接和合约交易。
+    
+    -   举例：Uniswap：用户把两种资产存入池子，交易者用一种资产换另一种资产，价格由池子状态和公式决定。流动性越深，同样规模交易的价格冲击通常越小。
+        
+    -   滑点：预期价格和实际成交价格的差距。
+        
+    -   流动性提供者：向池子提供资产，赚取手续费，也承担无常损失。
+        
+    -   价格影响：大额交易会改变池子比例，导致成交价格变差。
+        
+    -   MEV 风险：交易排序可能被利用，例如 sandwich attack。
+        
+-   lending：存款、借款、抵押率、利率和清算规则写进合约。款能否维持，取决于抵押品价值、债务价值、清算阈值和预言机价格。
+    
+-   stablecoin：稳定币是 DeFi 里的计价和结算基础，但“稳定”来自不同机制，不是天然保证。
+    
+-   liquidity：流动性决定资产能不能以合理价格买入、卖出、借出、清算或退出。个 token 标价 1 美元，不代表你能以 1 美元卖出大量仓位。
+    
+
+## **Connection: Agent Memory (Day 7 lecture) × Account Abstraction (today)**
+
+|   | Agent Memory | Account Abstraction |
+| --- | --- | --- |
+| Question | What does the Agent remember? | What is the Agent allowed to do? |
+| Problem | Context loss across sessions | EOA = all-or-nothing permissions |
+| Solution | Recall / Revise / Memory pipeline | Smart Account / Session Key / Policy |
+| Risk | Stale memory, hidden assumptions | Over-permissioned Agent, no revocation |
+| Together | Agent remembers YOU | Agent acts safely FOR you |
+
+-   **\* AA × DeFi 连接**：DeFi 协议里大量使用了 Smart Account（如 DeFi Saver 用 AA 做自动化清算保护）。Session Key 可以用来限制 Agent 在 DeFi 里的操作范围：比如「只允许调 Uniswap 的 swap，单笔不超过 0.01 ETH，每小时最多 1 次」——把自动化交易装进可撤销的安全边界。
+<!-- DAILY_CHECKIN_2026-05-26_END -->
+
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 ### **Long-term Memory for AI Agents：如何让 Agent 拥有持续上下文与长期一致性**
 
 -   价值：用户不需要一次次setup agent执行链路越长 记忆消耗越高
@@ -50,6 +128,7 @@ AI x Web3 School
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 ### **Wallet：用户意图进入链上执行之前的最后一道确认界面。**
 
@@ -124,6 +203,7 @@ AI x Web3 School
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 ### **开放代理经济：从 ERC-8004 / ERC-8183 到构建者之路**
@@ -242,6 +322,7 @@ AI x Web3 School
 
 
 
+
 ### **RAG：让回答有来源、有版本、有边界**
 
 -   第一性原理：要知道检索结果不是事实，要做到回答的东西关键点可在原文追溯，找不到答案要能让模型说不确定，而不是产生幻觉。
@@ -300,6 +381,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -387,6 +469,7 @@ context 决定模型看到的是用户幻想、过期文档，还是可验证的
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -510,6 +593,7 @@ context 决定模型看到的是用户幻想、过期文档，还是可验证的
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
