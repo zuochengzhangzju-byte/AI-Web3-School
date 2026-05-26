@@ -15,8 +15,22 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-26
+<!-- DAILY_CHECKIN_2026-05-26_START -->
+# **2026-05-26 Week 2 打卡**
+
+今天开始进入 Week 2 的学习。相比 Week 1 偏工具入门和基础补齐，Week 2 更像是在做方向判断：哪些问题真的值得用 AI x Web3 来解决，哪些只是把两个概念拼在一起。
+
+我今天先把问题空间粗略分成几个方向：payment / commerce、identity / reputation、wallet / permission、privacy / security 和 coordination。对我来说，目前比较感兴趣的是 wallet / permission 和 payment 方向，因为它们和 Agent 的工具调用、安全边界、机器支付、人类确认机制关系比较密切。
+
+我也意识到，一个 AI x Web3 项目不能只说“用了 AI，也用了链”，而是要讲清楚：AI 负责理解、规划、总结还是自动化？Web3 负责支付、身份、权限、结算还是可验证记录？如果这两个部分不能互相增强，那可能只是概念拼贴。
+
+接下来我想尝试把一个方向拆成几个角色：任务发起方、执行方、付款方、验证方、风险承担方和治理/仲裁方。这样应该更容易判断一个 proposal 是否真的成立，也能为 Week 3 或 Hackathon 的项目方向做准备。
+<!-- DAILY_CHECKIN_2026-05-26_END -->
+
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 # **2026-05-23 Open Agentic Economy 回放打卡**
 
 ## **主题**
@@ -65,6 +79,7 @@ Open Agentic Economy: From ERC-8004 / ERC-8183 to Builder Path
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
+
 # **2026-05-21 Hermes 工作流设计打卡**
 
 今天比较忙，没有系统学习新的课程内容，主要在思考怎么把 Learning Agent 的方法用到自己的真实工作流里。
@@ -82,6 +97,7 @@ Open Agentic Economy: From ERC-8004 / ERC-8183 to Builder Path
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 # **2026-05-20 Web3 基础复盘打卡**
@@ -112,6 +128,7 @@ Open Agentic Economy: From ERC-8004 / ERC-8183 to Builder Path
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -271,6 +288,7 @@ AI 时代更重要的能力包括：
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
