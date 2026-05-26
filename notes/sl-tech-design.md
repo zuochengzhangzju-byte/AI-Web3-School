@@ -15,8 +15,16 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-26
+<!-- DAILY_CHECKIN_2026-05-26_START -->
+今天大部分时间还是在工作上了。关于学习营，主要参加了线上会议，以及思考一些方向。
+
+目前，主要对链上数据分析Agent、智能合约审计辅助Agent以及交易提醒与策略Agent比较感兴趣，然后交给Hermes进行分析，让其对这三者进行扩展介绍。还没有形成一个比较好的内容，需要进一步思考、讨论。
+<!-- DAILY_CHECKIN_2026-05-26_END -->
+
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 [在网站aiweb3.school](http://在网站aiweb3.school)学习的时候，看到支付协议x402，引起我的注意，调研学习了X402协议。
 
 x402协议是一个将“付款”嵌入HTTP请求流程的开放协议。服务端使用HTTP402告诉客户端，某个资源需要付费，客户端用钱包生成付款授权，再把付款凭证随请求发送，服务端可以验证并进行结算后返回资源。
@@ -48,6 +56,7 @@ x402有4个核心角色：
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 主要在Sepolia测试网部署一份存证合约，部署的合约交易hash为：0x11436e8b75dd7b7a7303e96922dea649cef624298e32a6331333b067ee6d6834，合约地址为0x45acd158f0e5c7d4f97766d636240e70b7a6b89c。  
 
@@ -96,6 +105,7 @@ contract EvidenceRepository {
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
 
+
 今天任务：  
 ①在[https://aiweb3.school/zh/handbook/ai/](https://aiweb3.school/zh/handbook/ai) 网站上复习AI的概念
 
@@ -108,6 +118,7 @@ contract EvidenceRepository {
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -265,6 +276,7 @@ https://github.com/NousResearch/hermes-agent/blob/main/README.zh-CN.md
 
 
 
+
 主要在自己本地部署hermes。但是遇到一些问题，现在卡在网络上，下载hermes到约99%就会失败，目前正在排查（放弃使用http clone，改为使用ssh了，不知道会不会成功）。后面也会把整个部署过程记录，上传到打卡点。
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/sl-tech-design/images/2026-05-19-1779196495368-image.png)
@@ -272,6 +284,7 @@ https://github.com/NousResearch/hermes-agent/blob/main/README.zh-CN.md
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
