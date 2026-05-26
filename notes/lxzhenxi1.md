@@ -15,8 +15,22 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-26
+<!-- DAILY_CHECKIN_2026-05-26_START -->
+学习真实世界Web3支付案例：Quantoz于本月上线已被央行接纳的欧洲-非洲合规稳定币跨境汇款场景
+
+\- 汇款双方无需接触稳定币或改变现有流程，完全从底层用Web3替代SWIFT。
+
+\- EURQ进入国家级金融支付基础，被当地央行认可并由银行CoopBank作为treasury持有，收款为当地货币不影响非洲本地金融合规。
+
+\- 该案例可以通过CoopBank的700多家当地支行迅速规模化，满足埃塞俄比亚每年50亿美金跨境汇款费用高时间长的痛点，并已收到非洲其他国家政府及银行合作兴趣。
+
+新闻链接 [https://coopbankoromia.com.et/coopbank-and-terrapay-launch-blockchain-based-remittance-settlement-to-enhance-cross-border-trans](https://coopbankoromia.com.et/coopbank-and-terrapay-launch-blockchain-based-remittance-settlement-to-enhance-cross-border-trans)
+<!-- DAILY_CHECKIN_2026-05-26_END -->
+
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 ![截屏2026-05-25 下午8.06.15.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/lxzhenxi1/images/2026-05-25-1779713908494-__2026-05-25___8.06.15.png)
 
 ChatGPT Saved memory/ChatHistory Claude Project
@@ -26,6 +40,7 @@ ChatGPT Saved memory/ChatHistory Claude Project
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 Future of AI \* Ethereum: Ethereum becoming the coordination layer of value commitment for machines in the machine economy, with humans at center. ERC-8004: Trustless Agent went live same week as OpenClaw.
 
@@ -48,6 +63,7 @@ Example: Deep funding. Allocate funding to github repos.
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
 
+
 练习用AI生成定期行业简报，流程图以及行业研究
 <!-- DAILY_CHECKIN_2026-05-23_END -->
 
@@ -56,11 +72,13 @@ Example: Deep funding. Allocate funding to github repos.
 
 
 
+
 学习优秀笔记
 <!-- DAILY_CHECKIN_2026-05-22_END -->
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -87,6 +105,7 @@ web3 核心：密码学 经济学 社会学
 
 
 
+
 成功设置hermes agent Telegram channel 并创建GitHub Repo
 
 [https://github.com/lxzhenxi1/ai-web3-school-cohort-0](https://github.com/lxzhenxi1/ai-web3-school-cohort-0)
@@ -100,11 +119,13 @@ web3 核心：密码学 经济学 社会学
 
 
 
+
 成功安装Hermes Agent
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
