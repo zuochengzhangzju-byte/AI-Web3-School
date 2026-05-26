@@ -15,8 +15,25 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-26
+<!-- DAILY_CHECKIN_2026-05-26_START -->
+今天的学习重点是对 Open Agentic Economy 后续学习路径进行系统梳理。
+
+通过今天的学习，我明确了 AI × Web3 的核心机会不是简单地让 AI 调用区块链，而是让 Agent 拥有身份、信用、支付、验证和协作能力。
+
+ERC-8004 和 ERC-8183 分别从 **信任层** 和 **交易层** 支撑 Agentic Economy：
+
+-   ERC-8004 解决 Agent 是谁、是否可信、如何被验证的问题。
+    
+-   ERC-8183 解决 Agent 如何接任务、交付、验收和结算的问题。
+    
+
+后续学习需要从理论理解逐步进入实际 Builder 路径，重点完成一个简化版 **Agent Task Escrow Demo**，通过实践理解 AI Agent 与 Web3 协议标准结合的完整流程。
+<!-- DAILY_CHECKIN_2026-05-26_END -->
+
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 今天完成了 Open Agentic Economy 后续学习计划的整理，明确了从概念学习到项目实践的路径。
 
 后续学习将按照：
@@ -44,6 +61,7 @@ AI Agent 与链上任务结合
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 今天学习了 Open Agentic Economy 相关课程，重点了解了 AI Agent 与 Web3 协议标准结合后的发展方向，尤其是 ERC-8004 和 ERC-8183 在 Agent 经济中的作用。
 
@@ -124,6 +142,7 @@ ERC-8183 主要解决 Agent 之间的商业交易流程问题。它通过 Job、
 <!-- DAILY_CHECKIN_2026-05-21_START -->
 
 
+
 今天完成了对 AI-Agent 和 Web3 结合方向的系统分析。整体来看，AI-Agent 解决的是“自动理解和执行任务”的问题，Web3 解决的是“资产、身份、支付和可信记录”的问题。两者未来最可能在钱包助手、链上支付、DeFi 自动化、智能合约交互和链上数据分析等方向融合。  
   
 AI-Agent 和 Web3 的结合不是简单地“AI + 区块链”概念叠加，而是存在明确的互补关系：
@@ -155,6 +174,7 @@ AI-Agent 操作 Web3 时存在明显风险，尤其是：
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -254,6 +274,7 @@ AI-Agent 操作 Web3 时存在明显风险，尤其是：
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -407,6 +428,7 @@ AI-Agent 操作 Web3 时存在明显风险，尤其是：
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
