@@ -15,13 +15,123 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-26
+<!-- DAILY_CHECKIN_2026-05-26_START -->
+# claude code项目结构分析
+
+文件夹 PATH 列表
+
+```bash
+.claude.json          # 登录会话、MCP、缓存，自动生成，自动更新，已逐步废弃
+.claude
+	│ .last-cleanup   # 存储程序上次自动清理缓存的时间标记，用于管控清理周期
+	|
+	│ history.jsonl   # 按时间线记录所有prompt、时间戳、项目路径与会话 ID，仅存输入不存回复
+	|
+	├─backups/        # 对.claude.json的备份，也没什么大用
+	│    .claude.json.backup.1779637949559
+	│    ...
+	│
+	├─cache/
+	│    changelog.md # claude code自身的更新日志
+	|
+	├─telemetry/      # 远端上报失败的死信队列，我们的配置非官方API，所以每条会话都上传失败
+	|    1p_failed_events.<session-id>.<event-id>.json
+	| 
+	├─sessions/       # 存储着单次会话运行态快照
+	|
+	├─session-env/         # 启动时自动根据uuid创建一个当前会话的文件夹
+	│  └─<session-uuid>/   # 存储当前会话环境变量、Shell状态、启动Hook等，通常为空
+	|	
+	| shell-snapshots/# Shell环境快照
+	|
+	├─file-history/        # file-history是ClaudeCode的文件编辑历史存档。
+	│  └─<session-uuid>/   # 每个会话一个目录，由该会话的ID命名
+	│       <file-hash>@v1 # 被编辑文件的第1版（file-hash是文件绝对路径，通过SHA-256计
+	│       <file-hash>@v2 # 被编辑文件的第2版 算出的hash值，没改动一次都对源文件快照一次）
+	|
+	│ CLAUDE.md       # 系统提示词
+	|
+	│ settings.json   # 配置文件，参考https://code.claude.com/docs/zh-CN/settings
+	|
+	├─projects/
+	|  └─<project>/
+	|	   ├──memory/                 # 可配置该文件夹的默认位置，我已迁移至主目录
+	|  	   |   ├── MEMORY.md          # 简洁索引，加载到每个会话
+	|	   |   └── ...                # Claude 创建的任何其他主题文件
+	|      | <UUID>.jsonl             # 单次对话的完整记录
+	|  	   └──<UUID>/                 # 单词对话使用subagent和tools的完整记录
+	|
+	├─memory/
+	|	├── MEMORY.md # 简洁索引，加载到每个会话
+	|	└── ...       # Claude 创建的任何其他主题文件
+	|
+	├─skills/
+	|  └─<name>/
+	|	   ├── SKILL.md           # 必需 - 主要说明和导航
+	|	   ├── template.md        # 可选 - Claude 要填写的模板
+	|	   ├── examples/          # 可选 - 示例输出
+	|	   │   └── sample.md
+	|	   └── scripts/           # 可选 - Claude 可执行的脚本
+	|		    └── validate.sh
+	|
+	├─tasks/
+	| └── <task-list-uuid>/       # 每个任务列表一个 UUID 目录 
+	|	  ├── 1.json              # 单个任务 
+	|	  ├── 2.json 
+	|     ├── ... 
+	|	  ├── .lock               # 防并发写 
+	|	  └── .highwatermark      # 下一个任务 ID
+	|
+	└─plugins/
+	   │  known_marketplaces.json    # 本地记录你已添加的所有插件市场的注册表
+	   │
+	   └─marketplaces/ # 是插件市场的本地仓库目录，里面每个子目录就是一个市场的 git 仓库。
+	       └─claude-plugins-official/# Anthropic 官方市场，同级也可以添加其他插件市场
+	           │                     #git clone自anthropics/claude-plugins-official
+	           │  .gitignore         # Git 忽略文件
+	           │
+	           │  README.md          # Claude Code 插件目录
+	           │
+	           ├─.claude-plugin/     # Claude Code 约定的市场标识目录
+	           │     marketplace.json# 记录了该插件市场的所有插件的基本信息
+	           │
+	           ├─.git/   # 是任何git仓库都有的元数据目录，是git协议本身的数据存储层。
+	           │  └─ ...
+	           │
+	           ├─.github/# 这个市场特有的CI/CD体系，自动完成更新,校验,扫描等工作的流水线
+	           │  ├─policy/           # 记录对插件市场的审核准则以及审核结果的格式定义
+	           │  │      prompt.md
+	           │  │      schema.json
+	           │  │
+	           │  ├─workflows/        # 组成自动化流水线的workflows
+	           │  |      ...
+	           │  |
+	           │  └─scripts/          # workflow 跑的具体脚本
+	           │         discover_bumps.py
+	           │         validate-frontmatter.ts
+	           │
+	           ├─plugins/ # Anthropic 自己维护的内部插件，包含所有的配置和源码
+	           |  └─<name>
+	           |     └─ ...
+	           │
+	           └─external_plugins # 第三方服务集成的外部插件，只包含轻量配置，不含核心源码
+	              └─<name>
+	                 └─ ...
+```
+
+其他更个性化的文件夹参考[探索 .claude 目录 - Claude Code Docs](https://code.claude.com/docs/zh-CN/claude-directory)按需取用
+<!-- DAILY_CHECKIN_2026-05-26_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 今天几乎完整写完了我的Agent的顶层设计文档，参考了当前各种主流Agent的范式，做了很多关于个性化的调整和认为更合理的处理，也希望经过去敏感处理后开源出来有更多人看到，提提意见，一起完成技术实现。
 <!-- DAILY_CHECKIN_2026-05-24_END -->
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 今天继续写项目文件，同时做了少量关于日历日程的Debug
 <!-- DAILY_CHECKIN_2026-05-23_END -->
@@ -30,11 +140,13 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
 
+
 为Agent增加了撤回回滚、日历编辑功能
 <!-- DAILY_CHECKIN_2026-05-22_END -->
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -49,6 +161,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -161,6 +274,7 @@ EOA (私钥控制)
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
