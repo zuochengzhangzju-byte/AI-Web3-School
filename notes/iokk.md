@@ -15,8 +15,22 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-27
+<!-- DAILY_CHECKIN_2026-05-27_START -->
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/iokk/images/2026-05-27-1779896966434-image.png)
+
+查看回放了一下昨天的课程。  
+  
+Web3 Agent 钱包应以“用户控资产、Agent 受限执行”为核心。不要让 Agent 掌握主私钥，而是用智能合约钱包、AA 账户或 Session Key，让它只在限定范围内操作，如限额、限时、白名单合约、指定资产和指定方法。高风险操作如大额转账、跨链、Approve、借贷必须用户确认。
+
+架构上可包括：意图识别、策略规划、权限控制、交易模拟、风险检测和钱包执行。执行前要检查滑点、授权、合约安全、黑名单地址和余额变化。
+
+主要风险包括：私钥泄露、Prompt Injection、恶意合约、无限授权、MEV 夹击、跨链桥风险、Agent 判断错误和模型被操控。核心是：Agent 可以建议和执行小额任务，但最终控制权必须留给用户。
+<!-- DAILY_CHECKIN_2026-05-27_END -->
+
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/iokk/images/2026-05-25-1779712594950-image.png)
 
 # 产品视角看，它们为什么要做记忆工程？
@@ -117,6 +131,7 @@ Text
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
 
+
 今天通过AI了解相关的钱包概念：
 
 测试钱包就是用 MetaMask 这类钱包创建一个地址，在测试网上使用。测试网的币没有真实价值，通常可以从水龙头领取，比如 Sepolia 测试 ETH。它主要用来练习转账、部署合约和调用合约，不会损失真钱。
@@ -144,6 +159,7 @@ Text
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
 
+
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/iokk/images/2026-05-23-1779550761265-image.png)
 
 **Agentic Economy** 的核心，是让 AI Agent 从“回答问题的工具”变成能参与经济活动的主体：它可以接任务、调用服务、自动付款/收款，并证明任务已完成。
@@ -157,6 +173,7 @@ ERC-8004 / ERC-8183 这类标准的意义，是尝试把 Agent、钱包、支付
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -183,6 +200,7 @@ ERC-8004 / ERC-8183 这类标准的意义，是尝试把 Agent、钱包、支付
 
 
 
+
 今天有学习Hermes相关的安装，并且已经在本地部署，并且使用了对应的提醒文档，主要涉及到模型配置、消息渠道的设置以及常见问题点的处理。另外，还推荐了一些好用的工作流。
 
 ![iShot_2026-05-19_20.28.13.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/iokk/images/2026-05-19-1779205044574-iShot_2026-05-19_20.28.13.png)
@@ -190,6 +208,7 @@ ERC-8004 / ERC-8183 这类标准的意义，是尝试把 Agent、钱包、支付
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
