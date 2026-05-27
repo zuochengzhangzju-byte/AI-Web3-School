@@ -16,8 +16,17 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-28
+<!-- DAILY_CHECKIN_2026-05-28_START -->
+0527  
+  
+今天正式將GIT與bitget錢包串再一起，並且成功調閱數據，練習抓取交易的時間、區塊高度、並將記錄自動存檔。  
+目前遇到的問題是，測試鍊API沒辦法直接讀取，導致需要透過鍊上數據分析，抓取資料，每次區塊抓500，優點是免費，缺點是耗時太長。
+<!-- DAILY_CHECKIN_2026-05-28_END -->
+
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 0527
 
 在今天進行中，成功將本地與GITHUB進行串聯，並完成AI代碼建置。  
@@ -29,6 +38,7 @@ AI x Web3 School
 
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 
 0526筆記  
   
@@ -42,6 +52,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-25_START -->
 
 
+
 0525筆記  
   
 上週成功將api導入LLM中，並成功開啟對話模型。  
@@ -52,6 +63,7 @@ AI x Web3 School
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 
 
@@ -69,6 +81,7 @@ AI x Web3 School
 
 
 
+
 0523筆記  
   
 今天開始進行運用VS CODE搭建虛擬環境，並引入openai進行建置。  
@@ -77,6 +90,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -95,6 +109,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -124,6 +139,7 @@ AI x Web3 School
 
 
 
+
 0519筆記  
   
 透過Hermes指定一个“大脑”，也就是大语言模型。  
@@ -134,6 +150,7 @@ Hermes Agent支持众多主流模型，包括**OpenAI、Anthropic Claude。**
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
