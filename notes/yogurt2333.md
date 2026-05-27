@@ -15,8 +15,22 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-27
+<!-- DAILY_CHECKIN_2026-05-27_START -->
+**问题地图** 扫了全部 6 个方向
+
+**主方向选择** Wallet / Permission，写了为什么不是纯 AI / 不是纯 Web3
+
+**真实用户** 持币但不懂技术的普通人
+
+**问题拆解** 7 步流程图 + 参与方 + AI vs Web3 分工 + 自动化边界 + 风险对策
+
+**Next Steps** 明天出 proposal + 补 Cobo CAW + ERC-4337
+<!-- DAILY_CHECKIN_2026-05-27_END -->
+
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 **1.Obsidian = RAG** 的顿悟 — 自己的笔记系统本质上就是检索+生成，打算做个 Obsidian Agentic RAG
 
 **2.🚀 部署并验证了首个 Solidity 合约到 Sepolia**
@@ -34,6 +48,7 @@ AI x Web3 School
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 \### ✅ 完成：Vibe Coding 架构设计
 
@@ -74,6 +89,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-22_START -->
 
 
+
 \### Web3 基础 — 过了一遍
 
 章节 核心收获
@@ -102,6 +118,7 @@ AI x Web3 School
 
 
 
+
 🧭 2026 核心趋势 Agents with Wallets — Agent 自己管钱自己花
 
 📦 项目全景表 基础设施层 / 钱包支付层 / 应用层，每个都有简介
@@ -119,6 +136,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -151,6 +169,7 @@ Web3 底层原理
 
 
 
+
 \## 📋 5月19日学习总结
 
 \### ✅ 已完成
@@ -172,6 +191,7 @@ Web3 底层原理
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
