@@ -15,8 +15,31 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-27
+<!-- DAILY_CHECKIN_2026-05-27_START -->
+📚 AI × Web3 School Day 7 — 框架（Frameworks）
+
+💡 3 个核心理解：
+
+1.  框架是系统边界的表达，不是智能本身——先画清楚工作流再决定用不用框架，别让产品逻辑迁就框架
+    
+2.  2\. 简单链路不要上框架（一次调用+检索+输出足够），长流程才需要显式 state（多步、确认、恢复）
+    
+3.  3\. 框架要能退出——如果很难换模型、换向量库、换部署方式，长期维护成本会吞噬初期便利
+    
+
+🎯 最大收获：六种框架/工具（LangChain、LangGraph、OpenAI SDK、DSPy、Hermes、Learning Agent）解决的是不同层的问题。最有价值的判断不是"哪个最流行"，而是它帮你管理了哪一层复杂度，又把哪些藏起来了。
+
+❓ 我现在用的 Hermes Agent 本身就是框架的产物——它的 tool calling、state management、skills、memory 分别对应了 Handbook 里的哪些设计选择？如果要求我画 Hermes 的"先画工作流再选框架"图，关键节点应该有哪些？
+
+🔗 [https://github.com/Joea529/ai-web3-school-cohort-0](https://github.com/Joea529/ai-web3-school-cohort-0)
+
+📖 https://aiweb3.school/zh/handbook/
+<!-- DAILY_CHECKIN_2026-05-27_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 📚 AI × Web3 School Day 6 — 智能体（Agent）
 
 💡 3 个核心理解：
@@ -40,6 +63,7 @@ AI x Web3 School
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
+
 📚 AI × Web3 School Day 5 — 检索增强生成（RAG）
 
 💡 3 个核心理解：
@@ -62,6 +86,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 +📚 AI × Web3 School Day 5 — 检索增强生成（RAG）
@@ -96,6 +121,7 @@ AI x Web3 School
 
 
 
+
 📚 AI × Web3 School Day 4 — 上下文（Context）
 
 💡 3 个核心理解：
@@ -118,6 +144,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -150,6 +177,7 @@ AI x Web3 School
 
 
 
+
 📚 AI × Web3 School Day 2 — 提示词（Prompt）
 
 💡 对照手册学完 4 个知识节点：
@@ -173,6 +201,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
