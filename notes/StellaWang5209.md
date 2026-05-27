@@ -15,13 +15,20 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-27
+<!-- DAILY_CHECKIN_2026-05-27_START -->
+以前AI是 问答工具，现在Claude Code 是能读代码 + 改代码 + 跑命令的代理，它不再是“写代码的人”，而是“指挥AI的人”。
+<!-- DAILY_CHECKIN_2026-05-27_END -->
+
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 今天得请假
 <!-- DAILY_CHECKIN_2026-05-26_END -->
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 今天黑客松demo day，先打个卡，结束以后补学习内容
 <!-- DAILY_CHECKIN_2026-05-24_END -->
@@ -30,11 +37,13 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
 
+
 还在参加乡建黑客松，hermes在写代码上没有codex好用
 <!-- DAILY_CHECKIN_2026-05-23_END -->
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -55,11 +64,13 @@ AI x Web3 School
 
 
 
+
 终于安装完hermes，并且配置好AI模型了
 <!-- DAILY_CHECKIN_2026-05-20_END -->
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
