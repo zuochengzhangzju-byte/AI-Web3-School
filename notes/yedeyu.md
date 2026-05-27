@@ -15,13 +15,20 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-26
+<!-- DAILY_CHECKIN_2026-05-26_START -->
+-   观看回放 [Open Agentic Economy:From ERC-8004/ERC-8183 to Builder Path](https://www.youtube.com/watch?v=M_Ps8OyKwAw)
+<!-- DAILY_CHECKIN_2026-05-26_END -->
+
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 -   观看回放 [AI x Web3 School 例会 #1](https://www.youtube.com/watch?v=4rTRXtXQo2Y)
 <!-- DAILY_CHECKIN_2026-05-25_END -->
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 -   观看 [AI 下乡计划｜AI 在 Web3 的应用](https://www.youtube.com/watch?v=S3CUqNPrrK4)
     
@@ -36,11 +43,13 @@ AI x Web3 School
 
 
 
+
 -   观看 [60分钟全面掌握Claude Code～](https://www.bilibili.com/video/BV1NvRyBzEhq/)
 <!-- DAILY_CHECKIN_2026-05-23_END -->
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -55,11 +64,13 @@ AI x Web3 School
 
 
 
+
 -   观看回放 [Web3 运行原理](https://www.youtube.com/watch?v=amblYDPZqQ0)
 <!-- DAILY_CHECKIN_2026-05-21_END -->
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -78,11 +89,13 @@ AI x Web3 School
 
 
 
+
 -   观看回放 [AI 时代，Web3 开发者需要具备的基础知识和架构能力](https://x.com/i/broadcasts/1RKjpzPzVzZJw)
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
