@@ -15,8 +15,58 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-27
+<!-- DAILY_CHECKIN_2026-05-27_START -->
+> 今日是周三 Co-learning 日，核心动作是带着昨日方向决策和 5W 拆解去获取反馈，并迭代原型。
+
+> 关键动作：
+
+> 1.  **Co-learning 参加**：携带方向决策 + 5W 拆解 + 原型草稿，获取导师/同学反馈
+>     
+
+> 2.  **反馈记录与迭代**：将收到的关键评价转化为 [flow.md](http://flow.md) / [pseudo.py](http://pseudo.py) 的具体修改
+>     
+
+> 3.  **3 步 Demo 设计**：为选定方向设计一个最小可演示场景（3 步以内，链上或模拟）
+>     
+
+> 方向决策结论：（分析并确认了路线为payment(ERC-8004+x402) + wallet(cobo的agent wallet)）
+
+## 主方向决策：Payment / Commerce / Settlement
+
+> 建议选择 **方向 A: Payment / Commerce / Settlement**
+
+**理由：**
+
+1.  **已有资源优势**：你已有 x402 白皮书和相关材料在 LLM-Wiki，课程也把 x402+CAW 作为模块 B 核心任务给出完整链路。
+    
+2.  **任务集成度最高**：课程很明确地给出了“搭建 x402 paywall + CAW agent 自主支付闭环”的具体指引，后续深挖阻力最小。
+    
+3.  **安全可控**：全程可在测试网运行，不涉及真实资金。
+    
+4.  **Hackathon 对接**：Cobo 相关的 Hackathon/workshop 优先应用路径就是 Agent DeFi Execution，而它正是把 Payment + Wallet + Security 放到 DeFi 场景中检验，Payment 是最前置的起点。
+    
+5.  **性价比**：一周内可以做出有流程图、有测试网交易记录、有参考实现的闭环 demo，验证感最强。
+    
+
+**方向 C (Wallet) 放入 backlog：**
+
+-   相关性很强，但最好在 Payment 闭环跑通后作为“权限控制层”深化，而不是单独开线。  
+    
+-   理由：“agent 能不能自动付款”这个问题自然会带出“在什么权限范围内付款”，所以 Wallet 会被自然覆盖进去。
+    
+
+[Open: Pasted image 20260527230716.png](LLM-Wiki/raw/assets/fe8e05ce7fe3435472d0167f2f083c98_MD5.jpg)  
+LLM-Wiki/raw/assets/fe8e05ce7fe3435472d0167f2f083c98\_MD5.jpg
+
+> 学习笔记：[https://github.com/NeoWeb3Nova/neo-ai-web3-school-cohort-0/blob/main/daily/2026-05-27.md](https://github.com/NeoWeb3Nova/neo-ai-web3-school-cohort-0/blob/main/daily/2026-05-27.md)
+
+> [#AIWeb3School](#AIWeb3School) [#Week2](#Week2) [#Day10](#Day10) [#Colearning](#Colearning) [#HackathonPrep](#HackathonPrep)
+<!-- DAILY_CHECKIN_2026-05-27_END -->
+
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 > 今日核心任务是 Hackathon 方向最终决策与 5W 技术拆解。
 > 
 > 关键动作：
@@ -37,6 +87,7 @@ AI x Web3 School
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 > 今日完成 Co-learning 线上共学，并深度阅读 Handbook 三章交叉内容：Agent Identity、Settlement & Escrow、Governance AI。
 
@@ -71,6 +122,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
 
+
 > 今日完成 Week 1 遗留扫尾，推进模块 C 原型到可演示状态，并初筛 Week 2 方向。
 
 > 关键动作：
@@ -99,6 +151,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -137,6 +190,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -199,6 +253,7 @@ EVM 执行合约逻辑，成功则更新状态并发出 event，失败则 revert
 
 
 
+
 > 今日完成模块 B 收尾：测试钱包创建、测试网交易、合约部署与验证。
 > 
 > 关键收获：
@@ -227,6 +282,7 @@ EVM 执行合约逻辑，成功则更新状态并发出 event，失败则 revert
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -277,6 +333,7 @@ EVM 执行合约逻辑，成功则更新状态并发出 event，失败则 revert
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
