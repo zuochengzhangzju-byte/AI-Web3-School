@@ -15,8 +15,52 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-27
+<!-- DAILY_CHECKIN_2026-05-27_START -->
+### **Co-Learning — 021 学习以太坊**
+
+1.  参加了 Ethane（XiaoHai67890）的《021学习以太坊》分享
+    
+2.  理解了 L1 基础层（最终结算与安全）vs L2 扩容层（Rollups/State Channels/Sidechains）
+    
+3.  学习了 Blob 数据（Dencun 升级）：挂车比喻，L2 成本下降 90-99%
+    
+4.  区分了 Optimistic Rollup（欺诈证明）vs ZK Rollup（零知识证明）
+    
+5.  了解了 EIP-1559 Gas 销毁机制和轻节点概念
+    
+
+### **分享会 — Neo-Cypherpunk & Privacy**
+
+1.  参加了 Peter Farbey（@0xfar, Web3Privacy Now）的 Neo-Cypherpunk 分享
+    
+2.  理解了 Neo-Cypherpunk = privacy × empathy × collaboration
+    
+3.  学习了 Cypherpunk 历史脉络：1993 宣言 → 2024 Ethereum Cypherpunk Turn
+    
+4.  掌握了个人隐私实践栈：Signal / VPN / GrapheneOS / Firefox / Railgun 等
+    
+5.  区分了 Old School（专家/阴郁）vs Neo（人人参与/积极正向）
+    
+
+### **随堂笔记**
+
+> Transparency for the powerful, anonymity for the powerless. — 1993 Cypherpunk Manifesto
+
+> Neo = privacy + play + care + community. Privacy isn't isolation.
+
+### **下一步工作**
+
+1.  继续 Handbook Web3 基础学习 — 下一站 **钱包（Wallet）**
+    
+2.  尝试部署个人隐私工具栈（Signal + 浏览器替换 + VPN）
+    
+3.  探索 Railgun 等隐私工具
+<!-- DAILY_CHECKIN_2026-05-27_END -->
+
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 ### **Cobo Agentic Wallet 分享**
 
 1.  参加了 Cobo Agentic Wallet 分享会 — AI Agent 链上安全架构
@@ -53,6 +97,7 @@ AI x Web3 School
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 ### **Co-Learning — Railgun & Kohaku 隐私系统详解**
 
@@ -111,6 +156,7 @@ AI x Web3 School
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 
 ### **密码学（Cryptography）**
@@ -198,6 +244,7 @@ AI x Web3 School
 
 
 
+
 ### **Open Agentic Economy**
 
 1.  参加了 Sophia ([Z.AI](http://Z.AI)) 的 "Open Agentic Economy" 分享会
@@ -220,6 +267,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -271,6 +319,7 @@ AI x Web3 School
 
 
 
+
 1\. 参加了 "AI 下乡计划｜在 Web3 的应用" 分享会（ELON）
 
 2\. 理解了 AI + Web3 的核心框架：AI 负责理解与决策，Web3 负责身份、支付、结算和审计
@@ -286,6 +335,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -354,11 +404,13 @@ AI x Web3 School
 
 
 
+
 我今天在分享会过程中，把hermes和openclaw迁移到云服务器并且成功使用，也把和飞书的连接，以及日历的每日提醒完成了，明天会继续学习ai x web3指导文档中的内容。
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
