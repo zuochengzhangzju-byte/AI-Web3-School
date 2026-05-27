@@ -15,19 +15,35 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-27
+<!-- DAILY_CHECKIN_2026-05-27_START -->
+## 2026-05-27
+
+Week 2 Day 3。今天圍繞 smart contract 互動路徑、agent workflow threat model、Neo-Cypherpunk。
+
+Smart contract 那條鏈拆開看是:frontend → wallet request → tx → calldata → contract function → state change → event logs → indexer。多數人講到「agent 要解讀交易」就停在 ABI decode,但我覺得真正缺的那塊是 **simulation**。calldata 解出來只告訴你「這筆交易長這樣」,沒告訴你「這筆交易跑完之後狀態會變成怎樣」。沒有 simulation/dry-run 的結果,agent 看到的永遠是意圖層,不是後果層——而使用者真正在乎的、簽下去會發生什麼,只活在後果層。所以原則應該是:**agent 在沒拿到 simulation 結果之前不該對交易結果或安全性做任何 confident 解釋**。它可以說「這個 function 叫 swap」,但它不能說「你會拿到 X 顆 token」,除非那是模擬出來的、不是它腦補的。這跟前兩天那條「黑箱輸出不可信」的線是同一個原則:把可驗證的東西交給可驗證的元件,LLM 只做翻譯不做斷言。
+
+Agent workflow 那五步循環(任務分解 → 工具選擇 → 執行 → 觀察 → 糾錯)我想補一個容易被忽略的點:**觀察跟糾錯之間需要 ground truth**。如果觀察階段拿到的是模型自己幻覺出來的「我以為我做完了」,糾錯就是在錯誤的世界模型上修正,越修越偏。對鏈上動作來說 ground truth 很乾淨——tx hash、state、event 都可驗,所以 Web3 場景反而是少數能給 agent loop 提供強力 ground truth 的環境。這某種程度上解釋了為什麼 AI × Web3 不只是兩個熱詞相加:**鏈上動作可驗證,是 agent 自我糾錯的天然錨點**。沒這個錨,五步循環就是五步漂移。
+
+晚上 Neo-Cypherpunk 那場最有共鳴。Cypherpunk 我之前讀過不少——從 Chaum 的 mix network、Tim May 的 Crypto Anarchist Manifesto 到 Hughes 那句 "Cypherpunks write code"——那個時代的隱私是「技術精英全副武裝對抗國家」的姿態。Neo-Cypherpunk 把這件事重新定位成 **open、協作、可近用**:隱私不該是少數人的技術能力,而是普通使用者預設享有的權利。這個轉向我認同,但我想補一刀:對 builder 來說,這意味著隱私不能是 v2 才加的 feature,而必須是 **threat model 的預設前提**。產品設計第一天就該假設「使用者的所有資料都可能被觀察」,然後反推哪些資料根本不該被產品本身看到——這跟事後加密是兩種完全不同的東西。AI agent 場景尤其關鍵,因為 context window 就是個天然的隱私漏斗,使用者餵進去的東西不會自己消失。
+<!-- DAILY_CHECKIN_2026-05-27_END -->
+
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 水個打卡
 <!-- DAILY_CHECKIN_2026-05-26_END -->
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
 
+
 假日休息一下
 <!-- DAILY_CHECKIN_2026-05-24_END -->
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 **观看回放 5.20｜Web3 运行原理**  
@@ -43,6 +59,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -100,11 +117,13 @@ curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scri
 
 
 
+
 打卡，基本上把第一週的內容都看完了。都是些較為基礎的內容。把任務一跟任務二完成了。
 <!-- DAILY_CHECKIN_2026-05-20_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
