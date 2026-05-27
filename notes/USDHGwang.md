@@ -15,8 +15,70 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-27
+<!-- DAILY_CHECKIN_2026-05-27_START -->
+\---
+
+date: 2026-05-27
+
+event: Web3 × AI 學院 — 來賓演講
+
+speaker: Web3 Privacy Now (NeoCypherPunk)
+
+submitter: John (USDHG)
+
+\---
+
+\# 來賓演講筆記 — Web3 Privacy Now / NeoCypherPunk
+
+\## 講座核心
+
+Web3 Privacy Now 是非營利組織,把「社會主義者 + 自由科技人」連結在隱私議題上。三年從小型研究做到有影響力,核心產出:研究 / 教育 / 活動,有 Hackathon Pack 教育包。
+
+NeoCypherPunk 由 Rose O'Leary (Dark5) 起,Paul Allen Ellis 發展。是對 Eric Hughes 1993 _Cypherpunk Manifesto_ 的當代重寫:把隱私從「專家小圈」擴成「所有人都能參與」的運動;不極端、不要求完全離開大公司;互助 > 競爭;把 Ethereum 拉回「世界電腦」的原意。態度從 90 年代的 Gloom and Doom 換成 Joycentric / Fused。
+
+**2.「不極端、漸進務實」沒講紅線就退化成沒立場**
+
+漸進派可以,但若沒明確說「哪些行為 / 哪些公司不能妥協」,「漸進放棄」會被 normalize 成「反正先用著」,然後永遠不放棄。
+
+→ 想追問講者:NeoCypherPunk 自己畫的紅線在哪?
+
+**3.「社會主義者 + 自由科技人」聯盟才是真政治創新,但大綱沒展開**
+
+兩派對「個人 vs 集體」「私有 vs 共有」根本分歧。若只是「在反監控這個最小交集上聯手」 — 講清楚就好;若是更深整合 — 大綱沒交代,值得追問。
+
+\## 對我自己工作的啟發
+
+我正在做的 AIP(Autonomous Intent-integrity Protocol)目前只解決 **integrity**(AI agent 真的執行用戶授權的那筆,中間沒被偷改)。
+
+聽完這場最大收穫:\*\*只解 integrity 是漏的,還必須解 privacy\*\*。
+
+理由:agent 場景下,intent 被 mempool 看到 → 被搶在前面交易;執行歷史被看到 → 行為指紋被建,對手能預測下一步。\*\*兩個少一個 agent 都不可用\*\*。
+
+更細的收穫(寫筆記過程中校正出來的):
+
+\> 我一開始想畫「加 privacy 不能拖慢 interaction speed」為硬紅線,寫到一半發現 —— **這就是我前面批評 NeoCypherPunk 不畫紅線的鏡像錯誤,只是方向相反**。把絕對主義從「隱私要徹底」翻成「速度要徹底」,本質一樣。
+
+\>
+
+\> 真正誠實的設計姿態是 **trade-off,不是 filter**:privacy 優先序高,但每個 use case 的 speed budget 不同,選技術路線時要動態權衡。
+
+\>
+
+\> 這個自我校正其實是這場演講對我的實質影響 —— 不只是內容上,還有思考方式上。
+
+具體選型還沒收斂,但 AIP 的角色從「integrity 工具」改成「\*\*integrity + privacy 雙保證、且容許多種 privacy/speed profile 共存\*\*的設計」。
+
+\## 後續行動
+
+\- 找 NeoCypherPunk manifesto 原文讀,verify 大綱的轉述是否準確
+
+\- 列出 AIP × privacy 的候選技術路線,挑一條做 PoC(優先挑「最能 calibrate trade-off 空間」的,不是「最快的」)
+<!-- DAILY_CHECKIN_2026-05-27_END -->
+
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 **\## Today's Events**
 
 \- 學院 Week 2 Lesson 2：Cobo 團隊來賓演講介紹 Agentic Wallet (CAW)
@@ -54,6 +116,7 @@ AI x Web3 School
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 學院筆記 — Agent Memory
 
@@ -180,6 +243,7 @@ Agent 架構應由系統的\*\*具體 failure point\*\* 驅動（context anxiety
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 
 ```
@@ -334,6 +398,7 @@ Agent 進 vault 從 top MOC 開始，**不全 grep**。比 pure Zettelkasten「h
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 
@@ -574,6 +639,7 @@ Claude 的 MEMORY.md                  Hermes 的 MEMORY.md
 
 
 
+
 今天做了什麼：
 
 1\. Learning Agent 初始化
@@ -623,6 +689,7 @@ Claude 的 MEMORY.md                  Hermes 的 MEMORY.md
 
 
 
+
 今天做了什麼
 
 發布 obsidian-knowledge-vault
@@ -642,6 +709,7 @@ repo 7 個 commit，今天從空目錄推到完整 README + prompt + annotated o
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -725,6 +793,7 @@ HITL 模組要設計成 **「可被替代的層」**，不是 hardcode 必要的
 
 
 
+
 今天的主題是 Hermes Agent 安裝。
 
 因為看到直播裡很多夥伴卡在環境設定，就順手做了一份 Windows WSL2 + macOS 的完整安裝教程，在課程進行中同步解答問題。
@@ -745,6 +814,7 @@ HITL 模組要設計成 **「可被替代的層」**，不是 hardcode 必要的
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
