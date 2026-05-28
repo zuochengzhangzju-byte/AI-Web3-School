@@ -15,8 +15,44 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-28
+<!-- DAILY_CHECKIN_2026-05-28_START -->
+Day 11 · 2026-05-28 · @peanuut98
+
+今日学习：
+
+\- 把 Handbook 两节当一组读：「Web3 基础 · Account Abstraction」+「AI × Web3 Bridge · Agent Wallet」。
+
+\- AA 五零件（ERC-4337 / Smart Account / Bundler / Paymaster / Session Key）每个一句话拆清楚，重点修正：AA 的核心不是 gasless，是把账户控制权从私钥扩展成可编程规则。
+
+\- Agent Wallet 9 节点（AA Wallet / Smart Account / Safe / Session Key / Policy / Guard / Simulation / Revocation / Human Check）整理成最小检查清单。
+
+\- 按 Handbook 的最小实践，给「Agent 一天最多花 5 USDC 调白名单 API」这个场景写了一份 session key 策略草稿（7 维限制 + 必须人工确认动作 + 撤销路径 + 审计入口）。
+
+最大的认知变化：
+
+\- AA 的关键词不是「智能账户」，是「可编程规则」— 不是先挑钱包，是先设计规则。
+
+\- 生成是概率（Agent 做），拒绝是确定性（Guard 做）— 这两件事不能由同一个组件做。
+
+\- 自动化权限必须有一个用户看得见的关闭入口 — 「权限管理」是 UI 一等公民，不是后台配置。
+
+卡点：
+
+\- Session Key 的额度在合约里如何实现 / Bundler 不稳定时 Agent 怎么退化 / Simulation 在自动调用场景下如何做不失控 — 三个问题各开一个 issue 跟。
+
+明日 / 下一步：
+
+\- Day 12 写 Handbook feedback Round 2 + 把今天 3 个疑问开成 issue。
+
+\- 周末做 Counter 合约 Base Sepolia 部署练习。
+
+🔗 [https://github.com/peanuut98/ai-web3-school-cohort-0/blob/main/daily/2026-05-28.md](https://github.com/peanuut98/ai-web3-school-cohort-0/blob/main/daily/2026-05-28.md)
+<!-- DAILY_CHECKIN_2026-05-28_END -->
+
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 Day 10 · 2026-05-27 · @peanuut98
 
 今日学习：
@@ -48,6 +84,7 @@ Day 10 · 2026-05-27 · @peanuut98
 
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 
 # **Day 9 打卡**
 
@@ -297,6 +334,7 @@ Day 10 · 2026-05-27 · @peanuut98
 <!-- DAILY_CHECKIN_2026-05-24_START -->
 
 
+
 Day 7 · 2026-05-24 · @peanuut98
 
 今日学习：
@@ -328,6 +366,7 @@ Day 7 · 2026-05-24 · @peanuut98
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 
@@ -368,6 +407,7 @@ Day 6 · 2026-05-23 · @peanuut98
 
 
 
+
 Day 3 · 2026-05-20 · @peanuut98
 
 今日学习：
@@ -404,6 +444,7 @@ Day 3 · 2026-05-20 · @peanuut98
 
 
 
+
 Day 2 · 2026-05-19 · @peanuut98
 
 今日学习：
@@ -429,6 +470,7 @@ Day 2 · 2026-05-19 · @peanuut98
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
