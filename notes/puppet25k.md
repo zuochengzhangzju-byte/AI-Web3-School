@@ -15,8 +15,43 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-28
+<!-- DAILY_CHECKIN_2026-05-28_START -->
+### **Handbook — 钱包（Wallet）**
+
+1.  自学了 Handbook「钱包（Wallet）」章节
+    
+2.  理解了钱包不是"登录按钮"，而是用户意图进入链上执行前的最后一道确认界面
+    
+3.  掌握三类钱包动作：连接钱包（低风险）→ 签名消息（中风险）→ 发送交易（高风险）
+    
+4.  学习了 EOA（私钥控制账户）vs 智能账户的区别和优劣势
+    
+5.  理解了助记词的安全铁律：任何网页/AI 要求输入助记词应视为危险
+    
+6.  掌握了交易六阶段状态管理和 Explorer 查看方法
+    
+7.  理解了 Gas 费用机制和 AI × Web3 中的钱包边界设计
+    
+8.  学习计划进度更新：钱包 ✅ → 下一站 **智能合约（Smart Contract）** 🎯
+    
+
+### **随堂笔记**
+
+> 钱包不是登录按钮，是用户意图进入链上执行前的最后一道确认界面。 连接 ≠ 授权资产。签名必须可解释。网络是上下文。
+
+### **下一步工作**
+
+1.  继续 Handbook Web3 基础学习 — 下一站 **智能合约（Smart Contract）**
+    
+2.  用测试钱包连接测试网 dApp，做实操作
+    
+3.  思考 AI Agent 进入链上时的钱包边界设计
+<!-- DAILY_CHECKIN_2026-05-28_END -->
+
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 ### **Co-Learning — 021 学习以太坊**
 
 1.  参加了 Ethane（XiaoHai67890）的《021学习以太坊》分享
@@ -61,6 +96,7 @@ AI x Web3 School
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
 
+
 ### **Cobo Agentic Wallet 分享**
 
 1.  参加了 Cobo Agentic Wallet 分享会 — AI Agent 链上安全架构
@@ -97,6 +133,7 @@ AI x Web3 School
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 ### **Co-Learning — Railgun & Kohaku 隐私系统详解**
@@ -156,6 +193,7 @@ AI x Web3 School
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 
 
@@ -245,6 +283,7 @@ AI x Web3 School
 
 
 
+
 ### **Open Agentic Economy**
 
 1.  参加了 Sophia ([Z.AI](http://Z.AI)) 的 "Open Agentic Economy" 分享会
@@ -267,6 +306,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -320,6 +360,7 @@ AI x Web3 School
 
 
 
+
 1\. 参加了 "AI 下乡计划｜在 Web3 的应用" 分享会（ELON）
 
 2\. 理解了 AI + Web3 的核心框架：AI 负责理解与决策，Web3 负责身份、支付、结算和审计
@@ -335,6 +376,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -405,11 +447,13 @@ AI x Web3 School
 
 
 
+
 我今天在分享会过程中，把hermes和openclaw迁移到云服务器并且成功使用，也把和飞书的连接，以及日历的每日提醒完成了，明天会继续学习ai x web3指导文档中的内容。
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
