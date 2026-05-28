@@ -15,8 +15,18 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-28
+<!-- DAILY_CHECKIN_2026-05-28_START -->
+-   学会拆解一个交叉方向中的任务发起方、执行方、付款方、验证方、风险承担方和治理 / 仲裁方。
+    
+-   能判断 AI 在一个方案中承担的是理解、生成、规划、工具调用、自动化、监控、总结还是协作。
+    
+-   能判断 Web3 在一个方案中提供的是支付、身份、权限、开放状态、可验证记录、结算、抗审查还是协作机制。
+<!-- DAILY_CHECKIN_2026-05-28_END -->
+
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 -   建立 AI × Web3 的问题空间地图，而不是只记几个热门项目或标准名词。
     
 -   理解 payment / commerce、identity / reputation、capability / interoperability、wallet / permission、privacy / security 等方向各自解决的问题。
@@ -24,6 +34,7 @@ AI x Web3 School
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 1.  **Prompt → Workflow → Agent 的边界**：Prompt 是让模型回答，决策在人；Workflow 是预定义任务流程，模型是其中一个节点，路径固定；Agent 是模型自主规划、动态调用工具、跨轮管理状态。三者失控风险和可调试性完全不同。
     
@@ -34,11 +45,13 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
 
+
 **LLM：Large Language Medols**
 <!-- DAILY_CHECKIN_2026-05-23_END -->
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -51,6 +64,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -111,6 +125,7 @@ AI x Web3 School
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
