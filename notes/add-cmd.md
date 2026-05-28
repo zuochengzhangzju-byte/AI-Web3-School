@@ -15,8 +15,78 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-28
+<!-- DAILY_CHECKIN_2026-05-28_START -->
+\> 日期： 2026-05-28
+
+\> 参与者： add-cmd
+
+\> 环境： WSL Ubuntu 22.04 + Foundry
+
+\> 方向： Module D — Wallet / Permission / Safe Execution（AgentPact MVP）
+
+学习内容
+
+今日任务
+
+\- \[x\] 搭建 Foundry 项目（forge init + forge-std）
+
+\- \[x\] 编写 SimpleAccount — 最小化智能合约钱包
+
+\- \[x\] 编写 AccountFactory — CREATE2 确定性地址预测 + 部署
+
+\- \[x\] 编写 DeployAccount 部署脚本（Sepolia 配置）
+
+\- \[x\] 编译通过（forge build）
+
+项目：aa-demo（Foundry AA Demo）
+
+位置： /home/unthurn/Foundry/aa-demo/
+
+SimpleAccount.sol
+
+一个极简的智能合约钱包，包含：
+
+\- constructor(address \_owner) — 绑定钱包 owner
+
+\- receive() external payable — 接收 ETH
+
+\- execute(address dest, uint256 value, bytes calldata func) — 只有 owner 能调用的转发函数
+
+AccountFactory.sol
+
+基于 CREATE2 的工厂合约，核心是两个函数：
+
+\- getAddress(owner, salt) — 提前算出合约地址，零 Gas
+
+\- createAccount(owner, salt) — 首次交易时部署，已部署则复用
+
+DeployAccount.s.sol
+
+Foundry 部署脚本，从 .env 读取私钥和 RPC URL，部署 AccountFactory + 测试 SimpleAccount。
+
+关键学习
+
+1\. CREATE vs CREATE2
+
+\- CREATE：地址 = deployer + nonce，不可预测
+
+\- CREATE2：地址 = deployer + salt + bytecode hash，可预测再部署
+
+\- 意义：用户可以在账户没有 Gas 时，提前让别人转钱到这个地址，用户自己使用时再部署
+
+2\. Foundry 部署脚本模式
+
+\- vm.envUint("PRIVATE\_KEY") 从 .env 读私钥
+
+\- vm.startBroadcast(key) / vm.stopBroadcast() 标记上链操作
+
+\- vm.addr(key) 从私钥派生出地址
+<!-- DAILY_CHECKIN_2026-05-28_END -->
+
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 **Day 6（续）：Week 2 方向选择完成 — 整理交付物与后续规划**
 
 ### **今日路径**
@@ -36,6 +106,7 @@ AI x Web3 School
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 Day 6 · Week 2 Module A · 2026-05-25
 
@@ -114,6 +185,7 @@ USDC，每天不超过 $500"。LLM 是把权限系统从工程师专属降到普
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 
 # **Week 1 共学打卡 — AI 与 Web3 基础知识**
@@ -246,6 +318,7 @@ NaN.  WCB 打卡流程还没完全熟悉，这是第一次提交
 
 
 
+
 Day 5 — 智能体（Agent）打卡笔记
 
 📖 学了什么
@@ -347,6 +420,7 @@ GitHub: github.com/add-cmd/ai-web3-school-cohort-0/tree/master/2026-05-22
 
 
 
+
 Day 4 — RAG（检索增强生成）打卡笔记
 
 📖 学了什么
@@ -422,6 +496,7 @@ GitHub: github.com/add-cmd/ai-web3-school-cohort-0/tree/master/2026-05-21
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -518,6 +593,7 @@ GitHub: github.com/add-cmd/ai-web3-school-cohort-0/tree/master/2026-05-20
 
 
 
+
 Day 2 完成总览
 
 📘 Prompt 章节核心要点：
@@ -553,6 +629,7 @@ Day 2 完成总览
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
