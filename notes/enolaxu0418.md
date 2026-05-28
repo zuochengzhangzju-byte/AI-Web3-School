@@ -15,8 +15,25 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-28
+<!-- DAILY_CHECKIN_2026-05-28_START -->
+## Cobo 的可信执行链路（四步闭环）
+
+1.  **Agent submit** → 发起请求
+    
+2.  **Human approve** → 人类审批
+    
+3.  **Agent sign** → 获得受限签名能力，执行交易
+    
+4.  **On-chain traceable** → 结果可追溯、可审计
+    
+
+**核心目标**：Agent 无法在可控边界外执行任何操作。
+<!-- DAILY_CHECKIN_2026-05-28_END -->
+
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 ## 一、缺少可控边界时已出现的两类风险案例
 
 | 风险类型 | 描述 | 后果 |
@@ -42,6 +59,7 @@ AI x Web3 School
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 ### 1\. Agentic commerce 的下一个突破在哪里？
 
@@ -69,6 +87,7 @@ AI x Web3 School
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 
 ### 1\. Agentic commerce 的下一个突破在哪里？
@@ -108,6 +127,7 @@ AI x Web3 School
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 
@@ -188,6 +208,7 @@ Ethereum Foundation 已试点让 AI agent 参与**分配数十万美元给数百
 
 
 
+
 一、实现原理
 
 1.  **Bittensor**：子网定义规则 → 矿工提供服务 → 验证者评分 → 链上结算 → 奖励
@@ -219,6 +240,7 @@ Ethereum Foundation 已试点让 AI agent 参与**分配数十万美元给数百
 
 
 
+
 | 方向 | 解决什么问题 | 主案例 | 核心原理 |
 | --- | --- | --- | --- |
 | 1. 去中心化 AI 基础设施 | 算力、存储、模型服务如何组织与激励 | Bittensor | Subnet 定义任务 → Miner 提供服务 → Validator 评估质量 → 链上共识 → Token 奖励优质供给 |
@@ -230,6 +252,7 @@ Ethereum Foundation 已试点让 AI agent 参与**分配数十万美元给数百
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -248,6 +271,7 @@ Ethereum Foundation 已试点让 AI agent 参与**分配数十万美元给数百
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
