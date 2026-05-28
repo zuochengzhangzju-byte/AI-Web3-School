@@ -15,8 +15,31 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-28
+<!-- DAILY_CHECKIN_2026-05-28_START -->
+📚 AI × Web3 School Day 8 — 氛围编程（Vibe Coding）
+
+💡 3 个核心理解：
+
+1.  Vibe Coding 是把认知资源从"怎么写"迁移到"做什么"和"怎么验证"——人的角色从打字员变成导演，迭代速度决定效率上限
+    
+2.  2\. 它不是独立技能，而是前面七章的汇聚点：LLM 提供能力、Prompt 提供精度、Context 提供背景、Agent 提供工具、Framework 提供结构——Vibe Coding 是所有这些的"用户体验层"
+    
+3.  3\. 最大陷阱不是 AI 写错代码，是人不验证就接受。Web3 场景尤其危险——AI 生成的合约代码必须经过审查，Vibe Coding 加速"生成"和"测试"，但不替代"审查"
+    
+
+🎯 最大收获：Vibe Coding 最妙的地方在"vibe"——不是偷懒，是一种更高效的认知状态。每一层自动化释放一层认知负担，让你思考更高维度的问题。前六章不是孤立的——它们就是 vibe coding 的认知基础设施。
+
+❓ 如果 Vibe Coding 的终局是"所有人都能写软件"，开发者的核心价值会迁移到三个方向：系统设计、验证判断、领域知识。代码生成会变成 commodity。
+
+🔗 [https://github.com/Joea529/ai-web3-school-cohort-0](https://github.com/Joea529/ai-web3-school-cohort-0)
+
+📖 https://aiweb3.school/zh/handbook/
+<!-- DAILY_CHECKIN_2026-05-28_END -->
+
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 📚 AI × Web3 School Day 7 — 框架（Frameworks）
 
 💡 3 个核心理解：
@@ -39,6 +62,7 @@ AI x Web3 School
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 📚 AI × Web3 School Day 6 — 智能体（Agent）
 
@@ -64,6 +88,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
 
+
 📚 AI × Web3 School Day 5 — 检索增强生成（RAG）
 
 💡 3 个核心理解：
@@ -86,6 +111,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -122,6 +148,7 @@ AI x Web3 School
 
 
 
+
 📚 AI × Web3 School Day 4 — 上下文（Context）
 
 💡 3 个核心理解：
@@ -144,6 +171,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -178,6 +206,7 @@ AI x Web3 School
 
 
 
+
 📚 AI × Web3 School Day 2 — 提示词（Prompt）
 
 💡 对照手册学完 4 个知识节点：
@@ -201,6 +230,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
