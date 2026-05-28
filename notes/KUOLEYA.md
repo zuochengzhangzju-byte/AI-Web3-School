@@ -15,8 +15,28 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-28
+<!-- DAILY_CHECKIN_2026-05-28_START -->
+今天打开week2模块B：
+
+首先是第1个任务关于谁下单、谁执行、谁验收、谁付款、谁仲裁
+
+首先DAO 需要智能合约安全审计服务，由 AI Agent 自动执行并完成链上结算所以应有如下角色来负责
+
+| 角色 | 谁 | 职责 | | \*\*Client\*\* | DAO（合约部署方） | 提出审计需求、锁定预算、验收结果 | | \*\*Provider\*\* | AI 代码审计 Agent | 执行代码审查、生成审计报告 | | \*\*Evaluator\*\* | 第三方验证 Agent / 人工抽查 | 对审计报告质量进行 attestation | | \*\*Marketplace\*\* | 合约/中间件层 | 撮合需求、托管 escrow | | \*\*Budget / Pact\*\* | Cobo CAW / 链上合约 | 限制 agent 的执行边界和预算 | | \*\*Arbitrator\*\* | DAO 治理委员会 | 对争议做最终裁决 | | \*\*Settlement Layer\*\* | 链上结算合约 | 释放资金、记录收据 | ### 全流程（七个阶段） \`\`\` 1. 发现服务 DAO → 在 Agent Marketplace 发布审计需求 Agent Provider 响应报价 ├─ 审计范围（合约文件列表） ├─ 预算（例如 500 USDC，分 80% 执行 + 20% 验收） └─ 时间窗口（例如 72 小时内交付） 2. 报价与授权 Agent 返回报价 + 交付物标准 DAO 审阅通过 → 通过 Cobo CAW 创建 Pact ├─ Pact=intent("审计合约 xxx.sol") + policy(budget≤500 USDC, chain=Sepolia, time≤72h) └─ 预算锁定进入 Escrow 合约 3. 执行 Agent 下载合约源码，运行静态分析 + 形式化验证 生成审计报告（包含发现的漏洞、风险等级、修复建议） 通过链上交易提交报告（有 hash 作为交付证明） 4. 验收 Evaluator（可以是第三方 AI Agent 或者人工抽检）对审计报告质量做检查 ├─ PASS → 触发 Escrow 释放 ├─ FAIL → 退回到提交状态等待修改 └─ 部分通过 → 按比例释放 5. 结算 验收通过 → Escrow 合约释放资金给 Provider Agent ├─ Cobo CAW 记录完整审计日志 ├─ 链上收据（jobId, client, provider, resultHash, amount） └─ 信誉系统（ERC-8004）打分数 6. 失败处理 ├─ 超时未交付 → Escrow 退款给 Client ├─ 交付质量不达标 → Evaluator 标记 Rejected → Refund └─ 争议 → DAO Committee 仲裁（ERC-8183 dispute hook） 7. 记录证明 所有步骤写入链上： ├─ AuditReceipt NFT（报告 hash + 审计结果） ├─ Reputation Score（ERC-8004） └─ 结算收据（谁付了谁、什么时候、多少金额）
+
+第2个任务点：最小 Payment / Commerce Flow 设计：
+
+他应该核心围绕"报价→托管→执行→验收→结算"五个环节构建去信任交易闭环：Client与Agent链下协商任务内容和价格后，Client通过`createTask`将资金锁定到合约并设定截止时间，Agent在链下执行任务并通过`submitWork`提交交付物哈希上链作为存在性证明，随后Client调用`accept`放款给Agent或`reject`触发退款，任何一方超时未响应（Agent未提交或Client未验收）均可由对方触发自动结算，最终以链上事件和交付物哈希构成不可篡改的交易记录与追责凭证。
+
+第3个任务点：比较 x402、MPP、ERC-8004、ERC-8183 中任意两个，说明它们分别解决支付、验证、身份、结算或仲裁中的哪一段
+
+ERC-8004 = "agent 是谁 + 谁值得信任"，ERC-8183 = "怎么交易 + 如何验收 + 怎么收钱"——两者是 agent commerce 的上下两层，ERC-8183 的 reason 输出可以直接 feed 到 ERC-8004 的 Reputation Registry
+<!-- DAILY_CHECKIN_2026-05-28_END -->
+
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 今天完成week2的模块a的任务
 
 首先是任务1：
@@ -45,6 +65,7 @@ AI x Web3 School
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
 
+
 今天完成模块C的实验方向4下图为生成的成果：
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/KUOLEYA/images/2026-05-26-1779809141872-image.png)
@@ -52,6 +73,7 @@ AI x Web3 School
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 
 今天完成模块B的所有实践任务
@@ -84,6 +106,7 @@ AI x Web3 School
 
 
 
+
 今天复习Web3相关的一些知识点，这里还是引用材料中的知识点进行总结。
 
 首先账户、地址与钱包常被混为一谈，但在AI与Web3的构建逻辑中，三者的边界必须厘清：钱包并非普通账号，而是一把掌握私钥、承担安全责任并发起链上动作的唯一入口。\*\*助记词\*\*是私钥的人类可读种子，\*\*私钥\*\*是控制资产的唯一凭证，\*\*地址\*\*则是从私钥推导出的公开收付款标识——正因私钥与助记词能直接支配资产与权限，一旦泄露意味着完全失控，所以必须永远离线保存、绝不触碰网络。
@@ -101,6 +124,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -150,6 +174,7 @@ AI x Web3 School
 
 
 
+
 今天接着昨天的任务1完成任务2。
 
 仓库链接：[KUOLEYA/ai-web3-study: AI × Web3 课程学习实验仓库](https://github.com/KUOLEYA/ai-web3-study)
@@ -178,6 +203,7 @@ Agent协助日志：
 
 
 
+
 今天完成了模块a的任务1,包括搭建hermes-agent并完成一次对话式学习任务
 
 ![屏幕截图 2026-05-20 100141.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/KUOLEYA/images/2026-05-20-1779290806560-_____2026-05-20_100141.png)
@@ -187,6 +213,7 @@ Agent协助日志：
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
