@@ -15,8 +15,76 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-28
+<!-- DAILY_CHECKIN_2026-05-28_START -->
+# 2026-05-28 每日学习笔记
+
+## 学习内容
+
+### 晚间完成事项
+
+-   修正 PoW Pack：移除混入的 Week 2 会议内容，删除所有文件中泄露的任务 ID
+    
+-   提交 Week 1 PoW Pack 到 WCB ✅（submitId: cmpo8bb0h7mkwpo01cdma2gel）
+    
+-   设计 DeFi Swap 受限助手工作流文档 v1.1：新增 Pre-flight Simulation + Permit2 集成
+    
+-   撰写 Week 1 理解总结：AI Agent Workflow & Tool Use、钱包与签名、Agent 支付边界
+    
+
+### DeFi Swap 受限助手设计核心
+
+-   三条铁律：永不接触密钥、永不自动签名、永不绕过确认
+    
+-   三堵确认墙：合约地址核对 → 授权参数核对 → Swap 参数核对
+    
+-   Pre-flight Simulation：用 eth\_call 模拟交易，签名前发现授权不足、滑点过低等问题
+    
+-   Permit2 优先路径：链下签名授权，消除 Approve→Swap 间的 MEV 窗口
+    
+
+### Week 2 方向调研
+
+两个候选方向：
+
+**方向一：链上财务教练**
+
+-   分析用户链上交易行为，生成个人画像，结合盈亏给出交易风格诊断和建议
+    
+-   现有工具（DeBank/Zapper/Nansen）做资产追踪，无人做行为分析和诊断
+    
+-   AI 三层角色：描述→诊断→建议
+    
+
+**方向二：AI 治理助手**
+
+-   自动总结 DAO 提案、分析论坛讨论、评估投票影响，降低参与门槛
+    
+-   DAO 参与率仅 5%，核心障碍是信息过载
+    
+-   AI 做总结+分析+提醒，Web3 提供链上治理数据
+    
+
+### 竞品调研（记录 18 个项目）
+
+方向一：DeBank、Zapper、Zerion、Nansen、Arkham、Dune Analytics、Rotkiapp、Crypto Analyzer、Chainalysis、Elliptic、TRM Labs
+
+方向二：DeepDAO、Snapshot、Tally、Agora、Karma、Boardroom、Sybil、DAO-Analyzer
+
+详见 `tasks/2026-05-27-week2-direction-analysis.md`
+
+## 明日计划
+
+1.  确定 Week 2 主方向，开始画 AI × Web3 问题地图
+    
+2.  分析竞品优缺点，完成方向选择说明
+    
+3.  参加 5/29 Women Builders + Week 2 例会
+<!-- DAILY_CHECKIN_2026-05-28_END -->
+
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 **第一部分：学习总结**
 
 > 今天完成了 AI × Web3 Bridge 剩余 8 个章节的全面速览：
@@ -43,6 +111,7 @@ AI x Web3 School
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
 
+
 **第一部分：今日学习总结**
 
 > 今天重点完成了 Week 1 收尾任务和 Week 2 预热：
@@ -62,6 +131,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-25_START -->
 
 
+
 **第一部分：Web3 基础学习总结**
 
 > 今天完成了 Web3 基础 Phase 1 的全部剩余 6 个章节学习：Network（区块/共识/PoS/L2/Rollup）、Account Abstraction（ERC-4337/Smart Account/Bundler/Paymaster/Session Key）、DeFi（Token/AMM/滑点/无常损失/Lending/Stablecoin/Liquidity）、Oracle（Price Feed/Oracle Risk/AI Oracle）、Indexing（Event Indexing/Subgraph/Data Pipeline）、Security（Reentrancy/Access Control/Audit/Simulation/Monitoring）。共产出 7 份结构化学习笔记沉淀到 GitHub 仓库。
@@ -78,11 +148,13 @@ AI x Web3 School
 
 
 
+
 今天主要学习和了解web3的相关文档和知识。
 <!-- DAILY_CHECKIN_2026-05-24_END -->
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 
@@ -134,6 +206,7 @@ AI x Web3 School
 
 
 
+
 今天完成了两部分学习：  
   
 一、AI 基础概念深化  
@@ -173,6 +246,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -240,6 +314,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -354,6 +429,7 @@ AI x Web3 School
 
 
 
+
 今日学习总结：  
 今天系统阅读了 AI 基础文档，对已有知识进行了梳理和补充：  
 已熟悉的概念（复习巩固）：
@@ -380,6 +456,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
