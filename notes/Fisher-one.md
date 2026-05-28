@@ -15,8 +15,45 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-28
+<!-- DAILY_CHECKIN_2026-05-28_START -->
+今日学习的时间少点，所以看的不是很多，主要还是看看了方向问题。
+
+今天仔细看了 Week 2「AI × Web3 交叉研究与方向选择」的几个方向描述，最终锁定：
+
+**主方向：Wallet / Permission / Safe Execution**
+
+关注 agent 接触钱包、签名、预算和链上动作时，如何做权限分层、自动化边界、人工确认、撤销与审计。适合对账户抽象、Safe、policy、guard、session key 感兴趣的学员。
+
+**延伸方向：Payment / Commerce / Settlement**
+
+关注机器或 agent 如何购买 API、数据、算力和服务，以及报价、验收、托管、争议处理和结算如何闭环。适合对商业闭环、支付、标准和协议感兴趣的学员。
+
+### **为什么这两个放一起**
+
+不是二选一。Wallet/Permission 管 Agent **能做什么**（权限边界），Payment/Commerce 管 Agent **能花多少**（资金边界）。之前读的 Agent Wallet 和 Machine Payment 两章正好对应这两条线，在 Guard 那里汇合——做了什么事、花了多少钱，最后都要对得上。
+
+对应 Week 2 任务：
+
+-   任务 2（Agent 链上权限策略，20 pts）← 主方向
+    
+-   任务 5（最小支付流程拆解，20 pts）← 延伸方向
+    
+-   这两个做完后自然过渡到任务 6（x402 + CAW 闭环，40 pts）和任务 7（Proposal，40 pts）
+    
+
+### **还没做**
+
+-   问题地图（任务 1，20 pts）— 方向已定，但 5+ 方向的详细描述还没展开写
+    
+-   Agent Identity（任务 3）
+    
+-   Threat Model（任务 4）
+<!-- DAILY_CHECKIN_2026-05-28_END -->
+
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 **今日学习总结**
 
 **Stablecoin Payment** 最基础的稳定币支付，USDC/USDT 转账，没啥说的。
@@ -47,6 +84,7 @@ x402 之前完全理解错了，Subscription 和 Micropayment 也搞混了。但
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
 
+
 **今日学习内容**
 
 **AA Wallet / Smart Account**（基础层） 之前 Week 1 读 AA 的时候只觉得「很厉害」，现在理解了它的具体价值：传统 EOA 是一把私钥控制一切，AA 让账户本身能写规则——谁能操作、能操作什么、什么时候失效。Smart Account 就是带规则的钱包账户。对 Agent 来说，AA 的关键不是「钱包更高级」，而是账户终于能表达规则了。
@@ -72,11 +110,13 @@ x402 之前完全理解错了，Subscription 和 Micropayment 也搞混了。但
 <!-- DAILY_CHECKIN_2026-05-25_START -->
 
 
+
 今日完成了一个任务；设计一个受限 Web3 助手 workflow（40 pts）— 以「用稳定币订阅 X Premium」为场景，设计了基于智能账户（Smart Account）+ Session Key 的受限支付助手。核心设计：Session Key 四维限制（金额 ≤10U、每日 ≤3 笔、收款地址白名单、30 天有效期），规则由人来定、执行交给 Agent。重点搞清楚了白名单地址为什么必须人工核实（Agent 可能获取被篡改的地址），以及 Session Key 和 EOA 体验差异的本质——不是「不需要确认」，而是「授权范围内提前确认过了」。
 <!-- DAILY_CHECKIN_2026-05-25_END -->
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 
 
@@ -116,6 +156,7 @@ x402 之前完全理解错了，Subscription 和 Micropayment 也搞混了。但
 
 
 
+
 今日学习
 
 用 Excalidraw 画了一张从 用户发起任务 到 链上执行验证 的完整流程图，把 Week 1 学的 LLM、Prompt、Context、RAG、Agent、钱包、合约串成了一条链路。
@@ -145,6 +186,7 @@ RPC 广播 → mempool →
 
 
 
+
 Day 5 打卡｜概念卡片整理：AI 6 个 + Web3 8 个  
   
 前两天把 Handbook 四章读完了，今天没读新东西，把读过的概念用自己的话整理成了卡片，方便以后翻。  
@@ -168,6 +210,7 @@ ERC-4337 是新东西，看了 UserOperation → Bundler → EntryPoint → Paym
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -303,6 +346,7 @@ EOA（外部账户）= 裸数据库连接，私钥就是连接串，丢了全完
 
 
 
+
 ## 单笔交易流转流程
 
 钱包签名→节点网络传播→内存池排队→构建者排序→验证者打包出块→区块上链可查询
@@ -357,6 +401,7 @@ EOA（外部账户）= 裸数据库连接，私钥就是连接串，丢了全完
 
 
 
+
 今日的学习笔记作结
 
 ```markdown
@@ -389,6 +434,7 @@ EOA（外部账户）= 裸数据库连接，私钥就是连接串，丢了全完
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
