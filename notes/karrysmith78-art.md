@@ -15,8 +15,48 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-29
+<!-- DAILY_CHECKIN_2026-05-29_START -->
+NaN.  **数据可信与共享**
+      
+      -   区块链记录数据的来源、使用和交易过程，保证数据真实性。
+          
+      -   AI 模型可以在此基础上安全地训练。
+          
+      -   例如：医疗数据上链 → 供 AI 模型训练 → 确保数据安全、合规。
+          
+NaN.  **去中心化 AI 市场**
+      
+      -   把 AI 模型、算力和数据打包成 NFT 或 Token 上链，形成 **AI 服务市场**。
+          
+      -   开发者可以把模型上传，用户用代币调用。
+          
+      -   项目案例：Ocean Protocol、SingularityNET。
+          
+NaN.  **AI + 智能合约**
+      
+      -   AI 可以作为 **去中心化预言机的补充**，给智能合约提供预测和决策支持。
+          
+      -   例如：AI 预测市场价格 → 智能合约根据结果自动清算。
+          
+NaN.  **生成内容 + NFT/元宇宙**
+      
+      -   AI 生成艺术品、音乐，上链铸造成 NFT，保证版权。
+          
+      -   AI 驱动的虚拟人、元宇宙 NPC 上链，具备数字身份。
+          
+NaN.  **AI 算力的去中心化**
+      
+      -   通过区块链把闲置 GPU 共享出来，形成 **算力市场**。
+          
+      -   类似去中心化版的“AI 云计算平台”。
+          
+      -   案例：Gensyn、Akash Network。
+<!-- DAILY_CHECKIN_2026-05-29_END -->
+
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 ### **1\. Maintainers（维护者）**
 
 这些角色保证系统正常运行：
@@ -53,6 +93,7 @@ AI x Web3 School
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
 
+
 ## **方式 A（优先）：用系统盈余缓冲 Surplus Buffer填坑**
 
 -   协议平时会累积“盈余”（来自稳定费、PSM 手续费、RWA 收益等），先放进 **Surplus Buffer**。
@@ -81,6 +122,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 ## **方式 A（优先）：用系统盈余缓冲 Surplus Buffer填坑**
@@ -115,6 +157,7 @@ AI x Web3 School
 
 
 
+
 ## **1\. 清算机制**
 
 -   当抵押率过低时，系统会拍卖抵押物，确保 DAI 有足够资产支撑。
@@ -143,6 +186,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
