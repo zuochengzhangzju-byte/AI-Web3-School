@@ -15,8 +15,61 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-28
+<!-- DAILY_CHECKIN_2026-05-28_START -->
+今天继续 Week 2 主线：Payment / Commerce / Settlement。
+
+前两次已经完成：
+
+1.  AI × Web3 问题地图，并选择 Payment / Commerce / Settlement 作为主方向。
+    
+2.  Agent Wallet / Permission 策略，明确 agent 发起链上动作时必须有预算、allowlist、人工确认阈值和日志。
+    
+
+今天把它们合成一个更完整的商业流程：
+
+> 一个 research / learning agent 如何在用户预算内购买小额付费服务，并留下可审计 proof？
+
+今天完成了一份任务笔记：
+
+-   `https://github.com/adureychloe/ai-web3-school-cohort-0/blob/master/tasks/week2-payment-commerce-flow.md`
+    
+
+覆盖内容：
+
+-   谁下单、谁执行、谁验收、谁付款、谁仲裁。
+    
+-   最小 payment / commerce flow：intent、plan、discovery、quote、policy check、human review、execute、deliver、acceptance、payment / refund / dispute、proof。
+    
+-   报价、预算授权、执行、交付、验收、付款、退款、记录证明分别怎么实现。
+    
+-   x402、EIP-3009、ERC-8004、wallet policy 分别解决哪一段。
+    
+-   一个最小 JSON proof log 格式。
+    
+-   失败和争议处理策略。
+    
+
+今天最重要的理解是：
+
+> Agent commerce 的最小闭环不是“agent 自动付款”，而是“intent → quote → policy → payment → delivery → acceptance → proof”。
+
+几个具体结论：
+
+1.  x402 适合做付费 API / agent endpoint 的小额支付入口，但它只解决付款协议，不解决全部信任和验收问题。
+    
+2.  EIP-3009 可以让付款像“签一次受限授权”，但仍然必须被金额、deadline、nonce、token、收款方和 policy 限制。
+    
+3.  ERC-8004 可以帮助 agent 发现服务、检查身份和 reputation，但不能替代用户判断。
+    
+4.  Wallet policy / guard 是安全边界：它决定哪些付款可以自动执行，哪些必须人工确认。
+    
+5.  Proof log 很关键，因为 agent commerce 需要向用户解释：为什么付款、付给谁、拿到了什么、是否符合预算。
+<!-- DAILY_CHECKIN_2026-05-28_END -->
+
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 昨天我选择的 Week 2 主线是 Payment / Commerce / Settlement，也就是：Agent 如何帮助用户购买服务、完成交付、验收结果，并留下可审计的付款记录。
 
 今天我把问题推进到更底层的钱包和权限问题。我的当前理解是：
@@ -36,6 +89,7 @@ AI x Web3 School
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
 
+
 今天进入 Week 2，我做了一张 AI × Web3 问题地图，覆盖 Payment、Identity、Wallet/Permission、Privacy/Security、Dev Tooling、Governance 六个方向。我的主线选择改为 Payment / Commerce / Settlement，因为它最直接地回答：Agent 如何在用户授权预算内购买服务、完成交付、验收结果，并留下可验证付款和收据。具体的笔记内容在：[https://github.com/adureychloe/ai-web3-school-cohort-0/blob/master/tasks/week2-ai-web3-problem-map.md](https://github.com/adureychloe/ai-web3-school-cohort-0/blob/master/tasks/week2-ai-web3-problem-map.md)
 
 今天的关键收获：AI 负责理解任务、比较服务和判断交付是否达标；Web3 负责把报价、预算、付款、退款、收据和验证变成可检查机制。
@@ -43,6 +97,7 @@ AI x Web3 School
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 
 ## **开放 Agent 经济 (Open Agentic Economy)**
@@ -125,11 +180,13 @@ AI x Web3 School
 
 
 
+
 今天继续 AI × Web3 School 学习，完成了 EOA、智能账户、多签账户的权限差异比较。我的核心理解是：这三者不是简单的钱包形态差异，而是三种不同的权限模型。EOA 简单直接，但控制权高度集中在一把私钥上；智能账户把账户规则变成可编程逻辑，可以支持 session key、限额、过期、恢复和撤销，更适合受限 Agent workflow；多签则把高风险操作拆成多人确认，适合团队资金、DAO treasury 或协议管理。对 AI × Web3 来说，关键不是让 Agent “更自由地控制钱包”，而是让账户边界更明确：Agent 可以读、解释、准备、检查和验证，但涉及签名、转账、授权、合约写入时，必须有清晰的权限限制和人工/多方确认。
 <!-- DAILY_CHECKIN_2026-05-23_END -->
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -144,11 +201,13 @@ AI x Web3 School
 
 
 
+
 今天继续 AI × Web3 School 的学习，重点从 AI Agent 的安全边界转到 Web3 基础概念：Wallet、Network、Transaction、Gas、Smart Contract、Testnet 和 Block Explorer。我的核心收获是：钱包不是一个简单的登录按钮，而是用户账户控制权、签名、交易和风险确认的边界；网络也不是背景环境，而是交易能否被传播、打包、执行和验证的基础。把这两点和 AI Agent 放在一起看，我更清楚地意识到：Agent 可以帮助读文档、整理 ABI、解释交易、生成操作清单和检查风险，但不能接触助记词/私钥，也不能替用户自动签名、授权或发送交易（要实现自动交易Agent应该给Agent一个单独的钱包）。下一步准备做一次测试网交易，把钱包确认、gas、tx hash 和区块浏览器验证串起来。
 <!-- DAILY_CHECKIN_2026-05-21_END -->
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -167,11 +226,13 @@ AI x Web3 School
 
 
 
+
 今天推进 AI × Web3 School 的基础学习，重点看 LLM 和 Prompt。我的理解是，LLM 本身更像是语言和推理引擎，而 Prompt 是把任务、上下文、约束和输出格式组织起来的接口。放到 Web3 场景里，Prompt 不能只是“帮我操作钱包”这种模糊指令，而必须明确网络、权限、资金风险、是否需要用户确认、以及 proof-of-work 记录。今天最大的收获是：AI Agent 的能力边界，很大程度上取决于我们如何设计上下文、工具权限和确认流程。下一步会继续学习 Context 和 Agent，把它们和链上状态、钱包权限连接起来。
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
