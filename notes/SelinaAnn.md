@@ -15,8 +15,44 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-28
+<!-- DAILY_CHECKIN_2026-05-28_START -->
+# **Cypherpunk & the Cultural Layers of Privacy: Why Privacy Matters for Builders**
+
+## Cypherpunk
+
+-   1980s–1990s 的一个技术与社会运动，主张通过加密技术保护个人隐私与自由。
+    
+-   Privacy is necessary for an open society
+    
+
+## 为什么隐私对 Builders（开发者、创作者、创业者）重要
+
+-   **信任与用户关系**：产品尊重用户隐私 → 用户更信任 → 更可持续的生态。
+    
+-   **安全性**：隐私保护技术往往提升整体安全性（例如端到端加密）。
+    
+-   **道德与责任**：技术不是中立的，设计时考虑隐私意味着承担社会责任。
+    
+-   **创新动力**：在去中心化、隐私优先的场景下，开发者可探索新商业模式或服务模式。
+    
+
+## 隐私保护的实践方法
+
+-   **数据最小化**：只收集必要信息。
+    
+-   **默认加密**：端到端加密或零知识证明。
+    
+-   **透明政策**：明确告诉用户数据用途。
+    
+-   **去中心化架构**：区块链、去中心化存储。
+    
+-   **可选择性**：用户可控制自己的数据访问与共享。
+<!-- DAILY_CHECKIN_2026-05-28_END -->
+
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 # **Product manager of Cobo Agentic Wallet**
 
 ## agentic economy
@@ -55,6 +91,7 @@ AI x Web3 School
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
 
+
 # MetaMask
 
 -   metamask is a app tht allows you to manage ethereum,solana,bitcoin and private keys.
@@ -78,6 +115,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-25_START -->
 
 
+
 # **Long-term Memory for AI Agents**
 
 ## restart VS resume
@@ -93,6 +131,7 @@ AI x Web3 School
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 
 
@@ -184,6 +223,7 @@ AI x Web3 School
 
 
 
+
 # **Open Agentic Economy: From ERC-8004 / ERC-8183 to Builder Path**
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/SelinaAnn/images/2026-05-23-1779524951056-image.png)
@@ -206,6 +246,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -241,6 +282,7 @@ AI驱动链上分析工具
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -325,6 +367,7 @@ AI驱动链上分析工具
 
 
 
+
 Hermes Agent学习
 
 ```
@@ -379,6 +422,7 @@ API 文档：https://web3career.build/llms.txt
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
