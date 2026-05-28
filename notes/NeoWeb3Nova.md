@@ -35,8 +35,9 @@ AI x Web3 School
 > 这是 Week 2 Module B 的进阶任务——一个最小化的 **x402 paywall + Cobo CAW Agent 自主支付闭环**。  
 > 核心目标不是"自动付款"，而是展示：在明确授权、预算控制和可审计记录下完成自动交易的全流程。  
 > 场景
+
+> ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/NeoWeb3Nova/images/2026-05-28-1779970669921-image.png)
 > 
->   
 > **Agent 帮商户生成社交媒体营销内容并自动付款**
 > 
 > -   商户 Alice 授权 Buyer Agent 在 $50 预算内购买营销文案生成服务
@@ -57,6 +58,7 @@ AI x Web3 School
 
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 
 > 今日是周三 Co-learning 日，核心动作是带着昨日方向决策和 5W 拆解去获取反馈，并迭代原型。
 
@@ -109,6 +111,7 @@ AI x Web3 School
 
 
 
+
 > 今日核心任务是 Hackathon 方向最终决策与 5W 技术拆解。
 > 
 > 关键动作：
@@ -129,6 +132,7 @@ AI x Web3 School
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 
@@ -169,6 +173,7 @@ AI x Web3 School
 
 
 
+
 > 今日完成 Week 1 遗留扫尾，推进模块 C 原型到可演示状态，并初筛 Week 2 方向。
 
 > 关键动作：
@@ -197,6 +202,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -238,6 +244,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -306,6 +313,7 @@ EVM 执行合约逻辑，成功则更新状态并发出 event，失败则 revert
 
 
 
+
 > 今日完成模块 B 收尾：测试钱包创建、测试网交易、合约部署与验证。
 > 
 > 关键收获：
@@ -334,6 +342,7 @@ EVM 执行合约逻辑，成功则更新状态并发出 event，失败则 revert
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -387,6 +396,7 @@ EVM 执行合约逻辑，成功则更新状态并发出 event，失败则 revert
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
