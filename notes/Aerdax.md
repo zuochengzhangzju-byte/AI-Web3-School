@@ -15,8 +15,20 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-29
+<!-- DAILY_CHECKIN_2026-05-29_START -->
+**今日完成：** 阅读 MCP 章节，理清 MCP 协议的本质架构（Server / Client / Tool Schema / Permission 四层）；完成 Week 2 方向地图，确定主方向为企业级 AI Agent × Web3 支付与钱包管理，完成统一判断框架分析、问题拆解、项目 Proposal 初稿和参考资料清单。
+
+**学到的关键点：** MCP Server 是真正运行的服务进程，不是描述文件；自然语言到工具调用的映射是 LLM（Agent）的能力，MCP 只是标准化执行层；协议统一（JSON-RPC 2.0），不同 MCP 服务客户端统一对接；部分 MCP 服务（如 Figma MCP）内部嵌套专有 AI 模型，形成两层 AI 分工架构。
+
+**遇到的问题：** MCP 和 RAG / Agent 的关系一开始不清晰——理解后的结论是：三者独立存在，MCP 是工具接口标准，RAG 可以作为 MCP 工具暴露，Agent 是编排决策层，职责清晰分开。
+
+**明日计划：** 完成 MCP 最小实践实验（只读 Server，接入企业 Agent 场景）；开始 Week 3 准备，接入 Testnet 支付层，跑通带链上支付的最小 demo。
+<!-- DAILY_CHECKIN_2026-05-29_END -->
+
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 \# 2026-05-27 学习笔记  
   
 \> WCB Learning：https://web3career.build/zh/programs/AI-Web3-School#tab=learning  
@@ -145,6 +157,7 @@ Groq llama-3.1-8b-instant 不稳定返回 JSON，用 response\_format: json\_obj
 
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 
 # 2026-05-26 学习笔记
 
@@ -278,6 +291,7 @@ Groq llama-3.1-8b-instant 不稳定返回 JSON，用 response\_format: json\_obj
 <!-- DAILY_CHECKIN_2026-05-24_START -->
 
 
+
 今日完成： 阅读 Handbook「提示词」和「上下文」两章，完成两个最小实践：① 写出交易风险摘要 Prompt，按角色/任务/约束/输出四段结构，三组测试（普通转账/无限授权/意图不匹配）全部正确触发风险等级约束；② 为钱包授权检查 Agent 设计 Context Spec，按 5 层结构定义每个字段的来源、刷新策略和可信度。 学到的关键点： 高分线不能交给 Prompt——约束规则要硬编码进 system prompt，不依赖模型自由判断。Context 设计的核心是分层：指令层不可被外部输入覆盖，事实层必须实时查询不得缓存，dApp 页面说明属于不可信外部内容必须显式标注。 遇到的问题： Few-shot 的边界：维护的是推理模式和格式示例，不是覆盖所有业务逻辑。Prompt Injection 目前先了解概念，进入 Agent 开发阶段再深入。 明日计划： 继续阅读 Handbook 下一章节，考虑把 tx-risk-prompt 和 tx-explainer 的输出对接，形成完整的"读取链上数据 → 生成风险摘要"管道。
 <!-- DAILY_CHECKIN_2026-05-24_END -->
 
@@ -286,11 +300,13 @@ Groq llama-3.1-8b-instant 不稳定返回 JSON，用 response\_format: json\_obj
 
 
 
+
 今天由于一直在外面没有电脑不方便更深度的学习，所以只是用手机看了昨天和今天的课程录播，并且阅读了handbook第二章节的内容，目前学习中靠之前掌握的知识和工作中内容暂时还没有遇到什么阻碍，看到群里有很多优秀的人分享自己的学习方法或者自制的小工具，向优秀的人学习
 <!-- DAILY_CHECKIN_2026-05-23_END -->
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -327,6 +343,7 @@ exactInputSingle
 
 
 
+
 今天补齐了之前所有的录播课，下班前刚好有空终于可以参加一次直播了。由于公司本来就从事web3领域，虽然在大陆公司业务能接触到的公链业务场景和技术有限，不过还好是不少了解，并且日常对ai也是深度使用，目前学习起来还挺轻松，继续努力
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Aerdax/images/2026-05-20-1779269636559-image.png)
@@ -334,6 +351,7 @@ exactInputSingle
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
