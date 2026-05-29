@@ -15,13 +15,20 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-29
+<!-- DAILY_CHECKIN_2026-05-29_START -->
+![捕获.PNG](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Sofia16/images/2026-05-29-1780049128848-__.PNG)
+<!-- DAILY_CHECKIN_2026-05-29_END -->
+
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
+
 ![捕获.PNG](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Sofia16/images/2026-05-28-1779957994245-__.PNG)
 <!-- DAILY_CHECKIN_2026-05-28_END -->
 
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 
 ![捕获.PNG](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Sofia16/images/2026-05-27-1779890437775-__.PNG)
 <!-- DAILY_CHECKIN_2026-05-27_END -->
@@ -30,11 +37,13 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-25_START -->
 
 
+
 ![捕获.PNG](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Sofia16/images/2026-05-25-1779716116281-__.PNG)
 <!-- DAILY_CHECKIN_2026-05-25_END -->
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 
@@ -47,11 +56,13 @@ AI x Web3 School
 
 
 
+
 ![捕获.PNG](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Sofia16/images/2026-05-21-1779376700258-__.PNG)
 <!-- DAILY_CHECKIN_2026-05-21_END -->
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -68,11 +79,13 @@ AI x Web3 School
 
 
 
+
 ![捕获.PNG](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Sofia16/images/2026-05-19-1779202620680-__.PNG)
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
