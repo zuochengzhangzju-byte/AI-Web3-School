@@ -107,4 +107,35 @@ My main takeaway is that Web3 operations need explicit verification before execu
 <!-- DAILY_CHECKIN_2026-05-19_START -->
 学习了如何用hermes控制管理github，体验感受了自动化流程
 <!-- DAILY_CHECKIN_2026-05-19_END -->
+
+# 2026-05-27
+<!-- DAILY_CHECKIN_2026-05-27_START -->
+## 5/27 打卡：ERC-8004 Agent 身份与链上声誉
+
+### ETHPanda Space 笔记（嘉宾：@0xMalingshu，DevRel @ ETHPanda）
+
+**主题：Agent 有了链上身份后，谁来保证它说的是真的？**
+
+核心议题：
+1. **ERC-8004 的本质**：Agent 身份协议——把"谁在链上操作"从地址层面抽到 Agent 层面
+2. **声誉灌水问题**：链上身份可以被 Sybil 攻击，ERC-8004 无法独立解决，需要结合 ZK（World ID / Semaphore）
+3. **跨链一致性挑战**：同一个 Agent 在多链上是否保持同一身份？
+4. **协议宪法论**：David 说"协议即 Agent 经济的宪法"
+5. **Agent 间通信语言**：私钥签名 + ZK 证明作为唯一通信格式
+
+### 核心洞察
+
+**意图中心协议（Intent-centric）**
+- 用户只说"我要什么"，不指定"怎么做"
+- 对 AI Agent 的意义：Agent 作为用户的代理，只需要理解意图，不需要理解链上执行细节
+
+**协议即宪法的问题**
+- 宪法需要解释权。协议即宪法 = 谁解释协议，谁就是实际立法者
+- 去中心化不等于无权威
+
+### 待深挖
+- ERC-8004 的具体实现：身份注册在链上还是链下？
+- Agent 的 viewing key / spending key 分离机制
+- 与 ZKProofport (ERC-8004 + TEE) 的关系
+<!-- DAILY_CHECKIN_2026-05-27_END -->
 <!-- Content_END -->
