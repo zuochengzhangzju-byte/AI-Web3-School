@@ -15,8 +15,18 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-29
+<!-- DAILY_CHECKIN_2026-05-29_START -->
+今天是 AI x Web3 School Week 2 的阶段复盘日，晚上有「Women Builders in AI x Web3」和 Week 2 例会。我把今天的重点放在两件事上：一是从 builder 的学习路径和协作网络里看自己接下来怎么持续推进；二是把这一周学到的长期记忆、Agentic Wallet、隐私、权限边界和钱包安全整理成更清晰的项目方向。
+
+这一周我逐渐感受到，AI x Web3 的学习不是只靠听课堆概念，而是需要把每个主题都落到一个可构建的问题上。长期记忆让我想到 Agent 如何保持持续上下文；Agentic Wallet 让我关注权限、签名、额度和风控；隐私主题让我意识到数据最小化和用户授权边界的重要性；Co-learning 则提醒我，Hackathon 项目要尽早收敛到可演示的最小原型，而不是一直停留在发散阶段。
+
+目前我更倾向于把项目方向收敛到交易解释、Agent 权限和钱包安全附近。一个可能的最小原型是 Transaction Risk Explainer：用户输入交易哈希、合约地址或待签名 payload，AI 负责解释交易目的、涉及的资产、授权对象和潜在风险，Web3 侧负责提供链上可验证信息，最终由用户自己决定是否继续。这个方向能把 AI 的理解能力和 Web3 的权限边界结合起来，也比较适合在 Hackathon 时间内做出可展示版本。
+<!-- DAILY_CHECKIN_2026-05-29_END -->
+
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
+
 今天是 AI x Web3 School Week 2 的第四天，今晚主要是 Co-learning「任务推进与答疑」。我准备把前几天学到的长期记忆、Agentic Wallet、隐私和钱包权限这些内容串起来，开始更认真地收敛自己的 Hackathon 方向。
 
 这几天我逐渐意识到，AI x Web3 的项目不能只停留在“AI 帮我解释一下”或者“Agent 自动做事”这两个极端之间。真正有价值的部分可能在中间：AI 帮用户理解复杂操作、生成执行计划、解释交易风险；Web3 提供签名、权限、资产控制、链上记录和可验证结果；人类则需要在关键节点保留最终确认权。这个结构让我更倾向于做一个和交易解释、Agent 权限边界或钱包安全相关的最小原型。
@@ -26,6 +36,7 @@ AI x Web3 School
 
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 
 今天是 AI x Web3 School Week 2 的第三天，晚上准备参加 Co-learning「任务推进与答疑」和「Neo-Cypherpunk & the Cultural Layers of Privacy: Why Privacy Matters for Builders」主题分享。今天的关键词是 privacy，我想把它和前几天学到的 Agentic Wallet、长期记忆、钱包权限和链上验证放在一起理解。
 
@@ -38,6 +49,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-25_START -->
 
 
+
 今天是 AI x Web3 School Week 2 的开端，晚上学习了「Long-term Memory for AI Agents：如何让 Agent 拥有持续上下文与长期一致性」相关内容，也继续整理了 Week 1 到 Week 2 的学习记录。
 
 今天的主题让我开始思考 Agent 的“长期记忆”到底应该怎么设计。对学习型 Agent 来说，记忆不应该只停留在聊天上下文里，因为聊天上下文会丢失、会混乱，也不容易复盘。更可靠的方式是把重要状态沉淀到结构化记录里：daily note 记录每天做了什么，tasks 记录任务和 proof，experiments 记录小实验，handbook-feedback 记录疑问和改进建议，Git commit history 则提供一条可追溯的时间线。
@@ -47,6 +59,7 @@ AI x Web3 School
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 
 
@@ -63,6 +76,7 @@ AI x Web3 School
 
 
 
+
 今天是 AI x Web3 School Week 1 的第 6 天，我先用 Learning Agent 通过 WCB API 查询了今天的任务。今天的主题是 Open Agentic Economy: From ERC-8004 / ERC-8183 to Builder Path。
 
 我对 Open Agentic Economy 的初步理解是：当 AI Agent 不再只是聊天助手，而是可以发现任务、调用工具、发起支付、参与协作甚至代表用户执行某些动作时，它就进入了一个更开放的经济网络。这个网络里最关键的问题不是“Agent 能不能自动做事”，而是 Agent 的身份如何被识别、权限如何被限制、支付如何发生、执行结果如何验证、出错后的责任边界怎么设计。这里 Web3 的价值会变得更具体：钱包、签名、交易、合约、链上记录和标准化协议可以帮助 Agent 行为变得可授权、可追踪、可结算、可验证。
@@ -72,6 +86,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -92,11 +107,13 @@ AI x Web3 School
 
 
 
+
 Web3 不能只追求“去中心化”，还必须重新设计安全、财政、治理、责任和分配机制。 否则去中心化只是把旧世界的问题换了一种形式重新出现。
 <!-- DAILY_CHECKIN_2026-05-21_END -->
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -121,6 +138,7 @@ Web3 不能只追求“去中心化”，还必须重新设计安全、财政、
 
 
 
+
 今天是 AI x Web3 School Day 2，我先补看了昨晚课程的回放，并继续用 Learning Agent 查询和整理今天的 WCB 任务。昨晚回放帮助我把 AI x Web3 的学习主线重新捋了一遍：这不是简单把 AI 和 Web3 两个关键词拼在一起，而是要理解模型能力、工具调用、钱包、签名、支付、身份、权限、安全执行和可验证记录如何在真实场景里连成一条执行链。
 
 Web3 基础上，今天主要补了几个心智模型：钱包不只是“登录工具”，更像是用户控制账户和签名权限的入口；地址是链上身份和资产位置的公开标识，但真正能控制地址的是私钥 / 助记词，所以绝不能交给任何 Agent；交易不是普通的后端请求，一旦签名并上链，就会进入区块链的状态变更流程，并且需要通过区块浏览器、交易哈希和合约调用记录来验证结果；授权和转账也不是一回事，授权可能会给某个合约持续使用资产的权限，因此比“点一下确认”更需要看清楚对象、额度和风险。
@@ -130,6 +148,7 @@ Web3 基础上，今天主要补了几个心智模型：钱包不只是“登录
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
