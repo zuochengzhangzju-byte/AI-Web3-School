@@ -15,8 +15,86 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-29
+<!-- DAILY_CHECKIN_2026-05-29_START -->
+Zombie Permission Scanner + Agent Identity Passport
+
+在 AI Agent 執行交易之前，主動掃描所有鏈上殭屍授權、驗證 Agent 身份護照，並用第二個 AI 審計 Agent 的歷史行為與宣告範圍是否一致。
+
+一、核心問題
+
+•   Zombie Permission：舊的 unlimited approve 從未撤銷。新 Agent 可直接重用，靜默觸發，無任何警告。攻擊者只需等待。
+
+•   Agent 身份不透明：沒有標準方法驗證「這個 Agent 是誰、部署者是誰、宣告了什麼權限」。ERC-8004 提出了 Agent Identity 格式，但尚未普及。
+
+•   Scope Escalation：Agent 護照宣告 `read_only`，實際卻呼叫 `approve(MaxUint256)`。沒有機制比對宣告與行動，等同於無限制授權。
+
+二、架構
+
+鏈上歷史授權
+
+    ↓
+
+ZOMBIE SCANNER
+
+① Allowance Audit  →  age + amount 風險 
+
+② Whitelist Check  →  已知合約比對      
+
+③ Revoke Interface  →  單筆 / 批量撤銷   
+
+    +
+
+AGENT PASSPORT（ERC-8004）
+
+①  Identity Registry →  Operator / 部署時間
+
+② Trust Score      →  tx 歷史 + 被攔次數 
+
+③ Scope Manifest  →  宣告範圍 vs 實際行為
+
+④ Behavior Log    →  30 天行為時間軸    
+
+    ↓
+
+Cross-Agent Audit（LLM Judge）
+
+三、實作
+
+模組 1：Zombie Scanner
+
+模組 2：Agent Passport（ERC-8004）
+
+模組 3：Cross-Agent Audit（LLM Judge）
+
+四、工具
+
+•   授權查詢：Ethers.js `getAllowance()`
+
+•   合約白名單：Ethers.js + on-chain label DB
+
+•   Agent 身份標準：ERC-8004 Agent Identity
+
+•   Scope 比對：自定義 manifest JSON
+
+•   LLM 裁判：Claude API `claude-sonnet-4-20250514`
+
+•   風險分類：MITRE ATLAS AML.T0051
+
+五、兩天的防線總覽
+
+事前 → Zombie Scanner + Agent Passport
+
+事中 → Firewall（Injection Detector + callData Decoder + Simulation）
+
+事後 → Behavior Log + Cross-Agent Audit
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/1118sophie/images/2026-05-29-1780056486922-image.png)
+<!-- DAILY_CHECKIN_2026-05-29_END -->
+
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
+
 實作：AI Agent Transaction Firewall
 
 在 AI Agent 送出鏈上交易之前，用第二個 AI 擔任裁判，比對用戶原始意圖與最終行動是否一致，並將 hex callData 翻譯成人類可讀的風險摘要，要求 Approve / Reject。
@@ -93,6 +171,7 @@ Demo Flow
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
 
+
 這次整理筆記的過程，我沒有從技術規格出發，而是問自己一個比較奇怪的問題：如果我是 AI，被給了一個錢包，我會怎麼「誤用」它而不被發現？這個角色扮換的思維，反而讓我更快理解為什麼單靠 prompt 限制 AI 是不夠的——彈性本身就是風險，不是因為 AI 壞，而是因為它有能力在規則的縫隙裡找到新的執行路徑。
 
 讓我印象最深的是「信任的可分割性」這個概念。人類建立信任的方式，一直都是把責任分給多方，讓任何一方都無法單獨作惡。這在金融裡叫雙簽，在法律裡叫公證，在密碼學裡叫多方計算。Cobo 的三層架構做的事情，本質上也是這件事——把規則不放在 prompt 裡，而是寫進基礎設施，讓邊界變成自動執行的東西，不依賴任何人的善意。
@@ -106,6 +185,7 @@ Demo Flow
 
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 
 
 一、重要的概念：「當 AI 開始能控制資金時，Trust becomes infrastructure。」
@@ -153,6 +233,7 @@ Demo Flow
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 
@@ -215,6 +296,7 @@ AI 開始從「單次問答工具」變成「長期協作系統」。
 
 
 
+
 1\. 合約安全審計的實踐與成果
 
 •   實際操作：講者提到實際使用了 OpenAI 推出的EVM Bench工具進行智能合約審計。此外，他們團隊還設計了一套合約審計知識庫（Wiki），將歷史發現的安全問題與風險分級存入服務端。
@@ -236,6 +318,7 @@ AI 開始從「單次問答工具」變成「長期協作系統」。
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 
@@ -294,6 +377,7 @@ AI 開始從「單次問答工具」變成「長期協作系統」。
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -374,6 +458,7 @@ AI 開始從「單次問答工具」變成「長期協作系統」。
 
 
 
+
 **在 AI 時代，開發者的價值不在於編碼速度，而是在於對底層知識的掌握與架構設計能力。**
 
 **1\. AI 時代下開發者的角色轉變：從「執行者」變為「架構師」**
@@ -419,6 +504,7 @@ AI 開始從「單次問答工具」變成「長期協作系統」。
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
