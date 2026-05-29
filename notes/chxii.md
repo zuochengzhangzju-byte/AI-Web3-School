@@ -15,8 +15,134 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-29
+<!-- DAILY_CHECKIN_2026-05-29_START -->
+## **ETHGlobal OpenAgents Hackathon 项目扫描**
+
+来源：[https://ethglobal.com/showcase?events=openagents，共](https://ethglobal.com/showcase?events=openagents%EF%BC%8C%E5%85%B1) 33 个项目，按方向分类：
+
+### **钱包 / 安全**
+
+-   **AgentMandate** — "Bound the agent, not the keys." 链上信任层，限制 Agent 在 Uniswap 上的行为（绑定 Agent 而非限制私钥）
+    
+-   **Bunkermode** — AI 检测 DeFi 攻击，在瀑布发生前自动平仓
+    
+-   **GuardianKit** — 跨链钱包安全层，阻止恶意合约调用
+    
+-   **0G SkillGate** — Agent 技能安装前的安全门
+    
+
+### **Agent 身份 / 发现 / 信誉**
+
+-   **AgentRadar** — ENS 原生身份层。ERC-8004 有 32000+ Agent，其中 17500 个 profile 为空。AgentRadar 用 PageRank 对 14249 个实体排名
+    
+-   **Sayben** — Agent 的身份、安全和交互图谱层
+    
+
+### **多 Agent 协作网络**
+
+-   **Sibyl** — AI 交易策略通过 Gensyn AXL 网络传播，签名策略 + 运营者执行 + 利润 split（70/30）
+    
+-   **AI Treasury Council** — 5 个 AI Agent 辩论 DAO 财政决策，在 0G 上留审计痕迹
+    
+-   **RB Agent Protocol** — LLM 提议 + 确定性规则验证 + 适配器执行
+    
+
+### **隐私 / 暗池**
+
+-   **Murmur** — Agent 暗池，在 Gensyn AXL 上私密报价，链上原子结算
+    
+-   **Charon** — TEE（可信执行环境）锁住秘密，满足条件才释放
+    
+
+### **资产自动化**
+
+-   **DeadAgent** — 数字遗产协议，主人死后自动清算交接加密资产
+    
+-   **Rebalancer** — iNFT 拥有的 LP 再平衡器
+    
+
+### **工作流编排**
+
+-   **AXL Hub** — Agent 创建和执行工作流图
+    
+-   **IntentMesh** — AI 端到端执行用户意图，带可验证链上证明
+    
+-   **Omikuji Hub** — AI 抽签预言机
+    
+
+### **游戏 / 虚拟世界**
+
+-   **Clan World: Ælder** — 4 个 AI Agent 完整跑链上游戏（协作、谈判、背叛）
+    
+-   **ERC-7857 iNFT Arena** — NFT 繁殖 + 竞技场
+    
+
+### **AI / 内容创作**
+
+-   **Mobile Twin** — 用手机录自己生成克隆
+    
+-   **Nyxie** — AI 会议助手
+    
+-   **Coding Agent (a1dv9)** — 多人格 Swarm 编码 Agent
+    
+
+### **基础设施**
+
+-   **Gasless Cross-Chain AI** — 0G 上跨链 AI 计算，用 USDC 支付无需跨链桥
+    
+-   **Federated ML Marketplace** — Gensyn AXL 加密 P2P 网络上的去中心化 ML 训练市场
+    
+
+### **农业**
+
+-   **Agrobase** — 非洲农民在 Base 链上的 Web3 小额贷款 + 天气保险
+    
+
+### **空白发现**
+
+**Agent 操作可见性**方向几乎空白——大多数项目在"让 Agent 做事"，几乎没人做"让人类看清 Agent 干了什么"。只有 Bunkermode 稍微接近（被动防御），但不是主动的日志/审计/可视化。
+
+* * *
+
+## **x402 + Cobo CAW Agent 支付闭环**
+
+详细分析见：`tasks/x402-Cobo-CAW-Agent-Payment-Demo.md`
+
+### **现状**
+
+| 组件 | 状态 |
+| --- | --- |
+| x402 Server（Flask） | ✅ 完整，402 响应 + proof 验证 + replay 保护 |
+| Agent 主逻辑 | ✅ 完整，检测 402 → 支付 → 重试 |
+| CAW Client（Mock） | ✅ 基础完整，ERC-20 transfer via web3.py |
+| BudgetGuard | ❌ 缺失 |
+| 审计日志 | ❌ 缺失 |
+| 多端点展示 | ❌ 缺失 |
+
+### **核心流程**
+
+```
+Agent GET /analyze → 402 (payment info)
+  → CAW.transfer_usdc() 链上扣 USDC
+    → tx_hash → 重试 GET + X-Payment-Proof
+      → 200 (数据)
+```
+
+### **待补充**
+
+1.  BudgetGuard（预算检查 + 地址白名单 + 时间窗口）
+    
+2.  审计日志持久化
+    
+3.  多端点（不同价格）
+    
+4.  真实 Cobo CAW SDK 集成
+<!-- DAILY_CHECKIN_2026-05-29_END -->
+
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
+
 ### **任务 1：Agent Profile Design**
 
 以 Web3 Analysis Agent 为例，设计完整 Agent Profile。
@@ -131,6 +257,7 @@ AI x Web3 School
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
 
+
 ## **今日完成：Agent Payment/Commerce Flow 设计**
 
 ### **任务产出**
@@ -190,6 +317,7 @@ AI x Web3 School
 
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 
 
 ## **今日完成：AI × Web3 问题地图**
@@ -319,6 +447,7 @@ AI Agent 自动执行交易，但：
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 
@@ -588,6 +717,7 @@ AI Agent 自动执行交易，但：
 
 
 
+
 ## **学习内容**
 
 ### **文档阅读（Ethereum 官方）**
@@ -664,6 +794,7 @@ L1 网络层   P2P Gossip       ← 节点发现、广播、同步
 
 
 
+
 ## **今日完成**
 
 ### **受限 Web3 助手设计**
@@ -718,6 +849,7 @@ L1 网络层   P2P Gossip       ← 节点发现、广播、同步
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -833,6 +965,7 @@ L1 网络层   P2P Gossip       ← 节点发现、广播、同步
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -1257,6 +1390,7 @@ result = agent.invoke({"messages": [{"role": "user", "content": "hi"}]})
 
 
 
+
 ## **学习内容**
 
 ### **主题 1：测试网交易任务**
@@ -1489,6 +1623,7 @@ my-project/
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -1878,6 +2013,7 @@ A：很难追回。所以审计（audit）和风险监控非常重要。
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
