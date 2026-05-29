@@ -15,8 +15,22 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-29
+<!-- DAILY_CHECKIN_2026-05-29_START -->
+从昨晚开始就在部署有关国外一个黑客松开源的Claude code，我用codex让他下载下来，并用学到的RAG去理解里面的所有资料，让多个agents分工合作，写成了一篇prompt
+
+![298558ea579199bbf5f4a7d44326cc6a.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Addie-zhu/images/2026-05-29-1780063106569-298558ea579199bbf5f4a7d44326cc6a.png)![f99e9435441f95c8259ce16ba66021fb.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Addie-zhu/images/2026-05-29-1780063117642-f99e9435441f95c8259ce16ba66021fb.png)
+
+昨天跑到凌晨，然后对话额度不够了，熬到了早上八点起来重新让他跑，跑到下午终于将所有内容整理完毕，我还将所有内容生成了一篇obsidian
+
+![cfc16060a4acf8896d77cfa2b4fb9b8d.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Addie-zhu/images/2026-05-29-1780063196920-cfc16060a4acf8896d77cfa2b4fb9b8d.png)
+
+准备下个星期克服学习别人的模型，靠一个人如何获得黑客松冠军的能力
+<!-- DAILY_CHECKIN_2026-05-29_END -->
+
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
+
 今日已完成打开学习agent部分
 
 ![15e45201f8c33d58719d2a5aa7ffd74b.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Addie-zhu/images/2026-05-28-1779978316008-15e45201f8c33d58719d2a5aa7ffd74b.png)
@@ -35,6 +49,7 @@ AI x Web3 School
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
 
+
 第一次这么早交作业，昨晚睡前又发现ai好像没有将作业记录完整，早上起来以后重新让codex生成了一份作业重新做(⊙o⊙)
 
 ![239a49b7fa4896726e85b5d40e28b830.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Addie-zhu/images/2026-05-27-1779873548070-239a49b7fa4896726e85b5d40e28b830.png)
@@ -46,6 +61,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-26_START -->
 
 
+
 今天跟进了学习进度，学到了RAG，并且完成了学习任务，也顺便将obsidian进行了更新，且让agent更新了本地文件
 
 ![1514278cf2e4a80db35502faf79b1ec8.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Addie-zhu/images/2026-05-26-1779810794658-1514278cf2e4a80db35502faf79b1ec8.png)
@@ -55,6 +71,7 @@ AI x Web3 School
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 
@@ -75,6 +92,7 @@ AI x Web3 School
 
 
 
+
 今天没有更近新的学习任务，一天都在搞定安装git、学会怎么创建GitHub repo、以及怎么部署本地文件夹让codex push到GitHub上，以及完成了
 
 ![59d9768418f6224c3f5ccd4c244fc807.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Addie-zhu/images/2026-05-22-1779464214747-59d9768418f6224c3f5ccd4c244fc807.png)
@@ -87,6 +105,7 @@ AI x Web3 School
 
 
 
+
 今天是第二天的学习任务，对prompt有了一些粗浅的理解，也对codex的交互更熟练了，也明白怎么使用跟让数据理解的自然语言跟LLM沟通，也完善了用户画像（第一天不知道有这块），明天将对接github repo，将codex的数据放在里面
 
 ![78603492a45ac303c8cd40bdeceb69bf.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Addie-zhu/images/2026-05-21-1779378254690-78603492a45ac303c8cd40bdeceb69bf.png)
@@ -94,6 +113,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -120,6 +140,7 @@ AI x Web3 School
 
 
 
+
 ![3054dd988c54ed99c9f666f26a330f46.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/Addie-zhu/images/2026-05-19-1779204393778-3054dd988c54ed99c9f666f26a330f46.png)
 
 今天课听下来整体还是听不懂，但根据draken老师的操作理解了一些控制微信的运行逻辑，感觉实操还是有些困难，在寻求大家的帮助的时候建议我用codex去辅助安装，然后现在39分，我依旧卡在第一步
@@ -131,6 +152,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
