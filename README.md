@@ -355,7 +355,7 @@ more information
 | [wfnuser](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/wfnuser.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [justinwongcn](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/justinwongcn.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [fffg-o](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/fffg-o.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | | | | | | | |
-| [lllllbbbbbxxx](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/lllllbbbbbxxx.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ⭕️ | ✅ |   | | | | | | | | | | | | | | | | |
+| [lllllbbbbbxxx](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/lllllbbbbbxxx.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | | | | | | | | | | | | | | | | |
 | [hanaishii](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/hanaishii.md) | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ |   | | | | | | | | | | | | | | | |
 | [Recordarses](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/Recordarses.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | |
 | [calla7777777](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/calla7777777.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -1234,6 +1234,7 @@ more information
 | [yisueh163](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/yisueh163.md) | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | | | | | | | | | | | | | |
 | [SamCheebuild](https://github.com/IntensiveCoLearning/AI-Web3-School/blob/main/notes/SamCheebuild.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ |   | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
