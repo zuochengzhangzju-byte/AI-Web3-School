@@ -15,8 +15,64 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-29
+<!-- DAILY_CHECKIN_2026-05-29_START -->
+Day — Agent 链上足迹实验：Agentic Ping
+
+\> 日期： 2026-05-29
+
+\> 方向： Module D — Wallet / Permission / Safe Execution
+
+\> 核心： Agent 调用智能合约在链上留下可验证的执行足迹
+
+\> 技术栈： Solidity ^0.8.24 + Go (GoFrame v2 + go-ethereum) + Sepolia 测试网
+
+今日任务
+
+\- \[x\] 部署 PingTarget 合约到 Sepolia 测试网
+
+\- \[x\] 搭建 Go 后端骨架（POST /api/ping）
+
+\- \[x\] 编码 ping() 的 callData（selector: 0x5c36b186）
+
+\- \[x\] commit & push 到学习仓库
+
+项目：Agentic Ping
+
+一句话：让 AI Agent 在链上留个脚印。
+
+概念很简单——一个极简合约 PingTarget，谁都能调 ping()，调一次 pingCount++ 并 emit 事件，记录谁在什么时候踩了一脚。
+
+PingTarget (Sepolia: 0xb6941F...)
+
+├── pingCount → 第几次被 Ping
+
+└── event Pinged(agent, timestamp)
+
+后端用 Go 写，提供 POST /api/ping，目前是骨架（mock 响应），TODO 是接 Alchemy Bundler 走 ERC-4337 代付流程让 Agent 真正上链。
+
+关键学习
+
+从 ERC-4337 看 Agent 链上交互：
+
+传统账号调合约要 EOA 签名（私钥），Agent 不能自己签名。ERC-4337 的 UserOperation 让 Agent 只需要指定：
+
+UserOp {
+
+sender: Agent 的合约账户地址
+
+callData: ping() 的编码数据 (0x5c36b186)
+
+// 剩下由 Bundler + Paymaster 搞定
+
+}
+
+pm\_sponsorUserOperation → Gas Manager 代付签名 → eth\_sendUserOperation 上链。Agent 全程不需要私钥，只需要知道要调什么。
+<!-- DAILY_CHECKIN_2026-05-29_END -->
+
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
+
 \> 日期： 2026-05-28
 
 \> 参与者： add-cmd
@@ -87,6 +143,7 @@ Foundry 部署脚本，从 .env 读取私钥和 RPC URL，部署 AccountFactory 
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
 
+
 **Day 6（续）：Week 2 方向选择完成 — 整理交付物与后续规划**
 
 ### **今日路径**
@@ -106,6 +163,7 @@ Foundry 部署脚本，从 .env 读取私钥和 RPC URL，部署 AccountFactory 
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 Day 6 · Week 2 Module A · 2026-05-25
@@ -185,6 +243,7 @@ USDC，每天不超过 $500"。LLM 是把权限系统从工程师专属降到普
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 
 
@@ -319,6 +378,7 @@ NaN.  WCB 打卡流程还没完全熟悉，这是第一次提交
 
 
 
+
 Day 5 — 智能体（Agent）打卡笔记
 
 📖 学了什么
@@ -421,6 +481,7 @@ GitHub: github.com/add-cmd/ai-web3-school-cohort-0/tree/master/2026-05-22
 
 
 
+
 Day 4 — RAG（检索增强生成）打卡笔记
 
 📖 学了什么
@@ -496,6 +557,7 @@ GitHub: github.com/add-cmd/ai-web3-school-cohort-0/tree/master/2026-05-21
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -594,6 +656,7 @@ GitHub: github.com/add-cmd/ai-web3-school-cohort-0/tree/master/2026-05-20
 
 
 
+
 Day 2 完成总览
 
 📘 Prompt 章节核心要点：
@@ -629,6 +692,7 @@ Day 2 完成总览
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
