@@ -15,8 +15,1100 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-29
+<!-- DAILY_CHECKIN_2026-05-29_START -->
+**\# AI × Web3 School - Day 8-10 学习打卡**
+
+  
+
+\> 日期：2026-05-29
+
+\> Week 2 完成：AI × Web3 Bridge 核心实践
+
+  
+
+\---
+
+  
+
+**\## 📅 本周学习概览**
+
+  
+
+**\### Day 7: Chain-aware Context 实践**
+
+\- ✅ 理解链上数据的 Context 管理
+
+\- ✅ 实现手动 + 自动化交易数据收集
+
+\- ✅ 设计标记系统（⛓️ 📚 💭）
+
+  
+
+**\### Day 8-9: Web3 Tool Use + Agent Workflow 综合实践 ⭐**
+
+\- ✅ 实现 5 个 Web3 Tools（只读、模拟、权限检查）
+
+\- ✅ 实现 7 步 Agent Workflow
+
+\- ✅ 实现 Human-in-the-loop 机制
+
+\- ✅ 完成 5 个测试用例（4 个完全通过）
+
+\- ✅ 写完整实验报告
+
+  
+
+**\### Day 10: AI × Web3 进阶主题浏览**
+
+\- ✅ 快速浏览 5 个进阶主题
+
+\- 🔄 选做 AI Security 实践（进行中）
+
+\- 🔄 Week 2 总结（进行中）
+
+  
+
+\---
+
+  
+
+**\## 🎯 Day 8-9 核心成果：Web3 Swap Agent**
+
+  
+
+**\### 项目简介**
+
+  
+
+实现了一个完整的 Web3 代币交换 Agent，包含：
+
+\- **5 个 Web3 Tools**：余额查询、授权查询、calldata 生成、权限检查
+
+\- **7 步工作流**：解析 → 查询 → 验证 → 计划 → 确认 → 执行 → 记录
+
+\- **Human-in-the-loop**：用户确认 + 价格滑点检查
+
+\- **5 个测试用例**：覆盖正常流程、错误链、滑点过大、余额不足、用户拒绝
+
+  
+
+**\### 项目结构**
+
+  
+
+\`\`\`
+
+experiments/web3-swap-agent/
+
+├── tools/ # Web3 工具
+
+│ ├── read\_[tools.py](http://tools.py) # 只读工具（余额、授权查询）
+
+│ ├── simulate\_[tools.py](http://tools.py) # 模拟工具（生成 calldata）
+
+│ └── permission\_[tools.py](http://tools.py) # 权限检查工具
+
+├── workflow/ # Agent 工作流
+
+│ ├── [agent.py](http://agent.py) # SwapAgent 主流程（7 步）
+
+│ └── human\_in\_[loop.py](http://loop.py) # 用户确认界面
+
+├── tests/ # 测试用例
+
+│ ├── test\_case\_[1.py](http://1.py) # 正常流程 ✅
+
+│ ├── test\_case\_[2.py](http://2.py) # 错误链 ⚠️
+
+│ ├── test\_case\_[3.py](http://3.py) # 滑点过大 ✅
+
+│ ├── test\_case\_[4.py](http://4.py) # 余额不足 ✅
+
+│ └── test\_case\_[5.py](http://5.py) # 用户拒绝 ✅
+
+├── [DESIGN.md](http://DESIGN.md) # 设计文档
+
+├── EXPERIMENT\_[REPORT.md](http://REPORT.md) # 实验报告
+
+└── IMPLEMENTATION\_[GUIDE.md](http://GUIDE.md) # 实现指南
+
+\`\`\`
+
+  
+
+**\### 核心亮点**
+
+  
+
+**\#### 1. 工具分类设计 ⭐**
+
+  
+
+按风险级别分类，清晰的权限边界：
+
+  
+
+**只读工具（低风险）**：
+
+\`\`\`python
+
+get\_eth\_balance(address) # 查询 ETH 余额
+
+get\_erc20\_balance(address, token) # 查询 ERC-20 余额
+
+get\_erc20\_allowance(owner, spender, token) # 查询授权额度
+
+\`\`\`
+
+  
+
+**模拟工具（中风险）**：
+
+\`\`\`python
+
+generate\_approve\_calldata(token, spender, amount) # 生成 approve calldata
+
+\`\`\`
+
+  
+
+**权限检查工具（低风险）**：
+
+\`\`\`python
+
+check\_transaction\_permission(token, spender, amount) # 检查白名单
+
+\`\`\`
+
+  
+
+**\#### 2. 7 步工作流设计 ⭐**
+
+  
+
+清晰的步骤拆解，职责单一：
+
+  
+
+\`\`\`
+
+Step 1: 解析请求 → 提取 token、金额、地址
+
+Step 2: 查询价格 → 获取当前价格，计算预期输出
+
+Step 3: 检查余额和授权 → 验证用户是否有足够资金
+
+Step 4: 生成交易计划 → 生成 approve + swap 步骤
+
+Step 5: 用户确认 → Human-in-the-loop，价格滑点检查 ⭐
+
+Step 6: 执行交易 → 发送交易（Mock）
+
+Step 7: 记录结果 → 生成摘要，记录交易哈希
+
+\`\`\`
+
+  
+
+**\#### 3. Human-in-the-loop 设计 ⭐⭐⭐**
+
+  
+
+**交互界面**：
+
+\`\`\`
+
+\============================================================
+
+🔄 Swap Transaction Confirmation
+
+\============================================================
+
+  
+
+📋 Transaction Details:
+
+From: 100 USDC
+
+To: ~0.05 ETH
+
+Price: 1 USDC = 0.0005 ETH
+
+  
+
+⚠️ This transaction requires 2 step(s):
+
+1\. Approve USDC to Uniswap Router
+
+2\. Execute Swap
+
+  
+
+💰 Current Balance:
+
+USDC: 200
+
+  
+
+⚠️ Price Check:
+
+Previous price: 0.0005 ETH/USDC
+
+Current price: 0.00046 ETH/USDC
+
+Change: -8.0% ⚠️ (exceeds 5% tolerance)
+
+  
+
+⚠️ WARNING: Price has changed significantly!
+
+New expected output: 0.046 ETH (was 0.05)
+
+  
+
+✅ Permission Check: Passed
+
+  
+
+\============================================================
+
+Do you want to proceed? (y/n):
+
+\`\`\`
+
+  
+
+**核心特性**：
+
+\- ✅ 完整的交易信息展示
+
+\- ✅ **价格滑点检查**（重新查询价格，对比变化）
+
+\- ✅ 超过 5% 阈值显示警告
+
+\- ✅ 权限检查结果展示
+
+\- ✅ 测试模式支持（环境变量控制）
+
+  
+
+**\#### 4. 测试用例设计**
+
+  
+
+**Case 1: 正常流程** ✅
+
+\- 余额充足（200 USDC）
+
+\- 价格稳定（+2% < 5%）
+
+\- 用户批准
+
+\- 成功生成 approve + swap 交易
+
+  
+
+**Case 3: 滑点过大** ✅
+
+\- 价格下跌 -8%（超过 5% 阈值）
+
+\- 显示警告和新预期输出
+
+\- Case 3a: 用户批准 → 成功
+
+\- Case 3b: 用户拒绝 → 返回错误
+
+  
+
+**Case 4: 余额不足** ✅
+
+\- Mock 地址余额只有 20 USDC
+
+\- 请求 100 USDC
+
+\- Step 3 检测到余额不足 → 返回错误
+
+  
+
+**Case 5: 用户拒绝** ✅
+
+\- 所有检查通过
+
+\- 用户在 Step 5 拒绝
+
+\- 返回错误`User rejected`
+
+  
+
+**Case 2: 错误链** ⚠️
+
+\- 测试框架完成
+
+\- 链检查逻辑未实现（设计决策：专注核心流程）
+
+  
+
+**\### 测试结果**
+
+  
+
+\`\`\`bash
+
+\# 运行所有测试
+
+✅ Test Case 1 PASSED - 正常流程
+
+✅ Test Case 3a PASSED - 滑点过大，用户批准
+
+✅ Test Case 3b PASSED - 滑点过大，用户拒绝
+
+✅ Test Case 4 PASSED - 余额不足
+
+✅ Test Case 5 PASSED - 用户拒绝
+
+⚠️ Test Case 2 COMPLETED - 错误链（框架完成，逻辑未实现）
+
+  
+
+测试覆盖率: 80%（4/5 完全通过）
+
+\`\`\`
+
+  
+
+\---
+
+  
+
+**\## 💡 核心学习收获**
+
+  
+
+**\### 1. Web3 Tool Use 的核心是分类和权限控制**
+
+  
+
+**关键认知**：
+
+\- 不是所有工具都需要用户确认
+
+\- 只读工具可以自由调用，签名工具必须严格控制
+
+\- 权限检查应该在生成交易计划时进行（Step 4），而不是执行时
+
+  
+
+**工具分类原则**：
+
+\`\`\`
+
+只读（低风险）→ 无需确认，可以频繁调用
+
+模拟（中风险）→ 需要权限检查，但不需要用户确认
+
+签名（高风险）→ 必须经过用户确认
+
+\`\`\`
+
+  
+
+**\### 2. Agent Workflow 的核心是拆解和错误处理**
+
+  
+
+**关键认知**：
+
+\- 复杂流程应该拆解为清晰的步骤
+
+\- 每个步骤职责单一，易于测试和调试
+
+\- 任何步骤失败，立即返回
+
+  
+
+**拆解原则**：
+
+1\. **单一职责**：每个步骤只做一件事
+
+2\. **依赖关系**：后面的步骤依赖前面的步骤
+
+3\. **风险分层**：低风险在前，高风险在后
+
+4\. **可验证性**：每个步骤的输出可验证
+
+5\. **决策点**：在需要决策的地方设置边界
+
+  
+
+**\### 3. Human-in-the-loop 的核心是信息透明和用户控制**
+
+  
+
+**关键认知**：
+
+\- 用户确认界面应该提供完整的信息
+
+\- **价格滑点检查是必需的**（防止用户在价格剧烈波动时执行交易）
+
+\- 测试模式支持是必需的（方便自动化测试）
+
+  
+
+**设计要点**：
+
+\- 显示交易详情（From、To、Price）
+
+\- 显示交易步骤（Approve + Swap）
+
+\- 显示当前余额
+
+\- **重新查询价格，对比变化**（核心创新）
+
+\- 显示权限检查结果
+
+  
+
+**\### 4. 任务拆解能力的训练方法**
+
+  
+
+**5 个方法**：
+
+1\. **刻意练习**：每天拆解 1 个任务，反复练习
+
+2\. **学习经典案例**：研究优秀项目的拆解方式
+
+3\. **反向工程**：看到复杂系统，尝试反推步骤
+
+4\. **从失败中学习**：尝试不同方案，发现问题，反思改进
+
+5\. **建立模式库**：记录常见模式，形成自己的设计模式库
+
+  
+
+**关键**：
+
+\- 不是死记硬背（记住某个任务是 7 步）
+
+\- 而是理解原则（为什么这样拆解）
+
+\- 通过大量练习，形成直觉
+
+  
+
+**\### 5. AI 时代的人类价值**
+
+  
+
+**LLM 可以做到的**：
+
+\- 生成初步的步骤列表
+
+\- 识别依赖关系
+
+\- 生成代码实现
+
+  
+
+**LLM 做不好的**：
+
+\- 理解业务约束（安全性、合规性、成本）
+
+\- 权衡 trade-off（性能 vs 可维护性）
+
+\- 创新和突破（创造新模式）
+
+\- 责任和决策（承担最终责任）
+
+  
+
+**未来的协作模式**：
+
+\- LLM 生成方案（快速迭代）
+
+\- 人类 review 和优化（质量保证）
+
+\- LLM 实现细节（提高效率）
+
+\- 人类验证和测试（最终把关）
+
+  
+
+**关键认知**：
+
+\- 在 AI 时代，**\*\*判断力\*\***比**\*\*执行力\*\***更重要
+
+\- 拆解能力是判断力的基础
+
+\- 学会与 LLM 协作是未来的核心竞争力
+
+  
+
+\---
+
+  
+
+**\## 📊 项目统计**
+
+  
+
+| 指标 | 数值 |
+
+|------|------|
+
+| 实现时间 | ~3 小时 |
+
+| 代码行数 | ~800 行 |
+
+| 工具数量 | 5 个（3 只读 + 1 模拟 + 1 权限） |
+
+| 工作流步骤 | 7 步 |
+
+| 测试用例 | 5 个（4 完全通过 + 1 框架完成） |
+
+| 测试覆盖率 | 80% |
+
+| 文档完整度 | 100%（设计文档 + 实验报告 + 实现指南） |
+
+  
+
+\---
+
+  
+
+**\## 🎯 Day 10 学习内容**
+
+  
+
+**\### 快速浏览 5 个进阶主题**
+
+  
+
+已完成核心概念总结文档`notes/day10-advanced-topics-summary.md`
+
+  
+
+**1\. Agent Identity（Agent 身份）**
+
+\- 3 种身份模式：共享钱包、独立钱包、Session Key
+
+\- DID（去中心化身份）
+
+\- 签名验证方法
+
+  
+
+**2\. Trust & Reputation（信任与声誉）**
+
+\- 链上声誉系统
+
+\- 声誉计算模型
+
+\- 信任机制（质押、保险、多签）
+
+  
+
+**3\. AI Security（AI 安全）⭐ 重点**
+
+\- Prompt Injection 攻击和防御
+
+\- 数据投毒
+
+\- 模型攻击
+
+\- 权限提升
+
+  
+
+**4\. AI Privacy（AI 隐私）**
+
+\- 隐私保护技术（ZKP、TEE、联邦学习）
+
+\- 隐私与功能的权衡
+
+  
+
+**5\. Verifiable AI（可验证 AI）**
+
+\- 验证方法（zkML、TEE、乐观验证）
+
+\- 链上 AI 的挑战
+
+  
+
+**\### 选做实践（进行中）**
+
+  
+
+**选择**：AI Security - Prompt Injection 检测
+
+  
+
+**原因**：
+
+\- 非常实用，所有 Agent 都需要防御 Prompt Injection
+
+\- 难度适中，2 小时可以完成最小实践
+
+\- 可以应用到未来的所有 Agent 项目
+
+  
+
+\---
+
+  
+
+**\## 📈 Week 2 学习成果总结**
+
+  
+
+**\### 核心能力提升**
+
+  
+
+**1\. AI × Web3 集成能力** ⭐⭐⭐⭐⭐
+
+\- ✅ 理解 Web3 Tool Use 的核心原则
+
+\- ✅ 掌握 Agent Workflow 的设计方法
+
+\- ✅ 实现 Human-in-the-loop 机制
+
+\- ✅ 理解 Chain-aware Context 的设计
+
+  
+
+**2\. 系统设计能力** ⭐⭐⭐⭐⭐
+
+\- ✅ 任务拆解能力（7 步工作流）
+
+\- ✅ 权限分级设计（只读、模拟、签名）
+
+\- ✅ 错误处理策略（立即返回）
+
+\- ✅ 测试驱动开发（5 个测试用例）
+
+  
+
+**3\. 安全意识** ⭐⭐⭐⭐
+
+\- ✅ 理解 Prompt Injection 攻击
+
+\- ✅ 设计权限检查机制
+
+\- ✅ 实现用户确认流程
+
+\- ✅ 价格滑点检查
+
+  
+
+**4\. 协作能力** ⭐⭐⭐⭐
+
+\- ✅ 理解人类与 LLM 的协作模式
+
+\- ✅ 学会设计、实现、review 的工作流
+
+\- ✅ 培养判断力和决策能力
+
+  
+
+**\### 完成的实践项目**
+
+  
+
+1\. **Chain-aware Context 实践**（Day 7）
+
+\- 手动收集交易数据
+
+\- 自动化脚本实现
+
+\- 标记系统设计
+
+  
+
+2\. **Web3 Swap Agent**（Day 8-9）⭐ 核心项目
+
+\- 5 个 Web3 Tools
+
+\- 7 步 Agent Workflow
+
+\- Human-in-the-loop 机制
+
+\- 5 个测试用例
+
+\- 完整文档
+
+  
+
+3\. **进阶主题浏览**（Day 10）
+
+\- 5 个主题核心概念总结
+
+\- AI Security 实践（进行中）
+
+  
+
+**\### 产出的文档**
+
+  
+
+1\. **学习笔记**
+
+\- `notes/frameworks-handbook-summary.md`
+
+\- `notes/mcp-handbook-summary.md`
+
+\- `notes/day10-advanced-topics-summary.md`
+
+  
+
+2\. **实践文档**
+
+\- `experiments/chain-aware-context/README.md`
+
+\- `experiments/web3-swap-agent/DESIGN.md`
+
+\- `experiments/web3-swap-agent/EXPERIMENT_REPORT.md`
+
+\- `experiments/web3-swap-agent/IMPLEMENTATION_GUIDE.md`
+
+  
+
+3\. **每日记录**
+
+\- `daily/2026-05-22.md` (Day 5: Frameworks)
+
+\- `daily/2026-05-27.md` (Day 6: MCP)
+
+\- `daily/2026-05-28.md` (Day 7: Chain-aware Context)
+
+  
+
+\---
+
+  
+
+**\## 🚀 Week 3 规划**
+
+  
+
+**\### 学习重点**
+
+  
+
+**Phase 3: Advanced Topics & Projects**
+
+  
+
+根据 Week 2 的学习成果，Week 3 将重点关注：
+
+  
+
+1\. **深入 AI Security**
+
+\- 完成 Prompt Injection 检测实践
+
+\- 研究更多 AI 安全威胁
+
+\- 设计安全的 Agent 架构
+
+  
+
+2\. **Agent Identity & Wallet**
+
+\- 实现 Session Key 管理
+
+\- 设计权限控制系统
+
+\- 研究 ERC-4337 账户抽象
+
+  
+
+3\. **项目开发**
+
+\- 选择一个赛道（Agentic Commerce / Wallet & Permission / AI Security）
+
+\- 设计完整的项目架构
+
+\- 开始实现 MVP
+
+  
+
+**\### 目标**
+
+  
+
+\- ✅ 完成至少 1 个中型项目
+
+\- ✅ 掌握 AI × Web3 的核心技术栈
+
+\- ✅ 准备 Hackathon 项目
+
+\- ✅ 为开源社区贡献代码
+
+  
+
+\---
+
+  
+
+**\## 🔗 项目链接**
+
+  
+
+\- **GitHub 仓库**：[https://github.com/XuetaoZhang/ai-web3-school-cohort-0](https://github.com/XuetaoZhang/ai-web3-school-cohort-0)
+
+\- **Web3 Swap Agent**`experiments/web3-swap-agent/`
+
+\- **实验报告**`experiments/web3-swap-agent/EXPERIMENT_REPORT.md`
+
+\- **测试用例**`experiments/web3-swap-agent/tests/`
+
+  
+
+\---
+
+  
+
+**\## 💭 个人感悟**
+
+  
+
+**\### 关于学习方式**
+
+  
+
+从 Day 5 开始，我调整了学习方式：
+
+\- **之前**：AI 直接生成代码，我只是"旁观者"
+
+\- **现在**：我自己设计、实现、测试，AI 提供指导和 review
+
+  
+
+**效果**：
+
+\- 学习效果显著提升
+
+\- 真正理解了设计原则
+
+\- 培养了系统思维和判断力
+
+  
+
+**\### 关于任务拆解**
+
+  
+
+通过 Web3 Swap Agent 的实践，我深刻理解了任务拆解的重要性：
+
+\- 不是死记硬背（记住某个任务是 7 步）
+
+\- 而是理解原则（为什么这样拆解）
+
+\- 通过大量练习，形成直觉
+
+  
+
+**拆解原则**：
+
+1\. 单一职责
+
+2\. 依赖关系
+
+3\. 风险分层
+
+4\. 可验证性
+
+5\. 决策点
+
+  
+
+**\### 关于 AI 时代的人类价值**
+
+  
+
+与 AI 深入讨论后，我理解了：
+
+\- LLM 会越来越强，但不会完全替代人类
+
+\- 人类的价值在于：业务理解、权衡判断、创新能力、责任担当
+
+\- 未来的工作方式是人类 + LLM 协作，而不是对抗
+
+  
+
+**关键认知**：
+
+\- 在 AI 时代，**\*\*判断力\*\***比**\*\*执行力\*\***更重要
+
+\- 拆解能力是判断力的基础
+
+\- 学会与 LLM 协作是未来的核心竞争力
+
+  
+
+\---
+
+  
+
+**\## 📸 项目截图**
+
+  
+
+**\### 测试运行结果**
+
+  
+
+\`\`\`bash
+
+\============================================================
+
+Test Case 1: Normal Flow
+
+\============================================================
+
+  
+
+\============================================================
+
+🔄 Swap Transaction Confirmation
+
+\============================================================
+
+  
+
+📋 Transaction Details:
+
+From: 100 USDC
+
+To: ~0.05 ETH
+
+Price: 1 USDC = 0.0005 ETH
+
+  
+
+⚠️ This transaction requires 2 step(s):
+
+1\. Approve USDC to Uniswap Router
+
+2\. Execute Swap
+
+  
+
+💰 Current Balance:
+
+USDC: 200.0
+
+  
+
+⚠️ Price Check:
+
+Previous price: 0.0005 ETH/USDC
+
+Current price: 0.00051 ETH/USDC
+
+Change: +2.0% ✅ (within 5% tolerance)
+
+  
+
+✅ Permission Check: Passed
+
+  
+
+\============================================================
+
+\[TEST MODE\] Auto decision: y
+
+  
+
+✅ Transaction approved by user
+
+  
+
+\============================================================
+
+✅ Transaction Completed
+
+\============================================================
+
+  
+
+Successfully swapped 100 USDC to 0.05 ETH
+
+  
+
+Transactions:
+
+\- Approve: 0x354a7eb575919125ec92f13273bda3566fe4bd6de9ee9a4d923735b723c4515b
+
+\- Swap: 0x8c408a3efdaa0f586519de0755129753fa412e563844218eb8b95d68557650c3
+
+  
+
+\============================================================
+
+✅ Test Case 1 PASSED
+
+\============================================================
+
+\`\`\`
+
+  
+
+\---
+
+  
+
+**\## 🎯 下一步行动**
+
+  
+
+**\### 今天（Day 10）**
+
+\- \[x\] 快速浏览 5 个进阶主题
+
+\- \[ \] 完成 AI Security 实践（Prompt Injection 检测）
+
+\- \[ \] 完成 Week 2 总结
+
+\- \[ \] 提交到 GitHub
+
+  
+
+**\### 明天（Week 3 开始）**
+
+\- \[ \] 深入 AI Security 研究
+
+\- \[ \] 开始 Agent Identity & Wallet 实践
+
+\- \[ \] 规划中型项目
+
+  
+
+\---
+
+  
+
+**学习心得**：Week 2 是一个质的飞跃。从理论学习到实践应用，从简单的工具调用到完整的 Agent 工作流，从被动接受到主动设计。最重要的是，我理解了任务拆解的原则，培养了系统思维和判断力。这些能力不仅适用于 AI × Web3，也适用于所有复杂系统的设计。
+
+  
+
+**感谢**：感谢 AI × Web3 School 提供的优质内容和学习平台，感谢 Claude 的耐心指导和深入讨论。
+
+  
+
+\---
+
+  
+
+#AIxWeb3School #Week2 #WebToolUse #AgentWorkflow #HumanInTheLoop #TaskDecomposition #AIxWeb3Bridge
+<!-- DAILY_CHECKIN_2026-05-29_END -->
+
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
+
 **\# Day 8 打卡 - Web3 Tool Use & Agent Workflow 实践（进行中）**
 
   
@@ -575,6 +1667,7 @@ AI x Web3 School
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
 
+
 **\# Day 5-6 打卡 - Frameworks & MCP 实践**
 
   
@@ -1132,11 +2225,13 @@ experiments/mcp-practice/
 <!-- DAILY_CHECKIN_2026-05-26_START -->
 
 
+
 今日有事，先打卡
 <!-- DAILY_CHECKIN_2026-05-26_END -->
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 
@@ -1147,6 +2242,7 @@ experiments/mcp-practice/
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -1164,6 +2260,7 @@ experiments/mcp-practice/
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -1476,6 +2573,7 @@ Context 不是简单的文本拼接，而是信息治理问题：
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -1879,6 +2977,7 @@ experiments/web3-ai-assistant/
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
@@ -2417,6 +3516,7 @@ return response.choices\[0\].message.content # 返回最终答案
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
