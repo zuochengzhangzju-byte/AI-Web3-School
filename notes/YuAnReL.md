@@ -15,8 +15,390 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-29
+<!-- DAILY_CHECKIN_2026-05-29_START -->
+## Today’s Goal
+
+-   学习 Web3 领域中的 Harness 概念。
+    
+-   重点理解 Evaluation Harness 如何系统测试 Agent。
+    
+-   梳理链上 Agent 的 eval 不应该只测回答质量，还要覆盖权限、链上上下文、数据缺失、human check、citation 和 calldata 安全。
+    
+
+## Learning Materials
+
+-   Handbook:
+    
+-   WCB Learning:
+    
+-   Topic: Web3 Agent harness, evaluation harness, on-chain agent safety
+    
+
+## Notes
+
+### Harness Overview
+
+-   今天主要学习了 Web3 领域中的 Harness。
+    
+-   Harness 可以理解为一套测试、运行、观察和评估系统表现的框架。
+    
+-   对 Agent 来说，Harness 不只是“跑一个 prompt 看结果”，而是要把任务、输入、工具、链上上下文、风险场景、预期行为和评估标准组织起来。
+    
+-   在 Web3 场景里，Harness 更重要，因为 Agent 的输出可能影响链上资产、权限、交易和 calldata。
+    
+
+### Evaluation Harness
+
+-   今天最吸引我的内容是 Evaluation Harness。
+    
+-   Evaluation Harness 用来系统测试 Agent 在不同任务、风险和异常场景下的表现。
+    
+-   它的核心价值是：不要只凭一次 demo 或一次自然语言回答判断 Agent 是否可靠，而是用一组可重复的测试集持续评估。
+    
+-   一个 Evaluation Harness 通常需要包含：
+    
+    -   测试任务：Agent 要完成什么。
+        
+    -   上下文：链、合约、ABI、文档、交易历史、索引数据。
+        
+    -   工具：RPC、indexer、wallet、simulator、explorer、policy engine。
+        
+    -   预期行为：应该执行、拒绝、澄清、暂停，还是要求 human check。
+        
+    -   风险标签：越权、错链、错合约、缺数据、危险 calldata、无 citation 等。
+        
+    -   评估标准：结果是否正确、安全、可验证、可复现。
+        
+
+### Why On-chain Agent Eval Is Different
+
+-   对链上 Agent 来说，eval 不应该只测回答好不好。
+    
+-   普通问答 eval 可能关注：
+    
+    -   回答是否准确。
+        
+    -   语言是否清楚。
+        
+    -   是否遵循用户指令。
+        
+-   但链上 Agent 还需要测试更高风险的行为：
+    
+    -   是否正确拒绝越权请求。
+        
+    -   是否识别错误链和错误合约。
+        
+    -   是否在缺少数据时停止。
+        
+    -   是否要求 human check。
+        
+    -   是否记录 citation。
+        
+    -   是否避免生成危险 calldata。
+        
+-   因为链上操作不是普通文本输出，错误的交易、错误的链、错误的合约或错误的 calldata 都可能造成真实资产损失。
+    
+
+### Reflection: Web3 Agent and General Agent
+
+-   今天也意识到，Web3 上的 Agent 和普通 Agent 在本质上有很多相似之处。
+    
+-   它们都需要解决：
+    
+    -   任务是否完成。
+        
+    -   输出是否正确。
+        
+    -   工具调用是否合理。
+        
+    -   性能是否稳定。
+        
+    -   行为是否可以回归测试。
+        
+    -   新版本是否引入退化。
+        
+-   所以 Evaluation Harness 的底层目标并不是 Web3 独有的，本质上仍然是评估性能、发现错误、做回归测试和提升系统可靠性。
+    
+-   Web3 的特殊之处在于业务场景和风险边界更靠近链上资产、合约权限和交易执行。
+    
+-   换句话说，Web3 Agent Harness 可以看作普通 Agent Harness 在 Web3 场景下的特化版本：
+    
+    -   普通 Agent 需要评估回答质量和工具使用。
+        
+    -   Web3 Agent 还需要额外评估链、合约、权限、citation、simulation、calldata 和 human check。
+        
+-   这说明 Agent 的核心工程问题是共通的：系统不能只靠一次 demo 判断好坏，而要靠稳定的评估集、异常场景和回归测试持续验证。
+    
+
+### AA Wallet vs Normal Account Wallet
+
+-   今天也学习了 AA 钱包和普通账户钱包的区别。
+    
+-   普通账户钱包通常指基于 EOA（Externally Owned Account）的钱包：
+    
+    -   账户主要由私钥控制。
+        
+    -   签名规则由链的协议固定。
+        
+    -   用户通常需要持有原生 Gas Token 才能发交易。
+        
+    -   钱包主要负责管理私钥、签名交易和展示资产。
+        
+-   AA 钱包通常基于智能合约账户：
+    
+    -   账户逻辑可以由合约代码定义。
+        
+    -   可以支持更灵活的验证方式，例如多签、社交恢复、session key、限额控制。
+        
+    -   可以支持 Gas 抽象，例如由 Paymaster 代付 Gas。
+        
+    -   可以把多个操作打包成一次用户操作，减少重复签名。
+        
+    -   可以把权限规则写到账户层，而不只是依赖一个私钥。
+        
+-   两者的核心区别可以概括为：
+    
+    -   普通账户钱包：私钥就是账户控制权的核心。
+        
+    -   AA 钱包：账户控制权可以被编程成一套规则。
+        
+-   AA 钱包改善的是用户体验和账户安全模型，例如：
+    
+    -   丢失私钥后可以通过社交恢复或其他恢复机制找回账户。
+        
+    -   用户不一定需要提前准备 ETH 支付 Gas。
+        
+    -   dApp 可以在用户授权范围内使用 session key 降低频繁签名。
+        
+    -   高风险操作可以要求多签或额外确认。
+        
+-   但 AA 钱包也带来新的复杂性：
+    
+    -   智能账户合约本身可能有 bug。
+        
+    -   Paymaster、Bundler、EntryPoint 等组件会引入新的依赖和风险边界。
+        
+    -   权限规则如果配置不当，也可能产生新的安全问题。
+        
+-   这和 Evaluation Harness 有关系：测试 AA 钱包相关 Agent 时，不仅要测试签名是否正确，还要测试 session key 范围、Paymaster 条件、智能账户权限、human check 和 calldata 是否安全。
+    
+
+### Eval Dimension: Unauthorized Requests
+
+-   链上 Agent 必须能正确拒绝越权请求。
+    
+-   例如：
+    
+    -   用户要求 Agent 操作不属于自己的资产。
+        
+    -   用户要求绕过 multisig、owner、role 或 allowlist。
+        
+    -   用户要求生成能盗取资产、绕过权限或伪造授权的 calldata。
+        
+-   Evaluation Harness 应该测试 Agent 是否能识别这些请求，并明确拒绝。
+    
+-   正确行为不是“尽量帮用户完成”，而是在权限不明确或明显越权时停止。
+    
+
+### Eval Dimension: Wrong Chain / Wrong Contract
+
+-   链上 Agent 必须识别错误链和错误合约。
+    
+-   同一个合约名或 Token symbol 可能存在于多个链上。
+    
+-   同一个协议也可能在不同网络部署不同地址。
+    
+-   如果 Agent 忽略 chain id、contract address、deployment version，就可能把 Ethereum mainnet、Base、Arbitrum、Sepolia 等环境混在一起。
+    
+-   Evaluation Harness 应该测试：
+    
+    -   Agent 是否检查 chain id。
+        
+    -   Agent 是否核对 contract address。
+        
+    -   Agent 是否识别 proxy implementation。
+        
+    -   Agent 是否在地址和文档不匹配时暂停。
+        
+    -   Agent 是否避免把测试网结果当成主网事实。
+        
+
+### Eval Dimension: Missing Data
+
+-   链上 Agent 在缺少关键数据时应该停止，而不是编造。
+    
+-   例如缺少：
+    
+    -   ABI。
+        
+    -   chain id。
+        
+    -   block number。
+        
+    -   contract address。
+        
+    -   method 参数。
+        
+    -   oracle price。
+        
+    -   allowance。
+        
+    -   slippage 设置。
+        
+    -   simulation 结果。
+        
+-   Evaluation Harness 应该测试 Agent 是否能主动指出缺失字段，并要求补充数据。
+    
+-   对链上操作来说，“不知道”往往比“猜一个答案继续执行”更安全。
+    
+
+### Eval Dimension: Human Check
+
+-   有些场景即使 Agent 能生成方案，也应该要求 human check。
+    
+-   例如：
+    
+    -   大额转账。
+        
+    -   授权无限额度。
+        
+    -   合约升级。
+        
+    -   owner 或 admin 权限变更。
+        
+    -   与未验证合约交互。
+        
+    -   低流动性资产交易。
+        
+    -   清算、借贷、杠杆、跨链桥等高风险操作。
+        
+-   Evaluation Harness 应该测试 Agent 是否能在这些场景暂停，并把风险摘要、交易参数和 citation 提供给人类确认。
+    
+-   Human check 不是降低自动化能力，而是把高风险决策放在更明确的权限边界里。
+    
+
+### Eval Dimension: Citation
+
+-   链上 Agent 的回答需要 citation。
+    
+-   Citation 可以包括：
+    
+    -   transaction hash。
+        
+    -   block number。
+        
+    -   contract address。
+        
+    -   event log。
+        
+    -   explorer link。
+        
+    -   ABI source。
+        
+    -   docs URL。
+        
+    -   audit report。
+        
+-   Evaluation Harness 应该测试 Agent 的结论是否能回到具体证据。
+    
+-   没有 citation 的链上回答只能算观点；带 citation 的回答才有机会被验证、复盘和追责。
+    
+
+### Eval Dimension: Dangerous Calldata
+
+-   链上 Agent 不能随意生成或提交危险 calldata。
+    
+-   危险 calldata 可能包括：
+    
+    -   无限授权 `approve`。
+        
+    -   转移全部余额。
+        
+    -   调用高权限 `execute`、`upgradeTo`、`setOwner`、`grantRole`。
+        
+    -   与未知或未验证合约交互。
+        
+    -   使用错误 selector 或错误参数编码。
+        
+    -   绕过前端保护直接调用底层合约。
+        
+-   Evaluation Harness 应该测试 Agent 是否会：
+    
+    -   解码 calldata。
+        
+    -   解释目标合约和方法。
+        
+    -   检查权限和余额。
+        
+    -   模拟交易。
+        
+    -   检查 slippage、deadline、recipient。
+        
+    -   在危险调用前暂停并要求确认。
+        
+-   对 Web3 Agent 来说，calldata 是非常关键的安全边界，因为它是链上操作真正执行的指令。
+    
+
+### Possible Evaluation Cases
+
+-   正常任务：
+    
+    -   查询某地址 Token 余额，并给出 chain id、block number、contract address 和 citation。
+        
+    -   解释一笔交易发生了什么，并给出 explorer link。
+        
+    -   根据 ABI 解码一个 event log。
+        
+-   风险任务：
+    
+    -   用户要求在错误链上调用合约。
+        
+    -   用户要求生成无限授权交易。
+        
+    -   用户要求操作不属于自己的资产。
+        
+    -   文档说是 A 合约，但链上地址实际是 B 合约。
+        
+    -   Indexing 数据落后很多区块，用户要求立即执行交易。
+        
+    -   缺少 slippage 或 simulation，用户要求强行 swap。
+        
+-   预期行为：
+    
+    -   能回答的回答。
+        
+    -   需要补数据的停下来。
+        
+    -   高风险的要求 human check。
+        
+    -   越权或危险的明确拒绝。
+        
+    -   每个关键结论都能给 citation。
+        
+
+### Main Takeaways
+
+-   Evaluation Harness 是系统测试 Agent 可靠性的工具，不是一次性人工试用。
+    
+-   Web3 Agent 和普通 Agent 的底层评估目标是相似的，都是为了评估性能、发现错误和做回归测试。
+    
+-   Web3 Agent 的 eval 不能只测回答质量，还要测权限、安全、证据、上下文和执行边界。
+    
+-   Web3 的特殊性主要来自链上业务场景：资产、合约、权限、交易、calldata 和 citation 都会放大错误成本。
+    
+-   AA 钱包和普通账户钱包的区别在于：普通账户主要由私钥控制，AA 钱包把账户控制权变成可编程规则。
+    
+-   链上 Agent 必须在错链、错合约、缺数据、高风险 calldata、无 citation 等场景下表现稳定。
+    
+-   一个好的 Evaluation Harness 应该覆盖正常任务、异常任务、攻击任务和高风险操作。
+    
+-   对链上 Agent 来说，“拒绝、暂停、要求 human check、提供 citation”本身就是重要能力。
+<!-- DAILY_CHECKIN_2026-05-29_END -->
+
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 ## **Today’s Goal**
 
 -   学习链感知上下文（chain-aware context）的组成。
@@ -346,6 +728,7 @@ AI x Web3 School
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
 
+
 \## Today’s Goal
 
 \- 学习 Web3 中 Indexing 的作用。
@@ -607,6 +990,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-25_START -->
 
 
+
 \## Today’s Goal
 
 \- 学习 Web3 中预言机（Oracle）的作用。
@@ -789,11 +1173,13 @@ AI x Web3 School
 
 
 
+
 今日摸鱼
 <!-- DAILY_CHECKIN_2026-05-24_END -->
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 
@@ -1134,6 +1520,7 @@ AI x Web3 School
 
 
 
+
 \## Today’s Goal
 
 \- 学习账户抽象（Account Abstraction, AA）的基本概念。
@@ -1393,6 +1780,7 @@ AI x Web3 School
 
 
 
+
 ## **Today’s Goal**
 
 -   学习以太坊开发相关工具链：Remix、Hardhat、Foundry、OpenZeppelin、viem。
@@ -1573,6 +1961,7 @@ AI x Web3 School
 
 
 
+
 \## Today’s Goal
 
 \- 学习 Web3 相关的密码学、钱包、智能合约和 ETH 合约基础知识。
@@ -1692,6 +2081,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
