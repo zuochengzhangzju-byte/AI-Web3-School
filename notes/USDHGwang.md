@@ -15,8 +15,61 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-29
+<!-- DAILY_CHECKIN_2026-05-29_START -->
+# **把一個 self-hosted agent harness 跑起來，踩到的幾件事**
+
+這幾天在折騰 Hermes Agent（Nous Research 的自架 agent 平台），不是當聊天框用，而是真的拿它接幾條 workflow：把報告萃取成知識圖、排程做新聞摘要、用 Kanban 跑多 agent 並行。記一下實際踩出來、跟「官網說法」不太一樣的東西。
+
+## **1\. harness ≠ model**
+
+最反直覺的一點：我這台跑的根本不是 Hermes 自家的模型，是 DeepSeek V4 Flash（透過 NVIDIA 的 API）。也就是說，這套東西的價值不在模型，在**外面那層 harness**——人格（SOUL）、跨 session 的記憶檔、skills、cron、多 agent 調度。模型是可抽換的零件。
+
+這讓我重新理解 agent 這個詞：大家盯著模型多聰明，但真正決定一個 agent 好不好用的，是它周邊那層通常很無聊的鷹架。
+
+## **2\. 記憶是「你看得到、改得到的檔」**
+
+它的記憶不是黑箱。是硬碟上幾個 markdown：人格一個檔、使用者輪廓一個檔、長期記憶一個檔，啟動時載進 context。跟一般聊天工具那種「它好像記得你、但你看不到也搬不走」的記憶完全不同——這裡你能打開、能編輯、能版控。對「要長期累積、又不想被綁死在某平台」的人來說，這個差別很關鍵。
+
+## **3\. 今天最大的一課：可靠性是 prompt 精準度決定的，不是模型決定的**
+
+做新聞摘要時撞到最有意思的事。
+
+第一版 prompt 我寫得很鬆——「整理昨天的 AI 新技術跟新聞」。結果它**編了一整批假新聞**（什麼某大廠投資數十億、某模型發佈），連結全是 404，而且它還自己標註「這些查不到、視為不可靠」。更糟的是，它「採用」的那幾條看似從 API 來的連結，ID 是乾淨連號（…000、…001、…002）——一看就是編的。
+
+第二版我把 prompt 收死：強制先呼叫 API、把原始回傳印出來、**連結只准用 API 回傳的真實 ID、API 裡沒有的一律不准寫、寧可少寫也不准補**。結果就乾淨了，連結是真的、點得開、ID 雜亂得像真的。
+
+同一個任務、同一個模型，差別只在 prompt 的 grounding。結論很明確：**用這類工具的核心技能，其實是 prompt 跟 grounding 的紀律**，不是換更強的模型。開放式問法等於請模型用幻覺填空。
+
+## **4\. 「會自我成長」的官方說法，實際是人機協作**
+
+官網主打 self-improving、會自動從經驗生成 skill。實際問下來：它不會靜默自動建 skill，是**做完任務主動問你「要不要存成 skill」、你點頭才建**。所以與其說「自動成長」，不如說「human-in-the-loop 的能力沉澱」。這其實更誠實也更可控，只是跟行銷話術有落差。
+
+## **5\. 一堆營運層的摩擦（這才是 harness engineering 的本體）**
+
+-   **工具批准門檻**：terminal 指令預設要人工批准。在背景/排程任務裡沒人按，它就卡在 pending、一直重試。但 execute\_code（跑 Python）是自動放行的——所以實務上要把任務設計成走自動放行的那條路。這種「哪個工具要批准」的細節，直接決定自動化跑不跑得起來。
+    
+-   **慢而且不可預測**：每次 API call 帶約十萬 token 的 context、延遲幾十秒，一個任務動輒 3～15 分鐘，連很小的任務也是。同一件事這次 3 分、下次 15 分。這逼著你重新設計 UX——不能假設「現場即時跑完」，要設計成非同步、預先跑好。
+    
+-   這兩點加起來讓我體會：agent 系統的難處不在「能不能做」，在「可不可靠、可不可預測」。
+    
+
+## **6\. 多 agent 調度（Kanban）**
+
+它的多 agent 是一個 SQLite-backed 的看板：每個看板一個 db，任務走狀態機（待办 → 就绪 → 进行中 → 完成，卡住就 blocked 等人）。dispatcher 每個 tick 把 ready 的卡各 spawn 一個 worker，沒設並發上限 = 預設就能並行。
+
+踩到一個坑：worker 的 workspace 預設是隔離的暫存目錄，這樣它讀不到也寫不到你真正的資料夾——要明確指定成共享目錄（dir:絕對路徑）才行。又是一個「不講你不會知道、但會讓你卡很久」的細節。
+
+## **收斂**
+
+跑下來最大的體感：**一個 agent harness，八成是在處理無聊但關鍵的鷹架**——記憶怎麼存、輸出怎麼 grounding、哪些工具要批准、任務怎麼排程、多 agent 怎麼協調。模型是可換的；前沿的難題是可靠性跟可預測性，不是模型夠不夠聰明。
+
+下一步想試的：既然 harness 是 model-agnostic 又支援 MCP，理論上可以把另一個專長不同的 agent 當工具編排進來。這條還沒跑通，之後再記。
+<!-- DAILY_CHECKIN_2026-05-29_END -->
+
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
+
 **\## 今天涵蓋**
 
 1. **Week 2 Module A** —— AI × Web3 問題地圖(六方向),選 **Wallet × Privacy 交集** 當 Week 2 主線。
@@ -52,6 +105,7 @@ AI x Web3 School
 
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 
 \---
 
@@ -116,6 +170,7 @@ NeoCypherPunk 由 Rose O'Leary (Dark5) 起,Paul Allen Ellis 發展。是對 Eric
 <!-- DAILY_CHECKIN_2026-05-26_START -->
 
 
+
 **\## Today's Events**
 
 \- 學院 Week 2 Lesson 2：Cobo 團隊來賓演講介紹 Agentic Wallet (CAW)
@@ -153,6 +208,7 @@ NeoCypherPunk 由 Rose O'Leary (Dark5) 起,Paul Allen Ellis 發展。是對 Eric
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 
@@ -281,6 +337,7 @@ Agent 架構應由系統的\*\*具體 failure point\*\* 驅動（context anxiety
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 
 
@@ -437,6 +494,7 @@ Agent 進 vault 從 top MOC 開始，**不全 grep**。比 pure Zettelkasten「h
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 
@@ -681,6 +739,7 @@ Claude 的 MEMORY.md                  Hermes 的 MEMORY.md
 
 
 
+
 今天做了什麼：
 
 1\. Learning Agent 初始化
@@ -732,6 +791,7 @@ Claude 的 MEMORY.md                  Hermes 的 MEMORY.md
 
 
 
+
 今天做了什麼
 
 發布 obsidian-knowledge-vault
@@ -751,6 +811,7 @@ repo 7 個 commit，今天從空目錄推到完整 README + prompt + annotated o
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -838,6 +899,7 @@ HITL 模組要設計成 **「可被替代的層」**，不是 hardcode 必要的
 
 
 
+
 今天的主題是 Hermes Agent 安裝。
 
 因為看到直播裡很多夥伴卡在環境設定，就順手做了一份 Windows WSL2 + macOS 的完整安裝教程，在課程進行中同步解答問題。
@@ -858,6 +920,7 @@ HITL 模組要設計成 **「可被替代的層」**，不是 hardcode 必要的
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
