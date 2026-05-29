@@ -15,8 +15,16 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-29
+<!-- DAILY_CHECKIN_2026-05-29_START -->
+今天状态很不好。。。
+
+干的事情特别少，不足以记录。。。
+<!-- DAILY_CHECKIN_2026-05-29_END -->
+
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
+
 昨天忘打卡了竟然。
 
 昨日和今日在构建LIFI Intents挑战者活动。已完成。
@@ -25,6 +33,7 @@ AI x Web3 School
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
 
+
 -   今天专注求职了，没怎么做进度
     
 -   参加晚上讲座
@@ -32,6 +41,7 @@ AI x Web3 School
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 -   培训agent
@@ -49,6 +59,7 @@ AI x Web3 School
 
 
 
+
 -   今天在培训Hermes。
     
 -   明天批量做任务。
@@ -60,6 +71,7 @@ AI x Web3 School
 
 
 
+
 -   成功实践Hermes部署
     
 -   思考了Hackqthon选题的可能性，钱包选题大家都很有想法，之外的选题又有什么呢？
@@ -67,6 +79,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -88,6 +101,7 @@ AI x Web3 School
 
 
 
+
 -   参加AI下乡计划
     
 
@@ -96,6 +110,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -118,6 +133,7 @@ AI x Web3 School
 
 
 
+
 -   钱包与抽象X推文大纲
     
 -   参加Hermes部署讲座。准备部署一个Hermes。
@@ -125,6 +141,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
