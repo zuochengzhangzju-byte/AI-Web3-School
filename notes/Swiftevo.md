@@ -15,8 +15,48 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-30
+<!-- DAILY_CHECKIN_2026-05-30_START -->
+這兩者之中，**Cobo Agentic Wallet (CAW)** 以及其背後的技術架構，與 **Public Goods（公共物品）** 的發展有著直接且明確的關聯；而 [**Z.AI**](http://Z.AI) 則是從開源（Open Source）與學術工具的角度切入，間接回饋了 Public Goods 的生態。
+
+以下為兩者在 DeSci 或 Public Goods 發展上的交集與關聯分析：
+
+### 1\. Cobo Agentic Wallet：直接支援 Public Goods 的治理與資金安全
+
+在 Cobo 的官方開發者生態與技術架構（如 AI×Web3 Open Learning Platform 等相關手冊）中，**Public Goods** 與 **DAO（去中心化自治組織）** 被明確列為關鍵的應用場景：
+
+-   **治理 AI 與公共物品資金管理**：
+    
+    在 Frontier Exploration 的規劃中，Cobo 提及「Governance: AI collaboration tools for DAOs, public goods, and protocol governance」（用於 DAO、公共物品和協議治理的 AI 協作工具）。
+    
+-   **解決自動化撥款（Grants）的安全痛點**：
+    
+    許多 Public Goods 生態（如 Gitcoin、Greenpill 或 GCC）目前都在積極發展「AI 評審機器人」或「自動化資產分配 AI」。過去，讓 AI 自動去轉帳或撥款非常危險（因為需要把私鑰給 AI）。Cobo Agentic Wallet 提出的 **Pacts（條約限制）** 與 **策略控管機制**，能讓公共物品基金會在安全、去中心化且不暴露私鑰的前提下，授權 AI 智慧體去自動執行小額的 Grant 撥款、資金池再平衡或社群資源調配。
+    
+
+### 2\. [Z.AI](http://Z.AI)：以「開源模型」與「學術基礎設施」間接貢獻 Public Goods
+
+雖然 [Z.AI](http://Z.AI)（原智譜 AI）在 API 商業文件與訂閱方案中，沒有直接打出 "DeSci" 或 "Public Goods" 這兩個區塊鏈社群常用的術語，但它的企業定位與產品線在實質上與這兩者深度綁定：
+
+-   **MIT 開源協議的 AI 資產（Model Weights as Public Goods）**：
+    
+    [Z.AI](http://Z.AI) 將其核心旗艦模型（如 `GLM-5` 系列）的**模型權重完全開源（開放於 Hugging Face 且採用 MIT 許可證）**。在數位時代，開源的高性能大模型本身就被 Web3 與 AI 社群視為一種極具價值的「數位公共物品（Digital Public Goods）」，降低了去中心化科學（DeSci）研究者自主部署 AI 的算力與技術門檻。
+    
+-   **學術檢索基礎設施 AMiner**：
+    
+    [Z.AI](http://Z.AI) 旗下擁有 **AMiner**（一個專門用於科學文獻檢索、學者網絡挖掘的 AI 平台）。DeSci 的核心精神之一是讓科學研究更開放、可追溯且去中心化。AMiner 的數據庫與文獻解析工具（包含其 API 提及的 Layout Parsing 與 Web Reader 智慧體工具），常被許多建構 DeSci 基礎設施（例如科學數據層、論文同儕審查 Bot）的開發團隊用來當作基礎資料擷取的底層。
+    
+
+### 總結
+
+-   如果你想尋找**直接用於管理公共物品（Public Goods）資產、DAO 治理，或是讓 DeSci 專案的 AI 機器人安全操作鏈上資金**的解決方案，**Cobo Agentic Wallet** 提供了直接的工具。
+    
+-   如果你是需要**開源的模型公共資源，或是需要 AI 工具來解析大量科學文獻與學術數據（DeSci 的研究工具層）**，[**Z.AI**](http://Z.AI) 的 API 與開源 GLM 模型則是強大的底層技術支撐。
+<!-- DAILY_CHECKIN_2026-05-30_END -->
+
 # 2026-05-29
 <!-- DAILY_CHECKIN_2026-05-29_START -->
+
 # Day 6 學習總結 — Agent Memory、Knowledge Infrastructure 與 Context Engineering
 
 今天其實有兩條主線：
@@ -621,6 +661,7 @@ Reasoning + Actions
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
 
+
 Day 5 學習總結 — Context Engineering、Compression 與 Agent Cognition
 
 今天你開始進入：
@@ -1210,6 +1251,7 @@ Context Engineering 組織知識
 
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 
 
 # Day 4 學習總結 — Long-term Memory、Knowledge Infrastructure 與 AI-native Architecture
@@ -1860,6 +1902,7 @@ LLM 會忽略中間資訊。
 
 
 
+
 Day 4 學習總結 — Long-term Memory、Knowledge Infrastructure 與 AI-native Architecture
 
 今天你開始真正進入：
@@ -2475,6 +2518,7 @@ LLM 會忽略中間資訊。
 
 
 
+
 # Day 3 學習總結 — Retrieval Architecture 與 RAG Pipeline
 
 今天你正式進入：
@@ -3081,6 +3125,7 @@ retrieved chunks 太大怎辦？
 
 
 
+
 Day 3 學習總結 — Retrieval Architecture 與 RAG Pipeline
 
 今天你正式進入：
@@ -3666,6 +3711,7 @@ Retrieval 系統真正目標：
 
 
 
+
 學習總結 — Retrieval 與 RAG Architecture
 
 今天你已經正式進入：
@@ -4180,11 +4226,13 @@ AI-native database：
 
 
 
+
 今天聽了Elon 老師的 AI x web3 課，感覺目前很多的例子都是大集團或者大公司的成功案例。暫時很少看到有個人開發者的應用例子。目前最集中的都是在 AI 如何協助 web3 錢包安全或者交易上的分析。
 <!-- DAILY_CHECKIN_2026-05-21_END -->
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -4609,6 +4657,7 @@ workflow + tools + actions。
 
 
 
+
 # **Daily Note: 2026-05-19**
 
 ## **Today**
@@ -4703,6 +4752,7 @@ Proof link: [**https://github.com/Swiftevo/ai-web3-school-cohort-0**](https://gi
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
