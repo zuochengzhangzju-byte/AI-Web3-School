@@ -15,8 +15,74 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-30
+<!-- DAILY_CHECKIN_2026-05-30_START -->
+# 2026-05-30 每日学习笔记
+
+## 学习内容
+
+### 竞品分析（方向一）
+
+三类竞品深度讨论：
+
+**第一类（DeBank/Zapper/Zerion）：** 投资组合追踪器，做资产追踪但无人做行为诊断和分析
+
+-   DeBank：数据最全最快，主打分析功能，但管理和买卖不做
+    
+-   Zapper：一站式资产管理，想做超级应用但新协议支持慢、数据分析表面
+    
+-   Zerion：移动钱包体验好，内置智能钱包，但投研功能弱
+    
+
+**第二类（Dune/Nansen/Arkham）：** 链上数据分析平台
+
+-   Dune：SQL 查询门槛高，适合高级用户
+    
+-   Nansen：追踪聪明钱，不分析用户自身行为
+    
+-   Arkham：地址反匿名化，面向调查/合规
+    
+
+**第三类（Chainalysis/Elliptic/TRM）：** 全部 B 端工具，面向政府和交易所
+
+**结论：** 方向一的核心切入点是"行为分析 + 诊断 + 建议"，现有竞品都在数钱/盯人/查合规，没有人做行为画像
+
+### Module B 任务一：最小支付与商业流程拆解
+
+-   场景：Cobo Agentic Wallet + DCA 定投 Agent
+    
+-   拆解了 Pact 四要素（Intent / Execution Plan / Policies / Completion Conditions）
+    
+-   完整流程：9 步，覆盖下单→授权→执行→验收→终止
+    
+-   设计了 5 个 Phase（报价/执行/验收/失败处理/记录证明）
+    
+-   输出文档：`tasks/2026-05-29-payment-commerce-breakdown.md`
+    
+
+### Module B 任务二：x402 + CAW 自主支付闭环设计
+
+-   学习了 x402 协议：HTTP 402 标准、三种支付方案（exact/upto/batch-settlement）、Facilitator 机制
+    
+-   设计了完整 6 Phase 交互流程（准备→请求→支付决策→支付→验证→完成）
+    
+-   包含架构图、交互流程、关键接口说明、风险边界
+    
+-   延续 Week 1 三条铁律（永不接触密钥、永不自动签名、永不绕过确认）
+    
+-   输出文档：`tasks/2026-05-29-x402-caw-payment-design.md`
+    
+
+## 明日计划
+
+1.  确定 Week 2 主方向
+    
+2.  继续跟进剩余模块任务
+<!-- DAILY_CHECKIN_2026-05-30_END -->
+
 # 2026-05-29
 <!-- DAILY_CHECKIN_2026-05-29_START -->
+
 # 2026-05-29 每日学习笔记
 
 ## 学习内容
@@ -44,6 +110,7 @@ AI x Web3 School
 
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
+
 
 # 2026-05-28 每日学习笔记
 
@@ -114,6 +181,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-27_START -->
 
 
+
 **第一部分：学习总结**
 
 > 今天完成了 AI × Web3 Bridge 剩余 8 个章节的全面速览：
@@ -142,6 +210,7 @@ AI x Web3 School
 
 
 
+
 **第一部分：今日学习总结**
 
 > 今天重点完成了 Week 1 收尾任务和 Week 2 预热：
@@ -159,6 +228,7 @@ AI x Web3 School
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 
@@ -181,11 +251,13 @@ AI x Web3 School
 
 
 
+
 今天主要学习和了解web3的相关文档和知识。
 <!-- DAILY_CHECKIN_2026-05-24_END -->
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 
@@ -241,6 +313,7 @@ AI x Web3 School
 
 
 
+
 今天完成了两部分学习：  
   
 一、AI 基础概念深化  
@@ -280,6 +353,7 @@ AI x Web3 School
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -349,6 +423,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -467,6 +542,7 @@ AI x Web3 School
 
 
 
+
 今日学习总结：  
 今天系统阅读了 AI 基础文档，对已有知识进行了梳理和补充：  
 已熟悉的概念（复习巩固）：
@@ -493,6 +569,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
