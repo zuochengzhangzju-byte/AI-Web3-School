@@ -15,8 +15,72 @@ timezone: UTC+8
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-30
+<!-- DAILY_CHECKIN_2026-05-30_START -->
+Week 2 总结：AI x Web3 Bridge 深挖 - 安全钱包方向
+
+本周我围绕 AI x Web3 的交叉方向完成了 Week 2 学习与项目方向收敛，最终选择主线：
+
+Wallet / Permission / Safe Execution
+
+项目方向初步命名为 SafePay Guard Wallet：一个面向 Web3 用户、DAO 财务人员和 builder 的安全钱包执行助手，在签名、授权、转账和 agent 自动付款前，解释交易意图，检查权限风险，执行预算和白名单策略，并留下可审计记录。
+
+本周完成内容：
+
+1\. 绘制 AI x Web3 问题地图，覆盖 Payment / Commerce / Settlement、Identity / Reputation、Wallet / Permission、Privacy / Security、Dev Tooling、Governance 等方向。
+
+2\. 选择安全钱包作为主方向，并解释它为什么不是纯 AI 或纯 Web3 问题。
+
+3\. 设计 x402 paywall + Cobo CAW agent 自主支付闭环。
+
+4\. 完成一个本地可运行 demo：request -> 402 -> Pact check -> CAW mock payment payload -> retry -> verify / settle -> audit log -> protected API result。
+
+5\. 设计 SafePay Execution Agent 的 agent profile。
+
+6\. 设计 agent wallet 权限策略，包含预算、可调用合约、人工确认阈值、撤销方式、日志和失败处理。
+
+7\. 完成 threat model，并模拟 prompt injection、伪造工具返回、越权付款、replay 等攻击。
+
+8\. 设计 DAO budget execution checklist workflow。
+
+9\. 完成 Week 2 final proposal：SafePay Guard Wallet。
+
+关键 GitHub 产出：
+
+\- Week 2 总结：
+
+[https://github.com/tz-hao/ai-web3-school-cohort-0/blob/main/submissions/week-2-summary.md](https://github.com/tz-hao/ai-web3-school-cohort-0/blob/main/submissions/week-2-summary.md)
+
+\- Week 2 Final Proposal：
+
+[https://github.com/tz-hao/ai-web3-school-cohort-0/blob/main/submissions/week2-final-safe-wallet-proposal.md](https://github.com/tz-hao/ai-web3-school-cohort-0/blob/main/submissions/week2-final-safe-wallet-proposal.md)
+
+\- x402 + CAW 本地 demo：
+
+[https://github.com/tz-hao/ai-web3-school-cohort-0/tree/main/experiments/x402-caw-agent-payment](https://github.com/tz-hao/ai-web3-school-cohort-0/tree/main/experiments/x402-caw-agent-payment)
+
+本周最大收获：
+
+AI x Web3 的重点不是让 AI 无限制自动执行，而是让 AI 的理解能力进入一个受 Web3 权限系统约束的执行环境。我总结成一句话：
+
+AI can suggest.
+
+Policy decides.
+
+Wallet enforces.
+
+Human can revoke.
+
+Audit records.
+
+Week 3 下一步：
+
+继续推进 SafePay Guard Wallet，从 mock demo 走向更真实的产品原型：接入 Safe / session key / policy guard，增加交易 simulation 和 token allowance 检查，做签名前风险说明页，并把攻击模拟扩展成 regression test。
+<!-- DAILY_CHECKIN_2026-05-30_END -->
+
 # 2026-05-29
 <!-- DAILY_CHECKIN_2026-05-29_START -->
+
 ```
 传统以太坊的痛点：
 
@@ -38,6 +102,7 @@ timezone: UTC+8
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
 
+
 ```
 线 1：Agent 怎么做事？
   ├── MCP  → Agent ↔ 工具（发现 + 调用）
@@ -54,6 +119,7 @@ timezone: UTC+8
 
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 
 
 # **MCP 远程服务器连接**  
@@ -82,6 +148,7 @@ Claude Desktop 默认     Lambda/SaaS 首选           2024-11 提出，2025-03 
 
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 
 
 
@@ -114,6 +181,7 @@ Claude Desktop 默认     Lambda/SaaS 首选           2024-11 提出，2025-03 
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 
@@ -172,11 +240,13 @@ Claude Desktop 默认     Lambda/SaaS 首选           2024-11 提出，2025-03 
 
 
 
+
 今天学习了一下web3xai有一些大概的总结：从 Agent Workflow 的 human-in-the-loop，到 Escrow 的多签仲裁，到 Sovereignty 的一键 kill switch，到 Governance AI 的「AI 不替你做投票建议」——**自动化程度越高，撤回机制必须越强**。
 <!-- DAILY_CHECKIN_2026-05-24_END -->
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 
@@ -210,6 +280,7 @@ Claude Desktop 默认     Lambda/SaaS 首选           2024-11 提出，2025-03 
 
 
 
+
 **1\. Web3 Tool Use（学完）**  
 \- 工具分层：只读（RPC/Contract Read）↔️ 写交易（Contract Write/Wallet）必须硬分离  
 \- 写交易前 7 步检查链：chain id → 合约地址 → ABI → value → gas → simulation → policy+确认  
@@ -223,6 +294,7 @@ Claude Desktop 默认     Lambda/SaaS 首选           2024-11 提出，2025-03 
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -249,6 +321,7 @@ Claude Desktop 默认     Lambda/SaaS 首选           2024-11 提出，2025-03 
 
 
 
+
 今天听了一下web3的课，这些概念都懂算是巩固一下基础了
 <!-- DAILY_CHECKIN_2026-05-20_END -->
 
@@ -264,11 +337,13 @@ Claude Desktop 默认     Lambda/SaaS 首选           2024-11 提出，2025-03 
 
 
 
+
 今天终于把hermes弄好，也学习了一些ai的知识
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
