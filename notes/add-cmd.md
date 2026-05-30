@@ -15,8 +15,14 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-30
+<!-- DAILY_CHECKIN_2026-05-30_START -->
+占位
+<!-- DAILY_CHECKIN_2026-05-30_END -->
+
 # 2026-05-29
 <!-- DAILY_CHECKIN_2026-05-29_START -->
+
 Day — Agent 链上足迹实验：Agentic Ping
 
 \> 日期： 2026-05-29
@@ -72,6 +78,7 @@ pm\_sponsorUserOperation → Gas Manager 代付签名 → eth\_sendUserOperation
 
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
+
 
 \> 日期： 2026-05-28
 
@@ -144,6 +151,7 @@ Foundry 部署脚本，从 .env 读取私钥和 RPC URL，部署 AccountFactory 
 <!-- DAILY_CHECKIN_2026-05-26_START -->
 
 
+
 **Day 6（续）：Week 2 方向选择完成 — 整理交付物与后续规划**
 
 ### **今日路径**
@@ -163,6 +171,7 @@ Foundry 部署脚本，从 .env 读取私钥和 RPC URL，部署 AccountFactory 
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 
@@ -243,6 +252,7 @@ USDC，每天不超过 $500"。LLM 是把权限系统从工程师专属降到普
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 
 
@@ -379,6 +389,7 @@ NaN.  WCB 打卡流程还没完全熟悉，这是第一次提交
 
 
 
+
 Day 5 — 智能体（Agent）打卡笔记
 
 📖 学了什么
@@ -482,6 +493,7 @@ GitHub: github.com/add-cmd/ai-web3-school-cohort-0/tree/master/2026-05-22
 
 
 
+
 Day 4 — RAG（检索增强生成）打卡笔记
 
 📖 学了什么
@@ -557,6 +569,7 @@ GitHub: github.com/add-cmd/ai-web3-school-cohort-0/tree/master/2026-05-21
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -657,6 +670,7 @@ GitHub: github.com/add-cmd/ai-web3-school-cohort-0/tree/master/2026-05-20
 
 
 
+
 Day 2 完成总览
 
 📘 Prompt 章节核心要点：
@@ -692,6 +706,7 @@ Day 2 完成总览
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
