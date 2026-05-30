@@ -15,8 +15,96 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-30
+<!-- DAILY_CHECKIN_2026-05-30_START -->
+# Why Ethereum and decentralized applications are important for the future of technology and society.
+
+### **Core Importance**
+
+1.  **Decentralization**: No single entity controls the system, reducing risks of censorship, fraud, or manipulation.
+    
+2.  **Transparency**: All transactions and code are publicly verifiable on the blockchain.
+    
+3.  **Ownership**: Users control their data, assets, and identity without intermediaries.
+    
+4.  **Composability**: dApps can interact seamlessly (e.g., DeFi protocols building on each other).
+    
+5.  **Global Access**: Anyone with an internet connection can participate, regardless of location or status.
+    
+
+* * *
+
+### **Key Use Cases**
+
+1.  **Decentralized Finance (DeFi)**
+    
+    -   Lending/borrowing (e.g., Aave, Compound)
+        
+    -   Decentralized exchanges (e.g., Uniswap, dYdX)
+        
+    -   Stablecoins (e.g., DAI, USDC)
+        
+2.  **Identity & Reputation**
+    
+    -   Self-sovereign identity (e.g., **ERC-8004** for AI agents)
+        
+    -   Verifiable credentials (e.g., Soulbound Tokens)
+        
+3.  **Gaming & NFTs**
+    
+    -   True digital ownership (e.g., Axie Infinity, CryptoPunks)
+        
+    -   Interoperable in-game assets
+        
+4.  **Governance & DAOs**
+    
+    -   Community-driven decision-making (e.g., MakerDAO, Uniswap Governance)
+        
+    -   Transparent voting systems
+        
+5.  **Machine-to-Machine Economies**
+    
+    -   Autonomous agents paying for services (e.g., **x402** protocol for HTTP payments)
+        
+    -   AI-driven marketplaces
+        
+6.  **Supply Chain & Provenance**
+    
+    -   Immutable tracking of goods (e.g., VeChain, IBM Food Trust)
+        
+
+* * *
+
+### **Areas for Discussion**
+
+1.  **Scalability vs. Decentralization**
+    
+    -   How do Layer 2s (e.g., Arbitrum, Optimism) balance speed and security?
+        
+2.  **Regulation & Compliance**
+    
+    -   Can decentralized systems coexist with government oversight?
+        
+3.  **User Experience (UX)**
+    
+    -   How can wallets and dApps become as intuitive as Web2 apps?
+        
+4.  **Security & Auditing**
+    
+    -   What are the biggest risks (e.g., reentrancy, oracle manipulation), and how are they mitigated?
+        
+5.  **AI + Blockchain Synergy**
+    
+    -   How can **ERC-8004** and **x402** enable fully autonomous agent economies?
+        
+6.  **Sustainability**
+    
+    -   How does Ethereum’s shift to Proof-of-Stake (PoS) impact energy use?
+<!-- DAILY_CHECKIN_2026-05-30_END -->
+
 # 2026-05-29
 <!-- DAILY_CHECKIN_2026-05-29_START -->
+
 ## **Women Builders in AI × Web3**
 
 ### 1\. **背景与意义**
@@ -129,6 +217,7 @@ AI x Web3 School
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
 
+
 # **Cypherpunk & the Cultural Layers of Privacy: Why Privacy Matters for Builders**
 
 ## Cypherpunk
@@ -164,6 +253,7 @@ AI x Web3 School
 
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 
 
 # **Product manager of Cobo Agentic Wallet**
@@ -206,6 +296,7 @@ AI x Web3 School
 
 
 
+
 # MetaMask
 
 -   metamask is a app tht allows you to manage ethereum,solana,bitcoin and private keys.
@@ -231,6 +322,7 @@ AI x Web3 School
 
 
 
+
 # **Long-term Memory for AI Agents**
 
 ## restart VS resume
@@ -246,6 +338,7 @@ AI x Web3 School
 
 # 2026-05-24
 <!-- DAILY_CHECKIN_2026-05-24_START -->
+
 
 
 
@@ -341,6 +434,7 @@ AI x Web3 School
 
 
 
+
 # **Open Agentic Economy: From ERC-8004 / ERC-8183 to Builder Path**
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/SelinaAnn/images/2026-05-23-1779524951056-image.png)
@@ -363,6 +457,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -400,6 +495,7 @@ AI驱动链上分析工具
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -488,6 +584,7 @@ AI驱动链上分析工具
 
 
 
+
 Hermes Agent学习
 
 ```
@@ -542,6 +639,7 @@ API 文档：https://web3career.build/llms.txt
 
 # 2026-05-19
 <!-- DAILY_CHECKIN_2026-05-19_START -->
+
 
 
 
