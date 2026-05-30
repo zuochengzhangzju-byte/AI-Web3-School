@@ -15,8 +15,24 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-30
+<!-- DAILY_CHECKIN_2026-05-30_START -->
+Network 解决的是：
+
+`交易在哪条链上发生？ 状态如何被打包、执行、确认和展示？`
+
+Account Abstraction 解决的是：
+
+`谁能代表账户执行动作？ 权限如何被限制、自动化、恢复和审计？`
+
+一句话总结：
+
+**Network 是链上操作发生的环境，Account Abstraction 是链上账户权限的升级。前者决定交易如何进入共识，后者决定账户如何更安全、更灵活地表达授权。**
+<!-- DAILY_CHECKIN_2026-05-30_END -->
+
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 # Web3 基础总结：智能合约与开发栈
 
 资料来源：
@@ -159,6 +175,7 @@ AI 可以帮助：
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
 
+
 **一、密码学核心**
 
 Web3 的账户体系本质上不是“用户名 + 密码”，而是“私钥 + 签名”。谁控制私钥，谁就控制对应地址上的资产和权限。
@@ -258,11 +275,13 @@ AI 不应该做这些事：
 <!-- DAILY_CHECKIN_2026-05-25_START -->
 
 
+
 先打个卡，明早补上
 <!-- DAILY_CHECKIN_2026-05-25_END -->
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -1059,11 +1078,13 @@ Agent 的默认设计应该是先只读：
 
 
 
+
 要截止了，先打卡，一会儿补上
 <!-- DAILY_CHECKIN_2026-05-21_END -->
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -1789,6 +1810,7 @@ v1 SDK 里的 swapExactTokensForTokens 现在还能按老参数调用吗？
 
 
 
+
 > 分析对象：[AI x Web3 School - 上下文（Context）](https://aiweb3.school/zh/handbook/ai/context/)  
 > 整理日期：2026-05-19
 
@@ -1969,6 +1991,7 @@ dApp 页面写“这是安全授权”，模型不能直接相信。它只能把
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
