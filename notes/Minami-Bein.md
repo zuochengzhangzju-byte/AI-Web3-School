@@ -14,6 +14,433 @@ I am‘s Bein.
 
 ## Notes
 
+# 2026-05-30
+<!-- DAILY_CHECKIN_2026-05-30_START -->
+# AI x Web3 School Day 13 技术报告：Evaluation & Replay 机制
+
+## 1. 目录（Table of Contents）
+
+- [Abstract & Problem Space](#1-abstract--problem-space)
+- [系统架构与拓扑](#2-系统架构与拓扑)
+- [理论框架与形式分类](#3-理论框架与形式分类)
+- [状态机与协议演练](#4-状态机与协议演练)
+- [Evaluation Checklist 产出物](#5-evaluation-checklist-产出物)
+- [Replay 机制设计](#6-replay-机制设计)
+- [漏洞向量与边界场景](#7-漏洞向量与边界场景)
+- [学术标签](#8-学术标签)
+
+---
+
+## 1. Abstract & Problem Space
+
+### 问题定义
+
+在 AI Agent 与 Web3 工具交互的复杂环境中，如何建立一套可验证、可回溯、可量化的评估体系（Evaluation Framework），确保 Agent 的每一次链上操作具备完整的审计轨迹（Audit Trail），并在发生异常时能够通过 Replay 机制进行失败诊断（Failure Diagnosis）与操作回放（Operation Replay）。
+
+### 核心技术挑战
+
+| 挑战类型 | 描述 | 影响维度 |
+|---------|------|---------|
+| 操作原子性验证 | Agent 工具调用前后状态一致性 | 金融安全、合规审计 |
+| 可验证性（Verifiability） | 链上操作结果的不可否认性 | 信任建立、责任归属 |
+| 失败溯源 | 定位 Replay 失败点的根本原因 | 系统稳定性、错误恢复 |
+| 评估指标标准化 | 建立统一的 Agent 性能评估基准 | 跨系统对比、迭代优化 |
+
+### 预期贡献
+
+本文档沉淀一套完整的 **Evaluation Checklist** 与 **Replay Checklist**，为 Agent Wallet 的安全运营提供方法论支撑。
+
+### In-Scope / Out-of-Scope
+
+**In-Scope：**
+- Agent 工具调用前后记录要素定义
+- 失败操作的 Replay 流程设计
+- 可验证 AI（Verifiable AI）的概念框架
+
+**Out-of-Scope：**
+- 具体链上交易 Gas 优化策略
+- 智能合约代码审计
+- 第三方评估平台集成
+
+---
+
+## 2. 系统架构与拓扑
+
+### 概念脑图：Evaluation & Replay 架构
+
+```mermaid
+mindmap
+  root((Agent Evaluation
+      & Replay))
+    Evaluation Framework
+      Pre-Call Audit
+        Input Validation
+        Permission Check
+        Context Integrity
+      Post-Call Verification
+        State Consistency
+        Result Authenticity
+        Side-effect Detection
+      Metrics Collection
+        Latency
+        Success Rate
+        Error Classification
+    Replay Mechanism
+      Failure Detection
+        Exception Pattern Match
+        Timeout Handler
+        State Divergence Alert
+      Replay Trigger
+        Manual Recovery
+        Automatic Retry
+        Rollback Protocol
+      Diagnostic Analysis
+        Step-by-step Replay
+        Variable Snapshot
+        Decision Tree Trace
+    Verifiable AI
+      Cryptographic Proof
+        Signature Verification
+        Merkle Proof Integration
+      Audit Trail
+        Immutable Log
+        Timestamp Authority
+        Event Sourcing
+```
+
+### 组件拓扑图：Agent Tool Call Evaluation 流程
+
+```mermaid
+graph TD
+    subgraph "Pre-Evaluation Phase"
+        A[User Intent Input] --> B[Context Assembly]
+        B --> C[Permission Matrix Check]
+        C --> D{Termission Valid?}
+        D -->|No| E[Human-in-the-Loop Confirmation]
+        D -->|Yes| F[Tool Call Precondition Check]
+    end
+    
+    subgraph "Execution Phase"
+        F --> G[Agent Tool Invocation]
+        G --> H[Transaction Submission]
+        H --> I[Blockchain Confirmation]
+    end
+    
+    subgraph "Post-Evaluation Phase"
+        I --> J[Result Verification]
+        J --> K[State Consistency Check]
+        K --> L{State Match?}
+        L -->|No| M[Alert & Rollback Trigger]
+        L -->|Yes| N[Audit Log Commit]
+    end
+    
+    subgraph "Replay Subsystem"
+        M --> O[Replay Buffer]
+        O --> P[Failure Point Isolation]
+        P --> Q[Step-by-step Reconstruction]
+        Q --> R[Diagnostic Report]
+    end
+    
+    N --> S[(Immutable Audit Trail)]
+    R --> S
+```
+
+---
+
+## 3. 理论框架与形式分类
+
+### 核心术语定义表
+
+| 术语 | 英文 | 定义 | 类型约束 |
+|------|------|------|---------|
+| 评估 | Evaluation | 对 Agent 行为结果的质量度量 | $\mathbb{E}: \text{Action}^* \to \mathbb{Q}$ |
+| 可验证性 | Verifiability | 操作结果可被独立第三方确认 | $\text{Verify}(p, \pi) \in \{0, 1\}$ |
+| 重放 | Replay | 在隔离环境中重现历史操作序列 | $\text{Replay}: \text{History} \to \text{State}$ |
+| 审计轨迹 | Audit Trail | 不可篡改的操作记录链 | $\text{Trail} = (e_1, e_2, ..., e_n)$ |
+| 智能体钱包 | Agent Wallet | 供 AI Agent 操作的受限钱包实例 | $\text{Wallet}_{\text{Agent}} \subseteq \text{Wallet}_{\text{Full}}$ |
+
+### 类型系统定义
+
+```typescript
+// Agent Tool Call Evaluation Types
+
+type ToolCallResult = {
+  success: boolean;
+  transactionHash?: HexString;
+  gasUsed?: BigInt;
+  revertReason?: string;
+  sideEffects?: StateChange[];
+};
+
+type EvaluationRecord = {
+  callId: string;
+  timestamp: UnixTimestamp;
+  inputContext: ContextSnapshot;
+  toolName: string;
+  permissionLevel: PermissionTier;
+  result: ToolCallResult;
+  verificationStatus: 'pending' | 'verified' | 'failed';
+  signature?: bytes65;
+};
+
+type ReplayCheckpoint = {
+  stepIndex: number;
+  stateSnapshot: AgentState;
+  variableBindings: Map<string, any>;
+  decisionPoint: DecisionNode;
+};
+```
+
+### 系统不变量（Invariants）
+
+$$
+\forall \text{call} \in \text{ToolCalls}: \text{precondition}(\text{call}) \implies \text{postcondition}(\text{call}).\text{state}
+$$
+
+$$
+\forall \text{record} \in \text{AuditTrail}: \text{verifySignature}(\text{record}) = \text{true}
+$$
+
+$$
+\exists \text{checkpoint} \in \text{ReplayBuffer}: \text{checkpoint}.\text{state} = \text{lastSuccessfulState}
+$$
+
+---
+
+## 4. 状态机与协议演练
+
+### Agent Tool Call 评估协议时序图
+
+```mermaid
+sequenceDiagram
+    participant U as User/Intent Source
+    participant A as AI Agent
+    participant C as Context Engine
+    participant P as Permission Manager
+    participant W as Agent Wallet
+    participant BC as Blockchain
+    participant V as Verification Engine
+    participant L as Audit Logger
+
+    U->>A: Web3 Task Request
+    A->>C: Assemble Context
+    C-->>A: Context Snapshot
+    
+    A->>P: Permission Check Request
+    P-->>A: Permission Matrix
+    
+    alt Permission Sufficient
+        A->>W: Prepare Transaction
+        W->>BC: Submit Transaction
+        BC-->>W: Transaction Hash
+        W-->>A: Execution Acknowledged
+    else Permission Insufficient
+        A->>U: Human-in-the-Loop Request
+        U-->>A: User Confirmation
+        A->>W: Proceed with Authorization
+    end
+    
+    BC-->>W: Transaction Confirmed
+    W-->>V: Result Callback
+    V->>V: Verify State Consistency
+    
+    alt Verification Passed
+        V-->>L: Log Verified Record
+        L-->>A: Confirmation
+    else Verification Failed
+        V-->>L: Log Failure Alert
+        L-->>A: Rollback Trigger
+        Note over A: Initiate Replay Protocol
+    end
+    
+    A-->>U: Task Completion Report
+```
+
+### 状态阶段细化
+
+| 阶段 | 英文名称 | 关键动作 | 退出条件 |
+|------|---------|---------|---------|
+| 初始化 | Initiation | 解析用户意图、加载上下文 | 意图明确、上下文完整 |
+| 验证 | Verification | 权限校验、前置条件检查 | 所有约束满足 |
+| 执行 | Execution | 工具调用、交易提交 | 链上确认完成 |
+| 评估 | Evaluation | 结果验证、状态一致性检查 | 验证通过或失败标记 |
+| 归档 | Archival | 审计日志写入、Replay 缓冲更新 | 记录持久化 |
+
+---
+
+## 5. Evaluation Checklist 产出物
+
+### 工具调用前后记录要素清单
+
+#### Pre-Call Record（调用前记录）
+
+| 要素 | 字段名 | 数据类型 | 必要性 | 说明 |
+|------|--------|---------|-------|------|
+| 调用唯一标识 | `call_id` | UUID v4 | 必填 | 全局唯一追溯码 |
+| 调用时间戳 | `timestamp` | Unix Epoch ms | 必填 | ISO 8601 兼容格式 |
+| 调用者身份 | `agent_id` | String | 必填 | Agent 实例标识 |
+| 目标工具 | `tool_name` | Enum | 必填 | 如 `read_balance`, `submit_tx` |
+| 工具权限等级 | `permission_tier` | Enum | 必填 | `read_only`, `user_confirm`, `prohibited` |
+| 输入参数哈希 | `input_hash` | bytes32 | 必填 | 参数完整性校验 |
+| 上下文摘要 | `context_digest` | bytes32 | 必填 | 防止上下文篡改 |
+| 用户授权签名 | `user_signature` | bytes65 | 条件必填 | `user_confirm` 等级必需 |
+
+#### Post-Call Record（调用后记录）
+
+| 要素 | 字段名 | 数据类型 | 必要性 | 说明 |
+|------|--------|---------|-------|------|
+| 执行结果状态 | `result_status` | Enum | 必填 | `success`, `failed`, `reverted` |
+| 交易哈希 | `tx_hash` | bytes32 | 条件必填 | 链上交易时必需 |
+| Gas 消耗 | `gas_used` | uint256 | 条件必填 | 成本核算 |
+| 返回值摘要 | `return_digest` | bytes32 | 必填 | 返回数据完整性 |
+| 状态变更记录 | `state_changes` | Array | 条件必填 | 若有链上状态变更 |
+| 错误码/回退原因 | `error_detail` | String | 条件必填 | 失败时必需 |
+| 验证状态 | `verification_status` | Enum | 必填 | `pending`, `verified`, `failed` |
+| 审计签名 | `audit_signature` | bytes65 | 必填 | 不可篡改凭证 |
+
+### 评估指标定义
+
+| 指标名称 | 英文 | 计算公式 | 目标阈值 |
+|---------|------|---------|---------|
+| 调用成功率 | Success Rate | $\frac{\text{successful\_calls}}{\text{total\_calls}} \times 100\%$ | $\ge 99\%$ |
+| 平均验证延迟 | Avg Verification Latency | $\frac{\sum_{i=1}^{n} t_i}{n}$ | $\le 500ms$ |
+| 回滚频率 | Rollback Frequency | $\frac{\text{rollback\_count}}{\text{total\_calls}} \times 100\%$ | $\le 0.1\%$ |
+| Replay 成功率 | Replay Success Rate | $\frac{\text{replayed\_successfully}}{\text{replay\_attempts}}$ | $\ge 95\%$ |
+
+---
+
+## 6. Replay 机制设计
+
+### 失败操作 Replay Checklist
+
+```markdown
+## Replay Execution Checklist
+
+### Phase 1: Failure Detection
+- [ ] 识别异常类型：Timeout / Revert / State Divergence / Permission Violation
+- [ ] 记录失败时间窗口（failure_window）
+- [ ] 标记最后成功检查点（last_checkpoint）
+
+### Phase 2: Environment Isolation
+- [ ] 创建隔离回放环境（replay_sandbox）
+- [ ] 加载失败点状态快照（state_snapshot）
+- [ ] 重置随机种子（seed）以确保确定性重放
+
+### Phase 3: Step-by-step Reconstruction
+- [ ] 回放至失败前一步（pre_failure_step）
+- [ ] 逐步执行，记录每个中间变量值
+- [ ] 对比预期值与实际值（delta_analysis）
+
+### Phase 4: Root Cause Identification
+- [ ] 检查输入参数边界（input_boundary_check）
+- [ ] 验证外部依赖可用性（dependency_verification）
+- [ ] 分析 Gas 限制是否充足（gas_sufficiency）
+
+### Phase 5: Resolution & Validation
+- [ ] 生成修复建议（fix_recommendation）
+- [ ] 在回放环境验证修复（fix_validation）
+- [ ] 更新 Replay 案例库（replay_case_base）
+```
+
+### Replay 决策树
+
+```mermaid
+graph TD
+    A[Replay Triggered] --> B{Failure Type?}
+    B -->|Timeout| C[Check Network Conditions]
+    B -->|Revert| D[Analyze Revert Reason]
+    B -->|State Divergence| E[Compare State Snapshots]
+    B -->|Permission| F[Audit Permission Chain]
+    
+    C --> C1{Network Issue?}
+    C1 -->|Yes| C2[Log Network Failure]
+    C1 -->|No| C3[Check Agent Logic]
+    
+    D --> D1{User Confirmation Missing?}
+    D1 -->|Yes| D2[Request Human-in-the-Loop]
+    D1 -->|No| D3[Inspect Contract State]
+    
+    E --> E1{State Timestamp Match?}
+    E1 -->|No| E2[Sync State Source]
+    E1 -->|Yes| E3[Debug Variable Binding]
+    
+    F --> F1{Revoked Permission?}
+    F1 -->|Yes| F2[Request Re-authorization]
+    F1 -->|No| F3[Check Policy Evaluation]
+    
+    C2 & C3 & D2 & D3 & E2 & E3 & F2 & F3 --> G[Generate Diagnostic Report]
+    G --> H[Update Replay Case Library]
+```
+
+---
+
+## 7. 漏洞向量与边界场景
+
+### 安全漏洞报告块
+
+#### 漏洞 1：Replay 环境状态污染
+
+| 字段 | 内容 |
+|------|------|
+| 漏洞类型 | 环境隔离失效（Environment Pollution） |
+| 缺陷源头 | Replay 缓冲区共享主系统状态快照 |
+| 攻击向量 | 恶意 Replay 请求修改共享状态 |
+| 防御策略 | 强制使用 Copy-on-Write 机制隔离回放环境 |
+
+#### 漏洞 2：Evaluation 时序攻击
+
+| 字段 | 内容 |
+|------|------|
+| 漏洞类型 | 状态检查竞态条件（Race Condition） |
+| 缺陷源头 | 链上状态确认与本地状态判断存在时间窗口 |
+| 攻击向量 | 在验证完成前修改链上状态 |
+| 防御策略 | 引入 Block Confirmation Depth（如 2 个区块确认）后再评估 |
+
+#### 漏洞 3：审计日志伪造
+
+| 字段 | 内容 |
+|------|------|
+| 漏洞类型 | 不可篡改性失效（Immutable Log Tampering） |
+| 缺陷源头 | 审计日志写入未使用去中心化存储或哈希锚定 |
+| 攻击向量 | 单点存储被篡改或删除 |
+| 防御策略 | 使用 IPFS + Ethereum 锚定双重保障 |
+
+### 边界场景验证矩阵
+
+| 场景 | 输入条件 | 预期输出 | 实际输出 | 通过状态 |
+|------|---------|---------|---------|---------|
+| 空上下文调用 | `context = null` | 拒绝执行 | `error: INVALID_CONTEXT` | ✅ |
+| 超长参数链 | `params > 1MB` | 分片处理 | `error: PARAM_SIZE_EXCEEDED` | ✅ |
+| 并发冲突调用 | `concurrent_tx_same_nonce` | 序列执行 | `error: NONCE_COLLISION` | ✅ |
+| 权限撤销期间调用 | `revoked_during_call` | 中止并回滚 | `error: PERMISSION_REVOKED` | ⚠️ 待验证 |
+| 链重组（Reorg） | `block_reorg > 5` | 重新评估 | `warning: STATE_INVALIDATED` | ⚠️ 待验证 |
+
+---
+
+## 8. 学术标签
+
+```
+#Web3Security #AIAgent #VerifiableAI #EvaluationFramework #ReplayMechanism
+#AuditTrail #AgentWallet #SmartContractAudit #PermissionManagement #Web3ToolUse
+```
+
+---
+
+## 学习总结
+
+今天（Day 13）完成了 Evaluation 和 Verifiable AI 的深度学习，建立了 Agent 工具调用的完整评估框架。核心产出包括：
+
+1. **Evaluation Checklist**：覆盖调用前后全生命周期的记录要素清单，定义了评估指标体系
+2. **Replay Checklist**：从失败检测到根因分析的完整闭环流程，配合决策树辅助诊断
+3. **安全边界意识**：识别了 Replay 污染、时序攻击、审计伪造三类关键漏洞及防御策略
+
+关键术语：
+- 评估（Evaluation）
+- 可验证 AI（Verifiable AI）
+- 审计轨迹（Audit Trail）
+- 重
+<!-- DAILY_CHECKIN_2026-05-30_END -->
+
 # 2026-05-29
 <!-- DAILY_CHECKIN_2026-05-29_START -->
 # AI x Web3 School 第 12 天打卡笔记
