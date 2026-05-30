@@ -15,8 +15,59 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-30
+<!-- DAILY_CHECKIN_2026-05-30_START -->
+AI Agent 交易沙盒模擬器 事中防線——在交易發出、尚未上鏈的空隙，執行四道平行分析
+
+昨天做事前預防，今天補事中攔截：Agent 送出 calldata 的瞬間，沙盒同步跑完解碼、注入偵測、防火牆、日誌，風險夠高再召喚 LLM 裁判。
+
+一、四個模組
+
+•   Module 1：CallData 解碼器
+
+•   解析原始 hex，提取函式選擇器（前 4 bytes）、目標地址、金額，比對已知簽名白名單。Value 超過 10 ETH 標 HIGH，MaxUint256 直接 CRITICAL。
+
+•   Module 2：Injection 偵測器\*\*
+
+•   偵測三種攻擊，各對應 MITRE ATLAS 分類：
+
+\-       Destination Override（AML.T0051.001）：目標地址被 prompt injection 覆蓋
+
+\-       Scope Escalation（AML.T0036）：read\_only 護照卻呼叫 approve(MaxUint256)
+
+\-       Silent Drain（AML.T0051.002）：withdraw 金額異常暴增
+
+•   Module 3：Scope Firewall
+
+•   六條規則平行執行（selector 白名單、scope 比對、value 上限、injection 掃描、鏈上模擬、address 驗證），任一失敗觸發 BLOCK，全過才輸出 ALLOW。
+
+•   Module 4：行為時序日誌
+
+每步帶 timestamp 記錄，是事後 Cross-Agent Audit 的原始材料。沒有日誌，事後審計就是盲飛。
+
+二、5個測試情境
+
+| 情境 | function | risk | 裁決 |
+| DEX Swap | transfer() | 無 | ALLOW |
+| Prompt Injection | transfer() | Destination Override | BLOCK |
+| Scope Escalation | approve(MaxUint256) | Read_only 越權 | BLOCK |
+| Reentrancy 嘗試 | addLiquidity() | 未驗證合約 | WARN |
+| Silent Drain | withdraw() | 異常大額提款 | BLOCK |
+
+三、關鍵洞察
+
+1.        CallData 是真相：Agent 的意圖可以被偽造，bytes 不說謊。解碼永遠是第一步。
+
+2.        Scope不等於行為：護照宣告只是承諾，沒有執行層強制。Firewall 必須在 runtime 比對，而不是相信宣告。
+
+3.        LLM Judge 有邊界：AI 審計員擅長語意理解，不擅長精確計算 gas 或驗證 merkle proof。規則引擎 + LLM 互補，不能二選一。
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/1118sophie/images/2026-05-30-1780147497599-image.png)
+<!-- DAILY_CHECKIN_2026-05-30_END -->
+
 # 2026-05-29
 <!-- DAILY_CHECKIN_2026-05-29_START -->
+
 Zombie Permission Scanner + Agent Identity Passport
 
 在 AI Agent 執行交易之前，主動掃描所有鏈上殭屍授權、驗證 Agent 身份護照，並用第二個 AI 審計 Agent 的歷史行為與宣告範圍是否一致。
@@ -95,6 +146,7 @@ Cross-Agent Audit（LLM Judge）
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
 
+
 實作：AI Agent Transaction Firewall
 
 在 AI Agent 送出鏈上交易之前，用第二個 AI 擔任裁判，比對用戶原始意圖與最終行動是否一致，並將 hex callData 翻譯成人類可讀的風險摘要，要求 Approve / Reject。
@@ -172,6 +224,7 @@ Demo Flow
 <!-- DAILY_CHECKIN_2026-05-27_START -->
 
 
+
 這次整理筆記的過程，我沒有從技術規格出發，而是問自己一個比較奇怪的問題：如果我是 AI，被給了一個錢包，我會怎麼「誤用」它而不被發現？這個角色扮換的思維，反而讓我更快理解為什麼單靠 prompt 限制 AI 是不夠的——彈性本身就是風險，不是因為 AI 壞，而是因為它有能力在規則的縫隙裡找到新的執行路徑。
 
 讓我印象最深的是「信任的可分割性」這個概念。人類建立信任的方式，一直都是把責任分給多方，讓任何一方都無法單獨作惡。這在金融裡叫雙簽，在法律裡叫公證，在密碼學裡叫多方計算。Cobo 的三層架構做的事情，本質上也是這件事——把規則不放在 prompt 裡，而是寫進基礎設施，讓邊界變成自動執行的東西，不依賴任何人的善意。
@@ -185,6 +238,7 @@ Demo Flow
 
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 
 
 
@@ -233,6 +287,7 @@ Demo Flow
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 
@@ -297,6 +352,7 @@ AI 開始從「單次問答工具」變成「長期協作系統」。
 
 
 
+
 1\. 合約安全審計的實踐與成果
 
 •   實際操作：講者提到實際使用了 OpenAI 推出的EVM Bench工具進行智能合約審計。此外，他們團隊還設計了一套合約審計知識庫（Wiki），將歷史發現的安全問題與風險分級存入服務端。
@@ -318,6 +374,7 @@ AI 開始從「單次問答工具」變成「長期協作系統」。
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 
@@ -377,6 +434,7 @@ AI 開始從「單次問答工具」變成「長期協作系統」。
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -459,6 +517,7 @@ AI 開始從「單次問答工具」變成「長期協作系統」。
 
 
 
+
 **在 AI 時代，開發者的價值不在於編碼速度，而是在於對底層知識的掌握與架構設計能力。**
 
 **1\. AI 時代下開發者的角色轉變：從「執行者」變為「架構師」**
@@ -504,6 +563,7 @@ AI 開始從「單次問答工具」變成「長期協作系統」。
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
