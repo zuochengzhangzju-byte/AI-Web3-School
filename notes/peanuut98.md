@@ -15,8 +15,46 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-30
+<!-- DAILY_CHECKIN_2026-05-30_START -->
+Day 13 · 2026-05-30 · @peanuut98
+
+今日学习：
+
+\- Handbook · Indexing：把 The Graph 解决的 3 件事讲清（历史聚合 / 多合约关联 / 跨索引信任），写出 3 个常见误解（"= 链上数据" / "永远准" / "能做实时"）。GraphQL ≈ 链上版 tool 查询接口，对应 Day 10 那条 ABI ≈ tool schema 的写接口。
+
+\- Handbook · Oracle：拆出 4 类 Oracle（Price Feed / Functions / VRF / 跨链），每类一句话；写了 3 个 DeFi 史上 Oracle 风险的真实事故形态（闪电贷打偏单源 / 心跳跑不赢闪崩 / 跨链桥被攻破）。
+
+\- 把 Day 9 → Day 10 → Day 11 → Day 12 → Day 13 串成一张「Agent 在链上读 / 写 / 看世界」全景图，确认 Agent 写走 ABI/RPC、读走 Indexer/GraphQL、看世界走 Oracle 这三条独立通道。
+
+\- 给 Day 14 准备好 Counter 合约 Base Sepolia 部署练习的最小步骤清单（最小合约源码 + 6 步流程 + 边界声明）— 今天不动手，明天直接照做。
+
+最大的认知变化：
+
+\- Oracle 不是"数据源"，是"信任假设的搬运者" — 用 X 这个 Oracle = 接受 X 的失败模型作为我自己的失败模型上界。
+
+\- Day 11 那 9 个 Agent Wallet 节点全在动作 / 金额 / 路径层，今天意识到要加第 10 条："Oracle 假设审计" — 即使所有动作合规，底层 Oracle 错了护栏也兜不住。
+
+\- "Agent 调链上"是 5 层结构（Intent → Smart Account 拒绝 → 写走 RPC / 读走 Indexer / 看世界走 Oracle），不是单一动作。
+
+卡点：
+
+\- 还没自己部署过合约 — Day 14 把 Counter 部到 Base Sepolia，跑一次 increment 闭环。
+
+\- "Oracle 假设审计"具体怎么落地（怎么自动判断 Price Feed 健康度 / 心跳触发降级）还没答案，先记着。
+
+明日 / 下一步：
+
+\- Day 14：Week 2 周复盘 + 按今天的最小步骤部 Counter 到 Base Sepolia。
+
+\- Week 3：Vibe Coding 武装周，用 Claude Code 给全景图每一层写一段最小脚本。
+
+🔗 [https://github.com/peanuut98/ai-web3-school-cohort-0/blob/main/daily/2026-05-30.md](https://github.com/peanuut98/ai-web3-school-cohort-0/blob/main/daily/2026-05-30.md)
+<!-- DAILY_CHECKIN_2026-05-30_END -->
+
 # 2026-05-29
 <!-- DAILY_CHECKIN_2026-05-29_START -->
+
 Day 12 · 2026-05-29 · @peanuut98
 
 今日学习：
@@ -52,6 +90,7 @@ Day 12 · 2026-05-29 · @peanuut98
 
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
+
 
 Day 11 · 2026-05-28 · @peanuut98
 
@@ -90,6 +129,7 @@ Day 11 · 2026-05-28 · @peanuut98
 <!-- DAILY_CHECKIN_2026-05-27_START -->
 
 
+
 Day 10 · 2026-05-27 · @peanuut98
 
 今日学习：
@@ -121,6 +161,7 @@ Day 10 · 2026-05-27 · @peanuut98
 
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
+
 
 
 
@@ -374,6 +415,7 @@ Day 10 · 2026-05-27 · @peanuut98
 
 
 
+
 Day 7 · 2026-05-24 · @peanuut98
 
 今日学习：
@@ -405,6 +447,7 @@ Day 7 · 2026-05-24 · @peanuut98
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 
@@ -449,6 +492,7 @@ Day 6 · 2026-05-23 · @peanuut98
 
 
 
+
 Day 3 · 2026-05-20 · @peanuut98
 
 今日学习：
@@ -487,6 +531,7 @@ Day 3 · 2026-05-20 · @peanuut98
 
 
 
+
 Day 2 · 2026-05-19 · @peanuut98
 
 今日学习：
@@ -512,6 +557,7 @@ Day 2 · 2026-05-19 · @peanuut98
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
