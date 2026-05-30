@@ -15,8 +15,14 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-30
+<!-- DAILY_CHECKIN_2026-05-30_START -->
+今日研究了一下官方文档
+<!-- DAILY_CHECKIN_2026-05-30_END -->
+
 # 2026-05-29
 <!-- DAILY_CHECKIN_2026-05-29_START -->
+
 参加了会议，明白了自己和其他人的差距，应该不参加黑客松了，能顺利完成本次学习课程并学到东西就算成功
 
 ![27403f5ccfa92a593406620b9791dce.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/mooncake-17/images/2026-05-29-1780061021428-27403f5ccfa92a593406620b9791dce.png)
@@ -24,6 +30,7 @@ AI x Web3 School
 
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
+
 
 在github上找了个区块链项目练练手，发现cursor的agent真好用，比hermes的方便  
 
@@ -34,6 +41,7 @@ AI x Web3 School
 <!-- DAILY_CHECKIN_2026-05-27_START -->
 
 
+
 今天参会，看了别人实际案例，觉得很强大
 
 ![1000012791.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/mooncake-17/images/2026-05-27-1779891772526-1000012791.jpg)
@@ -41,6 +49,7 @@ AI x Web3 School
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 
@@ -55,6 +64,7 @@ AI x Web3 School
 
 
 
+
 用cursor搭建了一个简单的测试钱包项目，先学习区块链，后面再想着怎么结合ai吧
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/mooncake-17/images/2026-05-23-1779551148622-image.png)
@@ -62,6 +72,7 @@ AI x Web3 School
 
 # 2026-05-22
 <!-- DAILY_CHECKIN_2026-05-22_START -->
+
 
 
 
@@ -80,6 +91,7 @@ AI x Web3 School
 
 
 
+
 参加了今天的会议，之前不知道ai结合web3能做什么具体的案例，老师建议我们可以做一个ai结合钱包做安全环境识别的小插件，后续我也想弄一个这个看看，计划明天捣鼓一下怎么弄钱包
 
 ![b5a520b3575333a50ce1155e9b290a6.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/mooncake-17/images/2026-05-21-1779369025060-b5a520b3575333a50ce1155e9b290a6.jpg)
@@ -87,6 +99,7 @@ AI x Web3 School
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -109,6 +122,7 @@ AI x Web3 School
 
 
 
+
 参加会议并且成功配置了hermes，尝试使用微信连接hermes。
 
 ![a4e8629846ee3fd648baa7d2a650714.png](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/mooncake-17/images/2026-05-19-1779197444236-a4e8629846ee3fd648baa7d2a650714.png)![9640414c90b9fcd5038db1e4fcdb927.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/AI-Web3-School/main/assets/mooncake-17/images/2026-05-19-1779197387041-9640414c90b9fcd5038db1e4fcdb927.jpg)
@@ -116,6 +130,7 @@ AI x Web3 School
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
