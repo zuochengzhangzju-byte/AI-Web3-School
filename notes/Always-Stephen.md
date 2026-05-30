@@ -15,8 +15,160 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-30
+<!-- DAILY_CHECKIN_2026-05-30_START -->
+\# Week 2 Day 5 — Week 2 最终冲刺 + 例会
+
+**日期**: 2026-05-29
+
+**主线方向**: Dev Tooling / Agent Workflow
+
+**WCB 学习面板**: [https://web3career.build/zh/programs/AI-Web3-School#tab=learning](https://web3career.build/zh/programs/AI-Web3-School#tab=learning)
+
+**课程参考**: \[Notion Week 2\]([https://ethpanda.notion.site/Week-2-AI-Web3-354bbd63be87818a83abdca6da1e50cf?pvs=74](https://ethpanda.notion.site/Week-2-AI-Web3-354bbd63be87818a83abdca6da1e50cf?pvs=74))
+
+\---
+
+\## 今日活动
+
+| 时间 | 活动 | Zoom |
+
+|------|------|------|
+
+| 19:00 | Women Builders in AI × Web3 | \[Zoom\]([https://us06web.zoom.us/j/83554099273?pwd=mW8dOaJOhLplm8xFJc1rSIjtMrEg2x.1](https://us06web.zoom.us/j/83554099273?pwd=mW8dOaJOhLplm8xFJc1rSIjtMrEg2x.1)) 密码: 164100 |
+
+| **20:00** | **Week 2 例会｜成果分享+Week 3 预告** | \[Zoom\]([https://us06web.zoom.us/j/87492556811?pwd=yCa7M68zCp1y1f1Q5J7aYa0e3PVHIx.1](https://us06web.zoom.us/j/87492556811?pwd=yCa7M68zCp1y1f1Q5J7aYa0e3PVHIx.1)) 密码: 033931 |
+
+**X 直播/回放**:
+
+\- Women Builders: [https://x.com/i/broadcasts/1mxPaLvzjOgKN](https://x.com/i/broadcasts/1mxPaLvzjOgKN)
+
+\- Week 2 例会: [https://x.com/i/broadcasts/1dGYljZYLlZKX](https://x.com/i/broadcasts/1dGYljZYLlZKX)
+
+\---
+
+\## 今日产出
+
+\- \[x\] 补完 Week 2 全部 7 条交付：
+
+\- ✅ AI × Web3 问题地图 → `research/ai-web3-problem-map.md`
+
+\- ✅ 参考资料清单 → `research/references.md`（13 条外部 + 7 份内部产出）
+
+\- ✅ 深挖包 → `research/dev-tooling-deep-dive.md`（3 张流程图 + 4 个反例 + 7 项风险矩阵 + 3 级验证计划）
+
+\- ✅ 方向 backlog → `research/direction-backlog.md`（5 个未选方向 + 不选原因 + 重访条件）
+
+\- \[ \] Women Builders in AI × Web3 笔记
+
+\- \[ \] Week 2 例会分享 + 收获
+
+\---
+
+\## Week 2 交付清单（全部完成 ✅）
+
+| # | 交付物 | 状态 | 产出 |
+
+|---|--------|:--:|------|
+
+| 1 | AI × Web3 问题地图（≥5 方向） | ✅ | `research/ai-web3-problem-map.md` |
+
+| 2 | 方向选择说明（为什么不是纯 AI/纯 Web3） | ✅ | `proposals/week2-dev-tooling-proposal.md` |
+
+| 3 | 问题拆解（参与方、流程、AI作用、Web3机制、自动化边界） | ✅ | proposal + `research/mcp-vs-a2a.md` |
+
+| 4 | 项目初步 proposal | ✅ | `proposals/week2-dev-tooling-proposal.md` |
+
+| 5 | 参考资料清单（≥5 条） | ✅ | `research/references.md` |
+
+| 6 | 主方向深挖包（流程图+场景+反例+风险+验证计划） | ✅ | `research/dev-tooling-deep-dive.md` |
+
+| 7 | 方向 backlog（未选方向+不选原因） | ✅ | `research/direction-backlog.md` |
+
+\### Week 2 全部产出清单
+
+\`\`\`
+
+ai-web3-school-cohort-0/
+
+├── proposals/
+
+│ └── [week2-dev-tooling-proposal.md](http://week2-dev-tooling-proposal.md) # 项目提案（交付 #2,3,4）
+
+├── research/
+
+│ ├── [ai-web3-problem-map.md](http://ai-web3-problem-map.md) # 问题地图（交付 #1）
+
+│ ├── [mcp-vs-a2a.md](http://mcp-vs-a2a.md) # MCP vs A2A 协议对比
+
+│ ├── [uniswap-v2-router-analysis.md](http://uniswap-v2-router-analysis.md) # 真实合约分析
+
+│ ├── [dev-tooling-deep-dive.md](http://dev-tooling-deep-dive.md) # 深挖包（交付 #6）
+
+│ ├── [direction-backlog.md](http://direction-backlog.md) # 方向 backlog（交付 #7）
+
+│ └── [references.md](http://references.md) # 参考资料（交付 #5）
+
+├── experiments/
+
+│ └── smart-contract-analyzer/ # MCP Server 代码（6 个文件）
+
+└── daily/
+
+├── [2026-05-25.md](http://2026-05-25.md) ~ [2026-05-29.md](http://2026-05-29.md) # 5 天学习笔记
+
+\`\`\`
+
+\---
+
+\## 例会分享准备
+
+\> 今晚 20:00 Week 2 例会分享要点
+
+\- \[ \] **方向一句话**：Smart Contract Analyzer — AI agent 通过 MCP Server 调用 Etherscan 自动分析链上合约安全
+
+\- \[ \] **为什么选这个**：数据最开放（Web3 链上公开） + 技术最可行（MCP 1.0） + 需求最明确（每个 Web3 开发者都要读合约）
+
+\- \[ \] **做了什么**：6 个方向问题地图 → MCP Server 4 个 Tool 全部实现 → Uniswap V2 Router 深度分析 → 反例 + 风险 + 验证计划
+
+\- \[ \] **Demo**：架构图（Hermes → MCP Server → Etherscan）+ 实际分析结果
+
+\- \[ \] **Week 3 计划**：配好 ETHERSCAN\_API\_KEY 运行端到端测试，扩展到多数据源
+
+\---
+
+\## WCB 打卡草稿
+
+\`\`\`
+
+#AIWeb3School #Week2Day5
+
+Week 2 全部 7 条交付完成：
+
+1\. 6 方向问题地图 + 统一判断框架
+
+2\. Dev Tooling 方向选择（Smart Contract Analyzer MCP Server）
+
+3\. MCP Server 4 个 Tool 全部实现
+
+4\. 深挖包：3 张流程图 + 4 个反例 + 7 项风险矩阵 + 3 级验证计划
+
+5\. 13 条外部参考 + 7 份内部产出
+
+6\. 5 个方向 backlog（含不选原因和重访条件）
+
+今晚 20:00 例会见！
+
+\`\`\`
+
+\- 打卡链接: [https://web3career.build/zh/programs/AI-Web3-School#tab=learning](https://web3career.build/zh/programs/AI-Web3-School#tab=learning)
+
+\- 提交状态: pending
+<!-- DAILY_CHECKIN_2026-05-30_END -->
+
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
+
 \# Week 2 Day 4 — Co-learning & 冲刺 Week 2 例会
 
 **日期**: 2026-05-28
@@ -211,6 +363,7 @@ args: \["C:/Users/psxxc/ai-web3-school-cohort-0/experiments/smart-contract-analy
 # 2026-05-26
 <!-- DAILY_CHECKIN_2026-05-26_START -->
 
+
 #AIWeb3School #Week2Day2
 
 今天三件事：
@@ -232,6 +385,7 @@ args: \["C:/Users/psxxc/ai-web3-school-cohort-0/experiments/smart-contract-analy
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 \# Week 2 Day 1 — AI × Web3 交叉研究方向选择
@@ -480,6 +634,7 @@ Name: ai-web3-learning-session
 
 
 
+
 \# Daily Note — 2026-05-22
 
 \## 今日学习：Web3 网络（Network）基础
@@ -617,6 +772,7 @@ Name: ai-web3-learning-session
 
 
 
+
 \# Daily Note — 2026-05-21
 
 \## 今日课程
@@ -709,6 +865,7 @@ Name: ai-web3-learning-session
 
 
 
+
 今天参加了Web3 运行原理的课程，补齐了账户、钱包、签名、交易、Gas、合约、区块浏览器和测试网验证如何组成一次完整链上操作等知识，并且继续学习hermes的进阶玩法
 <!-- DAILY_CHECKIN_2026-05-20_END -->
 
@@ -720,11 +877,13 @@ Name: ai-web3-learning-session
 
 
 
+
 今天配置好了hermes，并观看了18号8pm的**AI时代，Web3开发者需要具备的基础知识和架构能力**的回放视频，学习了钱包、gas、ai的一些基础概念
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
