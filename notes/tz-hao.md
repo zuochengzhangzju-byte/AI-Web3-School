@@ -15,8 +15,58 @@ timezone: UTC+8
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-31
+<!-- DAILY_CHECKIN_2026-05-31_START -->
+AI Agent Server Wallet 与 [LI.FI](http://LI.FI) Agent Integration 学习
+
+今天学习了两份和 SafePay Guard Wallet 方向高度相关的资料：
+
+1\. MetaMask - Design server wallets for AI agents with ERC-8004
+
+[https://docs.metamask.io/tutorials/design-server-wallets/](https://docs.metamask.io/tutorials/design-server-wallets/)
+
+2\. [LI.FI](http://LI.FI) - Agent Integration
+
+[https://docs.li.fi/agents/overview](https://docs.li.fi/agents/overview)
+
+今日理解
+
+MetaMask 的 server wallet 架构说明了 AI agent 不应该直接接触控制资产的私钥，而应该通过 backend signer / TEE / policy engine 来请求签名。agent key 用来证明请求来源，account key 控制链上资产，两者应该分离。TEE 或 signer 层需要执行 spend limit、scope limit、chain limit、frequency limit、simulation check 和 human approval。
+
+[LI.FI](http://LI.FI) 的 agent integration 展示了 agent 如何接入真实跨链执行能力。Agent 可以通过 `/quote` 获取可执行交易，通过 `/status` 跟踪跨链状态，通过 `/chains/tokens/tools` 查询支持范围。[LI.FI](http://LI.FI) 也提供 MCP Server，让 agent 更容易以工具形式调用跨链能力。
+
+和我的 SafePay Guard Wallet 项目的关系
+
+MetaMask 解决的是：agent 如何安全请求签名。
+
+[LI.FI](http://LI.FI) 解决的是：agent 如何拿到可执行跨链交易。
+
+我的 SafePay Guard Wallet 可以把两者接起来：
+
+Agent 可以理解用户意图并获取 [LI.FI](http://LI.FI) quote，但最终是否签名执行，必须由 wallet policy / Safe / CAW / server wallet 决定。
+
+核心结论
+
+AI 可以找 route、解释交易、生成风险摘要；但 wallet policy 必须检查 chain、token、recipient、amount、slippage、contract、method 和 simulation 结果。
+
+我今天进一步确认了 SafePay Guard Wallet 的设计原则：
+
+\`\`\`text
+
+Agent proposes.
+
+Policy checks.
+
+Wallet signs.
+
+Human confirms high risk.
+
+Audit records.
+<!-- DAILY_CHECKIN_2026-05-31_END -->
+
 # 2026-05-30
 <!-- DAILY_CHECKIN_2026-05-30_START -->
+
 Week 2 总结：AI x Web3 Bridge 深挖 - 安全钱包方向
 
 本周我围绕 AI x Web3 的交叉方向完成了 Week 2 学习与项目方向收敛，最终选择主线：
@@ -81,6 +131,7 @@ Week 3 下一步：
 # 2026-05-29
 <!-- DAILY_CHECKIN_2026-05-29_START -->
 
+
 ```
 传统以太坊的痛点：
 
@@ -103,6 +154,7 @@ Week 3 下一步：
 <!-- DAILY_CHECKIN_2026-05-28_START -->
 
 
+
 ```
 线 1：Agent 怎么做事？
   ├── MCP  → Agent ↔ 工具（发现 + 调用）
@@ -119,6 +171,7 @@ Week 3 下一步：
 
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 
 
 
@@ -152,6 +205,7 @@ Claude Desktop 默认     Lambda/SaaS 首选           2024-11 提出，2025-03 
 
 
 
+
 ## **提示工程（让Agent从“靠运气”到“稳定可控”）**
 
 ### **1\. 系统提示符与用户提示符**
@@ -181,6 +235,7 @@ Claude Desktop 默认     Lambda/SaaS 首选           2024-11 提出，2025-03 
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 
@@ -241,11 +296,13 @@ Claude Desktop 默认     Lambda/SaaS 首选           2024-11 提出，2025-03 
 
 
 
+
 今天学习了一下web3xai有一些大概的总结：从 Agent Workflow 的 human-in-the-loop，到 Escrow 的多签仲裁，到 Sovereignty 的一键 kill switch，到 Governance AI 的「AI 不替你做投票建议」——**自动化程度越高，撤回机制必须越强**。
 <!-- DAILY_CHECKIN_2026-05-24_END -->
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 
@@ -281,6 +338,7 @@ Claude Desktop 默认     Lambda/SaaS 首选           2024-11 提出，2025-03 
 
 
 
+
 **1\. Web3 Tool Use（学完）**  
 \- 工具分层：只读（RPC/Contract Read）↔️ 写交易（Contract Write/Wallet）必须硬分离  
 \- 写交易前 7 步检查链：chain id → 合约地址 → ABI → value → gas → simulation → policy+确认  
@@ -294,6 +352,7 @@ Claude Desktop 默认     Lambda/SaaS 首选           2024-11 提出，2025-03 
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -322,6 +381,7 @@ Claude Desktop 默认     Lambda/SaaS 首选           2024-11 提出，2025-03 
 
 
 
+
 今天听了一下web3的课，这些概念都懂算是巩固一下基础了
 <!-- DAILY_CHECKIN_2026-05-20_END -->
 
@@ -338,11 +398,13 @@ Claude Desktop 默认     Lambda/SaaS 首选           2024-11 提出，2025-03 
 
 
 
+
 今天终于把hermes弄好，也学习了一些ai的知识
 <!-- DAILY_CHECKIN_2026-05-19_END -->
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
