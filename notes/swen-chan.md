@@ -15,13 +15,20 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-31
+<!-- DAILY_CHECKIN_2026-05-31_START -->
+这两天在大理demo，在线下不断链接AIxWeb3的资源，这算不算一种学习呢？
+<!-- DAILY_CHECKIN_2026-05-31_END -->
+
 # 2026-05-28
 <!-- DAILY_CHECKIN_2026-05-28_START -->
+
 我正在打造自己的独一无二的 Hermes Agent，非常期待
 <!-- DAILY_CHECKIN_2026-05-28_END -->
 
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 
 关于 agent memory 的一个思考：或许结构化的知识库可以降低 memory 工程化的压力  
   
@@ -40,6 +47,7 @@ pointed to a different answer: LLM Wiki. Don't make the agent remember everythin
 <!-- DAILY_CHECKIN_2026-05-26_START -->
 
 
+
 今日笔记：EOA、智能账户和多签账户的权限差异  
 [https://x.com/SwenChan/status/2058823951531593904?s=20](https://x.com/SwenChan/status/2058823951531593904?s=20)
 
@@ -49,6 +57,7 @@ pointed to a different answer: LLM Wiki. Don't make the agent remember everythin
 
 # 2026-05-25
 <!-- DAILY_CHECKIN_2026-05-25_START -->
+
 
 
 
@@ -63,11 +72,13 @@ pointed to a different answer: LLM Wiki. Don't make the agent remember everythin
 
 
 
+
 帮大家审批任务中！！
 <!-- DAILY_CHECKIN_2026-05-24_END -->
 
 # 2026-05-23
 <!-- DAILY_CHECKIN_2026-05-23_START -->
+
 
 
 
@@ -80,6 +91,7 @@ pointed to a different answer: LLM Wiki. Don't make the agent remember everythin
 
 # 2026-05-21
 <!-- DAILY_CHECKIN_2026-05-21_START -->
+
 
 
 
@@ -101,6 +113,7 @@ web3基础概念小卡片：[https://x.com/SwenChan/status/2057108610321363258?s
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -160,6 +173,7 @@ web3基础概念小卡片：[https://x.com/SwenChan/status/2057108610321363258?s
 
 
 
+
 今日开始学习，先发了一个prompt作为post，给大家需要用hermes agent来学习的同学
 
 然后跟着做做任务 收集问题
@@ -167,6 +181,7 @@ web3基础概念小卡片：[https://x.com/SwenChan/status/2057108610321363258?s
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
