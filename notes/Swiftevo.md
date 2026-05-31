@@ -15,8 +15,529 @@ AI x Web3 School
 ## Notes
 
 <!-- Content_START -->
+# 2026-05-31
+<!-- DAILY_CHECKIN_2026-05-31_START -->
+# Day 7 學習總結 — Memory、Fine-tuning 與人類認知模型
+
+今天最大的收穫其實不是新技術。
+
+而是：
+
+# 你開始把 AI 系統映射到人類認知系統
+
+這是一個很重要的轉折。
+
+因為：
+
+之前幾天你在學：
+
+-   Prompt
+    
+-   RAG
+    
+-   Memory
+    
+-   Retrieval
+    
+-   Context
+    
+
+像是在學零件。
+
+今天開始：
+
+你在學：
+
+# 整個系統怎樣一起運作
+
+* * *
+
+# 一、你建立了第一個完整心智模型
+
+你今天最大的成果：
+
+是這個框架：
+
+* * *
+
+## Fine-tuning
+
+像：
+
+```text
+教育背景
+專業訓練
+價值觀
+思考習慣
+```
+
+* * *
+
+例如：
+
+醫生
+
+律師
+
+研究員
+
+工程師
+
+* * *
+
+看到問題時：
+
+自然會有不同思考方式。
+
+* * *
+
+# AI 世界
+
+Fine-tuning：
+
+改變：
+
+```text
+模型行為傾向
+```
+
+不是新增知識。
+
+* * *
+
+# 二、Prompt
+
+你理解：
+
+Prompt 不是：
+
+```text
+單純問問題
+```
+
+而是：
+
+# 任務說明書
+
+* * *
+
+包含：
+
+-   角色
+    
+-   背景
+    
+-   目標
+    
+-   限制
+    
+
+* * *
+
+例如：
+
+```text
+你是一位 DeSci reviewer
+
+請重點分析：
+- evidence
+- risks
+- missing proof
+```
+
+* * *
+
+這其實像：
+
+# 工作指令
+
+* * *
+
+# 三、Memory
+
+今天你最大的修正之一。
+
+* * *
+
+原本你認為：
+
+```text
+Memory = 經驗結論
+```
+
+* * *
+
+後來你理解：
+
+其實分：
+
+* * *
+
+## Episodic Memory
+
+記：
+
+```text
+發生過甚麼
+```
+
+* * *
+
+例如：
+
+```text
+CancerDAO 曾參與 GG23
+```
+
+* * *
+
+## Semantic Memory
+
+記：
+
+```text
+理解了甚麼
+```
+
+* * *
+
+例如：
+
+```text
+CancerDAO 長期交付穩定
+```
+
+* * *
+
+所以：
+
+Memory：
+
+不只是結論。
+
+而是：
+
+# 可重複利用的經驗與理解
+
+* * *
+
+# 四、RAG
+
+今天最重要的修正。
+
+* * *
+
+原本：
+
+你把：
+
+```text
+RAG = Memory 形成過程
+```
+
+混在一起。
+
+* * *
+
+現在理解：
+
+# RAG 不產生 Memory
+
+* * *
+
+而是：
+
+# 查詢外部知識
+
+* * *
+
+最好的比喻：
+
+* * *
+
+## Memory
+
+你的腦
+
+* * *
+
+## RAG
+
+圖書館
+
+* * *
+
+## Retrieval
+
+翻書
+
+* * *
+
+所以：
+
+RAG 解決：
+
+```text
+我不知道資料在哪
+```
+
+* * *
+
+Memory 解決：
+
+```text
+我曾經學過甚麼
+```
+
+* * *
+
+# 五、Fine-tuning 的真正實作
+
+今天你終於搞懂：
+
+# Fine-tuning 不是聊天中發生
+
+* * *
+
+不能：
+
+```text
+給 GPT 一堆文件
+然後叫它自己 Fine-tune 自己
+```
+
+* * *
+
+因為：
+
+GPT 無法在聊天視窗：
+
+修改自己權重。
+
+* * *
+
+真正 Fine-tuning：
+
+是：
+
+```text
+Training Dataset
+↓
+GPU Training
+↓
+Weights Update
+↓
+New Model
+```
+
+* * *
+
+例如：
+
+建立：
+
+```text
+Input:
+Proposal
+
+Output:
+Reviewer Summary
+```
+
+的資料集。
+
+* * *
+
+再重新訓練。
+
+* * *
+
+# 六、你理解了 Prompt 與 Fine-tuning 的本質差異
+
+* * *
+
+# Prompt
+
+改變：
+
+```text
+這次任務
+```
+
+* * *
+
+# Fine-tuning
+
+改變：
+
+```text
+長期習慣
+```
+
+* * *
+
+超重要一句：
+
+* * *
+
+# RAG 管知識
+
+* * *
+
+# Fine-tuning 管行為
+
+* * *
+
+這是今天最值得記住的一句。
+
+* * *
+
+# 七、Spark Agent 對應
+
+你開始能把所有概念放進同一個架構。
+
+* * *
+
+## Fine-tuning
+
+Spark reviewer 風格
+
+* * *
+
+## Prompt
+
+本次評審任務
+
+* * *
+
+## Memory
+
+過往 ecosystem 理解
+
+* * *
+
+## RAG
+
+查 proposal / GitHub / evidence
+
+* * *
+
+## Context
+
+本次分析材料
+
+* * *
+
+## Agent
+
+完成 reviewer workflow
+
+* * *
+
+# 八、你現在的理解層級
+
+你已經完成：
+
+✅ Prompt
+
+✅ Context
+
+✅ RAG
+
+✅ Chunking
+
+✅ Embeddings
+
+✅ Dense vs Sparse Retrieval
+
+✅ Metadata Filtering
+
+✅ Vector DB
+
+✅ Reranking
+
+✅ Context Compression
+
+✅ Memory Systems
+
+✅ Fine-tuning
+
+✅ Notion / GitHub / Obsidian 定位
+
+* * *
+
+這些其實已經涵蓋：
+
+# 現代 RAG Agent Architecture 的大部分基礎
+
+* * *
+
+# 九、你現在最缺的是甚麼？
+
+你已經理解：
+
+```text
+AI 怎樣獲得知識
+```
+
+* * *
+
+下一步要理解：
+
+```text
+AI 怎樣決定做甚麼
+```
+
+* * *
+
+也就是：
+
+# Agent Planning
+
+* * *
+
+包括：
+
+-   ReAct（Reason + Act）
+    
+-   Tool Selection
+    
+-   Multi-step Planning
+    
+-   Reflection
+    
+-   Self-Critique
+    
+-   Multi-Agent Systems
+    
+
+* * *
+
+# 十、今天最重要的一句
+
+如果前幾天學的是：
+
+```text
+知識怎樣被儲存與檢索
+```
+
+那今天學的是：
+
+```text
+知識、經驗、習慣與任務
+如何共同形成 Agent 的行為
+```
+
+這其實已經開始接近：
+
+# AI 認知架構（AI Cognitive Architecture）
+
+而不只是單純的 RAG 技術。
+<!-- DAILY_CHECKIN_2026-05-31_END -->
+
 # 2026-05-30
 <!-- DAILY_CHECKIN_2026-05-30_START -->
+
 這兩者之中，**Cobo Agentic Wallet (CAW)** 以及其背後的技術架構，與 **Public Goods（公共物品）** 的發展有著直接且明確的關聯；而 [**Z.AI**](http://Z.AI) 則是從開源（Open Source）與學術工具的角度切入，間接回饋了 Public Goods 的生態。
 
 以下為兩者在 DeSci 或 Public Goods 發展上的交集與關聯分析：
@@ -56,6 +577,7 @@ AI x Web3 School
 
 # 2026-05-29
 <!-- DAILY_CHECKIN_2026-05-29_START -->
+
 
 # Day 6 學習總結 — Agent Memory、Knowledge Infrastructure 與 Context Engineering
 
@@ -662,6 +1184,7 @@ Reasoning + Actions
 <!-- DAILY_CHECKIN_2026-05-28_START -->
 
 
+
 Day 5 學習總結 — Context Engineering、Compression 與 Agent Cognition
 
 今天你開始進入：
@@ -1251,6 +1774,7 @@ Context Engineering 組織知識
 
 # 2026-05-27
 <!-- DAILY_CHECKIN_2026-05-27_START -->
+
 
 
 
@@ -1903,6 +2427,7 @@ LLM 會忽略中間資訊。
 
 
 
+
 Day 4 學習總結 — Long-term Memory、Knowledge Infrastructure 與 AI-native Architecture
 
 今天你開始真正進入：
@@ -2519,6 +3044,7 @@ LLM 會忽略中間資訊。
 
 
 
+
 # Day 3 學習總結 — Retrieval Architecture 與 RAG Pipeline
 
 今天你正式進入：
@@ -3126,6 +3652,7 @@ retrieved chunks 太大怎辦？
 
 
 
+
 Day 3 學習總結 — Retrieval Architecture 與 RAG Pipeline
 
 今天你正式進入：
@@ -3712,6 +4239,7 @@ Retrieval 系統真正目標：
 
 
 
+
 學習總結 — Retrieval 與 RAG Architecture
 
 今天你已經正式進入：
@@ -4227,11 +4755,13 @@ AI-native database：
 
 
 
+
 今天聽了Elon 老師的 AI x web3 課，感覺目前很多的例子都是大集團或者大公司的成功案例。暫時很少看到有個人開發者的應用例子。目前最集中的都是在 AI 如何協助 web3 錢包安全或者交易上的分析。
 <!-- DAILY_CHECKIN_2026-05-21_END -->
 
 # 2026-05-20
 <!-- DAILY_CHECKIN_2026-05-20_START -->
+
 
 
 
@@ -4658,6 +5188,7 @@ workflow + tools + actions。
 
 
 
+
 # **Daily Note: 2026-05-19**
 
 ## **Today**
@@ -4752,6 +5283,7 @@ Proof link: [**https://github.com/Swiftevo/ai-web3-school-cohort-0**](https://gi
 
 # 2026-05-18
 <!-- DAILY_CHECKIN_2026-05-18_START -->
+
 
 
 
